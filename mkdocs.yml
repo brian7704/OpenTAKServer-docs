@@ -15,6 +15,10 @@ nav:
   - Installation:
     - Installer: 'installation/installation.md'
     - Manual Installation: 'installation/manual_installation.md'
+  - Configuration: 'configuration.md'
+  - Database: 'database.md'
+  - Secrets: 'secrets.md'
   - Certificate Enrollment: 'certificate_enrollment.md'
   - API: 'API.md'
   - ADS-B: 'adsb.md'
+  - Symbology: 'symbology.md'

@@ -1,3 +1,7 @@
+# Manual Installation
+
+---
+
 ## Note
 
 OpenTAKServer should be installed and run as a regular user, not root.

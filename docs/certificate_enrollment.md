@@ -1,3 +1,7 @@
+# Certificate Enrollment
+
+--
+
 OpenTAKServer supports client certificate enrollment which defaults to port 8446.
 
 ##Authentication
