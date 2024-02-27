@@ -8,7 +8,7 @@ extra:
   article_nav_top: false
   article_nav_bottom: false
   history_buttons: true
-repo_url: https://github.com/brian7704/OpenTAKServer
+repo_url: https://github.com/brian7704/OpenTAKServer-docs
 site_url: https://docs.opentakserver.io
 nav:
   - Home: 'index.md'
@@ -18,3 +18,11 @@ nav:
   - Certificate Enrollment: 'certificate_enrollment.md'
   - API: 'API.md'
   - ADS-B: 'adsb.md'
+  - OpenTAK ICU:
+    - OpenTAK ICU: 'opentak_icu/index.md'
+    - Streaming Protocols: 'opentak_icu/streaming_protocols.md'
+    - Audio Codecs: 'opentak_icu/audio_codecs.md'
+    - Video Codecs: 'opentak_icu/video_codecs.md'
+    - Encryption: 'opentak_icu/encryption.md'
+    - TAK Server: 'opentak_icu/tak_server.md'
+    - MediaMTX: 'opentak_icu/mediamtx.md'
