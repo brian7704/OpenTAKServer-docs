@@ -3,6 +3,8 @@
 site_name: OpenTAKServer Documentation
 theme:
   name: windmill
+plugins:
+  - glightbox
 extra:
   version: 1.0
   article_nav_top: false
@@ -18,7 +20,10 @@ nav:
   - Configuration: 'configuration.md'
   - Database: 'database.md'
   - Secrets: 'secrets.md'
+  - CoT Routing: 'cot_routing.md'
   - Certificate Enrollment: 'certificate_enrollment.md'
+  - Email: 'email.md'
+  - Authentication: 'authentication.md'
   - API: 'API.md'
   - ADS-B: 'adsb.md'
   - Symbology: 'symbology.md'

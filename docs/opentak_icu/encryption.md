@@ -1,16 +1,16 @@
 # Encryption
----
+***
 
 OpenTAK ICU supports encryption when streaming with either RTSPS or RTMPS. This ensures that a 3rd party cannot intercept
 and view the stream while it's in transit to the server.
 
 ## CA Signed Certificates
----
+***
 If your server uses certificates signed by a trusted CA such as Let's Encrypt, simply choose the RTSPS or RTMPS protocl.
 No further action is required.
 
 ## Self-Signed Certificates
----
+***
 If your server uses self-signed certificates you will need to import them into OpenTAK ICU. The certificates should be
 in PKCS12 format, the same format that ATAK uses. To import them, use the following steps:
 
