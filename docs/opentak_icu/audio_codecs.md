@@ -16,8 +16,8 @@ The G711 codec is locked to a sample rate of 8000hz and mono audio. Both RTSP(S)
 
 ## Compatibility Matrix
 ---
-||OPUS|AAC|G711|
-|--|--|--|--|
-| RTSP(S) |Yes|No|Yes|
-| RTMP(S) |No|Yes|Yes|
-| SRT     |Yes|Yes|No|
+||OPUS| AAC |G711|
+|--|--|-----|--|
+| RTSP(S) |Yes| Yes |Yes|
+| RTMP(S) |No| Yes |Yes|
+| SRT     |Yes| Yes |No|
