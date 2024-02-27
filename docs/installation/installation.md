@@ -1,5 +1,7 @@
 # OpenTAKServer-Installer
 
+---
+
 All the installers are on [GitHub](https://github.com/brian7704/OpenTAKServer-Installer). Download the latest
 release or clone the repo
 ```
@@ -46,11 +48,3 @@ confirm their registration, reset their passwords, and optionally for two-factor
 enabled, you will need your mail server's address, port, username, and password. When using Gmail you will need to
 log into your Gmail account and enable an app password. Your normal password will not work. Other providers probably
 require you to take similar steps.
-
-# Manual Installation
-
-## Prerequisites
-
-## Ubuntu
-
-## Raspberry Pi
