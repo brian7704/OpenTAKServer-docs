@@ -21,3 +21,10 @@ Click on ```Setup 2FA``` in the navigation bar and select the authenticator app 
 Either scan the QR code with your authenticator app or copy and paste the code into the authenticator app. Your authenticator
 app will give you a PIN that you enter below the QR code.
 ![!2FA Setup](images/2fa_setup.png)
+
+## SSL Socket Authentication
+***
+Connecting to OpenTAKServer's SSL socket requires authentication. In ATAK's server setup, tap ```Use Authentication```
+and enter your username and password. When ATAK connects, it will send an ```<auth>``` CoT with the username
+and password. If the username and password are incorrect, the account is disabled, or no ```<auth>``` CoT is sent,
+OpenTAKServer will close the connection.

@@ -1,22 +1,20 @@
 # Certificate Enrollment
-
---
-
+***
 OpenTAKServer supports client certificate enrollment which defaults to port 8446.
 
-##Authentication
-
+## Authentication
+***
 Certificate enrollment requires authentication. You will need to register an account on your OpenTAKServer or
 have an administrator make an account for you.
 
 ## Prerequisites
-
+***
 The default port for certificate enrollment is 8446. This port will use one of two types of certificates, self-signed 
 or Let's Encrypt. The default is to use self-signed certificates. If your server uses self-signed certificates, you will need
 a copy of your server's truststore certificate for auto-enrollment. You can download a copy at http://your_server_address/api/truststore.
 
 ## Instructions
-
+***
 1. On the main ATAK screen, tap the hamburger icon in the top right corner and tap Settings
 2. Tap on Network Preferences
 3. Tap on TAK Servers

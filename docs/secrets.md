@@ -1,7 +1,5 @@
 # Secrets
-
----
-
+***
 OpenTAKServer requires several secret keys that are stored in secret_keys.py which the installer script will generate
 automatically. You will need to generate them yourself using Python's built-in secrets library if you are doing a manual installation.
 

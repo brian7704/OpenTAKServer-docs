@@ -1,6 +1,5 @@
 # Symbology
 ***
-
 ## ATAK default icon sets
 ***
 OpenTAKServer supports all the default icon sets that come with ATAK. The installer will automatically put them in

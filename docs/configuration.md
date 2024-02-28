@@ -1,6 +1,5 @@
 # Configuration
-
----
+***
 
 - SECRET_KEY
     - The [Flask secret key](https://flask.palletsprojects.com/en/2.3.x/config/#SECRET_KEY). This is generated 
