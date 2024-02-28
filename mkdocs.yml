@@ -26,7 +26,9 @@ nav:
   - Authentication: 'authentication.md'
   - API: 'API.md'
   - ADS-B: 'adsb.md'
+  - Mumble: 'mumble.md'
   - Symbology: 'symbology.md'
+  - Video Streaming: 'video_streaming.md'
   - OpenTAK ICU:
     - OpenTAK ICU: 'opentak_icu/index.md'
     - Streaming Protocols: 'opentak_icu/streaming_protocols.md'
