@@ -17,10 +17,10 @@ override the defaults there. You must restart OpenTAKServer for the changes to t
     `python3 -c 'import secrets; print(secrets.token_hex())`
 
 - SECURITY_PASSWORD_SALT
-  - Used by [Flask-Security](https://flask-security-too.readthedocs.io/en/stable/configuration/#SECURITY_PASSWORD_SALT) 
-  to salt hashed passwords. If you change this after users have been generated, they will
-  be locked out until their passwords have been reset. This will lock out the administrator as well. It is generated
-  using `secrets.SystemRandom().getrandbits(128)`
+    - Used by [Flask-Security](https://flask-security-too.readthedocs.io/en/stable/configuration/#SECURITY_PASSWORD_SALT) 
+    to salt hashed passwords. If you change this after users have been generated, they will
+    be locked out until their passwords have been reset. This will lock out the administrator as well. It is generated
+    using `secrets.SystemRandom().getrandbits(128)`
 
 ## OpenTAKServer Settings
 
@@ -117,24 +117,24 @@ provide your username and [app password](https://support.google.com/accounts/ans
 See [Flask-Mail's documentation](https://pythonhosted.org/Flask-Mail/) for details.
 
 - MAIL_ASCII_ATTACHMENTS
-  - Default `False`
+    - Default `False`
 - MAIL_DEBUG
-  - Default `False`
+    - Default `False`
 - MAIL_DEFAULT_SENDER
-  - Default `null`
+    - Default `null`
 - MAIL_MAX_EMAILS
-  - Default: `null`
+    - Default: `null`
 - MAIL_PORT
-  - Default `465`
+    - Default `465`
 - MAIL_SERVER
-  - Default `smtp.gmail.com`
+    - Default `smtp.gmail.com`
 - MAIL_SUPPRESS_SEND
-  - Default `false`
+    - Default `false`
 - MAIL_USERNAME
-  - Default `null`
+    - Default `null`
 - MAIL_PASSWORD
-  - Default `null`
+    - Default `null`
 - MAIL_USE_SSL
-  - Default `false`
+    - Default `false`
 - MAIL_USE_TLS
-  - Default `true`
+    - Default `true`
