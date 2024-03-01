@@ -15,6 +15,7 @@ extra:
 repo_url: https://github.com/brian7704/OpenTAKServer
 site_url: https://docs.opentakserver.io
 edit_uri: https://github.com/brian7704/OpenTAKServer-docs/tree/master/docs
+google_analytics: ['G-22JB0TDCSP', 'docs.opentakserver.io']
 nav:
   - Home: 'index.md'
   - Installation:

@@ -18,6 +18,35 @@ You can stream to MediaMTX using a variety of protocols:
 - WebRTC
 - UDP Multicast
 
+## Watching Video Streams
+
+***
+
+### In Browser
+
+***
+
+In OpenTAKServer, click on `Video Streams`. In the list of streams, click the `Watch` button on the stream you want to view.
+A video player will show up below the list of streams. There is a known issue where the player sometimes doesn't show up.
+If that happens, refresh the page and try again.
+
+Alternatively, you can copy the WebRTC link of the video and paste it in a new tab.
+
+### In ATAK
+
+***
+
+When ATAK is connected to OpenTAKServer, open the Video tool, then tap the download button. ATAK will query the server
+for a list of video streams. Choose which stream to view and tap the `Ok` button. Next, edit the video settings and add your
+OpenTAKServer username and password. You can now view the video stream.
+
+### In VLC
+
+***
+
+Copy the RTSP link from OpenTAKServer. In VLC, click Media -> Open Network Stream. Paste the RTSP link and click the Play
+button. You will be prompted for your OpenTAKServer username and password. Enter them and click Ok.
+
 ## Recording Streams
 
 ***
