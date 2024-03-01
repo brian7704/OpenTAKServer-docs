@@ -11,6 +11,8 @@ override the defaults there. You must restart OpenTAKServer for the changes to t
 
 ## Config Options
 
+***
+
 - SECRET_KEY
     - The [Flask secret key](https://flask.palletsprojects.com/en/2.3.x/config/#SECRET_KEY). This is generated 
     automatically by the installer. It is generated using the following command 

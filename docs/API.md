@@ -4,14 +4,14 @@
 
 ## Authentication
 
-All API calls except for `/api/login` require authentication. Some are restricted to administrators only.
+All API calls except for `/api/login` require [authentication](authentication.md). Some are restricted to administrators only.
 
 ***
 
 ## Pagination
 
-Most `GET` queries are paginated. You can include the `page` and `per_page` to specify which page to get and how many 
-results should be returned.
+Most `GET` queries are paginated. You can include the `page` and `per_page` parameters to specify which page to get and
+how many results should be returned.
 
 ***
 

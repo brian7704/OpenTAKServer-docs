@@ -3,6 +3,8 @@
 site_name: OpenTAKServer Documentation
 theme:
   name: windmill
+  search_index_only: true
+  include_search_page: true
 plugins:
   - glightbox
 extra:

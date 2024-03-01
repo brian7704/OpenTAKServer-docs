@@ -2,7 +2,8 @@
 
 ***
 
-Email support is disabled by default. Enabling it also enables the following features:
+OpenTAKServer uses [Flask-Mail](https://pythonhosted.org/Flask-Mail/) is used to handle emails. 
+Enabling email support also enables the following features:
 
 - User account self registration
 - Password reset - Without email, only administrators can change a user's password if they forget it
@@ -12,12 +13,18 @@ Email support is disabled by default. Enabling it also enables the following fea
 
 ***
 
-1. Log in as an administrator
-2. Click on `Settings` in the navigation bar
-3. Find `OTS_ENABLE_EMAIL` and click on the toggle 
-4. Scroll down to the email settings at the bottom of the page
-5. `MAIL_SERVER`, `MAIL_PORT`, `MAIL_USERNAME`, and `MAIL_PASSWORD` are all required. If your email server or service
-uses TLS or SSL, make sure to enable `MAIL_USE_SSL` or `MAIL_USE_TLS`
+The following settings are required to enable email support. You can find them in your `config.yml` file.
+
+- `OTS_ENABLE_EMAIL`: Other settings have no effect is this is set to `false`
+- `MAIL_SERVER`
+- `MAIL_PORT`
+- `MAIL_USERNAME`
+- `MAIL_PASSWORD`
+
+These settings are optional and will depend on the email service you use.
+
+- `MAIL_USE_SSL`
+- `MAIL_USE_TLS`
 
 ## Gmail
 
@@ -31,11 +38,11 @@ for details.
 
 ***
 
-| Setting        | Value            |
-|----------------|------------------|
-| **MAIL_SERVER** | `smtp.gmail.com` |
-| **MAIL_PORT**  | `465`            |
-|**MAIL_USE_SSL**|`True`|
-|**MAIL_USE_TLS**|`False`|
-|**MAIL_USERNAME**|`your_username@gmail.com`|
-|**MAIL_PASSWORD**|`your_app_password`|
+| Setting        | Value                     |
+|----------------|---------------------------|
+| **MAIL_SERVER** | `smtp.gmail.com`          |
+| **MAIL_PORT**  | `587`                     |
+|**MAIL_USE_SSL**| `false`                   |
+|**MAIL_USE_TLS**| `true`                    |
+|**MAIL_USERNAME**| `your_username@gmail.com` |
+|**MAIL_PASSWORD**| `your_app_password`       |
