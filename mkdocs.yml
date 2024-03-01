@@ -9,9 +9,10 @@ extra:
   version: 1.0
   article_nav_top: false
   article_nav_bottom: false
-  history_buttons: true
-repo_url: https://github.com/brian7704/OpenTAKServer-docs
+  history_buttons: false
+repo_url: https://github.com/brian7704/OpenTAKServer
 site_url: https://docs.opentakserver.io
+edit_uri: https://github.com/brian7704/OpenTAKServer-docs/tree/master/docs
 nav:
   - Home: 'index.md'
   - Installation:
