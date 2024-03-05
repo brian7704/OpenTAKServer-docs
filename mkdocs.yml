@@ -2,20 +2,24 @@
 
 site_name: OpenTAKServer Documentation
 theme:
-  name: windmill
+  name: null
+  custom_dir: windmill
   search_index_only: true
   include_search_page: true
 plugins:
   - glightbox
+  - mermaid2:
+      javascript: 'js/mermaid.min.10.8.0.js'
+  - search
 extra:
   version: 1.0
   article_nav_top: false
   article_nav_bottom: false
   history_buttons: false
+  gtag: 'G-22JB0TDCSP'
 repo_url: https://github.com/brian7704/OpenTAKServer
 site_url: https://docs.opentakserver.io
 edit_uri: https://github.com/brian7704/OpenTAKServer-docs/tree/master/docs
-google_analytics: ['G-22JB0TDCSP', 'docs.opentakserver.io']
 nav:
   - Home: 'index.md'
   - Installation:
