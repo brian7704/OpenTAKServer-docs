@@ -34,5 +34,5 @@ CoT messages which will put a sensor icon with its field of view on other EUD's 
 ***
 
 The Multiicast IP range is 224.1.0.0 - 239.255.255.255, however some IPs and IP ranges are reserved and cannot be used.
-Most IPs in the 232.0.0.0 - 239.255.255.255 are safe to use. See this [Wikipedia article](https://en.wikipedia.org/wiki/Multicast_address)
+Most IPs in the 232.0.0.0 - 239.255.255.255 range are safe to use. See this [Wikipedia article](https://en.wikipedia.org/wiki/Multicast_address)
 for more details. 
