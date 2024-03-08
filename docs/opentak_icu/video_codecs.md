@@ -39,3 +39,4 @@ drain the battery faster. AV1 is not supported when streaming via SRT.
 | RTSP(S) | Yes  | Yes  |Yes|
 |RTMP(S)|Yes| No   |Yes|
 |SRT|Yes| Yes  |No|
+|Multicast UDP|Yes|Yes|No|

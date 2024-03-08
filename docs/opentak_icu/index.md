@@ -1,3 +1,10 @@
+![GitHub Release Date](https://img.shields.io/github/release-date/brian7704/OpenTAK_ICU)
+![GitHub Release](https://img.shields.io/github/v/release/brian7704/OpenTAK_ICU)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fbrian7704%2FOpenTAK_ICU&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/brian7704/OpenTAK_ICU/total)
+
+
+
 # OpenTAK ICU
 
 ***
@@ -17,25 +24,27 @@ it doesn't support streaming audio or using authentication and encryption (RTSPS
 
 ***
 
-Get the APK from the GitHub [latest release](https://github.com/brian7704/OpenTAK_ICU/releases/latest)
+Get the APK from this repo's [latest release](https://github.com/brian7704/OpenTAK_ICU/releases/latest)
 
 ## Features
 
 ***
 
-- [Video Codecs](video_codecs.md)
-    - H264
-    - H265
-- [Audio Codecs](audio_codecs.md)
-    - AAC
-    - G711
-    - OPUS
-- [Streaming protocols](streaming_protocols.md)
-    - RTSP
-    - RTSPS
-    - RTMP
-    - RTMPS
-    - SRT (SRT does not yet support authentication)
+- Video Codecs
+  - H264
+  - H265
+  - AV1
+- Audio Codecs
+  - AAC
+  - G711
+  - OPUS
+- Streaming protocols
+  - RTSP
+  - RTSPS
+  - RTMP
+  - RTMPS
+  - SRT (SRT does not yet support authentication)
+  - Multicast UDP
 - Authentication
 - Servers with self-signed certificates
 - Background streaming and recording - Continue streaming and recording audio and video even if the app
@@ -50,7 +59,8 @@ is minimized or the screen is off.
 ***
 
 - KLV
-- Multicast
+- Stream your device's screen instead of camera
+- USB camera support
 
 ## Servers
 
@@ -64,10 +74,9 @@ streaming server but any RTSP/RTMP server should work.
 ***
 
 In the video tool, tap the + symbol to add a new stream and use the following settings:
-
-- Type: `rtsp`
+- Type: rtsp
 - Address: Your server's IP address or domain name
-- Port: The defaults are `8554` for RTSP and `8322` for RTSPS
+- Port: The defaults are 8554 for RTSP and 8322 for RTSPS
 - Path: The stream's path that is set in OpenTAK ICU's settings
 - Username/Password: Required only if your server enforces authentication
 - Reliable P2P Connection: Enables a TCP connection and is required if there is a NAT/firewall
@@ -77,7 +86,7 @@ In the video tool, tap the + symbol to add a new stream and use the following se
 
 ***
 
-When using MediaMTX and streaming with H264, you can watch the live stream in a browser by browsing to
+When using MediaMTX and streaming with H264, you can watch the live stream in a browser by going to
 
 `http://your_server_ip:8888/stream_path` 
 
@@ -87,7 +96,7 @@ for an HLS stream or
 
 for a WebRTC stream. Note that most browsers don't yet
 support H265. See [CanIUse](https://caniuse.com/hevc) for details. Also note that WebRTC does not
-support AAC audio so the stream will show as video only. Use either G711 or OPUS codecs for audio with WebRTC.
+support AAC audio so you will need to use OPUS or G711 if you're viewing the stream via WebRTC.
 
 ## Viewing streams in VLC
 
@@ -109,7 +118,7 @@ the bitrate will max out at what the bitrate setting's value is.
 
 ***
 
-If your server is using self-signed certificates, and you wish to stream encrypted audio and video,
+If your server is using self signed certificates and you wish to stream encrypted audio and video,
 you'll need your server's trust store certificate in PKCS12 (.p12 file extension) format. If your 
 RTSP server is using the same certificates as your TAK server, you can use the same trust store 
 certificate and certificate password in OpenTAK ICU. After selecting the certificate and providing
