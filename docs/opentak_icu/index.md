@@ -36,6 +36,7 @@ Get the APK from the GitHub [latest release](https://github.com/brian7704/OpenTA
     - RTMP
     - RTMPS
     - SRT (SRT does not yet support authentication)
+    - Multicast UDP
 - Authentication
 - Servers with self-signed certificates
 - Background streaming and recording - Continue streaming and recording audio and video even if the app
