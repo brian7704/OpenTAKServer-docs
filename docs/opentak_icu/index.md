@@ -50,7 +50,8 @@ is minimized or the screen is off.
 ***
 
 - KLV
-- Multicast
+- Stream your device's screen instead of camera
+- USB camera support
 
 ## Servers
 
@@ -115,3 +116,64 @@ RTSP server is using the same certificates as your TAK server, you can use the s
 certificate and certificate password in OpenTAK ICU. After selecting the certificate and providing
 the certificate password, press the Test Certificate button. This simply validates that the certificate
 is the correct format and that the password is correct.
+
+## Feature Comparison
+
+***
+
+### Streaming Protocols
+
+***
+
+| | TAK ICU |OpenTAK ICU|
+|-|---------|---|
+|RTSP|Yes|Yes|
+|RTSPS|No|Yes|
+|RTMP|No|Yes|
+|RTMPS|No|Yes|
+|SRT|No|Yes|
+|Multicast UDP|Yes|Yes|
+
+### Video Codecs
+
+***
+
+| | TAK ICU |OpenTAK ICU|
+|---|---------|---|
+|H264| Yes     |Yes|
+|H265| No      |Yes|
+|AV1|No|Yes|
+
+### Audio Codecs
+
+***
+
+| | TAK ICU|OpenTAK ICU|
+|---|---|---|
+|AAC|No|Yes|
+|G711|No|Yes|
+|OPUS|No|Yes|
+
+### Other Features
+
+***
+
+| |TAK ICU|OpenTAK ICU|
+|---|---|---|
+|Broadcast CoT on local network|Yes|Yes|
+|Send CoT to TAK server|No|Yes|
+|Show video on map (KLV)|Yes|No|
+|View video in ATAK/WinTAK video tool|Yes|Yes|
+|Stream to Wowza|Yes|No|
+|Stream in background|Yes|Yes|
+|Take a photo while streaming|Yes|Yes|
+|Switch camera while streaming|No|Yes|
+|Turn on flashlight while streaming|No|Yes|
+|Record to device while streaming|Yes|Yes|
+|Change Video/Audio bitrate|No|Yes|
+|Adaptive Bitrate|No|Yes|
+|1080p|No|Yes|
+|4K|Yes|Yes|
+|Change FPS|No|Yes|
+|Compass Display|Yes|No|
+|Server Authentication|Yes (only when using RTSP)|Yes (RTSP(S) and RTMP(S)|
