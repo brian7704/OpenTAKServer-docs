@@ -31,20 +31,20 @@ Get the APK from this repo's [latest release](https://github.com/brian7704/OpenT
 ***
 
 - Video Codecs
-  - H264
-  - H265
-  - AV1
+    - H264
+    - H265
+    - AV1
 - Audio Codecs
-  - AAC
-  - G711
-  - OPUS
+    - AAC
+    - G711
+    - OPUS
 - Streaming protocols
-  - RTSP
-  - RTSPS
-  - RTMP
-  - RTMPS
-  - SRT (SRT does not yet support authentication)
-  - Multicast UDP
+    - RTSP
+    - RTSPS
+    - RTMP
+    - RTMPS
+    - SRT (SRT does not yet support authentication)
+    - Multicast UDP
 - Authentication
 - Servers with self-signed certificates
 - Background streaming and recording - Continue streaming and recording audio and video even if the app

@@ -6,7 +6,7 @@ This project is just beginning and not yet suitable for production.
 
 ## Current Features
 ***
-- ATAK 4.8 and 5.0 support
+- ATAK 4.8 - 5.0 support
 - WinTAK support
 - TCP and SSL CoT streaming
 - Authentication

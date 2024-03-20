@@ -2,7 +2,7 @@
 
 ***
 
-OpenTAKServer uses [Flask-Mail](https://pythonhosted.org/Flask-Mail/) is used to handle emails. 
+OpenTAKServer uses [Flask-Mailman](https://github.com/waynerv/flask-mailman) is used to handle emails. 
 Enabling email support also enables the following features:
 
 - User account self registration
@@ -25,6 +25,8 @@ These settings are optional and will depend on the email service you use.
 
 - `MAIL_USE_SSL`
 - `MAIL_USE_TLS`
+
+You can find a full list of Flask-Mailman's settings in their [documentation](https://waynerv.github.io/flask-mailman/).
 
 ## Gmail
 
