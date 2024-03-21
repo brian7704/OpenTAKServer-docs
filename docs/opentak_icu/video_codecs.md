@@ -34,9 +34,9 @@ OpenTAK ICU, but if your device doesn't have a hardware encoder Android will use
 drain the battery faster. AV1 is not supported when streaming via SRT.
 
 ## Compatibility Matrix
-|        | H264 | H265 |AV1|
-|--------|------|------|--|
-| RTSP(S) | Yes  | Yes  |Yes|
-|RTMP(S)|Yes| No   |Yes|
-|SRT|Yes| Yes  |No|
-|Multicast UDP|Yes|Yes|No|
+|               | H264 | H265 | AV1 |
+|---------------|------|------|-----|
+| RTSP(S)       | Yes  | Yes  | Yes |
+| RTMP(S)       | Yes  | No   | Yes |
+| SRT           | Yes  | Yes  | No  |
+| Multicast UDP | Yes  | Yes  | No  |

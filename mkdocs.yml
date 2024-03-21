@@ -22,10 +22,12 @@ site_url: https://docs.opentakserver.io
 edit_uri: https://github.com/brian7704/OpenTAKServer-docs/tree/master/docs
 nav:
   - Home: 'index.md'
+  - Architecture: 'architecture.md'
   - Installation:
     - Installer: 'installation/installation.md'
     - Manual Installation: 'installation/manual_installation.md'
   - Configuration: 'configuration.md'
+  - Security: 'security.md'
   - Database: 'database.md'
   - CoT Routing: 'cot_routing.md'
   - Certificate Enrollment: 'certificate_enrollment.md'
