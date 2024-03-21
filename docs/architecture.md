@@ -38,6 +38,6 @@ Below is a table of all default ports used by OpenTAKServer.
 
 ***
 
-Here is an attempt at a diagram to help visualize the components use in OpenTAKServer and how they interact.
+Here is an attempt at a diagram to help visualize the components used in OpenTAKServer and how they interact.
 
 ![!Diagram](images/diagram.png)
