@@ -3,11 +3,24 @@
   {# Optional link to the repository #}
   {%- block repo %}
     {%- if config.repo_url %}
-    <ul class="wm-toctree wm-toc-repo">
+    <ul class="wm-toctree">
       <li class="wm-toc-li wm-toc-lev1">
       <a class="wm-article-link wm-toc-text" href="{{ config.repo_url }}">
         {% include 'repo-icon.html' %}
         {{ config.repo_name }}
+      </a>
+      </li>
+    </ul>
+    {%- endif %}
+  {%- endblock %}
+
+  {%- block discord %}
+    {%- if config.extra.discord_link %}
+    <ul class="wm-toctree wm-toc-repo">
+      <li class="wm-toc-li wm-toc-lev1">
+      <a class="wm-article-link wm-toc-text" href="{{ config.extra.discord_link }}">
+        <img src="img/discord.svg" alt="Discord Icon" style="width: 15px;" />
+        Discord
       </a>
       </li>
     </ul>
