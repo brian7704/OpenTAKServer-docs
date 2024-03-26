@@ -18,6 +18,19 @@ is `administrator` and the password is `password`. You should immediately change
 By default, only administrators can create user accounts. However, users can register their own accounts if an administrator
 enables [email](email.md) support.
 
+### Whitelisting and Blacklisting Email Domains
+
+***
+
+If email support is enabled, any valid email address can be used to create an account. However, there are whitelists
+for email domains and top level domains. Likewise, there are also blacklists. For example, if you add `example.com` to 
+the `OTS_EMAIL_DOMAIN_WHITELIST` option, only users with `@example.com` email addresses can register accounts.
+You can also add top level domains (TLDs) to the `OTS_EMAIL_TLD_WHITELIST` option. For example, adding `gov` and `mil`
+will allow only users with .gov or .mil email accounts to register accounts.
+
+`OTS_EMAIL_DOMAIN_BLACKLIST` and `OTS_EMAIL_TLD_BLACKLIST` are similar except that any email address not in those
+lists will be able to register for an account.
+
 ## Two-Factor Authentication
 
 ***
