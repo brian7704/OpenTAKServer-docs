@@ -27,6 +27,7 @@ nav:
   - Installation:
     - Installer: 'installation/installation.md'
     - Manual Installation: 'installation/manual_installation.md'
+    - Windows: 'installation/windows.md'
   - Configuration: 'configuration.md'
   - Security: 'security.md'
   - Database: 'database.md'

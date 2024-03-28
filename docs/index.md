@@ -6,7 +6,7 @@ This project is just beginning and not yet suitable for production.
 
 ## Current Features
 ***
-- ATAK 4.8 - 5.0 support
+- Support for ATAK 4.8 and up
 - WinTAK support
 - TCP and SSL CoT streaming
 - Authentication
@@ -26,6 +26,15 @@ This project is just beginning and not yet suitable for production.
 - WebUI
 - Mumble Authentication 
     - Use your OpenTAKServer account to log into your Mumble server
+
+## Supported Platforms
+
+***
+
+There are installer scripts for Ubuntu, Raspberry Pi, and Windows in the OpenTAKServer-Installer repo. Other Linux 
+distros will probably work via manual installation. If you'd like an installer for a particular distro, feel free to
+open an issue in the [OpenTAKServer-Installer repo](https://github.com/brian7704/OpenTAKServer-Installer/issues). There 
+are plans for MacOS and Android installers in the future.
 
 ## Planned Features
 ***
