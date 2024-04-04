@@ -1,12 +1,20 @@
 # OpenTAKServer-Installer
 
----
+***
 
-All the installers are on [GitHub](https://github.com/brian7704/OpenTAKServer-Installer). Download the latest
-release or clone the repo
-```
-git clone https://github.com/brian7704/OpenTAKServer-Installer.git
-```
+All the installers are on [GitHub](https://github.com/brian7704/OpenTAKServer-Installer).
+
+## Ubuntu and Raspberry Pi
+
+***
+
+The Ubuntu and Raspberry pi installers should be run as a regular user, not root. Copy and paste the following command into your terminal for the Ubuntu installer.
+
+`curl https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/online_installer/ubuntu_installer.sh | bash -`
+
+Use the following command for the Raspberry Pi installer.
+
+`curl https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/raspberry_pi_installer.sh | bash -`
 
 ## Notes
 
