@@ -25,15 +25,12 @@ There should be an option called `Run as administrator` that you can click on.
 ***
 
 1. Run Powershell as an administrator
-2. Run the command `Set-ExecutionPolicy Unrestricted`
-    1. This allows unsigned scripts downloaded from the internet to run. In the final step you will run a command to revert this setting since leaving it unrestricted is a security risk.
-3. `(Invoke-WebRequest -Uri https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/windows_installer.ps1 -UseBasicParsing).Content | Invoke-Expression`
-4. You may be prompted about the script being untrusted. If so, enter `R` at the prompt and press `Enter` to run it anyway.
-5. At this point the script will run with minimal user action required. You may see dialog boxes asking if you want to allow the installed software to access the network. Click allow on all of these dialogs
-6. After everything is installed, the installer will make services for MediaMTX and OpenTAKServer so they can run automatically at boot. You will be prompted for your password. The password is only used to create the services.
-7. If you didn't get any errors, installation should be complete and OpenTAKServer should be running. Try browsing to `http://127.0.0.1` and you will see the login page.
-8. If other devices on the network can't see the login page, you may need to [configure Windows Firewall](https://learn.microsoft.com/en-us/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access?view=sql-server-ver16). The list of ports that OpenTAKServer uses is [here](../architecture.md).
-9. Run `Set-ExecutionPolicy Restricted -Scope Process -Force` in the admin Powershell
+2. `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/windows_installer.ps1'))`
+3. You may be prompted about the script being untrusted. If so, enter `R` at the prompt and press `Enter` to run it anyway.
+4. At this point the script will run with minimal user action required. You may see dialog boxes asking if you want to allow the installed software to access the network. Click allow on all of these dialogs
+5. After everything is installed, the installer will make services for MediaMTX and OpenTAKServer so they can run automatically at boot. You will be prompted for your password. The password is only used to create the services.
+6. If you didn't get any errors, installation should be complete and OpenTAKServer should be running. Try browsing to `http://127.0.0.1` and you will see the login page.
+7. If other devices on the network can't see the login page, you may need to [configure Windows Firewall](https://learn.microsoft.com/en-us/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access?view=sql-server-ver16). The list of ports that OpenTAKServer uses is [here](../architecture.md).
 
 # Windows Manual Installation
 
