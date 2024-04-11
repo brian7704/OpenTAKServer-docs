@@ -8,6 +8,7 @@ This project is just beginning and not yet suitable for production.
 ***
 - Support for ATAK 4.8 and up
 - WinTAK support
+- iTAK support
 - TCP and SSL CoT streaming
 - Authentication
     - Optional support for user registration with an email account
@@ -15,12 +16,12 @@ This project is just beginning and not yet suitable for production.
 - Client certificate enrollment
 - CoT routing between EUDs
 - [MediaMTX](https://github.com/bluenviron/mediamtx) integration for video streaming
-  - Streams secured via SSL and authentication
-  - Stream video from TAK ICU and [OpenTAK ICU](https://github.com/brian7704/OpenTAK_ICU)
-  - Stream video from drones
-  - Connect to IP cameras
-  - Watch video streams in ATAK's video tool, web browser, or video player such as VLC
-  - Record streams
+    - Streams secured via SSL and authentication
+    - Stream video from TAK ICU and [OpenTAK ICU](https://github.com/brian7704/OpenTAK_ICU)
+    - Stream video from drones
+    - Connect to IP cameras
+    - Watch video streams in ATAK's video tool, web browser, or video player such as VLC
+    - Record streams
 - Upload data packages to share with other EUDs
 - Live stream ADS-B data from the free Airplanes.live API to EUDs
 - WebUI
@@ -40,6 +41,5 @@ are plans for MacOS and Android installers in the future.
 ***
 - Federation
 - DataSync
-- iTAK support
 - Pull data from networked SDRs (ie dump1090, rtl_ais, rtl_tcp, etc)
 
