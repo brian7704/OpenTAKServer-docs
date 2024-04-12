@@ -14,7 +14,7 @@ override the defaults there. You must restart OpenTAKServer for the changes to t
 ***
 
 The following sensitive options will compromise the security of your server if they are leaked. If you are asking for
-support over public channels such as [Discord](https://discord.gg/QChpNkrEUU) or [GitHub](https://github.com/brian7704/OpenTAKServer),
+support over public channels such as [Discord](https://discord.gg/6uaVHjtfXN) or [GitHub](https://github.com/brian7704/OpenTAKServer),
 remove these settings before posting. If these settings are mistakenly shared publicly, change them immediately.
 
 - SECRET_KEY

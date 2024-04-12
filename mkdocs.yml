@@ -24,6 +24,7 @@ edit_uri: https://github.com/brian7704/OpenTAKServer-docs/tree/master/docs
 nav:
   - Home: 'index.md'
   - Architecture: 'architecture.md'
+  - Feature Comparison: 'feature_comparison.md'
   - Installation:
     - Installer: 'installation/installation.md'
     - Manual Installation: 'installation/manual_installation.md'

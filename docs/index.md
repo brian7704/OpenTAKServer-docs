@@ -1,12 +1,21 @@
 # OpenTAKServer
+
 ***
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/opentakserver)
+![PyPI - Version](https://img.shields.io/pypi/v/opentakserver)
+![Discord](https://img.shields.io/discord/1183578214459777164?logo=discord&label=Discord&link=https%3A%2F%2Fdiscord.gg%2F6uaVHjtfXN)
+![GitHub Release Date](https://img.shields.io/github/release-date/brian7704/OpenTAKServer)
+
 OpenTAKServer (OTS) is yet another open source TAK Server for ATAK, iTAK, and WinTAK. OTS's goal is to be easy to install and use, and to run on both servers and SBCs (ie Raspberry Pi).
 
-This project is just beginning and not yet suitable for production.
+This is a new project under active development. Feel free to report any bugs or feature requests to our [GitHub repo](https://github.com/brian7704/OpenTAKServer).  You can also join us on our [Discord server](https://discord.gg/6uaVHjtfXN)
 
 ## Current Features
+
 ***
-- Support for ATAK 4.8 and up
+
+- Support for ATAK 4.8 and up (Older versions may work, needs to be tested)
 - WinTAK support
 - iTAK support
 - TCP and SSL CoT streaming
