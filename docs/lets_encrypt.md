@@ -19,16 +19,24 @@ sudo systemctl stop nginx
 sudo certbot certonly --standalone --preferred-challenges http -d your_domain_name.com # Replace your_domain_name.com with your actual domain
 ```
 
-After obtaining a certificate, `/etc/nginx/site-enabled/ots_https` and `/etc/nginx/site-enabled/ots_certificate_enrollment`
-need to be edited.
+Next change these following two lines in `/etc/nginx/site-enabled/ots_certificate_enrollment` from this:
 
-In `ots_certificate_enrollment` change `ssl_certificate` to `/etc/letsencrypt/live/your_domain_name.com/fullchain.pem;`
-and change `ssl_certificate_key` to `/etc/letsencrypt/live/your_domain_name.com/privkey.pem;`.
+```
+ssl_certificate /home/your_username/ots/ca/certs/opentakserver/opentakserver.pem;
+ssl_certificate_key /home/your_username/ots/ca/certs/opentakserver/opentakserver.nopass.key;
+```
 
-Make the same changes in `ots_https`, but only for the server block for port 443. The server block for port 8443
-should remain as the self-signed certificate.
+to this:
 
-Once `ots_https` and `ots_certificate_enrollment` have been change, start nginx with `systemctl start nginx`.
+```
+ssl_certificate /etc/letsencrypt/live/your_domain_name.com/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/your_domain_name.com/privkey.pem;
+```
+
+Finally, in `/etc/nginx/site-enabled/ots_https`, change the same two lines in the server block for port 443. Do not change
+the certificate settings in the server block for port 8443.
+
+Once the certificate settings are change, start nginx with this command: `systemctl start nginx`.
 
 ## Windows
 
