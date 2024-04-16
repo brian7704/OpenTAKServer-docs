@@ -12,7 +12,7 @@ The Ubuntu and Raspberry pi installers should be run as a regular user, not root
 
 `curl https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/online_installer/ubuntu_installer.sh | bash -`
 
-Use the following command for the Raspberry Pi installer.
+Use the following command for the Raspberry Pi installer. The installer supports Raspberry Pi OS Bookworm or newer versions.
 
 `curl https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/raspberry_pi_installer.sh | bash -`
 
