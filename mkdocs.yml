@@ -8,8 +8,6 @@ theme:
   include_search_page: true
 plugins:
   - glightbox
-  - mermaid2:
-      javascript: 'js/mermaid.min.10.8.0.js'
   - search
 extra:
   version: 1.0
