@@ -9,20 +9,33 @@
 When you first start OpenTAKServer, a default configuration file will be generated for you at `~/ots/config.yml`. You can
 override the defaults there. You must restart OpenTAKServer for the changes to take effect.
 
+## Secrets
+
+***
+
+The following sensitive options will compromise the security of your server if they are leaked. If you are asking for
+support over public channels such as [Discord](https://discord.gg/6uaVHjtfXN) or [GitHub](https://github.com/brian7704/OpenTAKServer),
+remove these settings before posting. If these settings are mistakenly shared publicly, change them immediately.
+
+- SECRET_KEY
+- SECURITY_PASSWORD_SALT
+- OTS_MEDIAMTX_TOKEN
+- MAIL_USERNAME
+- MAIL_PASSWORD
+
 ## Config Options
 
 ***
 
 - SECRET_KEY
-    - The [Flask secret key](https://flask.palletsprojects.com/en/2.3.x/config/#SECRET_KEY). This is generated 
-    automatically by the installer. It is generated using the following command 
-    `python3 -c 'import secrets; print(secrets.token_hex())`
+    - The [Flask secret key](https://flask.palletsprojects.com/en/2.3.x/config/#SECRET_KEY). 
+    It is generated automatically with `secrets.token_hex()` the first time you run OpenTAKServer.
 
 - SECURITY_PASSWORD_SALT
     - Used by [Flask-Security](https://flask-security-too.readthedocs.io/en/stable/configuration/#SECURITY_PASSWORD_SALT) 
     to salt hashed passwords. If you change this after users have been generated, they will
-    be locked out until their passwords have been reset. This will lock out the administrator as well. It is generated
-    using `secrets.SystemRandom().getrandbits(128)`
+    be locked out until their passwords have been reset. This will lock out the administrator as well. It is automatically
+    generated the first time you run OpenTAKServer using `secrets.SystemRandom().getrandbits(128)`
 
 ## OpenTAKServer Settings
 
@@ -100,23 +113,48 @@ override the defaults there. You must restart OpenTAKServer for the changes to t
 - OTS_AIRPLANES_LIVE_RADIUS
     - Radius in nautical miles to query ADSB from [Airplanes.live](https://airplanes.live/). Default `10` Max `250`
 
-- OTS_AIRPLANES_LIVE_MINUTES
-    - Query interval (minutes) for [Airplanes.live](https://airplanes.live/) Default `5`
-
-- OTS_AIRPLANES_LIVE_SECONDS
-    - Query interval (seconds) for [Airplanes.live](https://airplanes.live/) Default `0`
+- OTS_ENABLE_MUMBLE_AUTHENTICATION
+    - This option provide authentication for your Mumble server. When connecting to the Mumble server you will have to
+    use your OpenTAKServer username and password. This also prevents anyone without an account on your OpenTAKServer
+    from connecting. Default: `False`
 
 - OTS_ENABLE_EMAIL
     - Allow users to self-register accounts with an email address. Emails will only be sent to users to confirm their registration,
     reset their passwords, and optionally for two-factor authentication. Default `False`
 
-## Flask-Mail settings
+- OTS_EMAIL_DOMAIN_WHITELIST
+    - If `OTS_ENABLE_EMAIL` is set to `True`, you can use this whitelist to only allow users with email accounts with specific
+    domains to register. For example, if you set this option to `['gmail.com', 'yahoo.com']`, only users with gmail.com or
+    yahoo.com email addresses can register. Leave the default setting to allow any domain to register. Default: `[]`
+
+- OTS_EMAIL_DOMAIN_BLACKLIST
+    - Similar to `OTS_EMAIL_DOMAIN_WHITELIST`, but prevents specific email domains from registering accounts. Leave the
+    default setting to allow any domain to register. Default: `[]`
+
+- OTS_EMAIL_TLD_WHITELIST
+    - Similar to `OTS_EMAIL_DOMAIN_WHITELIST` but only allows users with specific top level domains to register. For example,
+    you could set this to `['gov', 'mil']` to only allow users with .gov or .mil email addresses to register. Do not put a 
+    dot before the TLD. Leave the default setting to allow any TLD to register. Default: `[]`
+
+- OTS_EMAIL_TLD_BLACKLIST
+    - Similar to `OTS_EMAIL_TLD_WHITELIST`, but prevents certain top level domains from registering accounts. Leave the default
+    setting to allow any TLD to register. Default: `[]`
+
+## Flask-Security
+
+***
+
+You can check [defaultconfig.py](https://github.com/brian7704/OpenTAKServer/blob/master/opentakserver/defaultconfig.py) 
+for the settings that OpenTAKServer uses. To learn about each setting you can check
+Flask-Security's [documentation](https://flask-security-too.readthedocs.io/en/stable/configuration.html).
+
+## Flask-Mailman settings
 
 ***
 
 These settings only take effect if `OTS_ENABLE_EMAIL` is `True`. The defaults will send email via a Gmail account, just
 provide your username and [app password](https://support.google.com/accounts/answer/185833?hl=en). 
-See [Flask-Mail's documentation](https://pythonhosted.org/Flask-Mail/) for details.
+See [Email](email.md) for details.
 
 - MAIL_ASCII_ATTACHMENTS
     - Default `False`

@@ -35,7 +35,7 @@ Click on the `Activate` switch to enable the job.
 
 ***
 
-You can query the API while the scheduled job is deactivated, or before it is due to be run. While logged into the web UI
+You can query the API while the scheduled job is deactivated or before it is due to run. While logged into the web UI
 as an administrator, click on `Scheduled Jobs`, then click the `Run Now` button.
 
 ## Screenshot

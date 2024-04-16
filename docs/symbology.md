@@ -7,7 +7,8 @@
 ***
 
 OpenTAKServer supports all the default icon sets that come with ATAK. The installer will automatically put them in
-OpenTAKServer's database in the icons table.
+OpenTAKServer's database in the icons table. If for some reason the icons are missing from the database,
+OpenTAKServer will automatically download them from the installer's GitHub repo when it starts up. 
 
 
 ## MIL-STD-2525c

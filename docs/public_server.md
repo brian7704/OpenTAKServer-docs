@@ -11,8 +11,8 @@ stream video, and
 ***
 
 Account registration is required for all functionality except connecting with ATAK via TCP. You can get an account in 
-two ways. Either sign up using an email address (it can be a temporary email) or send an email to <opentakserver@gmail.com>
-and an admin can create one without the need for an email address.
+two ways. Either sign up using an email address (it can be a temporary email) or contact us on our 
+[Discord server](https://discord.gg/6uaVHjtfXN) and an admin can create one without the need for an email address.
 
 ## ATAK Settings for TCP
 

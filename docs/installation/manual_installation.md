@@ -69,21 +69,9 @@ poetry update
 poetry install
 ```
 
-## Generate secrets
-
-```
-MTX_TOKEN=$(python3 -c "import secrets; print(secrets.SystemRandom().getrandbits(128))")
-echo "mediamtx_token = '${MTX_TOKEN}'" >> /opt/OpenTAKServer/opentakserver/secret_key.py
-echo "secret_key = '$(python3 -c 'import secrets; print(secrets.token_hex())')'" > /opt/OpenTAKServer/opentakserver/secret_key.py
-echo "node_id = '$(python3 -c "import random; import string; print(''.join(random.choices(string.ascii_lowercase + string.digits, k=64)))")'" >> /opt/OpenTAKServer/opentakserver/secret_key.py
-echo "security_password_salt = '$(python3 -c "import secrets; print(secrets.SystemRandom().getrandbits(128))")'" >> /opt/OpenTAKServer/opentakserver/secret_key.py
-echo "server_address = ''" >> /opt/OpenTAKServer/opentakserver/secret_key.py
-echo "totp_secrets = {1: '$(python3 -c "import pyotp; print(pyotp.random_base32())")'}" >> /opt/OpenTAKServer/opentakserver/secret_key.py
-```
-
 ## Configuration
 
-Configuration settings are located at /opt/OpenTAKServer/opentakserver/config.py. The out-of-the-box config
+Configuration settings are located at `~/ots/config.yml`. The out-of-the-box config
 should work in most situations. See the [config settings](../configuration.md) page for details on what each setting does.
 
 ## Systemd Service
