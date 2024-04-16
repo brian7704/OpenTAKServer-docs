@@ -40,11 +40,11 @@ for details.
 
 ***
 
-| Setting        | Value                     |
-|----------------|---------------------------|
-| **MAIL_SERVER** | `smtp.gmail.com`          |
-| **MAIL_PORT**  | `587`                     |
-|**MAIL_USE_SSL**| `false`                   |
-|**MAIL_USE_TLS**| `true`                    |
-|**MAIL_USERNAME**| `your_username@gmail.com` |
-|**MAIL_PASSWORD**| `your_app_password`       |
+| Setting           | Value                     |
+|-------------------|---------------------------|
+| **MAIL_SERVER**   | `smtp.gmail.com`          |
+| **MAIL_PORT**     | `587`                     |
+| **MAIL_USE_SSL**  | `false`                   |
+| **MAIL_USE_TLS**  | `true`                    |
+| **MAIL_USERNAME** | `your_username@gmail.com` |
+| **MAIL_PASSWORD** | `your_app_password`       |

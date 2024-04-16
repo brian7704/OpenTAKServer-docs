@@ -14,6 +14,12 @@ or Let's Encrypt. The default is to use self-signed certificates. If your server
 a copy of your server's truststore certificate for auto-enrollment. You can download a copy at 
 `http://your_server_address:8080/api/truststore`.
 
+## iTAK QR Code
+***
+In order to use a QR code for iTAK enrollment, your server must be configured with a signed certificate from Let's Encrypt
+or a similar trusted certificate authority.
+
+
 ## Instructions
 ***
 1. On the main ATAK screen, tap the hamburger icon in the top right corner and tap `Settings`
