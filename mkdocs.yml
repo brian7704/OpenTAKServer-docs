@@ -30,6 +30,7 @@ nav:
     - Manual Installation: 'installation/manual_installation.md'
     - Windows: 'installation/windows.md'
   - Configuration: 'configuration.md'
+  - Let's Encrypt: 'lets_encrypt.md'
   - Security: 'security.md'
   - Database: 'database.md'
   - CoT Routing: 'cot_routing.md'

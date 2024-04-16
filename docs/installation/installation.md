@@ -33,38 +33,6 @@ For better security, OpenTAKServer should not be run as root. The installer will
 The installer will generate a CA and all the keys you need to get the server started. It will also configure the
 certificate authority automatically.
 
-### Let's Encrypt
-
-***
-
-If you have a domain name for your server you can use a Let's Encrypt certificate to secure the web UI.
-
-Follow [Certbot's](https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal) instructions on how to obtain a certificate. 
-In order for this to work, the domain name should be pointed at your server's public IP address and 
-ports 80 and 443 should be open on your server. See
-[Let's Encrypt](https://letsencrypt.org/getting-started/) for more details.
-
-After running certbot, open `/etc/nginx/site-enabled/ots_proxy` in a text editor. In the fist `server` section you may
-see an if statement that certbot added which will look like this:
-
-```
-    if ($host = yourdomain.com) {
-        return 301 https://$host$request_uri;
-    } # managed by Certbot
-```
-
-Either change it or add the following if it doesn't exist:
-
-```
-    if ($server_port = 80) {
-        return 301 https://$host$request_uri;
-    } # managed by Certbot
-```
-
-This will cause web browsers to redirect to the HTTPS version of the site when they try to access it via HTTP on port 80.
-However, it will not redirect HTTP requests from ATAK and WinTAK on port 8080. Redirecting those requests would cause
-errors in ATAK and WinTAK.
-
 ### ZeroTier
 
 ***
