@@ -3,7 +3,21 @@
 ***
 
 OpenTAKServer uses [MediaMTX](https://github.com/bluenviron/mediamtx) for video streaming and recording. It accepts
-streams from apps such as OpenTAK ICU and TAK ICU, as well as devices like drones and IP Cameras.
+streams from apps such as [OpenTAK ICU](https://github.com/brian7704/OpenTAK_ICU) and TAK ICU, as well as devices like drones and IP Cameras.
+
+## Streaming From Your Browser
+
+***
+
+OpenTAKServer supports streaming from any device that has a browser and a camera. On the Video Streams page of
+OpenTAKServer's web UI there is a button labeled `Start Streaming`. Clicking that button will prompt the browser to ask
+for permission to use your device's camera and microphone to stream audio and video to MediaMTX. This is helpful in situations
+where someone with an Android or iOS device would like to stream to other users on the server but they have no app to do so.
+Laptop and desktop computers can also use this button to stream from their cameras.
+
+Note that streaming in this way only streams audio and video. Users can view the stream on their EUDs, but no location
+information is included with the stream, meaning there will be no icon on OpenTAKServer's or any EUD's maps for the location
+of the stream.
 
 ## Streaming Protocols
 
