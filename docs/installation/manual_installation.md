@@ -102,7 +102,7 @@ Create a new Python virtual environment and install OpenTAKServer from pip with 
 requires python's zeroc-ice package which most distros have a binary package for. Installing zeroc-ice via pip will
 compile from source and require lots of dev packages to be installed.
 
-```
+```shell
 python3 -m venv --system-site-packages ~/.opentakserver_venv
 ~/.opentakserver_venv/bin/pip install opentakserver
 ```
@@ -113,14 +113,13 @@ Use the following commands to install a systemd service which allows OpenTAKServ
 OpenTAKServer the first time, it will automatically generate the certificate authority and all the keys you need
 to get started.
 
-```
+```shell
 sudo tee /etc/systemd/system/opentakserver.service >/dev/null << EOF
 [Unit]
 Wants=network.target
 [Service]
 User=$(whoami)
-WorkingDirectory=/opt/OpenTAKServer
-ExecStart=/usr/local/bin/poetry run python /opt/OpenTAKServer/opentakserver/app.py
+ExecStart=$HOME/.opentakserver_venv/bin/python -m opentakserver.app
 [Install]
 WantedBy=multi-user.target
 EOF
@@ -145,13 +144,12 @@ config.yml you will need to restart OpenTAKServer for the changes to take effect
 Download [ots_http](https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/nginx_configs/ots_http),
 [ots_https](https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/nginx_configs/ots_https),
 and [ots_certificate_enrollment](https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/nginx_configs/ots_certificate_enrollment)
-and place them in `/etc/nginx/sites-enabled/`. Use the `sed` command to set the location of your server certificates. Make
-sure to replace USERNAME with your actual username.
+and place them in `/etc/nginx/sites-enabled/`. Use the `sed` command to set the location of your server certificates.
 
-```
-sudo sed -i 's~SERVER_CERT_FILE~/home/USERNAME/ots/ca/certs/opentakserver/opentakserver.pem/g' /etc/nginx/sites-enabled/*
-sudo sed -i 's~SERVER_KEY_FILE~/home/USERNAME/ots/ca/certs/opentakserver/opentakserver.nopass.key/g' /etc/nginx/sites-enabled/*
-sudo sed -i "s~CA_CERT_FILE~/home/USERNAME/ots/ca/ca.pem~g" /etc/nginx/sites-available/*
+```shell
+sudo sed -i "s~SERVER_CERT_FILE~$HOME/ots/ca/certs/opentakserver/opentakserver.pem~g" /etc/nginx/sites-enabled/*
+sudo sed -i "s~SERVER_KEY_FILE~$HOME/ots/ca/certs/opentakserver/opentakserver.nopass.key~g" /etc/nginx/sites-enabled/*
+sudo sed -i "s~CA_CERT_FILE~$HOME/ots/ca/ca.pem~g" /etc/nginx/sites-available/*
 sudo systemctl restart nginx
 ```
 

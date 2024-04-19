@@ -13,7 +13,7 @@ Before beginning, make sure your domain has a DNS A record that points to the pu
 
 Use the following commands to obtain a certificate.
 
-```
+```shell
 sudo apt install certbot
 sudo systemctl stop nginx
 sudo certbot certonly --standalone --preferred-challenges http -d your_domain_name.com # Replace your_domain_name.com with your actual domain
