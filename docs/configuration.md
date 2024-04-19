@@ -27,6 +27,9 @@ remove these settings before posting. If these settings are mistakenly shared pu
 
 ***
 
+- DEBUG
+  - This setting puts Flask in debug mode and will produce many more log messages. Do not use on production servers. Default `False`
+
 - SECRET_KEY
     - The [Flask secret key](https://flask.palletsprojects.com/en/2.3.x/config/#SECRET_KEY). 
     It is generated automatically with `secrets.token_hex()` the first time you run OpenTAKServer.
@@ -175,7 +178,7 @@ See [Email](email.md) for details.
 - MAIL_MAX_EMAILS
     - Default: `null`
 - MAIL_PORT
-    - Default `465`
+    - Default `587`
 - MAIL_SERVER
     - Default `smtp.gmail.com`
 - MAIL_SUPPRESS_SEND
@@ -188,3 +191,28 @@ See [Email](email.md) for details.
     - Default `false`
 - MAIL_USE_TLS
     - Default `true`
+
+## MediaMTX
+
+***
+
+OpenTAKServer's default configuration assumes that MediaMTX is running on the same server and OpenTAKServer connects to it
+via the loopback interface. As of version 1.1.4, MediaMTX can now be hosted on a different server. To do so you will need to change
+two settings.
+
+The first is `OTS_MEDIAMTX_API_ADDRESS` in `config.yml`. Make sure to include the scheme (ie `http://` or `https://`), server address,
+and port.
+
+The nginx config also needs to be changed. In `/etc/nginx/sites-enabled/ots_https` (or `c:\tools\nginx-1.25.4\conf\ots\ots_https.conf` on Windows),
+look for the `location` blocks for webrtc and hls. Each should have a `proxy_pass` line that starts with `https://127.0.0.1`. Change that address
+(and port number if necessary) to the address of your MediaMTX server.
+
+After changing these settings make sure to restart both OpenTAKServer and nginx.
+
+## Max Upload Size
+
+***
+
+OpenTAKServer's default configuration limits the size of uploaded files, including data packages, to 100MB. This setting
+is found in the `ots_http` and `ots_https` nginx config files. In those files, change the line `client_max_body_size 100M;`
+to raise the limit.
