@@ -48,10 +48,10 @@ remove these settings before posting. If these settings are mistakenly shared pu
     - OpenTAKServer's API listens on this port on the loopback interface. Nginx will proxy HTTP requests to this port.
         Default `8081`
 
-- OTS_HTTP_PORT
+- OTS_MARTI_HTTP_PORT (Renamed from OTS_HTTP_PORT as of version 1.1.3)
     - Port that nginx listens on for HTTP requests. Nginx will proxy these requests to OTS_LISTENER_PORT. Default `8080`
 
-- OTS_HTTPS_PORT
+- OTS_MARTI_HTTPS_PORT (Renamed from OTS_HTTPS_PORT as of version 1.1.3)
     - Nginx listens on this port for HTTPS requests and proxies them to OTS_LISTENER_PORT. Default `8443`
 
 - OTS_CERTIFICATE_ENROLLMENT_PORT
@@ -62,6 +62,16 @@ remove these settings before posting. If these settings are mistakenly shared pu
 
 - OTS_SSL_STREAMING_PORT
     - OpenTAKServer listens on this port for SSL connections from ATAK, WinTAK, and iTAK. Default `8089`
+
+- OTS_BACKUP_COUNT (Added in 1.1.4)
+  - Log files in `~/ots/logs/` will rotate at midnight every night. This setting determines the number of days to keep rotated logs
+    Log files older than this setting will be automatically deleted. Default `7`
+
+- OTS_RABBITMQ_SERVER_ADDRESS (Added in 1.1.4)
+  - Address of the RabbitMQ server. Default `127.0.0.1`
+
+- OTS_MEDIAMTX_API_ADDRESS (Added in 1.1.4)
+  - Address for MediaMTX's API server. Make sure to include the scheme (ie `http://`), address, and port. Default `http://localhost:9997`
 
 - OTS_MEDIAMTX_TOKEN
     - This token protects the /api/mediamtx/webhook endpoint. It is generated using `python3 -c 'import secrets; print(secrets.token_hex())`
