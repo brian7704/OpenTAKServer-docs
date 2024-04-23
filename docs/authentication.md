@@ -18,6 +18,16 @@ is `administrator` and the password is `password`. You should immediately change
 By default, only administrators can create user accounts. However, users can register their own accounts if an administrator
 enables [email](email.md) support.
 
+## Note on Passwords
+
+***
+
+OpenTAKServer prevents `@` and `:` characters in passwords. In certain situations that use basic authentication, 
+such as viewing RTSP streams, having these characters can cause an invalid URL. A typical URL when using basic authentication
+looks like `rtsp://username:password@server_address:8554/path`. In these situations, the ':' character separates the
+username and password, and the `@` character separates the username/password from the server address. Having a password
+with these characters will cause browsers and video players to incorrectly parse the URL.
+
 ### Whitelisting and Blacklisting Email Domains
 
 ***
