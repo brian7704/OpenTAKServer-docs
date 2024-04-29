@@ -41,8 +41,8 @@ iptables -I INPUT -m set --match-set ipsum src -j DROP
 2. Make the script executable `sudo chmod +x /opt/ipsum.sh` (substitute `/opt/ipsum.sh` with the actual location you saved the script to)
 3. Add a cron job to run every day at midnight
    1. `sudo crontab -e`
-   2. Add the following line to the bottom of the crontab file `0 0 * * * /opt/ipsum.sh`
-   3. Save the crontab file. If you're using `nano`, press `ctrl+o` to save, press `enter` to confirm, then `ctrl+x` to exit
+      2. Add the following line to the bottom of the crontab file `0 0 * * * /opt/ipsum.sh`
+      3. Save the crontab file. If you're using `nano`, press `ctrl+o` to save, press `enter` to confirm, then `ctrl+x` to exit
 
 ## IPTables Rules
 
