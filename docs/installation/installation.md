@@ -10,11 +10,11 @@ All the installers are on [GitHub](https://github.com/brian7704/OpenTAKServer-In
 
 The Ubuntu and Raspberry pi installers should be run as a regular user, not root. Copy and paste the following command into your terminal for the Ubuntu installer.
 
-`curl bit.ly/4elNzZA | bash -`
+`curl bit.ly/4elNzZA -L | bash -`
 
 Use the following command for the Raspberry Pi installer. The installer supports Raspberry Pi OS Bookworm or newer versions.
 
-`curl bit.ly/4cA0WUH | bash -`
+`curl bit.ly/4cA0WUH -L | bash -`
 
 ## Notes
 
