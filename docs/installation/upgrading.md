@@ -19,10 +19,13 @@ sufficient to make a backup.
 
 ***
 
-Run this command as the same user that OpenTAKServer runs as. Do not run it as root.
+Run the following commands as the same user that OpenTAKServer runs as. Do not run it as root.
 
-```
+```bash
 ~/.opentakserver_venv/bin/python <(curl https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/upgrade.py -s -N)
+rm -fr /var/www/html/opentakserver/*
+cd /var/www/html/opentakserver/
+~/.opentakserver_venv/bin/lastversion --assets extract brian7704/OpenTAKServer-UI
 ```
 
 ## Upgrading Windows
@@ -33,6 +36,11 @@ Run the following commands in Powershell
 
 ```powershell
 cd "$env:USERPROFILE\ots"
+.\.venv\Scripts\activate
 curl https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/upgrade.py -s -N -o upgrade.py
 .\.venv\Scripts\python.exe .\upgrade.py
+Remove-Item -Path C:\tools\nginx*\html\opentakserver\* -Recurse
+Set-Location -Path c:\tools\nginx*\html\opentakserver
+lastversion --assets extract brian7704/OpenTAKServer-UI
+deactivate
 ```
