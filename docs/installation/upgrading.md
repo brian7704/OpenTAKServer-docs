@@ -3,7 +3,8 @@
 ***
 
 Starting with version 1.2.0 there is an upgrade script which handles any new dependencies and database schema
-changes, as well as upgrading OpenTAKServer and the webUI.
+changes, as well as upgrading OpenTAKServer and the webUI. If you want to upgrade from version 1.1.10 or below, use
+this script.
 
 ## Backup your database
 
@@ -15,32 +16,28 @@ migration. The default database is a SQLite file at `~/ots/ots.db` in Ubuntu and
 and `C:\Users\your_username\ots\ots.db` in Windows. Simply copying and pasting that file to another folder is
 sufficient to make a backup.
 
-## Upgrading Ubuntu and Raspberry Pi
+## Ubuntu
 
 ***
 
-Run the following commands as the same user that OpenTAKServer runs as. Do not run it as root.
+Run this command as the same user that runs OpenTAKServer. Do not run as root.
 
-```bash
-~/.opentakserver_venv/bin/python <(curl https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/upgrade.py -s -N)
-rm -fr /var/www/html/opentakserver/*
-cd /var/www/html/opentakserver/
-~/.opentakserver_venv/bin/lastversion --assets extract brian7704/OpenTAKServer-UI
+```shell
+curl -L https://i.opentakserver.io/ubuntu_updater | bash -
 ```
 
-## Upgrading Windows
+## Raspberry Pi
 
 ***
 
-Run the following commands in Powershell
+Run this command as the same user that runs OpenTAKServer. Do not run as root.
 
-```powershell
-cd "$env:USERPROFILE\ots"
-.\.venv\Scripts\activate
-curl https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/upgrade.py -s -N -o upgrade.py
-.\.venv\Scripts\python.exe .\upgrade.py
-Remove-Item -Path C:\tools\nginx*\html\opentakserver\* -Recurse
-Set-Location -Path c:\tools\nginx*\html\opentakserver
-lastversion --assets extract brian7704/OpenTAKServer-UI
-deactivate
+```shell
+curl -L https://i.opentakserver.io/raspberry_pi_installer | bash -
 ```
+
+## Windows
+
+***
+
+Coming soon

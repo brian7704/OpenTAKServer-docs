@@ -25,7 +25,7 @@ There should be an option called `Run as administrator` that you can click on.
 ***
 
 1. Run Powershell as an administrator
-2. `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/brian7704/OpenTAKServer-Installer/master/windows_installer.ps1'))`
+2. `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://i.opentakserver.io/windows_installer'))`
 3. You may be prompted about the script being untrusted. If so, enter `R` at the prompt and press `Enter` to run it anyway.
 4. At this point the script will run with minimal user action required. You may see dialog boxes asking if you want to allow the installed software to access the network. Click allow on all of these dialogs
 5. After everything is installed, the installer will make services for MediaMTX and OpenTAKServer so they can run automatically at boot. You will be prompted for your password. The password is only used to create the services.
