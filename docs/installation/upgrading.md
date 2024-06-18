@@ -22,9 +22,7 @@ sufficient to make a backup.
 
 Run this command as the same user that runs OpenTAKServer. Do not run as root.
 
-```shell
-curl -L https://i.opentakserver.io/ubuntu_updater | bash -
-```
+`curl -L https://i.opentakserver.io/ubuntu_updater | bash -`
 
 ## Raspberry Pi
 
@@ -32,9 +30,7 @@ curl -L https://i.opentakserver.io/ubuntu_updater | bash -
 
 Run this command as the same user that runs OpenTAKServer. Do not run as root.
 
-```shell
-curl -L https://i.opentakserver.io/raspberry_pi_installer | bash -
-```
+`curl -L https://i.opentakserver.io/raspberry_pi_installer | bash -`
 
 ## Windows
 

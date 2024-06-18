@@ -12,15 +12,11 @@ The Ubuntu and Raspberry pi installers should be run as a regular user, not root
 
 Copy and paste the following command into your terminal for the Ubuntu installer.
 
-```shell
-curl https://i.opentakserver.io/ubuntu_installer -L | bash -
-```
+`curl https://i.opentakserver.io/ubuntu_installer -L | bash -`
 
 Use the following command for the Raspberry Pi installer. The installer supports Raspberry Pi OS Bookworm or newer versions.
 
-```shell
-curl https://i.opentakserver.io/raspberry_pi_installer -L | bash -
-```
+`curl https://i.opentakserver.io/raspberry_pi_installer -L | bash -`
 
 ## Notes
 

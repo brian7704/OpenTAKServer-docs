@@ -2,8 +2,7 @@
 
 ***
 
-Meshtastic support is currently under development and not part of an official release. You can test it on the
-[public server](public_server.md) or manually install it on your server from the [GitHub branch](https://github.com/brian7704/OpenTAKServer/tree/Meshtastic).
+Meshtastic support is available starting with version 1.2.0.
 
 ## Features
 
@@ -36,15 +35,15 @@ others will be standard mesh nodes.
 
 ***
 
-There are currently three configuration settings in `config.yml` for Meshtastic support:
+There are three configuration settings in `config.yml` for Meshtastic support:
 
 - `OTS_ENABLE_MESHTASTIC`: Default: `False`
-  - Change to `True` to enable this feature
+    - Change to `True` to enable this feature
 - `OTS_MESHTASTIC_TOPIC`: Default `opentakserver`
-  - This is the MQTT topic that OpenTAKServer will use when publishing messages bound for the Meshtastic network
+    - This is the MQTT topic that OpenTAKServer will use when publishing messages bound for the Meshtastic network
 - `OTS_MESHTASTIC_PUBLISH_INTERVAL`: Default `30` (seconds)
-  - In order not to overload the Meshtastic network with too many messages, PLI CoT's from EUDs connected to OpenTAKServer
-    will only be sent at this interval. This setting has no effect on GeoChat messages
+    - In order not to overload the Meshtastic network with too many messages, PLI CoT's from EUDs connected to OpenTAKServer
+      will only be sent at this interval. This setting has no effect on GeoChat messages
 
 ## Topology
 
@@ -82,7 +81,7 @@ The settings should be as follows:
 - MQTT Password: The password for the above username
 - Encryption: Disabled (Messages will be encrypted in transit with TLS)
 - TLS: Enabled
-- Root Topic: `opentakserver`
+- Root Topic: Value of the `OTS_MESHTASTIC_TOPIC` setting which defaults to `opentakserver`
 - Proxy to client: Disabled
 - Map Reporting: Enabled (Optional)
 - Map Report Publish Interval: 86400 (Optional)
@@ -98,7 +97,7 @@ messages from OpenTAKServer to the Meshtastic network, you must add a channel co
 that has the `downlink` option enabled.
 
 Once you add a channel configuration in the UI, click the QR code button and use the Meshtastic app to add the channel
-to your gateway device.
+to your gateway node.
 
 ![!Meshtastic UI Screenshot](images/meshtastic.png)
 ![!Add Meshtastic Channel Screenshot](images/meshtastic_add_channel.png)
