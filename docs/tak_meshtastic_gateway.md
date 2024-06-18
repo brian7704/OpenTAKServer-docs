@@ -1,0 +1,144 @@
+# TAK Meshtastic Gateway
+
+***
+
+TAK Meshtastic Gateway listens for multicast data from TAK clients (ATAK, WinTAK, and iTAK) and forwards it to
+a Meshtastic device which transmits it to a Meshtastic network. It will also forward messages from Meshtastic to 
+TAK clients via multicast. Additionally, it enables sending and receiving chat messages and locations between TAK clients
+and the Meshtastic app. For example, someone using WinTAK can send a message over a Meshtastic network to someone using 
+the Meshtastic app and vice versa.
+
+## Features
+
+***
+
+- Send chat and PLI messages from TAK clients (ATAK, WinTAK, and iTAK) over a Meshtastic network
+- Receive chat and PLI messages from a Meshtastic network and display them in a TAK client
+- See Meshtastic devices on the TAK client's map
+- See the TAK client on the Meshtastic app's map
+- Send and receive chat messages between the TAK client and Meshtastic app
+
+TAK Meshtastic Gateway currently only supports sending and receiving chat and PLI messages. Other data types such as
+data packages, markers, images, etc, are not supported due to the limited bandwidth of Meshtastic networks.
+
+## Python Requirements
+
+***
+
+Due to an issue with the unishox2-py3 package, Windows requires Python version 3.12. Linux and macOS will work with Python
+versions 3.8 and up.
+
+## Known Issues
+
+***
+
+There is a bug in the takproto library which causes an exception in TAK Meshtastic Gateway when parsing XML CoT data.
+There is a [PR](https://github.com/snstac/takproto/pull/16) that will fix the issue once it is merged. Until it is merged,
+TAK Meshtastic Gateway will install takproto from the GitHub PR instead of PyPI.
+
+
+## Installation
+
+***
+
+### Linux
+
+Steps may differ slightly on some distros
+
+```bash
+git clone https://github.com/brian7704/TAK_Meshtastic_Gateway.git
+cd TAK_Meshtastic_Gateway
+python3 -m venv venv
+. ./venv/bin/activate
+pip install git+https://github.com/snstac/takproto@refs/pull/16/merge
+pip install bs4 meshtastic pubsub colorlog unishox2-py3 netifaces2
+```
+
+### Windows
+
+These instructions assume you already have git and Python installed. In a future release there will be a binary made
+with PyInstaller which won't require git or Python to be installed.
+
+```bash
+git clone https://github.com/brian7704/TAK_Meshtastic_Gateway.git
+cd TAK_Meshtastic_Gateway
+python -m venv venv
+.\venv\Scripts\activate.bat
+pip install git+https://github.com/snstac/takproto@refs/pull/16/merge
+pip install https://github.com/brian7704/OpenTAKServer-Installer/raw/master/unishox2_py3-1.0.0-cp312-cp312-win_amd64.whl
+pip install bs4 meshtastic pubsub colorlog netifaces2
+```
+
+### MacOS
+
+TAK Meshtastic Gateway is untested on MacOS but should work fine. Try the Linux installation instructions and open
+an issue to let us know if there are any problems.
+
+## Architecture
+
+***
+
+In most scenarios, run TAK Meshtastic Gateway will run on the same computer that runs WinTAK. The Meshtastic node
+can either be connected to the same computer via USB, or be on the same LAN as the computer. Connecting to the Meshtastic
+node over the LAN allows it to be mounted in a spot outside with good mesh reception while the computer is inside.
+
+## Meshtastic Node Configuration
+
+***
+
+The Meshtastic node should be set to the TAK role. TAK Meshtastic Gateway will automatically change the node's long name 
+to the TAK client's callsign and the short name to the last four characters of the TAK client's UID. This ensures that 
+the callsign shows up correctly for mesh users who are only using the Meshtastic app and not a TAK client.
+TAK Meshtastic Gateway will also update the Meshtastic node's location with the location of the EUD.
+
+## Usage
+
+***
+
+All arguments are optional. If an argument is not specified its default value will be used.
+
+| Flag | Parameter          | Description                                                                                                                                   | Default                                                                                          |
+|------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| `-i` | `--ip-address`     | The private IP address of the machine running TAK Meshtastic Gateway.                                                                         | TAK Meshtastic Gateway will attempt to automatically find the IP of the computer it's running on |
+| `-s` | `--serial-device`  | The serial device of the Meshtastic node (i.e. `COM3` or `/dev/ttyACM0`). Cannot be used simultaneously with `--mesh-ip`                      | TAK Meshtastic Gateway will attempt to automatically determine the serial device                 |
+| `-m` | `--mesh-ip`        | The IP address or DNS name of the gateway Meshtastic node. Cannot be used simultaneously with `--serial-device`                               | Uses a serial connection                                                                         |
+| `-c` | `--tak-client-ip`  | The IP address of the device running the TAK client (ATAK, WinTAK, or iTAK)                                                                   | `localhost`                                                                                      |
+| `-p` | `--dm-socket-port` | TCP Port to listen on for DMs                                                                                                                 | `4243`                                                                                           |
+| `-t` | `--tx-interval`    | Minimum time (in seconds) to wait between PLI transmissions from the TAK client to the mesh network. This reduces strain on the mesh network. | `30`                                                                                             |
+| `-l` | `--log-file`       | Save log messages to a file.                                                                                                                  | `None` (disabled)                                                                                |
+| `-d` | `--debug`          | Enable debug log messages                                                                                                                     | `Disabled` Only messages at the `INFO` level or higher will be logged                            |
+
+## Permissions
+
+***
+
+When the Meshtastic node is connected via USB, TAK Meshtastic Gateway needs to be run as root (or via `sudo`) in Linux
+and in an administrator PowerShell or Command Prompt in Windows. Connecting to the Meshtastic node via TCP does
+not require elevated permissions.
+
+## Example Usage Scenarios
+
+***
+
+### Scenario 1
+
+- WinTAK on a PC
+- Meshtastic node connected to the PC via USB
+- TAK Meshtastic Gateway running on the same PC
+- Command: `python3 tak_meshtastic_gateway.py`
+
+### Scenario 2
+
+- WinTAK on a PC
+- Meshtastic node on the same LAN as the PC
+- TAK Meshtastic Gateway running on the same PC as WinTAK
+- Command: `python3 tak_meshtastic_gateway.py --mesh-ip MESHTASTIC_NODE_IP` Note: Substitute `MESHTASTIC_NODE_IP` with
+the node's actual IP (i.e. `192.168.1.10`)
+
+### Scenario 3
+
+- ATAK or iTAK on a mobile device connected to a Wi-Fi network
+- Meshtastic node connected to the same network
+- TAK Meshtastic Gateway running on a computer or VM on the same network
+- Command: `python3 tak_meshtastic_gateway.py --mesh-ip MESHTASTIC_NODE_IP --tak-client-ip TAK_CLIENT_IP` Note: Substitute
+`MESHTASTIC_NODE_IP` and `TAK_CLIENT_IP` with their actual IPs (i.e. `192.168.1.10` and `192.168.1.11`)

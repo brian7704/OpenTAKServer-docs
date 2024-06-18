@@ -42,6 +42,7 @@ nav:
   - Symbology: 'symbology.md'
   - Video Streaming: 'video_streaming.md'
   - Meshtastic: 'meshtastic.md'
+  - TAK Meshtastic Gateway: 'tak_meshtastic_gateway.md'
   - Public Server: 'public_server.md'
   - OpenTAK ICU:
     - OpenTAK ICU: 'opentak_icu/index.md'
