@@ -12,7 +12,7 @@ have an administrator make an account for you.
 The default port for certificate enrollment is `8446`. This port will use one of two types of certificates, self-signed 
 or Let's Encrypt. The default is to use self-signed certificates. If your server uses self-signed certificates, you will need
 a copy of your server's truststore certificate for auto-enrollment. You can download a copy at 
-`http://your_server_address:8080/api/truststore`.
+`https://your_server_address/api/truststore`.
 
 ## iTAK QR Code
 ***
