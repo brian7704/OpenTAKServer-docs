@@ -33,7 +33,7 @@ ssl_certificate /etc/letsencrypt/live/your_domain_name.com/fullchain.pem;
 ssl_certificate_key /etc/letsencrypt/live/your_domain_name.com/privkey.pem;
 ```
 
-Finally, in `/etc/nginx/site-enabled/ots_https`, change the same two lines in the server block for port 443. Do not change
+Finally, in `/etc/nginx/sites-enabled/ots_https`, change the same two lines in the server block for port 443. Do not change
 the certificate settings in the server block for port 8443.
 
 Once the certificate settings are change, start nginx with this command: `systemctl start nginx`.
