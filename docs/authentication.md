@@ -28,6 +28,51 @@ looks like `rtsp://username:password@server_address:8554/path`. In these situati
 username and password, and the `@` character separates the username/password from the server address. Having a password
 with these characters will cause browsers and video players to incorrectly parse the URL.
 
+## Token Authentication
+
+***
+
+OpenTAKServer supports token authentication which can be helpful when interacting with OpenTAKServer via the
+[API](API.md). Use the following steps to authenticate with a token:
+
+Add these settings to `~/ots/config.yml` if they're not already present. This will remove the CSRF requirements
+for token auth but still require CSRF for basic and session auth.
+
+```yaml
+SECURITY_CSRF_PROTECT_MECHANISMS:
+- session
+- basic
+```
+
+If you changed `config.yml` you must restart OpenTAKServer `sudo systemctl restart opentakserver`   
+
+Next, make an HTTP POST request to `/api/login` with the `include_auth_token` query parameter and your credentials as JSON.
+Here is an example in Python
+
+```python
+import requests
+response = requests.post("https://<your_server_address>/api/login", params={'include_auth_token': ''}, json={'username': 'your_username', 'password': 'your_password'})
+```
+   
+A successful login JSON response will be as follows
+
+```json
+{
+  "meta": {
+    "code": 200
+},
+  "response": {
+    "csrf_token": "xxxxx",
+    "user": {
+      "authentication_token": "yyyy"
+    }
+  }
+}
+```
+
+The `authentication_token` must be sent on every subsequent request. It can be in a query parameter called `auth_token`
+or in an HTTP header called `Authentication-Token`
+
 ### Whitelisting and Blacklisting Email Domains
 
 ***
