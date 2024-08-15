@@ -19,7 +19,7 @@ sudo systemctl stop nginx
 sudo certbot certonly --standalone --preferred-challenges http -d your_domain_name.com # Replace your_domain_name.com with your actual domain
 ```
 
-Next change these following two lines in `/etc/nginx/site-enabled/ots_certificate_enrollment` from this:
+Next change these following two lines in `/etc/nginx/sites-enabled/ots_certificate_enrollment` from this:
 
 ```
 ssl_certificate /home/your_username/ots/ca/certs/opentakserver/opentakserver.pem;
