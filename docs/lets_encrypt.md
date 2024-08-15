@@ -19,7 +19,7 @@ sudo systemctl stop nginx
 sudo certbot certonly --standalone --preferred-challenges http -d your_domain_name.com # Replace your_domain_name.com with your actual domain
 ```
 
-Next change these following two lines in `/etc/nginx/site-enabled/ots_certificate_enrollment` from this:
+Next change these following two lines in `/etc/nginx/sites-enabled/ots_certificate_enrollment` from this:
 
 ```
 ssl_certificate /home/your_username/ots/ca/certs/opentakserver/opentakserver.pem;
@@ -33,7 +33,7 @@ ssl_certificate /etc/letsencrypt/live/your_domain_name.com/fullchain.pem;
 ssl_certificate_key /etc/letsencrypt/live/your_domain_name.com/privkey.pem;
 ```
 
-Finally, in `/etc/nginx/site-enabled/ots_https`, change the same two lines in the server block for port 443. Do not change
+Finally, in `/etc/nginx/sites-enabled/ots_https`, change the same two lines in the server block for port 443. Do not change
 the certificate settings in the server block for port 8443.
 
 Once the certificate settings are change, start nginx with this command: `systemctl start nginx`.
