@@ -52,3 +52,9 @@ are plans for MacOS and Android installers in the future.
 - DataSync
 - Pull data from networked SDRs (ie dump1090, rtl_ais, rtl_tcp, etc)
 
+## Support The Project
+
+***
+
+If you'd like to support this project you can contribute [here](https://buymeacoffee.com/opentakserver). Contributions
+are voluntary and never required. OpenTAKServer will always remain free and open source.
