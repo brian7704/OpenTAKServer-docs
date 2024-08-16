@@ -22,3 +22,4 @@
 | Runs on Windows                            | Yes                             | Yes (with 3rd party app)        | ?                    |
 | Runs on MacOS                              | Coming Soon                     | No                              | ?                    |
 | Runs on Raspberry Pi                       | Yes                             | Yes                             | Yes                  |
+| Meshtastic support                         | Yes                             | No                              | No                   |

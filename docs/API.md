@@ -198,4 +198,61 @@ Searches for CasEvacs that are stored in the database
 
 ***
 
-## /api/user/add
+## /api/markers
+
+Searches for markers stored in the database
+
+- HTTP Method: `GET`
+- Access: Everyone
+- Parameters
+    - `uid` - The marker's unique ID
+    - `affiliation` - One of the following
+        - friendly
+        - hostile
+        - unknown
+        - pending
+        - assumed
+        - neutral
+        - suspect
+        - joker
+        - faker
+  - `callsign` - The marker's callsign
+
+***
+
+## /api/markers
+
+Adds a new marker or updates an existing one
+
+- HTTP Method: `POST`
+- Access: Everyone
+- Content Type: JSON
+- Required data in the JSON body
+    - `latitude` - float, must be >= -90 and <= 90
+    - `longitude` - float, must be >= -180 and <= 180
+    - `name` - name/callsign of the marker
+    - `uid` - An identifier in UUID4 format. If no marker exists with this UUID, a new on is created. Otherwise, the existing marker is updated.
+- Optional data in the JSON body
+    - `type` - The CoT type, defaults to `a-u-G` if none is given. There are too many possible valid values to list but here are a few examples. See [this chart](https://www.spatialillusions.com/milsymbol/docs/milsymbol-2525c.html#heading-1) from milsymbol for more examples. 
+        - `a-f-G` - Affiliation friendly, battle dimension ground
+        - `a-h-U` - Affiliation hostile, battle dimension subsurface
+        - `a-j-A` - Affiliation joker, battle dimension airborne
+    - `course` - The direction of travel in compass degrees. Must be >= 0 and < 360. Defaults to 0.
+    - `azimuth` - The azimuth in compass degrees. Must be >= 0 and < 360. Defaults to 0.
+    - `speed` - The speed in INSERT_UNIT_HERE. Must be >= 0. Defaults to 0.
+    - `battery` - The remaining battery percentage. Must be >= 0 and <= 100. Defaults to NULL.
+    - `fov` - The camera's field of vision in compass degrees. This will show a camera's view shed on the map.
+    - `ce` - Circular 1-sigma or a circular area about the location in meters
+    - `hae` - Height above the WGS ellipsoid in meters
+    - `le` - Linear 1-sigma error or an altitude range about the location in meters
+
+***
+
+## /api/markers
+
+Deletes a marker
+
+- HTTP Method: `DELETE`
+- Access: Everyone
+- Parameters
+    - `uid` - The marker's UID
