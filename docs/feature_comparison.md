@@ -18,6 +18,7 @@
 | Web UI                                     | Yes                             | Yes                             | Yes                  |
 | EUD Authentication                         | Yes                             | No                              | Yes                  |
 | ADS-B Data From Airplanes.live             | Yes                             | No                              | No                   |
+| AIS Data From AISHub.net                   | Yes                             | No                              | No                   |
 | Database                                   | SqlAlchemy (Defaults to SQLite) | SqlAlchemy (Defaults to SQLite) | PostgreSQL           |
 | Runs on Windows                            | Yes                             | Yes (with 3rd party app)        | ?                    |
 | Runs on MacOS                              | Coming Soon                     | No                              | ?                    |

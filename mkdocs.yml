@@ -38,6 +38,7 @@ nav:
   - Authentication: 'authentication.md'
   - API: 'API.md'
   - ADS-B: 'adsb.md'
+  - AIS: 'ais.md'
   - Mumble: 'mumble.md'
   - Symbology: 'symbology.md'
   - Video Streaming: 'video_streaming.md'
