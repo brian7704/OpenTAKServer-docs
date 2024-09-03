@@ -256,3 +256,68 @@ Deletes a marker
 - Access: Everyone
 - Parameters
     - `uid` - The marker's UID
+
+***
+
+## /api/casevac
+
+Searches for CasEvacs in the database
+
+- HTTP Method: `GET`
+- Access: Everyone
+- Parameters
+    - `callsign` - The CasEvac's Callsign
+      - `uid` - The CasEvac's UID
+
+***
+
+## /api/casevac
+
+Add or update a CasEvac
+
+- HTTP Method `POST`
+- Access: Everyone
+- Content Type: JSON
+- Required data in JSON body
+    - `uid` - An identifier in UUID4 format. If no marker exists with this UUID, a new on is created. Otherwise, the existing marker is updated.
+    - `title` - Name of the CasEvac that will appear on the map
+    - `latitude` - float, must be >= -90 and <= 90
+    - `longitude` - float, must be >= -180 and <= 180
+- Optional data in the JSON body
+    - `ambulatory` - Integer
+    - `casevac` - Boolean
+    - `child` - Integer
+    - `enemy` - Integer
+    - `epw` - Integer
+    - `equipment_detail` - String
+    - `equipment_none` - Boolean
+    - `equipment_other` - Boolean
+    - `extration_equipment` - Boolean
+    - `freq` - Integer
+    - `friendlies` - String
+    - `hlz_marking` - Integer
+    - `hlz_remarks` - String
+    - `hoist` - Boolean
+    - `litter` - Integer
+    - `marked_by` - String
+    - `medline_remarks` - String
+    - `nonus_civilian` - Integer
+    - `nonus_military` - Integer
+    - `obstacles` - String
+    - `priority` - Integer
+    - `routine` - Integer
+    - `security` - Integer
+    - `terrain_loose` - Boolean
+    - `terrain_other` - Boolean
+    - `terrain_other_detail` - Boolean
+    - `terrain_detail` - String
+    - `terrain_none` - Boolean
+    - `terrain_rough` - Boolean
+    - `terrain_slope` - Boolean
+    - `terrain_slope_dir` - String
+    - `urgent` - Integer
+    - `us_civilian` - Integer
+    - `us_military` - Integer
+    - `ventilator` - Boolean
+    - `winds_are_from` - String
+    - `zone_prot_selection` - Integer
