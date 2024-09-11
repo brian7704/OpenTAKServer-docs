@@ -39,6 +39,7 @@ nav:
   - API: 'API.md'
   - ADS-B: 'adsb.md'
   - AIS: 'ais.md'
+  - Plugin Update Server: 'update_server.md'
   - Mumble: 'mumble.md'
   - Symbology: 'symbology.md'
   - Video Streaming: 'video_streaming.md'

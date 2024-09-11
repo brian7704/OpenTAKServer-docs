@@ -24,3 +24,5 @@
 | Runs on MacOS                              | Coming Soon                     | No                              | ?                    |
 | Runs on Raspberry Pi                       | Yes                             | Yes                             | Yes                  |
 | Meshtastic support                         | Yes                             | No                              | No                   |
+| Update Server                              | Yes                             | No                              | No                   |
+| Device Profiles                            | Yes                             | No                              | Yes                  |
