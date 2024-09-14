@@ -30,6 +30,7 @@ nav:
     - Upgrading: 'installation/upgrading.md'
   - Configuration: 'configuration.md'
   - Let's Encrypt: 'lets_encrypt.md'
+  - Data Packages: 'data_packages.md'
   - Security: 'security.md'
   - Database: 'database.md'
   - CoT Routing: 'cot_routing.md'
