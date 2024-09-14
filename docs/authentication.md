@@ -47,11 +47,11 @@ SECURITY_CSRF_PROTECT_MECHANISMS:
 If you changed `config.yml` you must restart OpenTAKServer `sudo systemctl restart opentakserver`   
 
 Next, make an HTTP POST request to `/api/login` with the `include_auth_token` query parameter and your credentials as JSON.
-Here is an example in Python
+Here is an example in Python. If your server uses signed certs such as from Let's Encrypt you can remove `verify=False`.
 
 ```python
 import requests
-response = requests.post("https://<your_server_address>/api/login", params={'include_auth_token': ''}, json={'username': 'your_username', 'password': 'your_password'})
+response = requests.post("https://<your_server_address>/api/login", params={'include_auth_token': ''}, json={'username': 'your_username', 'password': 'your_password'}, verify=False)
 ```
    
 A successful login JSON response will be as follows
@@ -72,6 +72,25 @@ A successful login JSON response will be as follows
 
 The `authentication_token` must be sent on every subsequent request. It can be in a query parameter called `auth_token`
 or in an HTTP header called `Authentication-Token`
+
+### Session Authentication
+
+***
+
+Making API calls while using session authentication requires a CSRF token. Here is a python example 
+using session authentication. If your server uses signed certs such as from Let's Encrypt you can remove `verify=False`.
+
+```python
+import requests
+s = requests.session()
+address = "https://<your_server_address>"
+r = s.get(f"{address}/api/login", json={}, verify=False)
+csrf_token = r.json()['response']['csrf_token']
+s.headers['X-XSRF-TOKEN'] = csrf_token
+s.headers['Referer'] = address
+
+r = s.post(f"https://{address}/api/login", json={'username': 'administrator', 'password': 'password'}, verify=False)
+```
 
 ### Whitelisting and Blacklisting Email Domains
 

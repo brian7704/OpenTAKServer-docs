@@ -52,7 +52,7 @@ are plans for MacOS and Android installers in the future.
 - DataSync
 - Pull data from networked SDRs (ie dump1090, rtl_ais, rtl_tcp, etc)
 
-## Support The Project
+## Supporting The Project
 
 ***
 
