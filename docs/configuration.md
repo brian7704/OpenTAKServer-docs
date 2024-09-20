@@ -144,6 +144,12 @@ remove these settings before posting. If these settings are mistakenly shared pu
 - OTS_AISHUB_EAST_LON (Added in 1.3.0)
     - Eastern Longitude. Default: `None`
 
+- OTS_AISHUB_MMSI_LIST (Added in 1.3.0)
+    - A comma-separated string of MMSI numbers of specific vessels to search, for example `"367658140,366902120"` Default: `""`
+
+- OTS_AISHUB_IMO_LIST
+    - A comma-separated string of IMO numbers of specific vessels to search, for example `"1234,5678"` Default: `""`
+
 - OTS_PROFILE_MAP_SOURCES (Added in 1.3.0)
     - Automatically install map tile sources from [ATAK-Maps](https://github.com/joshuafuller/ATAK-Maps.git) when an EUD first connects to the server. Default: `true`
 
