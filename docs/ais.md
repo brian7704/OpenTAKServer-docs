@@ -32,3 +32,9 @@ See [AISHub's API docs](https://www.aishub.net/api) for more details.
 - `OTS_AISHUB_EAST_LON` - Longitude of the northeast corner
 - `OTS_AISHUB_MMSI_LIST` - A comma-separated string of MMSI numbers of specific vessels to search, for example `"367658140,366902120"`
 - `OTS_AISHUB_IMO_LIST` - A comma-separated string of IMO numbers of specific vessels to search, for example `"1234,5678"`
+
+## Screenshot
+
+***
+
+![!Screenshot of AIS on the map](images/ais_map.png)
