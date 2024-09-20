@@ -67,14 +67,17 @@ remove these settings before posting. If these settings are mistakenly shared pu
     - OpenTAKServer listens on this port for SSL connections from ATAK, WinTAK, and iTAK. Default `8089`
 
 - OTS_BACKUP_COUNT (Added in 1.1.4)
-  - Log files in `~/ots/logs/` will rotate at midnight every night. This setting determines the number of days to keep rotated logs
-    Log files older than this setting will be automatically deleted. Default `7`
+    - Log files in `~/ots/logs/` will rotate at midnight every night. This setting determines the number of days to keep rotated logs
+      Log files older than this setting will be automatically deleted. Default `7`
 
 - OTS_RABBITMQ_SERVER_ADDRESS (Added in 1.1.4)
-  - Address of the RabbitMQ server. Default `127.0.0.1`
+    - Address of the RabbitMQ server. Default `127.0.0.1`
+
+- OTS_RABBITMQ_TTL (Added in 1.3.0)
+    - Time To Live setting for messages published to RabbitMQ. Default: `86400000` (one day)
 
 - OTS_MEDIAMTX_API_ADDRESS (Added in 1.1.4)
-  - Address for MediaMTX's API server. Make sure to include the scheme (ie `http://`), address, and port. Default `http://localhost:9997`
+    - Address for MediaMTX's API server. Make sure to include the scheme (ie `http://`), address, and port. Default `http://localhost:9997`
 
 - OTS_MEDIAMTX_TOKEN
     - This token protects the /api/mediamtx/webhook endpoint. It is generated using `python3 -c 'import secrets; print(secrets.token_hex())`
@@ -126,6 +129,24 @@ remove these settings before posting. If these settings are mistakenly shared pu
 - OTS_AIRPLANES_LIVE_RADIUS
     - Radius in nautical miles to query ADSB from [Airplanes.live](https://airplanes.live/). Default `10` Max `250`
 
+- OTS_AISHUB_USERNAME (Added in 1.3.0)
+    - Username of your AISHub.net account. Default: `None` 
+
+- OTS_AISHUB_SOUTH_LAT (Added in 1.3.0)
+    - Southern latitude. Default: `None`
+
+- OTS_AISHUB_WEST_LON (Added in 1.3.0)
+    - Western longitude. Default: `None`
+
+- OTS_AISHUB_NORTH_LAT (Added in 1.3.0)
+    - Northern latitude. Default: `None`
+
+- OTS_AISHUB_EAST_LON (Added in 1.3.0)
+    - Eastern Longitude. Default: `None`
+
+- OTS_PROFILE_MAP_SOURCES (Added in 1.3.0)
+    - Automatically install map tile sources from [ATAK-Maps](https://github.com/joshuafuller/ATAK-Maps.git) when an EUD first connects to the server. Default: `true`
+
 - OTS_ENABLE_MUMBLE_AUTHENTICATION
     - This option provide authentication for your Mumble server. When connecting to the Mumble server you will have to
     use your OpenTAKServer username and password. This also prevents anyone without an account on your OpenTAKServer
@@ -152,6 +173,12 @@ remove these settings before posting. If these settings are mistakenly shared pu
 - OTS_EMAIL_TLD_BLACKLIST
     - Similar to `OTS_EMAIL_TLD_WHITELIST`, but prevents certain top level domains from registering accounts. Leave the default
     setting to allow any TLD to register. Default: `[]`
+
+- OTS_FIGLET_WIDTH (Added in 1.3.0)
+    - Width of the ASCII art logo that displays on startup. Default: `100`
+
+- OTS_FIGLET_FONTS (Added in 1.3.0)
+    - List of fonts for the ASCII art logo. Default: `["slant", "thin", "stampatello", "rectangles", "bell", "doom", "banner", "banner3-D", "banner3", "mini", "marquee", "big", "chunky", "poison", "pepper", "computer", "puffy", "cosmic", "script", "sblood", "epic", "speed", "trek", "rev", "larry3d", "3-d", "5lineoblique", "lean", "cursive", "gothic"]`
 
 ## Flask-Security
 
