@@ -32,6 +32,22 @@ Run this command as the same user that runs OpenTAKServer. Do not run as root.
 
 `curl -L https://i.opentakserver.io/raspberry_pi_installer | bash -`
 
+## Bleeding Edge
+
+***
+
+Both the Ubuntu and Raspberry Pi upgrade scripts have an option to install the latest, unstable versions of
+OpenTAKServer and OpenTAKServer-UI. This is for testing purposes only, **DO NOT USE THIS ON A PRODUCTION SERVER!** More than
+likely things will break or there will be bugs.
+
+### Ubuntu
+
+`curl -L https://i.opentakserver.io/ubuntu_updater | bash -s -- --bleeding-edge`
+
+### Raspberry Pi
+
+`curl -L https://i.opentakserver.io/raspberry_pi_installer | bash -s -- --bleeding-edge`
+
 ## Windows
 
 ***
