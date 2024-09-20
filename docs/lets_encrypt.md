@@ -21,14 +21,14 @@ sudo certbot certonly --standalone --preferred-challenges http -d your_domain_na
 
 Next change these following two lines in `/etc/nginx/sites-enabled/ots_certificate_enrollment` from this:
 
-```
+```shell
 ssl_certificate /home/your_username/ots/ca/certs/opentakserver/opentakserver.pem;
 ssl_certificate_key /home/your_username/ots/ca/certs/opentakserver/opentakserver.nopass.key;
 ```
 
 to this:
 
-```
+```shell
 ssl_certificate /etc/letsencrypt/live/your_domain_name.com/fullchain.pem;
 ssl_certificate_key /etc/letsencrypt/live/your_domain_name.com/privkey.pem;
 ```

@@ -34,7 +34,7 @@ This is a new project under active development. Feel free to report any bugs or 
     - Watch video streams in ATAK's video tool, web browser, or video player such as VLC
     - Record streams
 - Upload data packages to share with other EUDs
-- Live stream ADS-B data from the free Airplanes.live API to EUDs
+- Live stream ADS-B and AIS data from the free Airplanes.live and AISHub.net APIs to EUDs
 - WebUI
 - Mumble Authentication 
     - Use your OpenTAKServer account to log into your Mumble server
