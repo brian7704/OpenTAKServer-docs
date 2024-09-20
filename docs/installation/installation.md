@@ -12,11 +12,15 @@ The Ubuntu and Raspberry pi installers should be run as a regular user, not root
 
 Copy and paste the following command into your terminal for the Ubuntu installer.
 
-`curl https://i.opentakserver.io/ubuntu_installer -L | bash -`
+```shell
+curl https://i.opentakserver.io/ubuntu_installer -L | bash - | tee ots_ubuntu_installer.log
+```
 
 Use the following command for the Raspberry Pi installer. The installer supports Raspberry Pi OS Bookworm or newer versions.
 
-`curl https://i.opentakserver.io/raspberry_pi_installer -L | bash -`
+```shell
+curl https://i.opentakserver.io/raspberry_pi_installer -L | bash - | tee ots_rpi_installer.log
+```
 
 ## Notes
 
@@ -49,13 +53,3 @@ so it can join the network automatically.
 
 This installer will install the latest binaries for [MediaMTX](https://github.com/bluenviron/mediamtx) and make the 
 appropriate configuration changes in order to work with OpenTAKServer
-
-### Email support
-
-***
-
-OpenTAKServer can be optionally configured to require users to register using an email account. Users will be emailed to
-confirm their registration, reset their passwords, and optionally for two-factor authentication codes. If this option is
-enabled, you will need your mail server's address, port, username, and password. When using Gmail you will need to
-log into your Gmail account and enable an app password. Your normal password will not work. Other providers probably
-require you to take similar steps. You can find the required settings for Gmail [here](https://docs.opentakserver.io/#email/#gmail).

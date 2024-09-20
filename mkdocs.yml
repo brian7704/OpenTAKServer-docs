@@ -25,7 +25,6 @@ nav:
   - Feature Comparison: 'feature_comparison.md'
   - Installation:
     - Installer: 'installation/installation.md'
-    - Manual Installation: 'installation/manual_installation.md'
     - Windows: 'installation/windows.md'
     - Upgrading: 'installation/upgrading.md'
   - Configuration: 'configuration.md'

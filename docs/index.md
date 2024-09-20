@@ -19,6 +19,8 @@ This is a new project under active development. Feel free to report any bugs or 
 - WinTAK support
 - iTAK support
 - TCP and SSL CoT streaming
+- [Plugin Update Server](update_server.md)
+- [Device Profiles](device_profiles.md)
 - Authentication
     - Optional support for user registration with an email account
     - Two-factor authentication via TOTP authenticator or email
@@ -42,9 +44,9 @@ This is a new project under active development. Feel free to report any bugs or 
 ***
 
 There are installer scripts for Ubuntu, Raspberry Pi, and Windows in the OpenTAKServer-Installer repo. Other Linux 
-distros will probably work via manual installation. If you'd like an installer for a particular distro, feel free to
-open an issue in the [OpenTAKServer-Installer repo](https://github.com/brian7704/OpenTAKServer-Installer/issues). There 
-are plans for MacOS and Android installers in the future.
+distros and OSes can be supported. The main requirements are Python 3.10 or greater, RabbitMQ, and OpenSSL. If you'd
+like an installer for a particular distro or OS, feel free to open an issue in the [OpenTAKServer-Installer repo](https://github.com/brian7704/OpenTAKServer-Installer/issues).
+There are plans for MacOS and Android installers in the future.
 
 ## Planned Features
 ***

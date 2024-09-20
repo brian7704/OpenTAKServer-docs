@@ -42,11 +42,15 @@ likely things will break or there will be bugs.
 
 ### Ubuntu
 
-`curl -L https://i.opentakserver.io/ubuntu_updater | bash -s -- --bleeding-edge`
+```shell
+curl -L https://i.opentakserver.io/ubuntu_updater | bash -s -- --bleeding-edge | tee ~/ots_ubuntu_upgrade.log
+```
 
 ### Raspberry Pi
 
-`curl -L https://i.opentakserver.io/raspberry_pi_installer | bash -s -- --bleeding-edge`
+```shell
+curl -L https://i.opentakserver.io/raspberry_pi_installer | bash -s -- --bleeding-edge | tee ~/ots_rpi_upgrade.log
+```
 
 ## Windows
 
