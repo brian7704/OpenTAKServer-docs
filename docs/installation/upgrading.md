@@ -30,7 +30,7 @@ Run this command as the same user that runs OpenTAKServer. Do not run as root.
 
 Run this command as the same user that runs OpenTAKServer. Do not run as root.
 
-`curl -L https://i.opentakserver.io/raspberry_pi_installer | bash -`
+`curl -L https://i.opentakserver.io/raspberry_pi_updater | bash -`
 
 ## Bleeding Edge
 
