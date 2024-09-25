@@ -49,7 +49,7 @@ curl -L https://i.opentakserver.io/ubuntu_updater | bash -s -- --bleeding-edge |
 ### Raspberry Pi
 
 ```shell
-curl -L https://i.opentakserver.io/raspberry_pi_installer | bash -s -- --bleeding-edge | tee ~/ots_rpi_upgrade.log
+curl -L https://i.opentakserver.io/raspberry_pi_updater | bash -s -- --bleeding-edge | tee ~/ots_rpi_upgrade.log
 ```
 
 ## Windows
