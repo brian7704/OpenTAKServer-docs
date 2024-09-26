@@ -12,6 +12,7 @@ Below is a table of all default ports used by OpenTAKServer.
 |-------|---------------|----------|----------------------|-------------------------------------------------------------------------|
 | 80    | Nginx         | TCP      | All                  | Web UI and proxy for HTTP API requests to OpenTAKServer port 8081       |
 | 443   | Nginx         | TCP      | All                  | Web UI and proxy for HTTPS requests to OpenTAKServer port 8081          |
+| 1883  | RabbitMQ      | TCP      | All                  | Unencrypted MQTT port used for Meshtastic                               |
 | 1935  | MediaMTX      | TCP      | All                  | Publish and view RTMP video streams                                     |
 | 1936  | MediaMTX      | TCP      | All                  | Publish and view RTMPS video streams                                    |
 | 5672  | RabbitMQ      | TCP      | All                  | For AMPQ clients, should be blocked from external access in most cases  |
@@ -27,6 +28,7 @@ Below is a table of all default ports used by OpenTAKServer.
 | 8446  | Nginx         | TCP      | All                  | Web UI and proxy for certificate enrollment to OpenTAKServer port 8081  |
 | 8322  | MediaMTX      | TCP      | All                  | Publish and view RTSP(S) video streams                                  |
 | 8554  | MediaMTX      | TCP/UDP  | All                  | Publish and view RTSP video streams                                     |
+| 8883  | RabbitMQ      | TCP      | All                  | Encrypted MQTT port used for Meshtastic                                 |
 | 8888  | MediaMTX      | TCP      | All                  | View HLS video streams                                                  |
 | 8889  | MediaMTX      | TCP      | All                  | Publish and view WebRTC streams                                         |
 | 8890  | MediaMTX      | UDP      | All                  | Publish and view SRT streams                                            |
