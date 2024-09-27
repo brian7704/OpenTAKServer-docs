@@ -4,22 +4,28 @@
 
 All the installers are on [GitHub](https://github.com/brian7704/OpenTAKServer-Installer).
 
-## Ubuntu and Raspberry Pi
+## Ubuntu, Rocky, and Raspberry Pi
 
 ***
 
-The Ubuntu and Raspberry pi installers should be run as a regular user, not root. 
+The Ubuntu, Rocky, and Raspberry pi installers should be run as a regular user, not root. 
 
 Copy and paste the following command into your terminal for the Ubuntu installer.
 
 ```shell
-curl https://i.opentakserver.io/ubuntu_installer -L | bash - | tee ots_ubuntu_installer.log
+curl -s -L https://i.opentakserver.io/ubuntu_installer | bash -
+```
+
+Use the following command for Rocky Linux 9.4 and above
+
+```shell
+curl -s -L https://i.opentakserver.io/rocky_linux_installer | bash -
 ```
 
 Use the following command for the Raspberry Pi installer. The installer supports Raspberry Pi OS Bookworm or newer versions.
 
 ```shell
-curl https://i.opentakserver.io/raspberry_pi_installer -L | bash - | tee ots_rpi_installer.log
+curl -s -L https://i.opentakserver.io/raspberry_pi_installer | bash -
 ```
 
 ## Notes
