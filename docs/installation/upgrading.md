@@ -40,16 +40,19 @@ Both the Ubuntu and Raspberry Pi upgrade scripts have an option to install the l
 OpenTAKServer and OpenTAKServer-UI. This is for testing purposes only, **DO NOT USE THIS ON A PRODUCTION SERVER!** More than
 likely things will break or there will be bugs.
 
+When installing the bleeding edge version you will be prompted for which branch to install OpenTAKServer from. It defaults
+to the master branch.
+
 ### Ubuntu
 
 ```shell
-curl -L https://i.opentakserver.io/ubuntu_updater | bash -s -- --bleeding-edge | tee ~/ots_ubuntu_upgrade.log
+curl -sL https://i.opentakserver.io/ubuntu_updater | bash -s -- --bleeding-edge 
 ```
 
 ### Raspberry Pi
 
 ```shell
-curl -L https://i.opentakserver.io/raspberry_pi_updater | bash -s -- --bleeding-edge | tee ~/ots_rpi_upgrade.log
+curl -sL https://i.opentakserver.io/raspberry_pi_updater | bash -s -- --bleeding-edge
 ```
 
 ## Windows
