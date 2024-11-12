@@ -26,6 +26,7 @@ nav:
   - Installation:
     - Installer: 'installation/installation.md'
     - Windows: 'installation/windows.md'
+    - macOS: 'installation/macOS.md'
     - Upgrading: 'installation/upgrading.md'
   - Configuration: 'configuration.md'
   - Let's Encrypt: 'lets_encrypt.md'
