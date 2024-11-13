@@ -35,6 +35,7 @@ nav:
   - Database: 'database.md'
   - CoT Routing: 'cot_routing.md'
   - Certificate Enrollment: 'certificate_enrollment.md'
+  - Mission API/Data Sync: 'mission_api.md'
   - Email: 'email.md'
   - Authentication: 'authentication.md'
   - API: 'API.md'
