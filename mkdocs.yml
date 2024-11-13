@@ -41,6 +41,7 @@ nav:
   - API: 'API.md'
   - ADS-B: 'adsb.md'
   - AIS: 'ais.md'
+  - Deleting Old Data: 'delete_old_data.md'
   - Device Profiles: 'device_profiles.md'
   - Plugin Update Server: 'update_server.md'
   - Mumble: 'mumble.md'

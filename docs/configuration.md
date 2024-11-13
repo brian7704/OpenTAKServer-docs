@@ -186,6 +186,21 @@ remove these settings before posting. If these settings are mistakenly shared pu
 - OTS_FIGLET_FONTS (Added in 1.3.0)
     - List of fonts for the ASCII art logo. Default: `["slant", "thin", "stampatello", "rectangles", "bell", "doom", "banner", "banner3-D", "banner3", "mini", "marquee", "big", "chunky", "poison", "pepper", "computer", "puffy", "cosmic", "script", "sblood", "epic", "speed", "trek", "rev", "larry3d", "3-d", "5lineoblique", "lean", "cursive", "gothic"]`
 
+- OTS_DELETE_OLD_DATA_SECONDS (Added in 1.4.0)
+  - Used by the Delete Old Data scheduled job. Default: `0`
+
+- OTS_DELETE_OLD_DATA_MINUTES (Added in 1.4.0)
+  - Used by the Delete Old Data scheduled job. Default: `0`
+
+- OTS_DELETE_OLD_DATA_HOURS (Added in 1.4.0)
+  - Used by the Delete Old Data scheduled job. Default: `0`
+
+- OTS_DELETE_OLD_DATA_DAYS (Added in 1.4.0)
+  - Used by the Delete Old Data scheduled job. Default: `0`
+
+- OTS_DELETE_OLD_DATA_WEEKS (Added in 1.4.0)
+  - Used by the Delete Old Data scheduled job. Default: `1`
+
 ## Flask-Security
 
 ***
