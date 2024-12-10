@@ -15,7 +15,7 @@ Enabling email support also enables the following features:
 
 The following settings are required to enable email support. You can find them in your `config.yml` file.
 
-- `OTS_ENABLE_EMAIL`: Other settings have no effect is this is set to `false`
+- `OTS_ENABLE_EMAIL`: Other settings have no effect if this is set to `false`
 - `MAIL_SERVER`
 - `MAIL_PORT`
 - `MAIL_USERNAME`
