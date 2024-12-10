@@ -52,6 +52,9 @@ The following IPTables ruleset opens all ports used by OpenTAKServer and blocks 
 You can add or remove rules from this list as needed. After saving the rules to a file, you can load them with this command
 `iptables-restore < /path/to/iptables.rules`
 
+Which rules to enable depends on which components you're using. The list of all services is available in [Architecture](architecture.md). 
+At a minimum, you'll need to open 8443, 443, 8089, and 8446 for TAK to work, and 8080, 80, and 8088 if you're using TCP.
+
 ```shell
 *filter
 :INPUT ACCEPT [0:0]
