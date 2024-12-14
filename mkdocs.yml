@@ -58,5 +58,6 @@ nav:
     - Video Codecs: 'opentak_icu/video_codecs.md'
     - Recording: 'opentak_icu/recording.md'
     - Encryption: 'opentak_icu/encryption.md'
+    - Video Filters: 'opentak_icu/video_filters.md'
     - TAK Server: 'opentak_icu/tak_server.md'
     - MediaMTX: 'opentak_icu/mediamtx.md'
