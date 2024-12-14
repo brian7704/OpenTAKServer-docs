@@ -59,5 +59,6 @@ nav:
     - Recording: 'opentak_icu/recording.md'
     - Encryption: 'opentak_icu/encryption.md'
     - Video Filters: 'opentak_icu/video_filters.md'
+    - IR Cameras: 'opentak_icu/ir_cameras.md'
     - TAK Server: 'opentak_icu/tak_server.md'
     - MediaMTX: 'opentak_icu/mediamtx.md'
