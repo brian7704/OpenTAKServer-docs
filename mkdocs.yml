@@ -52,6 +52,7 @@ nav:
   - Public Server: 'public_server.md'
   - OpenTAK ICU:
     - OpenTAK ICU: 'opentak_icu/index.md'
+    - UVC Cameras: 'opentak_icu/uvc_cameras.md'
     - Streaming Protocols: 'opentak_icu/streaming_protocols.md'
     - Audio Codecs: 'opentak_icu/audio_codecs.md'
     - Video Codecs: 'opentak_icu/video_codecs.md'
