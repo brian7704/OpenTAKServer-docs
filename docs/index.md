@@ -25,6 +25,7 @@ This is a new project under active development. Feel free to report any bugs or 
     - Optional support for user registration with an email account
     - Two-factor authentication via TOTP authenticator or email
 - Client certificate enrollment
+- Data Sync/Mission API
 - CoT routing between EUDs
 - [MediaMTX](https://github.com/bluenviron/mediamtx) integration for video streaming
     - Streams secured via SSL and authentication
@@ -43,16 +44,17 @@ This is a new project under active development. Feel free to report any bugs or 
 
 ***
 
-There are installer scripts for Ubuntu, Raspberry Pi, and Windows in the OpenTAKServer-Installer repo. Other Linux 
-distros and OSes can be supported. The main requirements are Python 3.10 or greater, RabbitMQ, and OpenSSL. If you'd
-like an installer for a particular distro or OS, feel free to open an issue in the [OpenTAKServer-Installer repo](https://github.com/brian7704/OpenTAKServer-Installer/issues).
-There are plans for MacOS and Android installers in the future.
+There are installer scripts for Ubuntu, Raspberry Pi, Rocky 9, macOS, and Windows in the OpenTAKServer-Installer repo. 
+Other Linux  distros and OSes can be supported. The main requirements are Python 3.10 or greater, RabbitMQ, and OpenSSL.
+If you'd like an installer for a particular distro or OS, feel free to open an issue in the
+[OpenTAKServer-Installer repo](https://github.com/brian7704/OpenTAKServer-Installer/issues). There are plans for an Android installer in the future.
 
 ## Planned Features
 ***
 - Federation
-- DataSync
+- Channels/Groups
 - Pull data from networked SDRs (ie dump1090, rtl_ais, rtl_tcp, etc)
+- Traccar integration
 
 ## Supporting The Project
 
