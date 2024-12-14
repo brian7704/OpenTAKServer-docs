@@ -21,6 +21,15 @@ When switching to the UVC Camera source, the camera does not have to be connecte
 a black screen where the video should be. The video will start automatically when the camera is connected. Likewise,
 the camera can be disconnected and video will restart automatically when it is reconnected.
 
+## Setting Resolution
+
+***
+
+OpenTAK ICU doesn't automatically detect the UVC camera's resolution. To set the resolution manually, tap on settings  (looks like ⚙)
+→ Video Settings → UVC Camera Resolution Width and UVC Camera Resolution Height. If those options are greyed out,
+tap the Video Source option and choose UVC camera. Check your camera's documentation for the best resolution. The default
+resolution in OpenTAK ICU is 1920x1080.
+
 ## Audio
 
 ***
