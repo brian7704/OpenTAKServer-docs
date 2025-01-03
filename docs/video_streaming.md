@@ -54,6 +54,19 @@ When ATAK is connected to OpenTAKServer, open the Video tool, then tap the downl
 for a list of video streams. Choose which stream to view and tap the `Ok` button. Next, edit the video settings and add your
 OpenTAKServer username and password. You can now view the video stream.
 
+### In Kodi
+
+***
+
+There is an add-on for [Kodi](https://kodi.tv/) that allows you to watch streams and recordings from your server. The add-on
+works on all platforms that Kodi works on (Windows, macOS, Linux, Android, iOS, etc). To in stall the add-on, browse to
+Add-ons -> Download -> Video add-ons -> OpenTAKServer Video Plugin and select the install button.
+
+The first time the add-on is started, it will take you to the settings screen where you will need to enter your server's
+address, username, and password.
+
+![Kodi Add-on](images/kodi_screenshot_1.png)
+
 ### In VLC
 
 ***
