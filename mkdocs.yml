@@ -44,6 +44,7 @@ nav:
   - Deleting Old Data: 'delete_old_data.md'
   - Device Profiles: 'device_profiles.md'
   - Plugin Update Server: 'update_server.md'
+  - CloudTAK: 'cloudtak.md'
   - Mumble: 'mumble.md'
   - Symbology: 'symbology.md'
   - Video Streaming: 'video_streaming.md'
