@@ -33,7 +33,7 @@ with these characters will cause browsers and video players to incorrectly parse
 ***
 
 OpenTAKServer supports token authentication which can be helpful when interacting with OpenTAKServer via the
-[API](API.md). Use the following steps to authenticate with a token:
+[API](API_old). Use the following steps to authenticate with a token:
 
 Add these settings to `~/ots/config.yml` if they're not already present. This will remove the CSRF requirements
 for token auth but still require CSRF for basic and session auth.
