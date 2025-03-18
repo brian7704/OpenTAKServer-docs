@@ -9,12 +9,12 @@
 project = 'OpenTAKServer'
 copyright = '2025, Brian Wallen'
 author = 'Brian Wallen'
-release = '1.4.2'
+release = '1.4.3'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser']
+extensions = ['myst_parser', 'sphinx_copybutton']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -31,3 +31,4 @@ source_suffix = {
 html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
 html_css_files = ['custom.css']
+html_logo = '_static/ots_logo.png'

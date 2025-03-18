@@ -11,14 +11,22 @@ OpenTAKServer documentation
    :caption: Contents:
 
    main.rst
+
+.. toctree::
+   :caption: Installation:
+
    installation/installation.md
    installation/windows.md
    installation/macOS.md
    installation/upgrading.md
+
+.. toctree::
+   :caption: Documentation:
+
    architecture.md
    public_server.md
    feature_comparison.md
-   configuration.md
+   configuration.rst
    lets_encrypt.md
    data_packages.md
    security.md
