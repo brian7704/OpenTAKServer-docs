@@ -38,5 +38,5 @@ html_theme_options = {
     'canonical_url': 'docs.opentakserver.io',
     'logo_only': True,
     'style_external_links': True,
-    'github_url': 'https://github.com/brianwallen/OpenTAKServer-docs',
+    'github_url': 'https://github.com/brian7704/OpenTAKServer-docs',
 }
