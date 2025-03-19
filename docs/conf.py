@@ -32,3 +32,11 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
 html_css_files = ['custom.css']
 html_logo = '_static/ots_logo.png'
+html_favicon = '_static/favicon.png'
+html_theme_options = {
+    'analytics_id': 'G-22JB0TDCSP',
+    'canonical_url': 'docs.opentakserver.io',
+    'logo_only': True,
+    'style_external_links': True,
+    'github_url': 'https://github.com/brianwallen/OpenTAKServer-docs',
+}
