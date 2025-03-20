@@ -25,7 +25,7 @@ Run these commands to install Docker on Ubuntu. If you're not using Ubuntu, chec
 
 ```shell
 sudo apt update
-sudo aptinstall ca-certificates curl
+sudo apt install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
