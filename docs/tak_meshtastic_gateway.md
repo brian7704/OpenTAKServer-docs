@@ -68,7 +68,6 @@ pip install tak-meshtastic-gateway
 python -m venv tak_meshtastic_gateway_venv
 .\tak_meshtastic_gateway_venv\Scripts\activate
 pip install https://github.com/brian7704/OpenTAKServer-Installer/raw/master/unishox2_py3-1.0.0-cp312-cp312-win_amd64.whl
-pip install git+https://github.com/snstac/takproto@refs/pull/16/merge
 pip install tak-meshtastic-gateway
 ```
 
