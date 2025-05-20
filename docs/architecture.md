@@ -2,11 +2,32 @@
 
 ***
 
+As of version 1.5.0, OpenTAKServer is split into three parts, the API, the EUD handler, and the CoT parser. Each part runs as its
+own separate process. This solves a bottleneck issue caused by the [Python Global Interpreter Lock (GIL)](https://wiki.python.org/moin/GlobalInterpreterLock).
+
+## EUD Handler
+
+***
+
+The EUD Handler listens on a TCP port, specified by `OTS_TCP_STREAMING_PORT` or `OTS_SSL_STREAMING_PORT`, and is the main point of
+interaction between OpenTAKServer and EUDs. When an EUD sends a CoT message, `eud_handler` will publish it to RabbitMQ for `cot_parser`
+to parse. Likewise, when another EUD publishes a CoT message, `eud_handler` consume the message and send it to the EUD.
+
+## CoT Parser
+
+***
+
+The CoT Parser connects to the RabbitMQ server and parses CoT messages sent by EUDs. There can be multiple instances of CoT parsers
+running at once. This allows you to take full advantage of your CPU cores if you have a high number of incoming CoT messages per second.
+If there are too many incoming CoT messages for the server to handle, additional servers can run more instances of `cot_parser`
+for extra processing power.
+
 ## Ports
 
 ***
 
-Below is a table of all default ports used by OpenTAKServer.
+Below is a table of all default ports used by OpenTAKServer. For unencrypted TCP communications, ports 80, 8080, and 8088 are required.
+For SSL encrypted communications, ports 443, 8443, 8446, and 8089 are required. In either case, the rest of the ports are optional.
 
 | Port  | Component     | Protocol | Interface            | Description                                                             |
 |-------|---------------|----------|----------------------|-------------------------------------------------------------------------|
