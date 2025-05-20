@@ -70,6 +70,9 @@ remove these settings before posting. If these settings are mistakenly shared pu
     - Log files in `~/ots/logs/` will rotate at midnight every night. This setting determines the number of days to keep rotated logs
       Log files older than this setting will be automatically deleted. Default `7`
 
+- OTS_RABBITMQ_PREFETCH (Added in 1.5.0)
+  - How many CoT messages that cot_parser processes should prefetch. See https://www.rabbitmq.com/docs/consumer-prefetch Default: `2`
+
 - OTS_RABBITMQ_SERVER_ADDRESS (Added in 1.1.4)
     - Address of the RabbitMQ server. Default `127.0.0.1`
 
@@ -200,6 +203,14 @@ remove these settings before posting. If these settings are mistakenly shared pu
 
 - OTS_DELETE_OLD_DATA_WEEKS (Added in 1.4.0)
   - Used by the Delete Old Data scheduled job. Default: `1`
+
+- OTS_RABBITMQ_PREFETCH (Added in)
+
+- OTS_ENABLE_PLUGINS (Added in 1.5.0)
+  - Enables server plugins. Default `True`
+
+- OTS_COT_PARSER_PROCESSES (Added in 1.5.0)
+  - How many processes to fork when running the `cot_parser` command. Default: `1`
 
 ## Flask-Security
 
