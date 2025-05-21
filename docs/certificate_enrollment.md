@@ -19,6 +19,27 @@ a copy of your server's truststore certificate for auto-enrollment. You can down
 In order to use a QR code for iTAK enrollment, your server must be configured with a signed certificate from Let's Encrypt
 or a similar trusted certificate authority.
 
+## ATAK QR Code
+***
+Starting in version 1.5.0, OpenTAKServer supports QR code generation for ATAK certificate registration. This feature requires that your
+server has a domain name with a trusted cert from Let's Encrypt or a similar trusted certificate authority. When generating
+a QR code, you can optionally specify an expiration date and a maximum number of uses. If either or both are specified,
+the QR code will no longer work after the expiration date or the maximum number of uses (whichever comes first).
+The QR code can also be deleted. If it's scanned after being deleted, certificate registration will fail.
+
+Each user can only have one active QR code at a time but the code can be deleted and regenerated at any time. The QR code is
+unique to the user that generated it and should be treated like a password in most cases. However, it is possible to generate a single
+QR code and let multiple users scan it.
+
+To scan the QR code, use your EUD's camera app or any QR code scanning app. Once scanned, opening the link will automatically
+open ATAK and start the certificate registration process. This method does not require the user to uncheck the Preconfigured Trust
+option.
+
+Alternatively, if you are logged into the web UI on your EUD you can tap the `Open ATAK` button instead of scanning the QR
+code to start the certificate registration process.
+
+![!ATAK QR Code](images/ATAK_QR_Code.PNG)
+
 
 ## Instructions
 ***
