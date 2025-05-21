@@ -21,8 +21,13 @@ Web UI
 
 Plugins can optionally include a web UI that will be displayed in an iframe in OpenTAKServer's UI. Plugin UIs
 are written in the `Mantine <https://mantine.dev/>`_ react framework. To start a new plugin UI, create a new repo from
-the `OTS-UI-Plugin-Template <https://github.com/brian7704/OTS-SkyFi-Plugin-UI>`_. The UI repo should be separate from the
-plugin's repo.
+the `OTS-UI-Plugin-Template <https://github.com/brian7704/OTS-UI-Plugin-Template>`_. The UI repo should be separate from the
+plugin's repo. See the `SkyFi Plugin's UI <https://github.com/brian7704/OTS-SkyFi-Plugin-UI>`_ for an example.
+
+When building your plugin's UI, it's assumed that your code is in ``~/Webstorm Projects/Your-OTS-Plugin-UI`` and your plugin is at
+``~/PyCharm Projects/Your-OTS-Plugin``. The ``npm build`` command will automatically put the built UI files in ``~/PyCharm Projects/Your-OTS-Plugin/ui``.
+If your code is in another directory, edit the ``outDir`` option in your UI's `vite.config.mjs <https://github.com/brian7704/OTS-UI-Plugin-Template/blob/bf00f38321d24572a85210d40809ec8cc2454893/vite.config.mjs#L13>`_
+file
 
 ----
 Licensing
@@ -62,9 +67,22 @@ When a new version of your plugin is ready to be released, a new git tag should 
 `Semantic Versioning <https://semver.org/>`_. For example, the first version tag could be ``1.0.0``. Then when building the plugin
 for distribution using the ``poetry build`` command, the sdist and wheel files will be automatically tagged with this version number.
 
-++++++++++++++
-pyproject.toml
-++++++++++++++
+++++++++++++++++++++++++++++
+Start Developing Your Plugin
+++++++++++++++++++++++++++++
 
-The ``pyproject.toml`` file in plugin's root directory should be updated with the plugin's name, description, author's name and email,
-and its repo and documentation links.
+The things that need to be changed are marked with ``TODO`` comments in OTS-Plugin-Template and OTS-UI-Plugin-Template.
+
+#. pyproject.toml
+    #. Set the name, description, author information, and URLs
+    #. Change the ``include`` option under ``[tool.poetry]`` to the name of the folder that contains your plugin's code
+    #. Do the same for ``tool.poetry-dynamic-versioning.files``
+#. app.py
+    #. Change the class name
+    #. Change the name of the blueprint from ``PluginTemplate`` to your plugin's name
+    #. Add API routes as necessary. Remember to protect your routes using the ``@auth_required`` or ``@roles_accepted`` decorators
+    #. Edit the ``activate()`` method if your plugin needs to run in the background. For example, the AISStream plugin uses the ``activate()`` method to connect to AISStream's servers to pull data.
+#. default_config.py
+    #. Rename ``OTS_PLUGIN_TEMPLATE_ENABLED`` to your plugin's name
+    #. Add config options as necessary
+    #. Edit the validate() method to validate user input
