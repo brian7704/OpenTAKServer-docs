@@ -20,7 +20,7 @@ repo_url: https://github.com/brian7704/OpenTAKServer
 site_url: https://docs.opentakserver.io
 edit_uri: https://github.com/brian7704/OpenTAKServer-docs/tree/master/docs
 nav:
-  - Home: 'index.md'
+  - Home: 'main_old.md'
   - Architecture: 'architecture.md'
   - Feature Comparison: 'feature_comparison.md'
   - Installation:
@@ -38,7 +38,7 @@ nav:
   - Mission API/Data Sync: 'mission_api.md'
   - Email: 'email.md'
   - Authentication: 'authentication.md'
-  - API: 'API.md'
+  - API: 'API_old.md'
   - ADS-B: 'adsb.md'
   - AIS: 'ais.md'
   - Deleting Old Data: 'delete_old_data.md'
@@ -52,7 +52,7 @@ nav:
   - TAK Meshtastic Gateway: 'tak_meshtastic_gateway.md'
   - Public Server: 'public_server.md'
   - OpenTAK ICU:
-    - OpenTAK ICU: 'opentak_icu/index.md'
+    - OpenTAK ICU: 'opentak_icu/main_old.md'
     - UVC Cameras: 'opentak_icu/uvc_cameras.md'
     - Streaming Protocols: 'opentak_icu/streaming_protocols.md'
     - Audio Codecs: 'opentak_icu/audio_codecs.md'
