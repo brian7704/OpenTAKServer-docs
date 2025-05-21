@@ -32,13 +32,24 @@ versions 3.8 and up.
 
 ***
 
-There is a bug in the takproto library which causes an exception in TAK Meshtastic Gateway when parsing XML CoT data.
-There is a [PR](https://github.com/snstac/takproto/pull/16) that will fix the issue once it is merged. Until it is merged,
-you will need to manually install from the pull request using the installation instructions below.
-
 On Windows, the `unishox2-py3` library fails to build from the source distribution with the command `pip install unishox2-py3`.
 TAK Meshtastic Gateway will instead install [this wheel](https://github.com/brian7704/OpenTAKServer-Installer/blob/master/unishox2_py3-1.0.0-cp312-cp312-win_amd64.whl).
 As a result, Python 3.12 is required when running TAK Meshtastic Gateway on Windows.
+
+## Using Windows Offline
+
+***
+
+If you're using Windows offline with the Meshtastic node connected via USB, WinTAK might not send CoT messages over multicast.
+To fix that, a virtual loopback device needs to be installed.
+
+1. Right click start button -> Device manager
+2. Select your PC at the top (otherwise menu item will be missing)
+3. Click on Action -> Add legacy hardware
+4. Click Next -> Install the hardware that I manually select from a list (Advanced) -> Next
+5. Select Network Adapters -> Next and then wait until list is loaded
+6. In the Manufacturer list, select Microsoft. In the Model list, select `Microsoft KM-TEST Loopback Adapter`
+7. Click Next -> Finish
 
 ## Installation
 
