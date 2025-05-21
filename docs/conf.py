@@ -9,7 +9,7 @@
 project = 'OpenTAKServer'
 copyright = '2025, Brian Wallen'
 author = 'Brian Wallen'
-release = '1.4.3'
+release = '1.5.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
