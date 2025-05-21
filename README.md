@@ -1,5 +1,4 @@
-The docs are generated using [mkdocs](https://www.mkdocs.org/) and use the [Windmill](https://github.com/gristlabs/mkdocs-windmill) theme.
+The docs are generated using [Sphinx](https://www.sphinx-doc.org/en/master/) and use the [Read The Docs](https://sphinx-rtd-theme.readthedocs.io/en/stable/) theme.
 
-```pip install mkdocs-windmill```
 
 <https://docs.opentakserver.io>

@@ -18,6 +18,7 @@ This is a new project under active development. Feel free to report any bugs or 
 - Support for ATAK 4.8 and up (Older versions may work, needs to be tested)
 - WinTAK support
 - iTAK support
+- [CloudTAK](https://github.com/dfpc-coe/CloudTAK) support (a fully featured, browser based TAK client)
 - TCP and SSL CoT streaming
 - [Plugin Update Server](update_server.md)
 - [Device Profiles](device_profiles.md)
