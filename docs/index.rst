@@ -50,7 +50,7 @@ OpenTAKServer documentation
 .. toctree::
    :caption: Server Plugins
 
-   plug
+   plugins.rst
 
 .. toctree::
    :caption: TAK Meshtastic Gateway:

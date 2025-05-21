@@ -12,9 +12,8 @@ Plugins classes must be a subclass of ``opentakserver.plugins.Plugin.Plugin``
 Plugins can be created by making a new repository from `OTS-Plugin-Template <https://github.com/brian7704/OTS-Plugin-Template>`_.
 See the screenshot below.
 
-.. image:: docs/images/ots-plugin-template.png
+.. image:: images/ots-plugin-template.png
     :width: 600
-
 
 ----
 Web UI
