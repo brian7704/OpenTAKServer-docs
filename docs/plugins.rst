@@ -75,6 +75,7 @@ The things that need to be changed are marked with ``TODO`` comments in OTS-Plug
 
 #. pyproject.toml
     #. Set the name, description, author information, and URLs
+        *. The name must start with ``OTS-``
     #. Change the ``include`` option under ``[tool.poetry]`` to the name of the folder that contains your plugin's code
     #. Do the same for ``tool.poetry-dynamic-versioning.files``
 #. app.py
