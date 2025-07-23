@@ -112,6 +112,14 @@ OpenTAKServer Settings
    Time To Live setting for messages published to RabbitMQ. Default:
    ``86400000`` (one day)
 
+.. py:data:: OTS_RABBITMQ_PREFETCH (Added in 1.4.3)
+
+    Number of CoT messages to prefetch from the RabbitMQ queue. Default: ``2``
+
+.. py:data:: OTS_COT_PARSER_PROCESSES (Added in 1.5.0)
+
+    Number of ``cot_parser`` processes to run. Default: ``1``
+
 .. py:data:: OTS_MEDIAMTX_API_ADDRESS (Added in 1.1.4)
 
    Address for MediaMTX’s API server. Make sure to include the scheme
@@ -295,6 +303,10 @@ OpenTAKServer Settings
 .. py:data:: OTS_DELETE_OLD_DATA_WEEKS (Added in 1.4.0)
 
    Used by the Delete Old Data scheduled job. Default: ``1``
+
+.. py:data:: OTS_ENABLE_PLUGINS (Added in 1.5.0)
+
+    Enable or disable server plugins. Default: ``True``
 
 Flask-Security
 --------------

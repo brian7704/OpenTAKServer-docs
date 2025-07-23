@@ -48,6 +48,11 @@ OpenTAKServer documentation
    meshtastic.md
 
 .. toctree::
+   :caption: Server Plugins
+
+   plugins.rst
+
+.. toctree::
    :caption: TAK Meshtastic Gateway:
 
    tak_meshtastic_gateway.md

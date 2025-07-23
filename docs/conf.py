@@ -9,12 +9,12 @@
 project = 'OpenTAKServer'
 copyright = '2025, Brian Wallen'
 author = 'Brian Wallen'
-release = '1.4.3'
+release = '1.5.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser', 'sphinx_copybutton']
+extensions = ['myst_parser', 'sphinx_copybutton', 'sphinxcontrib.lightbox2',]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
