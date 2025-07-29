@@ -27,6 +27,7 @@ OpenTAKServer documentation
    public_server.md
    feature_comparison.md
    configuration.rst
+   API.rst
    lets_encrypt.md
    data_packages.md
    security.md
