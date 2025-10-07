@@ -8,7 +8,7 @@
 | SSL                                        | Yes                             | Yes                             | Yes                  |
 | Automatic Certificate Authority Generation | Yes                             | No                              | No                   |
 | Certificate Enrollment                     | Yes                             | No                              | Yes                  |
-| Federation                                 | Coming Soon                     | Yes                             | Yes                  |
+| Federation                                 | No (Coming in 1.7.0)            | Yes                             | Yes                  |
 | Data Packages                              | Yes                             | Yes                             | Yes                  |
 | DataSync                                   | Yes                             | Yes                             | Yes                  |
 | ExCheck                                    | Coming Soon                     | Yes                             | Yes                  |
@@ -26,3 +26,5 @@
 | Meshtastic support                         | Yes                             | No                              | No                   |
 | Update Server                              | Yes                             | No                              | No                   |
 | Device Profiles                            | Yes                             | No                              | Yes                  |
+| Groups/Channels                            | No (Coming in 1.6.0)            | No                              | Yes                  |
+| Actively Developed                         | Yes                             | No                              | Yes                  |
