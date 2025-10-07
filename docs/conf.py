@@ -14,7 +14,7 @@ release = '1.5.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser', 'sphinx_copybutton', 'sphinxcontrib.lightbox2',]
+extensions = ['myst_parser', 'sphinx_copybutton', 'sphinxcontrib.lightbox2', 'sphinxext.opengraph']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -24,6 +24,13 @@ source_suffix = {
     '.txt': 'markdown',
     '.md': 'markdown',
 }
+
+ogp_site_url = "https://docs.opentakserver.io"
+ogp_site_name = "OpenTAKServer Docs"
+ogp_image = "https://docs.opentakserver.io/_static/ots_logo.png"
+ogp_custom_meta_tags = ["<meta property=\"og:logo\" content=\"https://docs.opentakserver.io/_static/ots_logo.png\" />"]
+
+numpydoc_show_class_members = False
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

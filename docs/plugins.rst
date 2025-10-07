@@ -39,7 +39,7 @@ Plugins that are publicly distributed must use the GPLv3 or another `compatible 
 Public Repo
 ----
 
-While plugins can be distributed or kept private as the author chooses, there is a public plugin repo available. Plugins on this
+While plugins can be distributed or kept private as the author chooses (including on PyPI), there is a public plugin repo available. Plugins on this
 repo will be accepted after a code review to make sure it meets the plugin requirements, works as intended, and doesn't contain any
 malicious code. Once accepted, OpenTAKServer users will be able to install plugins from this repo from within the web UI. The repo
 can be browsed at https://repo.opentakserver.io.
