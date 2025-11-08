@@ -26,6 +26,14 @@ OpenTAKServer will also attempt to extract the plugin's icon from the APK. Howev
 is in PNG format, not in Android vector xml format. Because of this, you can optionally specify a separate icon file
 in the upload form. The icon should be a PNG file.
 
+## Plugin Versions
+
+***
+
+Starting in version 1.6.0, OpenTAKServer supports uploading plugins for different versions of ATAK. This is to support
+a feature introduced in ATAK 5.5 where ATAK will request a list of plugins for its version. ATAK 5.4 and prior will still
+query for a list of all plugins.
+
 ## Screenshot
 
 ![!Plugin Updates Screenshot](images/plugin_updates.png)
