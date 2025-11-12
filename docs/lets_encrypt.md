@@ -11,15 +11,9 @@ Before beginning, make sure your domain has a DNS A record that points to the pu
 
 ***
 
-Please note that although a certificate is trusted by web browsers, ATAK might not trust it. It seems that ATAK doesn't
-use Android's built-in trusted certificate store. Let's Encrypt certificates work. However, while certificates from ZeroSSL will work in
-other TAK clients, they won't work in ATAK. It fails with the following logcat error
-
-```
-URLReq: id 0 transfer failed - status 9 (SSL certificate problem: self-signed certificate in certificate chain); transferred 0 of 0
-```
-
-Other trusted certificate providers may result in the same issue.
+Please note that ATAK does not use Android's trusted certificate store. It comes bundled with root CAs for Let's Encrypt
+and Digicert only. Other trusted certificate providers will result in a `TAK Server's Identity Could Not Be Verified` error
+even though most web browsers and OSes trust them.
 
 ## Ubuntu and Raspberry Pi OS
 
