@@ -23,3 +23,9 @@ for details on configuring this feature.
 
 When using LDAP, OpenTAKServer will consider users that are members of the group specified by ``OTS_LDAP_ADMIN_GROUP``
 to be OTS administrators. The default name for this group is ``ots_admin``.
+
+LDAP groups must be prefixed with the value of ``OTS_LDAP_GROUP_PREFIX`` (default: ``ots_``). Groups without this prefix
+are ignored. Additionally, group direction is specified with ``_READ`` and ``_WRITE`` suffixes. These suffixes are case
+insensitive. For this reason, when creating a TAK group on your LDAP server you will actually need to create three groups.
+For example, if the group is called ``group1`` you would create ``ots_group1``, ``ots_group1_read``, and ``ots_group1_write``.
+All three are required. Then an administrator can assign ``ots_group1_read`` and ``ots_group1_write`` to users as needed.
