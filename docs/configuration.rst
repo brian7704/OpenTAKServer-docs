@@ -86,6 +86,13 @@ OpenTAKServer Settings
    Nginx listens on this port for certificate enrollment requests and
    proxies them to OTS_LISTENER_PORT. Default ``8446``
 
+.. py:data:: OTS_SSL_CERT_HEADER
+
+    On most Marti API endpoints, OpenTAKServer will look for the client certificate in this HTTP header
+    to identify the username via the certificate's common name.
+
+    Default: ``X-Ssl-Cert``
+
 .. py:data:: OTS_TCP_STREAMING_PORT
 
    OpenTAKServer listens on this port for TCP connections from ATAK,
@@ -323,6 +330,63 @@ OpenTAKServer Settings
 
     Default: ``["ots-", "ots_"]``
 
+.. py:data:: OTS_ENABLE_LDAP (Added in 1.6.0)
+
+    Enables LDAP for user and group administration.
+
+    Default: ``False``
+
+.. py:data:: OTS_LDAP_ADMIN_GROUP (Added in 1.6.0)
+
+    Users in the LDAP group will be considered administrators in OpenTAKServer
+
+    Default: ``ots_admin``
+
+.. py:data:: OTS_LDAP_COLOR_ATTRIBUTE (Added in 1.6.0)
+
+    Use this LDAP user attribute to assign team colors to users.
+
+    Default: ``colorAttribute``
+
+.. py:data:: OTS_LDAP_ROLE_ATTRIBUTE (Added in 1.6.0)
+
+    Use this LDAP user attribute to assign team roles to users.
+
+    Default: ``roleAttribute``
+
+.. py:data:: OTS_LDAP_CALLSIGN_ATTRIBUTE (Added in 1.6.0)
+
+    Use this LDAP user attribute to assign callsigns to users
+
+    Default: ``callsignAttribute``
+
+.. py:data:: OTS_LDAP_PREFERENCE_ATTRIBUTE_PREFIX (Added in 1.6.0)
+
+    User attributes with this prefix can be used to change settings in ATAK the same way
+    device profiles can.
+
+    Default: ``ots_``
+
+.. py:data:: OTS_ADSB_GROUP (Added in 1.6.1)
+
+    The Airplanes.live scheduled job will publish data to this group.
+
+    Default: ``ADS-B``
+
+.. py:data:: OTS_AIS_GROUP (Added in 1.6.1)
+
+    The AISHub scheduled job will publish data to this group.
+
+    Default: ``AIS``
+
+.. py:data:: OTS_MESHTASTIC_GROUP (Added in 1.6.1)
+
+    Meshtastic data received via MQTT will be published to this group.
+
+    Default: ``Meshtastic``
+
+
+
 Flask-Security
 --------------
 
@@ -333,6 +397,50 @@ You can check
 for the settings that OpenTAKServer uses. To learn about each setting
 you can check Flask-Security’s
 `documentation <https://flask-security-too.readthedocs.io/en/stable/configuration.html>`__.
+
+Flask-LDAP3-Login
+-----------------
+
+-----------------
+
+Flask-LDAP3-Login is used for LDAP support. See `their documentation <https://flask-ldap3-login.readthedocs.io/en/latest/>`__
+for more details.
+
+.. py:data:: LDAP_HOST
+
+    The address of the LDAP server.
+
+    Default: ``Blank String``
+
+.. py:data:: LDAP_BASE_DN
+
+    The LDAP server's base DN
+
+    Default: ``Blank String``
+
+.. py:data::
+
+    The LDAP server's user DN
+
+    Default: ``Blank String``
+
+.. py:data:: LDAP_GROUP_DN
+
+    The LDAP server's group DN
+
+    Default: ``Blank String``
+
+.. py:data:: LDAP_BIND_USER_DN
+
+    The LDAP server's bind user DN.
+
+    Default: ``cn=admin,ou=users=dc=example,dc=com``
+
+.. py:data:: LDAP_BIND_USER_PASSWORD
+
+    The bind user's password.
+
+    Default: ``password``
 
 Flask-Mailman settings
 ----------------------
