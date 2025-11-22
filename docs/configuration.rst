@@ -308,6 +308,21 @@ OpenTAKServer Settings
 
     Enable or disable server plugins. Default: ``True``
 
+.. py:data:: OTS_PLUGIN_REPO (Added in 1.5.0)
+
+    The URL of the plugin repo server. Defaults to OpenTAKServer's official
+    repo, but server admins can setup their own private repos with devpi and
+    change this option to the URL of the private server.
+
+    Default: ``https://repo.opentakserver.io/brian/prod/``
+
+.. py:data:: OTS_PLUGIN_PREFIXES (Added in 1.5.0)
+
+    Python libraries with the prefix defined in this option are considered to
+    be OpenTAKServer plugins.
+
+    Default: ``["ots-", "ots_"]``
+
 Flask-Security
 --------------
 
