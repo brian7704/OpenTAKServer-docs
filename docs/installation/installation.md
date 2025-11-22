@@ -15,17 +15,6 @@ running Ubuntu and Raspberry Pis running Ubuntu.
 curl -s -L https://i.opentakserver.io/ubuntu_installer | bash -
 ```
 
-## Rocky Linux
-
-***
-
-Use the following command for Rocky Linux 9.4 and above. This installer is only for amd64 machines and will not work
-for other architectures like the Raspberry Pi. This is due to RabbitMQ only providing amd64 builds for Rocky.
-
-```shell
-curl -s -L https://i.opentakserver.io/rocky_linux_installer | bash -
-```
-
 ## Raspberry Pi OS
 
 ***

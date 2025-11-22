@@ -66,13 +66,9 @@ Supported Platforms
 
 --------------
 
-There are installer scripts for Ubuntu, Raspberry Pi, Rocky 9, macOS,
-and Windows in the OpenTAKServer-Installer repo. Other Linux distros and
-OSes can be supported. The main requirements are Python 3.10 or greater,
-RabbitMQ, and OpenSSL. If you’d like an installer for a particular
-distro or OS, feel free to open an issue in the `OpenTAKServer-Installer
-repo <https://github.com/brian7704/OpenTAKServer-Installer/issues>`__.
-There are plans for an Android installer in the future.
+There are installer scripts for Ubuntu, Raspberry Pi in the OpenTAKServer-Installer
+repo and an official docker image is in the works. Other platforms can be supported as well.
+The main requirements are Python 3.10 or greater, RabbitMQ, and OpenSSL.
 
 Planned Features
 ----------------
@@ -110,8 +106,6 @@ open source.
    :hidden:
 
    installation/installation.md
-   installation/windows.md
-   installation/macOS.md
    installation/upgrading.md
 
 .. toctree::

@@ -22,7 +22,9 @@ sufficient to make a backup.
 
 Run this command as the same user that runs OpenTAKServer. Do not run as root.
 
-`curl -L https://i.opentakserver.io/ubuntu_updater | bash -`
+```shell
+curl -L https://i.opentakserver.io/ubuntu_updater | bash -
+```
 
 ## Raspberry Pi
 
@@ -30,7 +32,9 @@ Run this command as the same user that runs OpenTAKServer. Do not run as root.
 
 Run this command as the same user that runs OpenTAKServer. Do not run as root.
 
-`curl -L https://i.opentakserver.io/raspberry_pi_updater | bash -`
+```shell
+curl -L https://i.opentakserver.io/raspberry_pi_updater | bash -
+```
 
 ## Bleeding Edge
 
@@ -54,9 +58,3 @@ curl -sL https://i.opentakserver.io/ubuntu_updater | bash -s -- --bleeding-edge
 ```shell
 curl -sL https://i.opentakserver.io/raspberry_pi_updater | bash -s -- --bleeding-edge
 ```
-
-## Windows
-
-***
-
-Coming soon
