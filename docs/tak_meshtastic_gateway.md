@@ -1,7 +1,5 @@
 # TAK Meshtastic Gateway
 
-***
-
 TAK Meshtastic Gateway listens for multicast data from TAK clients (ATAK, WinTAK, and iTAK) and forwards it to
 a Meshtastic device which transmits it to a Meshtastic network. It will also forward messages from Meshtastic to 
 TAK clients via multicast. Additionally, it enables sending and receiving chat messages and locations between TAK clients
@@ -9,8 +7,6 @@ and the Meshtastic app. For example, someone using WinTAK can send a message ove
 the Meshtastic app and vice versa.
 
 ## Features
-
-***
 
 - Send chat and PLI messages from TAK clients (ATAK, WinTAK, and iTAK) over a Meshtastic network
 - Receive chat and PLI messages from a Meshtastic network and display them in a TAK client
@@ -23,22 +19,16 @@ data packages, markers, images, etc, are not supported due to the limited bandwi
 
 ## Python Requirements
 
-***
-
 Due to an issue with the unishox2-py3 package, Windows requires Python version 3.12. Linux and macOS will work with Python
 versions 3.8 and up.
 
 ## Known Issues
-
-***
 
 On Windows, the `unishox2-py3` library fails to build from the source distribution with the command `pip install unishox2-py3`.
 TAK Meshtastic Gateway will instead install [this wheel](https://github.com/brian7704/OpenTAKServer-Installer/blob/master/unishox2_py3-1.0.0-cp312-cp312-win_amd64.whl).
 As a result, Python 3.12 is required when running TAK Meshtastic Gateway on Windows.
 
 ## Using Windows Offline
-
-***
 
 If you're using Windows offline with the Meshtastic node connected via USB, WinTAK might not send CoT messages over multicast.
 To fix that, a virtual loopback device needs to be installed.
@@ -53,13 +43,9 @@ To fix that, a virtual loopback device needs to be installed.
 
 ## Installation
 
-***
-
 For installation you only need to create a Python virtual environment, activate the virtual environment, and install using pip.
 
 ### Linux/macOS
-
-***
 
 The unishox2-py3 Python library requires C build tools. In Debian based distros (i.e. Ubuntu) they can be installed with
 `apt install build-essential`.
@@ -72,8 +58,6 @@ pip install tak-meshtastic-gateway
 
 ### Windows
 
-***
-
 ```powershell
 python -m venv tak_meshtastic_gateway_venv
 .\tak_meshtastic_gateway_venv\Scripts\activate
@@ -83,13 +67,9 @@ pip install tak-meshtastic-gateway
 
 ## Usage
 
-***
-
 When your virtual environment active, run the `tak-meshtastic-gateway` command
 
 ## Architecture
-
-***
 
 In most scenarios, the user will run TAK Meshtastic Gateway on the same computer that runs WinTAK. The Meshtastic node
 can either be connected to the same computer via USB, or be on the same LAN as the computer. Connecting to the Meshtastic
@@ -97,16 +77,12 @@ node over the LAN allows it to be mounted in a spot outside with good mesh recep
 
 ## Meshtastic Node Configuration
 
-***
-
 The Meshtastic node should be set to the TAK role. TAK Meshtastic Gateway will automatically change the node's long name 
 to the TAK client's callsign and the short name to the last four characters of the TAK client's UID. This ensures that 
 the callsign shows up correctly for mesh users who are only using the Meshtastic app as well as ATAK plugin users.
 TAK Meshtastic Gateway will also update the Meshtastic node's location with the location of the EUD.
 
 ## ATAK Plugin Settings
-
-***
 
 For best results, use the following settings on devices using the [Meshtastic ATAK Plugin.](https://meshtastic.org/docs/software/integrations/integrations-atak-plugin/).
 You can find the settings in ATAK by clicking the Settings tool -> Tool Preferences -> Specific Tool Preferences ->
@@ -119,8 +95,6 @@ Meshtastic Preferences.
 The rest of the settings can be changed as needed.
 
 ## Usage
-
-***
 
 All arguments are optional. If an argument is not specified its default value will be used.
 
@@ -137,15 +111,11 @@ All arguments are optional. If an argument is not specified its default value wi
 
 ## Permissions
 
-***
-
 When the Meshtastic node is connected via USB, TAK Meshtastic Gateway needs to be run as root (or via `sudo`) in Linux
 and in an administrator PowerShell or Command Prompt in Windows. Connecting to the Meshtastic node via TCP does
 not require elevated permissions.
 
 ## Example Usage Scenarios
-
-***
 
 ### Scenario 1
 

@@ -1,12 +1,8 @@
 # Meshtastic
 
-***
-
 Meshtastic support is available starting with version 1.2.0.
 
 ## Features
-
-***
 
 OpenTAKServer supports two-way communication between Meshtastic devices and EUDs connected to OpenTAKServer. This
 means that Meshtastic devices will show up on the maps of EUDs connected to OpenTAKServer and EUDs will show up on
@@ -18,22 +14,16 @@ can be exchanged between EUDs connected to OpenTAKServer and the EUD in the Mesh
 
 ## Notes
 
-***
-
 In order not to overload the Meshtastic network with too many messages, only PLI and GeoChat CoT messages will be
 published to Meshtastic devices. Data packages and other CoT's such as markers, routes, geofences, etc, will not be
 sent to the mesh network, even if a Meshtastic device is running ATAK with the ATAK Meshtastic plugin.
 
 ## Requirements
 
-***
-
 You will need at least two Meshtastic devices. One will be connected to a Wi-Fi network and act as a gateway while the
 others will be standard mesh nodes.
 
 ## Configuration
-
-***
 
 There are three configuration settings in `config.yml` for Meshtastic support:
 
@@ -45,16 +35,7 @@ There are three configuration settings in `config.yml` for Meshtastic support:
     - In order not to overload the Meshtastic network with too many messages, PLI CoT's from EUDs connected to OpenTAKServer
       will only be sent at this interval. This setting has no effect on GeoChat messages
 
-## Topology
-
-***
-
-A diagram will go here
-
-
 ## Gateway Node Setup
-
-***
 
 The gateway node is responsible for exchanging messages between OpenTAKServer and the Meshtastic network. You can
 have multiple gateway nodes connected to one OpenTAKServer and exchange messages on multiple Meshtastic channels.
@@ -62,15 +43,11 @@ The gateway node should be set to either the `CLIENT` or `ROUTER_CLIENT` role.
 
 ### Network Connection
 
-***
-
 The gateway node needs to be connected to a network that can reach your OpenTAKServer. This can be on the same LAN as
 OpenTAKServer, or it can be at a remote site that can reach your OpenTAKServer via VPN or the internet. Refer to
 Meshtastic's documentation on how to [enable network connectivity](https://meshtastic.org/docs/configuration/radio/network/).
 
 ### MQTT
-
-***
 
 Once the gateway node is connected to a network you must [enable MQTT](https://meshtastic.org/docs/configuration/module/mqtt/).
 The settings should be as follows:
@@ -88,8 +65,6 @@ The settings should be as follows:
 - Position Precision: High (Optional)
 
 ### Channels
-
-***
 
 OpenTAKServer's Web UI now includes a Meshtastic page which can generate channel configurations. In order to send
 messages from OpenTAKServer to the Meshtastic network, you must add a channel configuration on this UI page with the

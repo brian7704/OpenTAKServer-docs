@@ -1,7 +1,5 @@
 # Security
 
-***
-
 For enhanced security, it is recommended that you disable the TCP CoT streaming port and disable nginx from listening
 for unencrypted HTTP requests on ports 80 and 8080. All data sent and received over these ports is unencrypted.
 Any third party that intercepts the data will be able to see things such as EUD locations, passwords, geochats,
@@ -19,8 +17,6 @@ nginx by running `sudo systemctl restart nginx`.
 
 ## Blocking Port Scanning Bots
 
-***
-
 The [ipsum](https://github.com/stamparm/ipsum) GitHub repo maintains a list of malicious IP addresses that updates daily.
 Blocking these IP addresses can be done with the following bash script that is run via a cron job.
 
@@ -35,8 +31,6 @@ iptables -I INPUT -m set --match-set ipsum src -j DROP
 
 ### Setting up the ipsum Script
 
-***
-
 1. Copy and paste the above script to a file somewhere on your server, for example `/opt/ipsum.sh`.
 2. Make the script executable `sudo chmod +x /opt/ipsum.sh` (substitute `/opt/ipsum.sh` with the actual location you saved the script to)
 3. Add a cron job to run every day at midnight
@@ -45,8 +39,6 @@ iptables -I INPUT -m set --match-set ipsum src -j DROP
       3. Save the crontab file. If you're using `nano`, press `ctrl+o` to save, press `enter` to confirm, then `ctrl+x` to exit
 
 ## IPTables Rules
-
-***
 
 The following IPTables ruleset opens all ports used by OpenTAKServer and blocks all others. It also includes the ipsum ruleset.
 You can add or remove rules from this list as needed. After saving the rules to a file, you can load them with this command

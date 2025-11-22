@@ -1,13 +1,9 @@
 # Video Streaming
 
-***
-
 OpenTAKServer uses [MediaMTX](https://github.com/bluenviron/mediamtx) for video streaming and recording. It accepts
 streams from apps such as [OpenTAK ICU](https://github.com/brian7704/OpenTAK_ICU) and TAK ICU, as well as devices like drones and IP Cameras.
 
 ## Streaming From Your Browser
-
-***
 
 OpenTAKServer supports streaming from any device that has a browser and a camera. On the Video Streams page of
 OpenTAKServer's web UI there is a button labeled `Start Streaming`. Clicking that button will prompt the browser to ask
@@ -21,8 +17,6 @@ of the stream.
 
 ## Streaming Protocols
 
-***
-
 You can stream to MediaMTX using a variety of protocols:
 
 - RTSP(S)
@@ -34,11 +28,7 @@ You can stream to MediaMTX using a variety of protocols:
 
 ## Watching Video Streams
 
-***
-
 ### In Browser
-
-***
 
 In OpenTAKServer, click on `Video Streams`. In the list of streams, click the `Watch` button on the stream you want to view.
 A video player will show up below the list of streams. There is a known issue where the player sometimes doesn't show up.
@@ -48,15 +38,11 @@ Alternatively, you can copy the WebRTC link of the video and paste it in a new t
 
 ### In ATAK
 
-***
-
 When ATAK is connected to OpenTAKServer, open the Video tool, then tap the download button. ATAK will query the server
 for a list of video streams. Choose which stream to view and tap the `Ok` button. Next, edit the video settings and add your
 OpenTAKServer username and password. You can now view the video stream.
 
 ### In Kodi
-
-***
 
 There is an add-on for [Kodi](https://kodi.tv/) that allows you to watch streams and recordings from your server. The add-on
 works on all platforms that Kodi works on (Windows, macOS, Linux, Android, iOS, etc). To in stall the add-on, browse to
@@ -69,14 +55,10 @@ address, username, and password.
 
 ### In VLC
 
-***
-
 Copy the RTSP link from OpenTAKServer. In VLC, click Media -> Open Network Stream. Paste the RTSP link and click the Play
 button. You will be prompted for your OpenTAKServer username and password. Enter them and click Ok.
 
 ## Recording Streams
-
-***
 
 To record a stream, simply click on the stream's record switch. You can do this during a stream or while not streaming.
 Recording automatically starts when a stream goes live and stops one the stream stops. Recorded videos will be in
@@ -84,7 +66,5 @@ Recording automatically starts when a stream goes live and stops one the stream 
 in the navigation bar.
 
 ## Screenshot
-
-***
 
 ![!Video Streams](images/video_streams.png)

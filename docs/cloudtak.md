@@ -1,12 +1,8 @@
 # CloudTAK
 
-***
-
 OpenTAKServer is compatible with [CloudTAK](https://github.com/dfpc-coe/CloudTAK), a fully featured, in-browser TAK client.
 
 ## Notes
-
-***
 
 CloudTAK has only been tested using an FQDN with a trusted certificate (i.e. Let's Encrypt). It may still work without an FQDN or trusted cert, but SSL is always required.
 For best results you should create a subdomain. For example, if your FQDN is `example.com`, your subdomain could be `cloudtak.example.com`.
@@ -14,8 +10,6 @@ For best results you should create a subdomain. For example, if your FQDN is `ex
 If you need support, please ask in the OTS discord rather than contacting COTAK (the creators of CloudTAK).
 
 ## Installation
-
-***
 
 This guide assume that you're installing CloudTAK on the same server as OpenTAKServer.
 
@@ -41,8 +35,6 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 ```
 
 ### CloudTAK
-
-***
 
 1. Clone the CloudTAK repo
 

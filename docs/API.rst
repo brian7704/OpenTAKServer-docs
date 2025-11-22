@@ -1,8 +1,6 @@
 API
 ===
 
---------------
-
 Authentication
 --------------
 
@@ -10,16 +8,12 @@ All API calls except for ``/api/login`` require
 `authentication <authentication.md>`__. Some are restricted to
 administrators only.
 
---------------
-
 Pagination
 ----------
 
 Most ``GET`` queries are paginated. You can include the ``page`` and
 ``per_page`` parameters to specify which page to get and how many
 results should be returned.
-
---------------
 
 /api/status
 -----------
@@ -30,8 +24,6 @@ usage, OS type and version, etc.
 -  HTTP Method: ``GET``
 -  Access: Everyone
 
---------------
-
 /api/tcp/start
 --------------
 
@@ -39,8 +31,6 @@ Starts the TCP CoT streaming server.
 
 -  HTTP Method: ``GET``
 -  Access: Administrators only
-
---------------
 
 /api/tcp/stop
 -------------
@@ -50,8 +40,6 @@ Stops the TCP CoT streaming server.
 -  HTTP Method: ``GET``
 -  Access: Administrators only
 
---------------
-
 /api/ssl/start
 --------------
 
@@ -59,8 +47,6 @@ Starts the SSL CoT streaming server
 
 -  HTTP Method: ``GET``
 -  Access: Administrators only
-
---------------
 
 /api/ssl/stop
 -------------
@@ -70,8 +56,6 @@ Stops the TCP SSL streaming server
 -  HTTP Method: ``GET``
 -  Access: Administrators only
 
---------------
-
 /api/certificate
 ----------------
 
@@ -80,8 +64,6 @@ Downloads a certificate data package for the specified callsign
 -  HTTP Method: ``GET``
 -  Access: Administrators only
 -  Parameters: callsign
-
---------------
 
 .. _apicertificate-1:
 
@@ -95,8 +77,6 @@ Creates a certificate data package for an EUD
 -  Content Type: ``JSON``
 -  Content: ``{'uid': 'Android-123456789', 'callsign': 'BRAVO'}``
 
---------------
-
 /api/me
 -------
 
@@ -105,8 +85,6 @@ Returns user account details
 -  HTTP Method: ``GET``
 -  Access: Everyone
 
---------------
-
 /api/data_packages
 ------------------
 
@@ -114,8 +92,6 @@ Uploads a data package
 
 -  HTTP Method: ``POST``
 -  Access: Everyone
-
---------------
 
 .. _apidata_packages-1:
 
@@ -127,8 +103,6 @@ Deletes a data package
 -  HTTP Method: ``DELETE``
 -  Access: Everyone
 -  Parameters: ``hash`` - The sha256 hash of the data package to delete
-
---------------
 
 .. _apidata_packages-2:
 
@@ -151,8 +125,6 @@ Returns info about data packages
    -  ``page`` - Which page to get
    -  ``per_page`` - Number of results per page
 
---------------
-
 /api/data_packages/download
 ---------------------------
 
@@ -162,8 +134,6 @@ Downloads a data package
 -  Access: Everyone
 -  Parameters: ``hash`` - The sha256 hash of the data package to
    download
-
---------------
 
 /api/cot
 --------
@@ -181,8 +151,6 @@ Searches for CoTs stored in the database
    -  ``page``
    -  ``per_page``
 
---------------
-
 /api/alerts
 -----------
 
@@ -198,8 +166,6 @@ Searches for alerts stored in the database
    -  ``page``
    -  ``per_page``
 
---------------
-
 /api/point
 ----------
 
@@ -213,8 +179,6 @@ Searches for points stored in the database
    -  ``callsign`` - Callsign of the EUD that created the point
    -  ``page``
    -  ``per_page``
-
---------------
 
 /api/casevac
 ------------
@@ -230,8 +194,6 @@ Searches for CasEvacs that are stored in the database
    -  ``uid`` - UID of the CasEvac
    -  ``page``
    -  ``per_page``
-
---------------
 
 /api/markers
 ------------
@@ -256,8 +218,6 @@ Searches for markers stored in the database
       -  faker
 
    -  ``callsign`` - The marker’s callsign
-
---------------
 
 .. _apimarkers-1:
 
@@ -306,8 +266,6 @@ Adds a new marker or updates an existing one
    -  ``le`` - Linear 1-sigma error or an altitude range about the
       location in meters
 
---------------
-
 .. _apimarkers-2:
 
 /api/markers
@@ -320,8 +278,6 @@ Deletes a marker
 -  Parameters
 
    -  ``uid`` - The marker’s UID
-
---------------
 
 .. _apicasevac-1:
 
@@ -337,8 +293,6 @@ Searches for CasEvacs in the database
    -  ``callsign`` - The CasEvac’s Callsign
 
       -  ``uid`` - The CasEvac’s UID
-
---------------
 
 .. _apicasevac-2:
 

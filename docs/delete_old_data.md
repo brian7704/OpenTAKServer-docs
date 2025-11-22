@@ -1,7 +1,5 @@
 # Deleting Old Data
 
-***
-
 OpenTAKServer can periodically delete old data from the database. This feature can be enabled by an administrator on the
 Scheduled Jobs page of the UI. The default settings will delete data (markers, location data, R&B Lines, alerts, CoT messages, and EUDs)
 that are older than one week, or EUDs that haven't connected within the last week. This interval can be configured by adding or

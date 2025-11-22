@@ -1,7 +1,5 @@
 # Email
 
-***
-
 OpenTAKServer uses [Flask-Mailman](https://github.com/waynerv/flask-mailman) is used to handle emails. 
 Enabling email support also enables the following features:
 
@@ -10,8 +8,6 @@ Enabling email support also enables the following features:
 - Two-factor authentication via email
 
 ## Enabling Email Support
-
-***
 
 The following settings are required to enable email support. You can find them in your `config.yml` file.
 
@@ -30,15 +26,11 @@ You can find a full list of Flask-Mailman's settings in their [documentation](ht
 
 ## Gmail
 
-***
-
 If you plan to use a Gmail account to send emails, you will need to log into your account and enable an app password. Your
 regular password will not work in OpenTAKServer. See [Google's documentation](https://support.google.com/accounts/answer/185833?hl=en) 
 for details.
 
 ### Gmail settings
-
-***
 
 | Setting           | Value                     |
 |-------------------|---------------------------|

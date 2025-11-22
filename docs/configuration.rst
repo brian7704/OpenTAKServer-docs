@@ -1,12 +1,8 @@
 Configuration
 =============
 
---------------
-
 Config file
 -----------
-
---------------
 
 When you first start OpenTAKServer, a default configuration file will be
 generated for you at ``~/ots/config.yml``. You can override the defaults
@@ -14,8 +10,6 @@ there. You must restart OpenTAKServer for the changes to take effect.
 
 Secrets
 -------
-
---------------
 
 The following sensitive options will compromise the security of your
 server if they are leaked. If you are asking for support over public
@@ -31,8 +25,6 @@ publicly, change them immediately.
 * MAIL_PASSWORD
 
 Config Options
---------------
-
 --------------
 
 .. py:data:: DEBUG
@@ -57,8 +49,6 @@ Config Options
 
 OpenTAKServer Settings
 ----------------------
-
---------------
 
 .. py:data:: OTS_DATA_FOLDER
 
@@ -390,8 +380,6 @@ OpenTAKServer Settings
 Flask-Security
 --------------
 
---------------
-
 You can check
 `defaultconfig.py <https://github.com/brian7704/OpenTAKServer/blob/master/opentakserver/defaultconfig.py>`__
 for the settings that OpenTAKServer uses. To learn about each setting
@@ -399,8 +387,6 @@ you can check Flask-Security’s
 `documentation <https://flask-security-too.readthedocs.io/en/stable/configuration.html>`__.
 
 Flask-LDAP3-Login
------------------
-
 -----------------
 
 Flask-LDAP3-Login is used for LDAP support. See `their documentation <https://flask-ldap3-login.readthedocs.io/en/latest/>`__
@@ -418,7 +404,7 @@ for more details.
 
     Default: ``Blank String``
 
-.. py:data::
+.. py:data:: LDAP_USER_DN
 
     The LDAP server's user DN
 
@@ -444,8 +430,6 @@ for more details.
 
 Flask-Mailman settings
 ----------------------
-
---------------
 
 These settings only take effect if ``OTS_ENABLE_EMAIL`` is ``True``. The
 defaults will send email via a Gmail account, just provide your username
@@ -500,8 +484,6 @@ See `Email <email.md>`__ for details.
 MediaMTX
 --------
 
---------------
-
 OpenTAKServer’s default configuration assumes that MediaMTX is running
 on the same server and OpenTAKServer connects to it via the loopback
 interface. As of version 1.1.4, MediaMTX can now be hosted on a
@@ -525,9 +507,8 @@ and nginx.
 Max Upload Size
 ---------------
 
---------------
-
 OpenTAKServer’s default configuration limits the size of uploaded files,
 including data packages, to 100MB. This setting is found in the
 ``ots_http`` and ``ots_https`` nginx config files. In those files,
 change the line ``client_max_body_size 100M;`` to raise the limit.
+Change it to ``client_max_body_size 0;`` to disable the limit.

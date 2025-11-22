@@ -1,7 +1,5 @@
 # Let's Encrypt
 
-***
-
 If you have a domain name for your server you can use a Let's Encrypt certificate to secure the web UI. This also
 allows iTAK to register with the server using a QR code.
 
@@ -9,15 +7,11 @@ Before beginning, make sure your domain has a DNS A record that points to the pu
 
 ## ATAK and Trusted Certificates
 
-***
-
 Please note that ATAK does not use Android's trusted certificate store. It comes bundled with root CAs for Let's Encrypt
 and Digicert only. Other trusted certificate providers will result in a `TAK Server's Identity Could Not Be Verified` error
 even though most web browsers and OSes trust them.
 
 ## Ubuntu and Raspberry Pi OS
-
-***
 
 Use the following commands to obtain a certificate.
 

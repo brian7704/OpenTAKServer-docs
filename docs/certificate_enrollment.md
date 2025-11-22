@@ -1,26 +1,26 @@
 # Certificate Enrollment
-***
+
 OpenTAKServer supports client certificate enrollment which defaults to port `8446`.
 
 ## Authentication
-***
+
 Certificate enrollment requires authentication. You will need to register an account on your OpenTAKServer or
 have an administrator make an account for you.
 
 ## Prerequisites
-***
+
 The default port for certificate enrollment is `8446`. This port will use one of two types of certificates, self-signed 
 or Let's Encrypt. The default is to use self-signed certificates. If your server uses self-signed certificates, you will need
 a copy of your server's truststore certificate for auto-enrollment. You can download a copy at 
 `https://your_server_address/api/truststore` or by logging into the web UI and clicking the `Download Truststore` button.
 
 ## iTAK QR Code
-***
+
 In order to use a QR code for iTAK enrollment, your server must be configured with a signed certificate from Let's Encrypt
 or a similar trusted certificate authority.
 
 ## ATAK QR Code
-***
+
 Starting in version 1.5.0, OpenTAKServer supports QR code generation for ATAK certificate registration. This feature requires that your
 server has a domain name with a trusted cert from Let's Encrypt or a similar trusted certificate authority. When generating
 a QR code, you can optionally specify an expiration date and a maximum number of uses. If either or both are specified,
@@ -42,7 +42,7 @@ code to start the certificate registration process.
 
 
 ## Instructions
-***
+
 1. On the main ATAK screen, tap the hamburger icon in the top right corner and tap `Settings`
 2. Tap on `Network Preferences`
 3. Tap on `TAK Servers`
@@ -67,8 +67,6 @@ code to start the certificate registration process.
 13. Any data packages, plugins, and device profiles that have been set by the server admin to install on enrollment will be automatically installed
 
 ### Screenshots
-
-***
 
 ![!Settings](images/certificate_enrollment/server_settings.png)
 
