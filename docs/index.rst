@@ -80,7 +80,6 @@ Planned Features
 --------------
 
 -  Federation
--  Channels/Groups
 -  Pull data from networked SDRs (ie dump1090, rtl_ais, rtl_tcp, etc)
 -  Traccar integration
 
@@ -126,6 +125,7 @@ open source.
    API.rst
    lets_encrypt.md
    data_packages.md
+   groups.rst
    security.md
    database.md
    cot_routing.md

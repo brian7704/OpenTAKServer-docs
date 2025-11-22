@@ -3,6 +3,6 @@
 *.iml
 out
 gen
-site
+_build
 
 _build
