@@ -8,8 +8,6 @@
 OpenTAKServer
 =============
 
---------------
-
 |PyPI - Downloads| |PyPI - Version| |Discord| |GitHub Release Date|
 
 OpenTAKServer (OTS) is yet another open source TAK Server for ATAK,
@@ -23,8 +21,6 @@ us on our `Discord server <https://discord.gg/6uaVHjtfXN>`__
 
 Current Features
 ----------------
-
---------------
 
 -  Support for ATAK 4.8 and up (Older versions may work, needs to be
    tested)
@@ -64,8 +60,6 @@ Current Features
 Supported Platforms
 -------------------
 
---------------
-
 There are installer scripts for Ubuntu, Raspberry Pi in the OpenTAKServer-Installer
 repo and an official docker image is in the works. Other platforms can be supported as well.
 The main requirements are Python 3.10 or greater, RabbitMQ, and OpenSSL.
@@ -73,16 +67,12 @@ The main requirements are Python 3.10 or greater, RabbitMQ, and OpenSSL.
 Planned Features
 ----------------
 
---------------
-
 -  Federation
 -  Pull data from networked SDRs (ie dump1090, rtl_ais, rtl_tcp, etc)
 -  Traccar integration
 
 Supporting The Project
 ----------------------
-
---------------
 
 If you’d like to support this project you can contribute
 `here <https://buymeacoffee.com/opentakserver>`__. Contributions are
@@ -98,8 +88,6 @@ open source.
    :maxdepth: 2
    :caption: Contents:
    :hidden:
-
-   main.rst
 
 .. toctree::
    :caption: Installation:
@@ -137,6 +125,8 @@ open source.
    symbology.md
    video_streaming.md
    meshtastic.md
+   generated_api.rst
+   models.rst
 
 .. toctree::
    :caption: Server Plugins

@@ -6,15 +6,23 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../../OpenTAKServer'))
+
 project = 'OpenTAKServer'
 copyright = '2025, Brian Wallen'
 author = 'Brian Wallen'
-release = '1.5.0'
+release = '1.6.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser', 'sphinx_copybutton', 'sphinxcontrib.lightbox2', 'sphinxext.opengraph']
+extensions = ['myst_parser', 'sphinx_copybutton', 'sphinxcontrib.lightbox2', 'sphinxext.opengraph', 'sphinx.ext.autosectionlabel',
+              'sphinx.ext.autodoc', 'sphinx.ext.napoleon', 'sphinx.ext.coverage', 'sphinx.ext.autosummary', 'sphinxcontrib.autohttp.flask',
+              'sphinx_sqlalchemy',]
+
+autosummary_generate = True
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
