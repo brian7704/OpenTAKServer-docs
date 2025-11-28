@@ -7,28 +7,20 @@
 
 # OpenTAK ICU
 
-***
-
 OpenTAK ICU is a video streaming app based on [RootEncoder](https://github.com/pedroSG94/RootEncoder) 
 that can stream audio and video to RTSP(S), RTMP(S), and SRT servers such as 
 [MediaMTX](https://github.com/bluenviron/mediamtx). Its primary focus is to work with the TAK ecosystem.
 
 ## Why?
 
-***
-
 While ATAK already has the TAK ICU plugin, it doesn't seem to support a few features. Specifically
 it doesn't support streaming audio or using authentication and encryption (RTSPS) at the same time.
 
 ## Download
 
-***
-
 Get the APK from this repo's [latest release](https://github.com/brian7704/OpenTAK_ICU/releases/latest)
 
 ## Features
-
-***
 
 - Video Codecs
     - H264
@@ -62,21 +54,15 @@ is minimized or the screen is off.
 
 ## Planned features
 
-***
-
 - KLV
 - Stream your device's screen instead of camera
 
 ## Servers
 
-***
-
 This app has been developed using [MediaMTX](https://github.com/bluenviron/mediamtx) as the 
 streaming server but any RTSP/RTMP server should work.
 
 ## Viewing OpenTAK ICU streams from MediaMTX in ATAK
-
-***
 
 In the video tool, tap the + symbol to add a new stream and use the following settings:
 - Type: rtsp
@@ -88,8 +74,6 @@ In the video tool, tap the + symbol to add a new stream and use the following se
   between your EUD and the server.
 
 ## Viewing the stream in a browser
-
-***
 
 When using MediaMTX and streaming with H264, you can watch the live stream in a browser by going to
 
@@ -105,23 +89,17 @@ support AAC audio so you will need to use OPUS or G711 if you're viewing the str
 
 ## Viewing streams in VLC
 
-***
-
 1. Click on Media -> Open Network Stream
 2. In the URL field enter `rtsp://your_server_address:8554/your_path`
 3. Click Play
 
 ## Adaptive Bitrate
 
-***
-
 When adaptive bitrate is enabled, the video bitrate will change based on your network/internet connection.
 If the connection can't send packets fast enough, the bitrate will lower. If the connection is good
 the bitrate will max out at what the bitrate setting's value is.
 
 ## Servers with self-signed certificates
-
-***
 
 If your server is using self signed certificates and you wish to stream encrypted audio and video,
 you'll need your server's trust store certificate in PKCS12 (.p12 file extension) format. If your 
@@ -132,11 +110,7 @@ is the correct format and that the password is correct.
 
 ## Feature Comparison
 
-***
-
 ### Streaming Protocols
-
-***
 
 |               | TAK ICU | OpenTAK ICU |
 |---------------|---------|-------------|
@@ -149,8 +123,6 @@ is the correct format and that the password is correct.
 
 ### Video Codecs
 
-***
-
 |      | TAK ICU | OpenTAK ICU |
 |------|---------|-------------|
 | H264 | Yes     | Yes         |
@@ -159,8 +131,6 @@ is the correct format and that the password is correct.
 
 ### Audio Codecs
 
-***
-
 |      | TAK ICU | OpenTAK ICU |
 |------|---------|-------------|
 | AAC  | No      | Yes         |
@@ -168,8 +138,6 @@ is the correct format and that the password is correct.
 | OPUS | No      | Yes         |
 
 ### Other Features
-
-***
 
 |                                      | TAK ICU                    | OpenTAK ICU              |
 |--------------------------------------|----------------------------|--------------------------|
