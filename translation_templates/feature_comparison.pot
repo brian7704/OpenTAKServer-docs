@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-29 03:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../feature_comparison.md:1
+msgid "Feature Comparison"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "OpenTAKServer"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "FreeTAKServer"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "TAKServer"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "TCP"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Yes"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "SSL"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Automatic Certificate Authority Generation"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "No"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Certificate Enrollment"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Federation"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "No (Coming in 1.7.0)"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Data Packages"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "DataSync"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "ExCheck"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Coming Soon"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Video Streaming"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Installed Separately"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Video Stream Recording/Playback"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Mumble Server Authentication"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Web UI"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "EUD Authentication"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "ADS-B Data From Airplanes.live"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "AIS Data From AISHub.net"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Database"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "SqlAlchemy (Defaults to PostGIS)"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "SqlAlchemy (Defaults to SQLite)"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "PostgreSQL"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Runs on Raspberry Pi"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Meshtastic support"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Update Server"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Device Profiles"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Groups/Channels"
+msgstr ""
+
+#: ../../feature_comparison.md:0
+msgid "Actively Developed"
+msgstr ""

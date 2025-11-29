@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-29 03:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../mumble.md:1
+msgid "Mumble"
+msgstr ""
+
+#: ../../mumble.md:3
+msgid "OpenTAKServer supports acting as an authentication provider for a Mumble server. This forces Mumble clients to connect using their OpenTAKServer username and password. It also prevents anyone without an account on your OpenTAKServer,  or an account that has been disabled by an administrator, from connecting."
+msgstr ""
+
+#: ../../mumble.md:7
+msgid "OpenTAKServer Configuration"
+msgstr ""
+
+#: ../../mumble.md:9
+msgid "Enable Mumble authentication by setting `OTS_ENABLE_MUMBLE_AUTHENTICATION` to `true` in your `config.yml`. It will  connect to Mumble's Ice server at 127.0.0.1:6502."
+msgstr ""
+
+#: ../../mumble.md:12
+msgid "Mumble Configuration"
+msgstr ""
+
+#: ../../mumble.md:14
+msgid "In your Mumble server's config file, make sure you uncomment or add this line `ice=\"tcp -h 127.0.0.1 -p 6502\"`"
+msgstr ""

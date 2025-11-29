@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-29 03:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../device_profiles.md:1
+msgid "Device Profiles"
+msgstr ""
+
+#: ../../device_profiles.md:3
+msgid "Device profiles allow administrators to automatically push settings out to EUDs. This can help keep settings in all EUDs in sync. Future versions of OpenTAKServer will support assigning different settings to specific users or groups of users."
+msgstr ""
+
+#: ../../device_profiles.md:6
+msgid "Usage"
+msgstr ""
+
+#: ../../device_profiles.md:8
+msgid "While logged into OpenTAKServer as an administrator, click on `Device Profiles` in the navbar. There will be a list of settings that the administrator has already enabled as well as an `Add Device Profile` button."
+msgstr ""
+
+#: ../../device_profiles.md:11
+msgid "In the settings list there are three switches for `Install on Enrollment`, `Install on Connection`, and `Active`."
+msgstr ""
+
+#: ../../device_profiles.md:13
+msgid "`Install on Enrollment` - Installs the setting on an EUD after a successful [certificate enrollment](certificate_enrollment.md)."
+msgstr ""
+
+#: ../../device_profiles.md:14
+msgid "`Install on Connection` - Installs the setting the next time the EUD connects to the server."
+msgstr ""
+
+#: ../../device_profiles.md:15
+msgid "`Active` - Enables or disables the setting from being installed on EUDs, even if `Install on Enrollment` or `Install on Connection` are enabled."
+msgstr ""
+
+#: ../../device_profiles.md:17
+msgid "One or both of `Install on Enrollment` and `Install on Connection` may be enabled for each setting."
+msgstr ""
+
+#: ../../device_profiles.md:19
+msgid "Settings keys and Values"
+msgstr ""
+
+#: ../../device_profiles.md:21
+msgid "Please refer to [MyTeckNet's Spreadsheet](https://mytecknet.com/creating-tak-data-packages-for-enrollment/#atak-preference-key) for the most complete list of possible settings and their values. Also make sure to set the `Value Type` field is set to the value of the setting's Type field in the MyTeckNeck spreadsheet."
+msgstr ""
+
+#: ../../device_profiles.md:25
+msgid "Screenshot"
+msgstr ""
+
+#: ../../device_profiles.md:27
+msgid "![!Screenshot](images/device_profiles.png)"
+msgstr ""
+
+#: ../../device_profiles.md:27
+msgid "!Screenshot"
+msgstr ""

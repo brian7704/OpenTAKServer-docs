@@ -1,0 +1,670 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-29 03:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../API_old.md:1
+msgid "API"
+msgstr ""
+
+#: ../../API_old.md:5
+msgid "Authentication"
+msgstr ""
+
+#: ../../API_old.md:7
+msgid "All API calls except for `/api/login` require [authentication](authentication.md). Some are restricted to administrators only."
+msgstr ""
+
+#: ../../API_old.md:11
+msgid "Pagination"
+msgstr ""
+
+#: ../../API_old.md:13
+msgid "Most `GET` queries are paginated. You can include the `page` and `per_page` parameters to specify which page to get and how many results should be returned."
+msgstr ""
+
+#: ../../API_old.md:18
+msgid "/api/status"
+msgstr ""
+
+#: ../../API_old.md:20
+msgid "Returns information about the server including disk usage, memory, usage, OS type and version, etc."
+msgstr ""
+
+#: ../../API_old.md:22
+#: ../../API_old.md:31
+#: ../../API_old.md:40
+#: ../../API_old.md:49
+#: ../../API_old.md:58
+#: ../../API_old.md:67
+#: ../../API_old.md:88
+#: ../../API_old.md:116
+#: ../../API_old.md:135
+#: ../../API_old.md:145
+#: ../../API_old.md:161
+#: ../../API_old.md:176
+#: ../../API_old.md:190
+#: ../../API_old.md:205
+#: ../../API_old.md:266
+msgid "HTTP Method: `GET`"
+msgstr ""
+
+#: ../../API_old.md:23
+#: ../../API_old.md:89
+#: ../../API_old.md:98
+#: ../../API_old.md:107
+#: ../../API_old.md:117
+#: ../../API_old.md:136
+#: ../../API_old.md:146
+#: ../../API_old.md:162
+#: ../../API_old.md:177
+#: ../../API_old.md:191
+#: ../../API_old.md:206
+#: ../../API_old.md:228
+#: ../../API_old.md:256
+#: ../../API_old.md:267
+#: ../../API_old.md:279
+msgid "Access: Everyone"
+msgstr ""
+
+#: ../../API_old.md:27
+msgid "/api/tcp/start"
+msgstr ""
+
+#: ../../API_old.md:29
+msgid "Starts the TCP CoT streaming server."
+msgstr ""
+
+#: ../../API_old.md:32
+#: ../../API_old.md:41
+#: ../../API_old.md:50
+#: ../../API_old.md:59
+#: ../../API_old.md:68
+#: ../../API_old.md:78
+msgid "Access: Administrators only"
+msgstr ""
+
+#: ../../API_old.md:36
+msgid "/api/tcp/stop"
+msgstr ""
+
+#: ../../API_old.md:38
+msgid "Stops the TCP CoT streaming server."
+msgstr ""
+
+#: ../../API_old.md:45
+msgid "/api/ssl/start"
+msgstr ""
+
+#: ../../API_old.md:47
+msgid "Starts the SSL CoT streaming server"
+msgstr ""
+
+#: ../../API_old.md:54
+msgid "/api/ssl/stop"
+msgstr ""
+
+#: ../../API_old.md:56
+msgid "Stops the TCP SSL streaming server"
+msgstr ""
+
+#: ../../API_old.md:63
+#: ../../API_old.md:73
+msgid "/api/certificate"
+msgstr ""
+
+#: ../../API_old.md:65
+msgid "Downloads a certificate data package for the specified callsign"
+msgstr ""
+
+#: ../../API_old.md:69
+msgid "Parameters: callsign"
+msgstr ""
+
+#: ../../API_old.md:75
+msgid "Creates a certificate data package for an EUD"
+msgstr ""
+
+#: ../../API_old.md:77
+#: ../../API_old.md:97
+#: ../../API_old.md:227
+msgid "HTTP Method: `POST`"
+msgstr ""
+
+#: ../../API_old.md:79
+msgid "Content Type: `JSON`"
+msgstr ""
+
+#: ../../API_old.md:80
+msgid "Content: `{'uid': 'Android-123456789', 'callsign': 'BRAVO'}`"
+msgstr ""
+
+#: ../../API_old.md:84
+msgid "/api/me"
+msgstr ""
+
+#: ../../API_old.md:86
+msgid "Returns user account details"
+msgstr ""
+
+#: ../../API_old.md:93
+#: ../../API_old.md:102
+#: ../../API_old.md:112
+msgid "/api/data_packages"
+msgstr ""
+
+#: ../../API_old.md:95
+msgid "Uploads a data package"
+msgstr ""
+
+#: ../../API_old.md:104
+msgid "Deletes a data package"
+msgstr ""
+
+#: ../../API_old.md:106
+#: ../../API_old.md:255
+msgid "HTTP Method: `DELETE`"
+msgstr ""
+
+#: ../../API_old.md:108
+msgid "Parameters: `hash` - The sha256 hash of the data package to delete"
+msgstr ""
+
+#: ../../API_old.md:114
+msgid "Returns info about data packages"
+msgstr ""
+
+#: ../../API_old.md:118
+#: ../../API_old.md:147
+msgid "Parameters: The following parameters are all optional"
+msgstr ""
+
+#: ../../API_old.md:119
+msgid "`hash` - The sha256 hash of the data package"
+msgstr ""
+
+#: ../../API_old.md:120
+msgid "`filename` - Data package filename."
+msgstr ""
+
+#: ../../API_old.md:121
+msgid "`creator_uid`"
+msgstr ""
+
+#: ../../API_old.md:122
+msgid "`keywords`"
+msgstr ""
+
+#: ../../API_old.md:123
+msgid "`mime_type`"
+msgstr ""
+
+#: ../../API_old.md:124
+msgid "`size`"
+msgstr ""
+
+#: ../../API_old.md:125
+msgid "`tool`"
+msgstr ""
+
+#: ../../API_old.md:126
+msgid "`page` - Which page to get"
+msgstr ""
+
+#: ../../API_old.md:127
+msgid "`per_page` - Number of results per page"
+msgstr ""
+
+#: ../../API_old.md:131
+msgid "/api/data_packages/download"
+msgstr ""
+
+#: ../../API_old.md:133
+msgid "Downloads a data package"
+msgstr ""
+
+#: ../../API_old.md:137
+msgid "Parameters: `hash` - The sha256 hash of the data package to download"
+msgstr ""
+
+#: ../../API_old.md:141
+msgid "/api/cot"
+msgstr ""
+
+#: ../../API_old.md:143
+msgid "Searches for CoTs stored in the database"
+msgstr ""
+
+#: ../../API_old.md:148
+msgid "`how`"
+msgstr ""
+
+#: ../../API_old.md:149
+msgid "`type`"
+msgstr ""
+
+#: ../../API_old.md:150
+msgid "`sender_callsign`"
+msgstr ""
+
+#: ../../API_old.md:151
+#: ../../API_old.md:165
+msgid "`sender_uid`"
+msgstr ""
+
+#: ../../API_old.md:152
+#: ../../API_old.md:167
+#: ../../API_old.md:181
+#: ../../API_old.md:196
+msgid "`page`"
+msgstr ""
+
+#: ../../API_old.md:153
+#: ../../API_old.md:168
+#: ../../API_old.md:182
+#: ../../API_old.md:197
+msgid "`per_page`"
+msgstr ""
+
+#: ../../API_old.md:157
+msgid "/api/alerts"
+msgstr ""
+
+#: ../../API_old.md:159
+msgid "Searches for alerts stored in the database"
+msgstr ""
+
+#: ../../API_old.md:163
+msgid "Parameters:"
+msgstr ""
+
+#: ../../API_old.md:164
+msgid "`uid`"
+msgstr ""
+
+#: ../../API_old.md:166
+msgid "`alert_type`"
+msgstr ""
+
+#: ../../API_old.md:172
+msgid "/api/point"
+msgstr ""
+
+#: ../../API_old.md:174
+msgid "Searches for points stored in the database"
+msgstr ""
+
+#: ../../API_old.md:178
+#: ../../API_old.md:192
+#: ../../API_old.md:207
+#: ../../API_old.md:257
+#: ../../API_old.md:268
+msgid "Parameters"
+msgstr ""
+
+#: ../../API_old.md:179
+msgid "`uid` - UID of the EUD that created the point"
+msgstr ""
+
+#: ../../API_old.md:180
+#: ../../API_old.md:194
+msgid "`callsign` - Callsign of the EUD that created the point"
+msgstr ""
+
+#: ../../API_old.md:186
+#: ../../API_old.md:262
+#: ../../API_old.md:274
+msgid "/api/casevac"
+msgstr ""
+
+#: ../../API_old.md:188
+msgid "Searches for CasEvacs that are stored in the database"
+msgstr ""
+
+#: ../../API_old.md:193
+msgid "`sender_uid` - UID of the EUD that created the point"
+msgstr ""
+
+#: ../../API_old.md:195
+msgid "`uid` - UID of the CasEvac"
+msgstr ""
+
+#: ../../API_old.md:201
+#: ../../API_old.md:223
+#: ../../API_old.md:251
+msgid "/api/markers"
+msgstr ""
+
+#: ../../API_old.md:203
+msgid "Searches for markers stored in the database"
+msgstr ""
+
+#: ../../API_old.md:208
+msgid "`uid` - The marker's unique ID"
+msgstr ""
+
+#: ../../API_old.md:209
+msgid "`affiliation` - One of the following"
+msgstr ""
+
+#: ../../API_old.md:210
+msgid "friendly"
+msgstr ""
+
+#: ../../API_old.md:211
+msgid "hostile"
+msgstr ""
+
+#: ../../API_old.md:212
+msgid "unknown"
+msgstr ""
+
+#: ../../API_old.md:213
+msgid "pending"
+msgstr ""
+
+#: ../../API_old.md:214
+msgid "assumed"
+msgstr ""
+
+#: ../../API_old.md:215
+msgid "neutral"
+msgstr ""
+
+#: ../../API_old.md:216
+msgid "suspect"
+msgstr ""
+
+#: ../../API_old.md:217
+msgid "joker"
+msgstr ""
+
+#: ../../API_old.md:218
+msgid "faker"
+msgstr ""
+
+#: ../../API_old.md:219
+msgid "`callsign` - The marker's callsign"
+msgstr ""
+
+#: ../../API_old.md:225
+msgid "Adds a new marker or updates an existing one"
+msgstr ""
+
+#: ../../API_old.md:229
+#: ../../API_old.md:280
+msgid "Content Type: JSON"
+msgstr ""
+
+#: ../../API_old.md:230
+msgid "Required data in the JSON body"
+msgstr ""
+
+#: ../../API_old.md:231
+#: ../../API_old.md:284
+msgid "`latitude` - float, must be >= -90 and <= 90"
+msgstr ""
+
+#: ../../API_old.md:232
+#: ../../API_old.md:285
+msgid "`longitude` - float, must be >= -180 and <= 180"
+msgstr ""
+
+#: ../../API_old.md:233
+msgid "`name` - name/callsign of the marker"
+msgstr ""
+
+#: ../../API_old.md:234
+#: ../../API_old.md:282
+msgid "`uid` - An identifier in UUID4 format. If no marker exists with this UUID, a new on is created. Otherwise, the existing marker is updated."
+msgstr ""
+
+#: ../../API_old.md:235
+#: ../../API_old.md:286
+msgid "Optional data in the JSON body"
+msgstr ""
+
+#: ../../API_old.md:236
+msgid "`type` - The CoT type, defaults to `a-u-G` if none is given. There are too many possible valid values to list but here are a few examples. See [this chart](https://www.spatialillusions.com/milsymbol/docs/milsymbol-2525c.html#heading-1) from milsymbol for more examples."
+msgstr ""
+
+#: ../../API_old.md:237
+msgid "`a-f-G` - Affiliation friendly, battle dimension ground"
+msgstr ""
+
+#: ../../API_old.md:238
+msgid "`a-h-U` - Affiliation hostile, battle dimension subsurface"
+msgstr ""
+
+#: ../../API_old.md:239
+msgid "`a-j-A` - Affiliation joker, battle dimension airborne"
+msgstr ""
+
+#: ../../API_old.md:240
+msgid "`course` - The direction of travel in compass degrees. Must be >= 0 and < 360. Defaults to 0."
+msgstr ""
+
+#: ../../API_old.md:241
+msgid "`azimuth` - The azimuth in compass degrees. Must be >= 0 and < 360. Defaults to 0."
+msgstr ""
+
+#: ../../API_old.md:242
+msgid "`speed` - The speed in INSERT_UNIT_HERE. Must be >= 0. Defaults to 0."
+msgstr ""
+
+#: ../../API_old.md:243
+msgid "`battery` - The remaining battery percentage. Must be >= 0 and <= 100. Defaults to NULL."
+msgstr ""
+
+#: ../../API_old.md:244
+msgid "`fov` - The camera's field of vision in compass degrees. This will show a camera's view shed on the map."
+msgstr ""
+
+#: ../../API_old.md:245
+msgid "`ce` - Circular 1-sigma or a circular area about the location in meters"
+msgstr ""
+
+#: ../../API_old.md:246
+msgid "`hae` - Height above the WGS ellipsoid in meters"
+msgstr ""
+
+#: ../../API_old.md:247
+msgid "`le` - Linear 1-sigma error or an altitude range about the location in meters"
+msgstr ""
+
+#: ../../API_old.md:253
+msgid "Deletes a marker"
+msgstr ""
+
+#: ../../API_old.md:258
+msgid "`uid` - The marker's UID"
+msgstr ""
+
+#: ../../API_old.md:264
+msgid "Searches for CasEvacs in the database"
+msgstr ""
+
+#: ../../API_old.md:269
+msgid "`callsign` - The CasEvac's Callsign"
+msgstr ""
+
+#: ../../API_old.md:270
+msgid "`uid` - The CasEvac's UID"
+msgstr ""
+
+#: ../../API_old.md:276
+msgid "Add or update a CasEvac"
+msgstr ""
+
+#: ../../API_old.md:278
+msgid "HTTP Method `POST`"
+msgstr ""
+
+#: ../../API_old.md:281
+msgid "Required data in JSON body"
+msgstr ""
+
+#: ../../API_old.md:283
+msgid "`title` - Name of the CasEvac that will appear on the map"
+msgstr ""
+
+#: ../../API_old.md:287
+msgid "`ambulatory` - Integer"
+msgstr ""
+
+#: ../../API_old.md:288
+msgid "`casevac` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:289
+msgid "`child` - Integer"
+msgstr ""
+
+#: ../../API_old.md:290
+msgid "`enemy` - Integer"
+msgstr ""
+
+#: ../../API_old.md:291
+msgid "`epw` - Integer"
+msgstr ""
+
+#: ../../API_old.md:292
+msgid "`equipment_detail` - String"
+msgstr ""
+
+#: ../../API_old.md:293
+msgid "`equipment_none` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:294
+msgid "`equipment_other` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:295
+msgid "`extration_equipment` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:296
+msgid "`freq` - Integer"
+msgstr ""
+
+#: ../../API_old.md:297
+msgid "`friendlies` - String"
+msgstr ""
+
+#: ../../API_old.md:298
+msgid "`hlz_marking` - Integer"
+msgstr ""
+
+#: ../../API_old.md:299
+msgid "`hlz_remarks` - String"
+msgstr ""
+
+#: ../../API_old.md:300
+msgid "`hoist` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:301
+msgid "`litter` - Integer"
+msgstr ""
+
+#: ../../API_old.md:302
+msgid "`marked_by` - String"
+msgstr ""
+
+#: ../../API_old.md:303
+msgid "`medline_remarks` - String"
+msgstr ""
+
+#: ../../API_old.md:304
+msgid "`nonus_civilian` - Integer"
+msgstr ""
+
+#: ../../API_old.md:305
+msgid "`nonus_military` - Integer"
+msgstr ""
+
+#: ../../API_old.md:306
+msgid "`obstacles` - String"
+msgstr ""
+
+#: ../../API_old.md:307
+msgid "`priority` - Integer"
+msgstr ""
+
+#: ../../API_old.md:308
+msgid "`routine` - Integer"
+msgstr ""
+
+#: ../../API_old.md:309
+msgid "`security` - Integer"
+msgstr ""
+
+#: ../../API_old.md:310
+msgid "`terrain_loose` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:311
+msgid "`terrain_other` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:312
+msgid "`terrain_other_detail` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:313
+msgid "`terrain_detail` - String"
+msgstr ""
+
+#: ../../API_old.md:314
+msgid "`terrain_none` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:315
+msgid "`terrain_rough` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:316
+msgid "`terrain_slope` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:317
+msgid "`terrain_slope_dir` - String"
+msgstr ""
+
+#: ../../API_old.md:318
+msgid "`urgent` - Integer"
+msgstr ""
+
+#: ../../API_old.md:319
+msgid "`us_civilian` - Integer"
+msgstr ""
+
+#: ../../API_old.md:320
+msgid "`us_military` - Integer"
+msgstr ""
+
+#: ../../API_old.md:321
+msgid "`ventilator` - Boolean"
+msgstr ""
+
+#: ../../API_old.md:322
+msgid "`winds_are_from` - String"
+msgstr ""
+
+#: ../../API_old.md:323
+msgid "`zone_prot_selection` - Integer"
+msgstr ""
