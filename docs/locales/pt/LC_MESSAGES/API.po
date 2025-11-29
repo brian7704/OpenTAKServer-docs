@@ -1,0 +1,646 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../API.rst:2
+msgid "API"
+msgstr ""
+
+#: ../../API.rst:5
+msgid "Authentication"
+msgstr ""
+
+#: ../../API.rst:7
+msgid ""
+"All API calls except for ``/api/login`` require `authentication "
+"<authentication.md>`__. Some are restricted to administrators only."
+msgstr ""
+
+#: ../../API.rst:12
+msgid "Pagination"
+msgstr ""
+
+#: ../../API.rst:14
+msgid ""
+"Most ``GET`` queries are paginated. You can include the ``page`` and "
+"``per_page`` parameters to specify which page to get and how many results"
+" should be returned."
+msgstr ""
+
+#: ../../API.rst:19
+msgid "/api/status"
+msgstr ""
+
+#: ../../API.rst:21
+msgid ""
+"Returns information about the server including disk usage, memory, usage,"
+" OS type and version, etc."
+msgstr ""
+
+#: ../../API.rst:24 ../../API.rst:32 ../../API.rst:40 ../../API.rst:48
+#: ../../API.rst:56 ../../API.rst:64 ../../API.rst:85 ../../API.rst:114
+#: ../../API.rst:133 ../../API.rst:143 ../../API.rst:159 ../../API.rst:174
+#: ../../API.rst:188 ../../API.rst:203 ../../API.rst:289
+msgid "HTTP Method: ``GET``"
+msgstr ""
+
+#: ../../API.rst:25 ../../API.rst:86 ../../API.rst:94 ../../API.rst:104
+#: ../../API.rst:115 ../../API.rst:134 ../../API.rst:144 ../../API.rst:160
+#: ../../API.rst:175 ../../API.rst:189 ../../API.rst:204 ../../API.rst:230
+#: ../../API.rst:277 ../../API.rst:290 ../../API.rst:305
+msgid "Access: Everyone"
+msgstr ""
+
+#: ../../API.rst:28
+msgid "/api/tcp/start"
+msgstr ""
+
+#: ../../API.rst:30
+msgid "Starts the TCP CoT streaming server."
+msgstr ""
+
+#: ../../API.rst:33 ../../API.rst:41 ../../API.rst:49 ../../API.rst:57
+#: ../../API.rst:65 ../../API.rst:76
+msgid "Access: Administrators only"
+msgstr ""
+
+#: ../../API.rst:36
+msgid "/api/tcp/stop"
+msgstr ""
+
+#: ../../API.rst:38
+msgid "Stops the TCP CoT streaming server."
+msgstr ""
+
+#: ../../API.rst:44
+msgid "/api/ssl/start"
+msgstr ""
+
+#: ../../API.rst:46
+msgid "Starts the SSL CoT streaming server"
+msgstr ""
+
+#: ../../API.rst:52
+msgid "/api/ssl/stop"
+msgstr ""
+
+#: ../../API.rst:54
+msgid "Stops the TCP SSL streaming server"
+msgstr ""
+
+#: ../../API.rst:60 ../../API.rst:71
+msgid "/api/certificate"
+msgstr ""
+
+#: ../../API.rst:62
+msgid "Downloads a certificate data package for the specified callsign"
+msgstr ""
+
+#: ../../API.rst:66
+msgid "Parameters: callsign"
+msgstr ""
+
+#: ../../API.rst:73
+msgid "Creates a certificate data package for an EUD"
+msgstr ""
+
+#: ../../API.rst:75 ../../API.rst:93 ../../API.rst:229
+msgid "HTTP Method: ``POST``"
+msgstr ""
+
+#: ../../API.rst:77
+msgid "Content Type: ``JSON``"
+msgstr ""
+
+#: ../../API.rst:78
+#, python-brace-format
+msgid "Content: ``{'uid': 'Android-123456789', 'callsign': 'BRAVO'}``"
+msgstr ""
+
+#: ../../API.rst:81
+msgid "/api/me"
+msgstr ""
+
+#: ../../API.rst:83
+msgid "Returns user account details"
+msgstr ""
+
+#: ../../API.rst:89 ../../API.rst:99 ../../API.rst:110
+msgid "/api/data_packages"
+msgstr ""
+
+#: ../../API.rst:91
+msgid "Uploads a data package"
+msgstr ""
+
+#: ../../API.rst:101
+msgid "Deletes a data package"
+msgstr ""
+
+#: ../../API.rst:103 ../../API.rst:276
+msgid "HTTP Method: ``DELETE``"
+msgstr ""
+
+#: ../../API.rst:105
+msgid "Parameters: ``hash`` - The sha256 hash of the data package to delete"
+msgstr ""
+
+#: ../../API.rst:112
+msgid "Returns info about data packages"
+msgstr ""
+
+#: ../../API.rst:116 ../../API.rst:145
+msgid "Parameters: The following parameters are all optional"
+msgstr ""
+
+#: ../../API.rst:118
+msgid "``hash`` - The sha256 hash of the data package"
+msgstr ""
+
+#: ../../API.rst:119
+msgid "``filename`` - Data package filename."
+msgstr ""
+
+#: ../../API.rst:120
+msgid "``creator_uid``"
+msgstr ""
+
+#: ../../API.rst:121
+msgid "``keywords``"
+msgstr ""
+
+#: ../../API.rst:122
+msgid "``mime_type``"
+msgstr ""
+
+#: ../../API.rst:123
+msgid "``size``"
+msgstr ""
+
+#: ../../API.rst:124
+msgid "``tool``"
+msgstr ""
+
+#: ../../API.rst:125
+msgid "``page`` - Which page to get"
+msgstr ""
+
+#: ../../API.rst:126
+msgid "``per_page`` - Number of results per page"
+msgstr ""
+
+#: ../../API.rst:129
+msgid "/api/data_packages/download"
+msgstr ""
+
+#: ../../API.rst:131
+msgid "Downloads a data package"
+msgstr ""
+
+#: ../../API.rst:135
+msgid "Parameters: ``hash`` - The sha256 hash of the data package to download"
+msgstr ""
+
+#: ../../API.rst:139
+msgid "/api/cot"
+msgstr ""
+
+#: ../../API.rst:141
+msgid "Searches for CoTs stored in the database"
+msgstr ""
+
+#: ../../API.rst:147
+msgid "``how``"
+msgstr ""
+
+#: ../../API.rst:148
+msgid "``type``"
+msgstr ""
+
+#: ../../API.rst:149
+msgid "``sender_callsign``"
+msgstr ""
+
+#: ../../API.rst:150 ../../API.rst:164
+msgid "``sender_uid``"
+msgstr ""
+
+#: ../../API.rst:151 ../../API.rst:166 ../../API.rst:180 ../../API.rst:195
+msgid "``page``"
+msgstr ""
+
+#: ../../API.rst:152 ../../API.rst:167 ../../API.rst:181 ../../API.rst:196
+msgid "``per_page``"
+msgstr ""
+
+#: ../../API.rst:155
+msgid "/api/alerts"
+msgstr ""
+
+#: ../../API.rst:157
+msgid "Searches for alerts stored in the database"
+msgstr ""
+
+#: ../../API.rst:161
+msgid "Parameters:"
+msgstr ""
+
+#: ../../API.rst:163
+msgid "``uid``"
+msgstr ""
+
+#: ../../API.rst:165
+msgid "``alert_type``"
+msgstr ""
+
+#: ../../API.rst:170
+msgid "/api/point"
+msgstr ""
+
+#: ../../API.rst:172
+msgid "Searches for points stored in the database"
+msgstr ""
+
+#: ../../API.rst:176 ../../API.rst:190 ../../API.rst:205 ../../API.rst:278
+#: ../../API.rst:291
+msgid "Parameters"
+msgstr ""
+
+#: ../../API.rst:178
+msgid "``uid`` - UID of the EUD that created the point"
+msgstr ""
+
+#: ../../API.rst:179 ../../API.rst:193
+msgid "``callsign`` - Callsign of the EUD that created the point"
+msgstr ""
+
+#: ../../API.rst:184 ../../API.rst:285 ../../API.rst:300
+msgid "/api/casevac"
+msgstr ""
+
+#: ../../API.rst:186
+msgid "Searches for CasEvacs that are stored in the database"
+msgstr ""
+
+#: ../../API.rst:192
+msgid "``sender_uid`` - UID of the EUD that created the point"
+msgstr ""
+
+#: ../../API.rst:194
+msgid "``uid`` - UID of the CasEvac"
+msgstr ""
+
+#: ../../API.rst:199 ../../API.rst:225 ../../API.rst:272
+msgid "/api/markers"
+msgstr ""
+
+#: ../../API.rst:201
+msgid "Searches for markers stored in the database"
+msgstr ""
+
+#: ../../API.rst:207
+msgid "``uid`` - The marker’s unique ID"
+msgstr ""
+
+#: ../../API.rst:208
+msgid "``affiliation`` - One of the following"
+msgstr ""
+
+#: ../../API.rst:210
+msgid "friendly"
+msgstr ""
+
+#: ../../API.rst:211
+msgid "hostile"
+msgstr ""
+
+#: ../../API.rst:212
+msgid "unknown"
+msgstr ""
+
+#: ../../API.rst:213
+msgid "pending"
+msgstr ""
+
+#: ../../API.rst:214
+msgid "assumed"
+msgstr ""
+
+#: ../../API.rst:215
+msgid "neutral"
+msgstr ""
+
+#: ../../API.rst:216
+msgid "suspect"
+msgstr ""
+
+#: ../../API.rst:217
+msgid "joker"
+msgstr ""
+
+#: ../../API.rst:218
+msgid "faker"
+msgstr ""
+
+#: ../../API.rst:220
+msgid "``callsign`` - The marker’s callsign"
+msgstr ""
+
+#: ../../API.rst:227
+msgid "Adds a new marker or updates an existing one"
+msgstr ""
+
+#: ../../API.rst:231 ../../API.rst:306
+msgid "Content Type: JSON"
+msgstr ""
+
+#: ../../API.rst:232
+msgid "Required data in the JSON body"
+msgstr ""
+
+#: ../../API.rst:234 ../../API.rst:313
+msgid "``latitude`` - float, must be >= -90 and <= 90"
+msgstr ""
+
+#: ../../API.rst:235 ../../API.rst:314
+msgid "``longitude`` - float, must be >= -180 and <= 180"
+msgstr ""
+
+#: ../../API.rst:236
+msgid "``name`` - name/callsign of the marker"
+msgstr ""
+
+#: ../../API.rst:237 ../../API.rst:309
+msgid ""
+"``uid`` - An identifier in UUID4 format. If no marker exists with this "
+"UUID, a new on is created. Otherwise, the existing marker is updated."
+msgstr ""
+
+#: ../../API.rst:241 ../../API.rst:316
+msgid "Optional data in the JSON body"
+msgstr ""
+
+#: ../../API.rst:243
+msgid ""
+"``type`` - The CoT type, defaults to ``a-u-G`` if none is given. There "
+"are too many possible valid values to list but here are a few examples. "
+"See `this chart <https://www.spatialillusions.com/milsymbol/docs"
+"/milsymbol-2525c.html#heading-1>`__ from milsymbol for more examples."
+msgstr ""
+
+#: ../../API.rst:249
+msgid "``a-f-G`` - Affiliation friendly, battle dimension ground"
+msgstr ""
+
+#: ../../API.rst:250
+msgid "``a-h-U`` - Affiliation hostile, battle dimension subsurface"
+msgstr ""
+
+#: ../../API.rst:251
+msgid "``a-j-A`` - Affiliation joker, battle dimension airborne"
+msgstr ""
+
+#: ../../API.rst:253
+msgid ""
+"``course`` - The direction of travel in compass degrees. Must be >= 0 and"
+" < 360. Defaults to 0."
+msgstr ""
+
+#: ../../API.rst:255
+msgid ""
+"``azimuth`` - The azimuth in compass degrees. Must be >= 0 and < 360. "
+"Defaults to 0."
+msgstr ""
+
+#: ../../API.rst:257
+msgid "``speed`` - The speed in INSERT_UNIT_HERE. Must be >= 0. Defaults to 0."
+msgstr ""
+
+#: ../../API.rst:259
+msgid ""
+"``battery`` - The remaining battery percentage. Must be >= 0 and <= 100. "
+"Defaults to NULL."
+msgstr ""
+
+#: ../../API.rst:261
+msgid ""
+"``fov`` - The camera’s field of vision in compass degrees. This will show"
+" a camera’s view shed on the map."
+msgstr ""
+
+#: ../../API.rst:263
+msgid "``ce`` - Circular 1-sigma or a circular area about the location in meters"
+msgstr ""
+
+#: ../../API.rst:265
+msgid "``hae`` - Height above the WGS ellipsoid in meters"
+msgstr ""
+
+#: ../../API.rst:266
+msgid ""
+"``le`` - Linear 1-sigma error or an altitude range about the location in "
+"meters"
+msgstr ""
+
+#: ../../API.rst:274
+msgid "Deletes a marker"
+msgstr ""
+
+#: ../../API.rst:280
+msgid "``uid`` - The marker’s UID"
+msgstr ""
+
+#: ../../API.rst:287
+msgid "Searches for CasEvacs in the database"
+msgstr ""
+
+#: ../../API.rst:293
+msgid "``callsign`` - The CasEvac’s Callsign"
+msgstr ""
+
+#: ../../API.rst:295
+msgid "``uid`` - The CasEvac’s UID"
+msgstr ""
+
+#: ../../API.rst:302
+msgid "Add or update a CasEvac"
+msgstr ""
+
+#: ../../API.rst:304
+msgid "HTTP Method ``POST``"
+msgstr ""
+
+#: ../../API.rst:307
+msgid "Required data in JSON body"
+msgstr ""
+
+#: ../../API.rst:312
+msgid "``title`` - Name of the CasEvac that will appear on the map"
+msgstr ""
+
+#: ../../API.rst:318
+msgid "``ambulatory`` - Integer"
+msgstr ""
+
+#: ../../API.rst:319
+msgid "``casevac`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:320
+msgid "``child`` - Integer"
+msgstr ""
+
+#: ../../API.rst:321
+msgid "``enemy`` - Integer"
+msgstr ""
+
+#: ../../API.rst:322
+msgid "``epw`` - Integer"
+msgstr ""
+
+#: ../../API.rst:323
+msgid "``equipment_detail`` - String"
+msgstr ""
+
+#: ../../API.rst:324
+msgid "``equipment_none`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:325
+msgid "``equipment_other`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:326
+msgid "``extration_equipment`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:327
+msgid "``freq`` - Integer"
+msgstr ""
+
+#: ../../API.rst:328
+msgid "``friendlies`` - String"
+msgstr ""
+
+#: ../../API.rst:329
+msgid "``hlz_marking`` - Integer"
+msgstr ""
+
+#: ../../API.rst:330
+msgid "``hlz_remarks`` - String"
+msgstr ""
+
+#: ../../API.rst:331
+msgid "``hoist`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:332
+msgid "``litter`` - Integer"
+msgstr ""
+
+#: ../../API.rst:333
+msgid "``marked_by`` - String"
+msgstr ""
+
+#: ../../API.rst:334
+msgid "``medline_remarks`` - String"
+msgstr ""
+
+#: ../../API.rst:335
+msgid "``nonus_civilian`` - Integer"
+msgstr ""
+
+#: ../../API.rst:336
+msgid "``nonus_military`` - Integer"
+msgstr ""
+
+#: ../../API.rst:337
+msgid "``obstacles`` - String"
+msgstr ""
+
+#: ../../API.rst:338
+msgid "``priority`` - Integer"
+msgstr ""
+
+#: ../../API.rst:339
+msgid "``routine`` - Integer"
+msgstr ""
+
+#: ../../API.rst:340
+msgid "``security`` - Integer"
+msgstr ""
+
+#: ../../API.rst:341
+msgid "``terrain_loose`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:342
+msgid "``terrain_other`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:343
+msgid "``terrain_other_detail`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:344
+msgid "``terrain_detail`` - String"
+msgstr ""
+
+#: ../../API.rst:345
+msgid "``terrain_none`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:346
+msgid "``terrain_rough`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:347
+msgid "``terrain_slope`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:348
+msgid "``terrain_slope_dir`` - String"
+msgstr ""
+
+#: ../../API.rst:349
+msgid "``urgent`` - Integer"
+msgstr ""
+
+#: ../../API.rst:350
+msgid "``us_civilian`` - Integer"
+msgstr ""
+
+#: ../../API.rst:351
+msgid "``us_military`` - Integer"
+msgstr ""
+
+#: ../../API.rst:352
+msgid "``ventilator`` - Boolean"
+msgstr ""
+
+#: ../../API.rst:353
+msgid "``winds_are_from`` - String"
+msgstr ""
+
+#: ../../API.rst:354
+msgid "``zone_prot_selection`` - Integer"
+msgstr ""
+

@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../data_packages.md:1
+msgid "Data Packages"
+msgstr ""
+
+#: ../../data_packages.md:3
+msgid "Uploading Data Packages Zip files"
+msgstr ""
+
+#: ../../data_packages.md:5
+msgid ""
+"Data package zip files can be uploaded via OpenTAKServer's web UI. When "
+"they are uploaded, EUDs can download them via the data package tool."
+msgstr ""
+
+#: ../../data_packages.md:8
+msgid "Sending Data Packages from EUDs"
+msgstr ""
+
+#: ../../data_packages.md:10
+msgid ""
+"OpenTAKServer will automatically store a copy of and data package sent "
+"out by EUDs."
+msgstr ""
+
+#: ../../data_packages.md:12
+msgid "Automatic Data Package Creation"
+msgstr ""
+
+#: ../../data_packages.md:14
+msgid ""
+"`png`, `jpg`, `jpeg`, and `xml` files can also be uploaded on the Data "
+"Packages page in the web UI. When they're uploaded, OpenTAKServer will "
+"automatically create data package zip files for them. If an image has GPS"
+" coordinates set in its EXIF data, it will automatically show on the "
+"EUD's map when it is downloaded."
+msgstr ""
+
+#: ../../data_packages.md:18
+msgid "Install on Enrollment and Connection"
+msgstr ""
+
+#: ../../data_packages.md:20
+msgid ""
+"On the data package page in the web UI there are switches for data "
+"package installation on certificate enrollment and on server connection. "
+"If the enrollment switch is enabled, the data package will be "
+"automatically installed on the EUD upon a successful certificate "
+"enrollment. Likewise, if the connection switch is enabled, the data "
+"package will be automatically installed the next time the EUD connects. "
+"One or both of these options can be enabled for each data package"
+msgstr ""
+
+#: ../../data_packages.md:25
+msgid "ATAK Settings for Installation on Connection"
+msgstr ""
+
+#: ../../data_packages.md:27
+msgid ""
+"If an EUD is initially connected to OpenTAKServer via certificate "
+"enrollment or a data package, the `Apply TAK Server Profile Updates` "
+"option in ATAK will be automatically enabled. Otherwise, you will need to"
+" manually enable it. It can be found under Settings->Network "
+"Preferences->Network Connection Preferences."
+msgstr ""
+
+#: ../../data_packages.md:31
+msgid ""
+"When ATAK connects to a server and this option is enabled, it makes a "
+"call to `/Marti/api/device/profile/connection` with an optional "
+"`syncSecago` parameter. `syncSecago` is a integer representing the number"
+" of seconds since that EUD last connected to the server. If it's present,"
+" OpenTAKServer will only send the EUD new or changed data packages "
+"between the current time and the last time the EUD connected."
+msgstr ""
+

@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../plugins.rst:3
+msgid "Server Plugins"
+msgstr ""
+
+#: ../../plugins.rst:5
+msgid "As of version 1.5.0, OpenTAKServer includes a plugin system."
+msgstr ""
+
+#: ../../plugins.rst:7
+msgid ""
+"Like OpenTAKServer, plugins are made using Python's `Flask "
+"<https://flask.palletsprojects.com/en/stable/>`_ framework. Specifically,"
+" plugins are `Flask Blueprints "
+"<https://flask.palletsprojects.com/en/stable/tutorial/views/>`_."
+msgstr ""
+
+#: ../../plugins.rst:10
+msgid ""
+"Plugins classes must be a subclass of "
+"``opentakserver.plugins.Plugin.Plugin``"
+msgstr ""
+
+#: ../../plugins.rst:12
+msgid ""
+"Plugins can be created by making a new repository from `OTS-Plugin-"
+"Template <https://github.com/brian7704/OTS-Plugin-Template>`_. See the "
+"screenshot below."
+msgstr ""
+
+#: ../../plugins.rst:20
+msgid "Web UI"
+msgstr ""
+
+#: ../../plugins.rst:22
+msgid ""
+"Plugins can optionally include a web UI that will be displayed in an "
+"iframe in OpenTAKServer's UI. Plugin UIs are written in the `Mantine "
+"<https://mantine.dev/>`_ react framework. To start a new plugin UI, "
+"create a new repo from the `OTS-UI-Plugin-Template "
+"<https://github.com/brian7704/OTS-UI-Plugin-Template>`_. The UI repo "
+"should be separate from the plugin's repo. See the `SkyFi Plugin's UI "
+"<https://github.com/brian7704/OTS-SkyFi-Plugin-UI>`_ for an example."
+msgstr ""
+
+#: ../../plugins.rst:27
+msgid ""
+"When building your plugin's UI, it's assumed that your code is in "
+"``~/Webstorm Projects/Your-OTS-Plugin-UI`` and your plugin is at "
+"``~/PyCharm Projects/Your-OTS-Plugin``. The ``npm build`` command will "
+"automatically put the built UI files in ``~/PyCharm Projects/Your-OTS-"
+"Plugin/ui``. If your code is in another directory, edit the ``outDir`` "
+"option in your UI's `vite.config.mjs <https://github.com/brian7704/OTS-"
+"UI-Plugin-"
+"Template/blob/bf00f38321d24572a85210d40809ec8cc2454893/vite.config.mjs#L13>`_"
+" file"
+msgstr ""
+
+#: ../../plugins.rst:34
+msgid "Licensing"
+msgstr ""
+
+#: ../../plugins.rst:36
+msgid ""
+"Plugins that are publicly distributed must use the GPLv3 or another "
+"`compatible <https://gplv3.fsf.org/wiki/index.php/Compatible_licenses>`_ "
+"license."
+msgstr ""
+
+#: ../../plugins.rst:40
+msgid "Public Repo"
+msgstr ""
+
+#: ../../plugins.rst:42
+msgid ""
+"While plugins can be distributed or kept private as the author chooses "
+"(including on PyPI), there is a public plugin repo available. Plugins on "
+"this repo will be accepted after a code review to make sure it meets the "
+"plugin requirements, works as intended, and doesn't contain any malicious"
+" code. Once accepted, OpenTAKServer users will be able to install plugins"
+" from this repo from within the web UI. The repo can be browsed at "
+"https://repo.opentakserver.io."
+msgstr ""
+
+#: ../../plugins.rst:49
+msgid "Development"
+msgstr ""
+
+#: ../../plugins.rst:51
+msgid ""
+"While any IDE can be used for development, this guide will focus on "
+"`PyCharm <https://www.jetbrains.com/pycharm/download>`_ for the plugin "
+"and `Webstorm <https://www.jetbrains.com/webstorm/>`_ for the UI. Both "
+"PyCharm and Webstorm have free versions which can be used."
+msgstr ""
+
+#: ../../plugins.rst:57
+msgid "Poetry"
+msgstr ""
+
+#: ../../plugins.rst:59
+msgid ""
+"`Poetry <https://python-poetry.org/>`_ is used to build, package, and "
+"version plugins, as well as manage dependencies."
+msgstr ""
+
+#: ../../plugins.rst:63
+msgid "Versioning"
+msgstr ""
+
+#: ../../plugins.rst:65
+msgid ""
+"`Poetry Dynamic Versioning <https://github.com/mtkennerly/poetry-dynamic-"
+"versioning>`_ is used to version plugins based on git tags. When a new "
+"version of your plugin is ready to be released, a new git tag should be "
+"created with the plugin version using `Semantic Versioning "
+"<https://semver.org/>`_. For example, the first version tag could be "
+"``1.0.0``. Then when building the plugin for distribution using the "
+"``poetry build`` command, the sdist and wheel files will be automatically"
+" tagged with this version number."
+msgstr ""
+
+#: ../../plugins.rst:72
+msgid "Start Developing Your Plugin"
+msgstr ""
+
+#: ../../plugins.rst:74
+msgid ""
+"The things that need to be changed are marked with ``TODO`` comments in "
+"OTS-Plugin-Template and OTS-UI-Plugin-Template."
+msgstr ""
+
+#: ../../plugins.rst:76
+msgid "pyproject.toml"
+msgstr ""
+
+#: ../../plugins.rst:77
+msgid "Set the name, description, author information, and URLs"
+msgstr ""
+
+#: ../../plugins.rst:78
+msgid "*. The name must start with ``OTS-``"
+msgstr ""
+
+#: ../../plugins.rst:79
+msgid ""
+"Change the ``include`` option under ``[tool.poetry]`` to the name of the "
+"folder that contains your plugin's code"
+msgstr ""
+
+#: ../../plugins.rst:80
+msgid "Do the same for ``tool.poetry-dynamic-versioning.files``"
+msgstr ""
+
+#: ../../plugins.rst:81
+msgid "app.py"
+msgstr ""
+
+#: ../../plugins.rst:82
+msgid "Change the class name"
+msgstr ""
+
+#: ../../plugins.rst:83
+msgid ""
+"Change the name of the blueprint from ``PluginTemplate`` to your plugin's"
+" name"
+msgstr ""
+
+#: ../../plugins.rst:84
+msgid ""
+"Add API routes as necessary. Remember to protect your routes using the "
+"``@auth_required`` or ``@roles_accepted`` decorators"
+msgstr ""
+
+#: ../../plugins.rst:85
+msgid ""
+"Edit the ``activate()`` method if your plugin needs to run in the "
+"background. For example, the AISStream plugin uses the ``activate()`` "
+"method to connect to AISStream's servers to pull data."
+msgstr ""
+
+#: ../../plugins.rst:86
+msgid "default_config.py"
+msgstr ""
+
+#: ../../plugins.rst:87
+msgid "Rename ``OTS_PLUGIN_TEMPLATE_ENABLED`` to your plugin's name"
+msgstr ""
+
+#: ../../plugins.rst:88
+msgid "Add config options as necessary"
+msgstr ""
+
+#: ../../plugins.rst:89
+msgid "Edit the validate() method to validate user input"
+msgstr ""
+
