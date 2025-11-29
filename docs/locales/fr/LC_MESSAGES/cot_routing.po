@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../cot_routing.md:1
+msgid "CoT Routing"
+msgstr ""
+
+#: ../../cot_routing.md:3
+msgid ""
+"OpenTAKServer uses [RabbitMQ](https://rabbitmq-website.pages.dev/) to "
+"broker CoT messages between EUD's. When an EUD connects, OpenTAKServer "
+"starts a new thread to handle sending and receiving CoT's. It also "
+"declares and binds to a RabbitMQ queue for the EUD. Queues are also "
+"declared for each team (Cyan, Magenta, etc) and EUDs are automatically "
+"bound to those queues when they send a CoT with their team info."
+msgstr ""
+

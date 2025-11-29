@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../mission_api.md:1
+msgid "Mission API/Data Sync"
+msgstr ""
+
+#: ../../mission_api.md:3
+msgid ""
+"As of version 1.4.0, OpenTAKServer supports the Mission API which enables"
+" support for plugins such as Data Sync and Fire Area Survey. This API "
+"only works when the EUD is connected to the server via SSL. Support for "
+"the Mission API is in the early stages so there may still be bugs. If you"
+" encounter any problems, please open a [GitHub "
+"issue](https://github.com/brian7704/OpenTAKServer/issues)."
+msgstr ""
+

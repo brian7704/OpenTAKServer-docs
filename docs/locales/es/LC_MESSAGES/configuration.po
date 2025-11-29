@@ -1,0 +1,619 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../configuration.rst:2
+msgid "Configuration"
+msgstr ""
+
+#: ../../configuration.rst:5
+msgid "Config file"
+msgstr ""
+
+#: ../../configuration.rst:7
+msgid ""
+"When you first start OpenTAKServer, a default configuration file will be "
+"generated for you at ``~/ots/config.yml``. You can override the defaults "
+"there. You must restart OpenTAKServer for the changes to take effect."
+msgstr ""
+
+#: ../../configuration.rst:12
+msgid "Secrets"
+msgstr ""
+
+#: ../../configuration.rst:14
+msgid ""
+"The following sensitive options will compromise the security of your "
+"server if they are leaked. If you are asking for support over public "
+"channels such as `Discord <https://discord.gg/6uaVHjtfXN>`__ or `GitHub "
+"<https://github.com/brian7704/OpenTAKServer>`__, remove these settings "
+"before posting. If these settings are mistakenly shared publicly, change "
+"them immediately."
+msgstr ""
+
+#: ../../configuration.rst:21
+msgid "SECRET_KEY"
+msgstr ""
+
+#: ../../configuration.rst:22
+msgid "SECURITY_PASSWORD_SALT"
+msgstr ""
+
+#: ../../configuration.rst:23
+msgid "OTS_MEDIAMTX_TOKEN"
+msgstr ""
+
+#: ../../configuration.rst:24
+msgid "MAIL_USERNAME"
+msgstr ""
+
+#: ../../configuration.rst:25
+msgid "MAIL_PASSWORD"
+msgstr ""
+
+#: ../../configuration.rst:28
+msgid "Config Options"
+msgstr ""
+
+#: ../../configuration.rst:32
+msgid ""
+"This setting puts Flask in debug mode and will produce many more log "
+"messages. Do not use on production servers. Default ``False``"
+msgstr ""
+
+#: ../../configuration.rst:37
+msgid ""
+"The `Flask secret key "
+"<https://flask.palletsprojects.com/en/2.3.x/config/#SECRET_KEY>`__. It is"
+" generated automatically with ``secrets.token_hex()`` the first time you "
+"run OpenTAKServer."
+msgstr ""
+
+#: ../../configuration.rst:43
+msgid ""
+"Used by `Flask-Security <https://flask-security-"
+"too.readthedocs.io/en/stable/configuration/#SECURITY_PASSWORD_SALT>`__ to"
+" salt hashed passwords. If you change this after users have been "
+"generated, they will be locked out until their passwords have been reset."
+" This will lock out the administrator as well. It is automatically "
+"generated the first time you run OpenTAKServer using "
+"``secrets.SystemRandom().getrandbits(128)``"
+msgstr ""
+
+#: ../../configuration.rst:51
+msgid "OpenTAKServer Settings"
+msgstr ""
+
+#: ../../configuration.rst:55
+msgid ""
+"Folder for all of OpenTAKServer’s data (sqlite db, video recordings, "
+"uploaded files, etc). Default: ``~/ots``"
+msgstr ""
+
+#: ../../configuration.rst:60
+msgid ""
+"OpenTAKServer’s API listens on this port on the loopback interface. Nginx"
+" will proxy HTTP requests to this port. Default ``8081``"
+msgstr ""
+
+#: ../../configuration.rst:66
+msgid ""
+"Port that nginx listens on for HTTP requests. Nginx will proxy these "
+"requests to OTS_LISTENER_PORT. Default ``8080``"
+msgstr ""
+
+#: ../../configuration.rst:71
+msgid ""
+"Nginx listens on this port for HTTPS requests and proxies them to "
+"OTS_LISTENER_PORT. Default ``8443``"
+msgstr ""
+
+#: ../../configuration.rst:76
+msgid ""
+"Nginx listens on this port for certificate enrollment requests and "
+"proxies them to OTS_LISTENER_PORT. Default ``8446``"
+msgstr ""
+
+#: ../../configuration.rst:81
+msgid ""
+"On most Marti API endpoints, OpenTAKServer will look for the client "
+"certificate in this HTTP header to identify the username via the "
+"certificate's common name."
+msgstr ""
+
+#: ../../configuration.rst:84
+msgid "Default: ``X-Ssl-Cert``"
+msgstr ""
+
+#: ../../configuration.rst:88
+msgid ""
+"OpenTAKServer listens on this port for TCP connections from ATAK, WinTAK,"
+" and iTAK. Default ``8088``"
+msgstr ""
+
+#: ../../configuration.rst:93
+msgid ""
+"OpenTAKServer listens on this port for SSL connections from ATAK, WinTAK,"
+" and iTAK. Default ``8089``"
+msgstr ""
+
+#: ../../configuration.rst:98
+msgid ""
+"Log files in ``~/ots/logs/`` will rotate at midnight every night. This "
+"setting determines the number of days to keep rotated logs Log files "
+"older than this setting will be automatically deleted. Default ``7``"
+msgstr ""
+
+#: ../../configuration.rst:105
+msgid "Address of the RabbitMQ server. Default ``127.0.0.1``"
+msgstr ""
+
+#: ../../configuration.rst:109
+msgid ""
+"Time To Live setting for messages published to RabbitMQ. Default: "
+"``86400000`` (one day)"
+msgstr ""
+
+#: ../../configuration.rst:114
+msgid "Number of CoT messages to prefetch from the RabbitMQ queue. Default: ``2``"
+msgstr ""
+
+#: ../../configuration.rst:118
+msgid "Number of ``cot_parser`` processes to run. Default: ``1``"
+msgstr ""
+
+#: ../../configuration.rst:122
+msgid ""
+"Address for MediaMTX’s API server. Make sure to include the scheme (ie "
+"``http://``), address, and port. Default ``http://localhost:9997``"
+msgstr ""
+
+#: ../../configuration.rst:128
+msgid ""
+"This token protects the /api/mediamtx/webhook endpoint. It is generated "
+"using ``python3 -c 'import secrets; print(secrets.token_hex())``"
+msgstr ""
+
+#: ../../configuration.rst:133
+msgid ""
+"SSL verification mode for the SSL CoT port. See `Python’s documentation "
+"<https://docs.python.org/3/library/ssl.html#ssl.SSLContext.verify_mode>`__"
+" for more details. Default ``ssl.CERT_REQUIRED``"
+msgstr ""
+
+#: ../../configuration.rst:139
+msgid ""
+"Unique node ID of this server. It can be generated with the following "
+"command ``python3 -c \"import random; import string; "
+"print(''.join(random.choices(string.ascii_lowercase + string.digits, "
+"k=64)))``"
+msgstr ""
+
+#: ../../configuration.rst:145
+msgid "Name for your certificate authority. Default ``OpenTAKServer-CA``"
+msgstr ""
+
+#: ../../configuration.rst:149
+msgid "Location of your certificate authority. Default ``~/ots/ca``"
+msgstr ""
+
+#: ../../configuration.rst:153
+msgid "Password for all generated certificate. Default ``atakatak``"
+msgstr ""
+
+#: ../../configuration.rst:157
+msgid ""
+"Number of days that generated certificates should be valid. Default "
+"``3650``"
+msgstr ""
+
+#: ../../configuration.rst:162
+msgid "ISO country code for your certificate authority. Default ``WW``"
+msgstr ""
+
+#: ../../configuration.rst:166
+msgid "State abbreviation for your certificate authority. Default ``XX``"
+msgstr ""
+
+#: ../../configuration.rst:170
+msgid "City name for your certificate authority. Default ``YY``"
+msgstr ""
+
+#: ../../configuration.rst:174
+msgid "Organization name for your certificate authority. Default ``ZZ``"
+msgstr ""
+
+#: ../../configuration.rst:178
+msgid "Organizational Unit (OU) name for your certificate authority."
+msgstr ""
+
+#: ../../configuration.rst:182
+msgid ""
+"Subject for your certificate authority. Default "
+"``/C=OTS_CA_COUNTRY/ST=OTS_CA_STATE/L=OTS_CA_CITY/O=OTS_CA_ORGANIZATION/OU=OTS_CA_ORGANIZATIONAL_UNIT``"
+msgstr ""
+
+#: ../../configuration.rst:187
+msgid ""
+"Latitude used to query ADS-B data from `Airplanes.live "
+"<https://airplanes.live/>`__. Default ``40.744213`` (Manhattan)"
+msgstr ""
+
+#: ../../configuration.rst:193
+msgid ""
+"Longitude used to query ADS-B data from `Airplanes.live "
+"<https://airplanes.live/>`__. Default ``-73.986939`` (Manhattan)"
+msgstr ""
+
+#: ../../configuration.rst:199
+msgid ""
+"Radius in nautical miles to query ADSB from `Airplanes.live "
+"<https://airplanes.live/>`__. Default ``10`` Max ``250``"
+msgstr ""
+
+#: ../../configuration.rst:205
+msgid "Username of your AISHub.net account. Default: ``None``"
+msgstr ""
+
+#: ../../configuration.rst:209
+msgid "Southern latitude. Default: ``None``"
+msgstr ""
+
+#: ../../configuration.rst:213
+msgid "Western longitude. Default: ``None``"
+msgstr ""
+
+#: ../../configuration.rst:217
+msgid "Northern latitude. Default: ``None``"
+msgstr ""
+
+#: ../../configuration.rst:221
+msgid "Eastern Longitude. Default: ``None``"
+msgstr ""
+
+#: ../../configuration.rst:225
+msgid ""
+"A comma-separated string of MMSI numbers of specific vessels to search, "
+"for example ``\"367658140,366902120\"`` Default: ``\"\"``"
+msgstr ""
+
+#: ../../configuration.rst:230
+msgid ""
+"A comma-separated string of IMO numbers of specific vessels to search, "
+"for example ``\"1234,5678\"`` Default: ``\"\"``"
+msgstr ""
+
+#: ../../configuration.rst:235
+msgid ""
+"Automatically install map tile sources from `ATAK-Maps "
+"<https://github.com/joshuafuller/ATAK-Maps.git>`__ when an EUD first "
+"connects to the server. Default: ``true``"
+msgstr ""
+
+#: ../../configuration.rst:241
+msgid ""
+"This option provide authentication for your Mumble server. When "
+"connecting to the Mumble server you will have to use your OpenTAKServer "
+"username and password. This also prevents anyone without an account on "
+"your OpenTAKServer from connecting. Default: ``False``"
+msgstr ""
+
+#: ../../configuration.rst:249
+msgid ""
+"Allow users to self-register accounts with an email address. Emails will "
+"only be sent to users to confirm their registration, reset their "
+"passwords, and optionally for two-factor authentication. Default "
+"``False``"
+msgstr ""
+
+#: ../../configuration.rst:256
+msgid ""
+"If ``OTS_ENABLE_EMAIL`` is set to ``True``, you can use this whitelist to"
+" only allow users with email accounts with specific domains to register. "
+"For example, if you set this option to ``['gmail.com', 'yahoo.com']``, "
+"only users with gmail.com or yahoo.com email addresses can register. "
+"Leave the default setting to allow any domain to register. Default: "
+"``[]``"
+msgstr ""
+
+#: ../../configuration.rst:265
+msgid ""
+"Similar to ``OTS_EMAIL_DOMAIN_WHITELIST``, but prevents specific email "
+"domains from registering accounts. Leave the default setting to allow any"
+" domain to register. Default: ``[]``"
+msgstr ""
+
+#: ../../configuration.rst:271
+msgid ""
+"Similar to ``OTS_EMAIL_DOMAIN_WHITELIST`` but only allows users with "
+"specific top level domains to register. For example, you could set this "
+"to ``['gov', 'mil']`` to only allow users with .gov or .mil email "
+"addresses to register. Do not put a dot before the TLD. Leave the default"
+" setting to allow any TLD to register. Default: ``[]``"
+msgstr ""
+
+#: ../../configuration.rst:280
+msgid ""
+"Similar to ``OTS_EMAIL_TLD_WHITELIST``, but prevents certain top level "
+"domains from registering accounts. Leave the default setting to allow any"
+" TLD to register. Default: ``[]``"
+msgstr ""
+
+#: ../../configuration.rst:286 ../../configuration.rst:290
+#: ../../configuration.rst:294 ../../configuration.rst:298
+msgid "Used by the Delete Old Data scheduled job. Default: ``0``"
+msgstr ""
+
+#: ../../configuration.rst:302
+msgid "Used by the Delete Old Data scheduled job. Default: ``1``"
+msgstr ""
+
+#: ../../configuration.rst:306
+msgid "Enable or disable server plugins. Default: ``True``"
+msgstr ""
+
+#: ../../configuration.rst:310
+msgid ""
+"The URL of the plugin repo server. Defaults to OpenTAKServer's official "
+"repo, but server admins can setup their own private repos with devpi and "
+"change this option to the URL of the private server."
+msgstr ""
+
+#: ../../configuration.rst:314
+msgid "Default: ``https://repo.opentakserver.io/brian/prod/``"
+msgstr ""
+
+#: ../../configuration.rst:318
+msgid ""
+"Python libraries with the prefix defined in this option are considered to"
+" be OpenTAKServer plugins."
+msgstr ""
+
+#: ../../configuration.rst:321
+msgid "Default: ``[\"ots-\", \"ots_\"]``"
+msgstr ""
+
+#: ../../configuration.rst:325
+msgid "Enables LDAP for user and group administration."
+msgstr ""
+
+#: ../../configuration.rst:327
+msgid "Default: ``False``"
+msgstr ""
+
+#: ../../configuration.rst:331
+msgid "Users in the LDAP group will be considered administrators in OpenTAKServer"
+msgstr ""
+
+#: ../../configuration.rst:333
+msgid "Default: ``ots_admin``"
+msgstr ""
+
+#: ../../configuration.rst:337
+msgid "Use this LDAP user attribute to assign team colors to users."
+msgstr ""
+
+#: ../../configuration.rst:339
+msgid "Default: ``colorAttribute``"
+msgstr ""
+
+#: ../../configuration.rst:343
+msgid "Use this LDAP user attribute to assign team roles to users."
+msgstr ""
+
+#: ../../configuration.rst:345
+msgid "Default: ``roleAttribute``"
+msgstr ""
+
+#: ../../configuration.rst:349
+msgid "Use this LDAP user attribute to assign callsigns to users"
+msgstr ""
+
+#: ../../configuration.rst:351
+msgid "Default: ``callsignAttribute``"
+msgstr ""
+
+#: ../../configuration.rst:355
+msgid ""
+"User attributes with this prefix can be used to change settings in ATAK "
+"the same way device profiles can."
+msgstr ""
+
+#: ../../configuration.rst:358
+msgid "Default: ``ots_``"
+msgstr ""
+
+#: ../../configuration.rst:362
+msgid "The Airplanes.live scheduled job will publish data to this group."
+msgstr ""
+
+#: ../../configuration.rst:364
+msgid "Default: ``ADS-B``"
+msgstr ""
+
+#: ../../configuration.rst:368
+msgid "The AISHub scheduled job will publish data to this group."
+msgstr ""
+
+#: ../../configuration.rst:370
+msgid "Default: ``AIS``"
+msgstr ""
+
+#: ../../configuration.rst:374
+msgid "Meshtastic data received via MQTT will be published to this group."
+msgstr ""
+
+#: ../../configuration.rst:376
+msgid "Default: ``Meshtastic``"
+msgstr ""
+
+#: ../../configuration.rst:381
+msgid "Flask-Security"
+msgstr ""
+
+#: ../../configuration.rst:383
+msgid ""
+"You can check `defaultconfig.py "
+"<https://github.com/brian7704/OpenTAKServer/blob/master/opentakserver/defaultconfig.py>`__"
+" for the settings that OpenTAKServer uses. To learn about each setting "
+"you can check Flask-Security’s `documentation <https://flask-security-"
+"too.readthedocs.io/en/stable/configuration.html>`__."
+msgstr ""
+
+#: ../../configuration.rst:390
+msgid "Flask-LDAP3-Login"
+msgstr ""
+
+#: ../../configuration.rst:392
+msgid ""
+"Flask-LDAP3-Login is used for LDAP support. See `their documentation "
+"<https://flask-ldap3-login.readthedocs.io/en/latest/>`__ for more "
+"details."
+msgstr ""
+
+#: ../../configuration.rst:397
+msgid "The address of the LDAP server."
+msgstr ""
+
+#: ../../configuration.rst:399 ../../configuration.rst:405
+#: ../../configuration.rst:411 ../../configuration.rst:417
+msgid "Default: ``Blank String``"
+msgstr ""
+
+#: ../../configuration.rst:403
+msgid "The LDAP server's base DN"
+msgstr ""
+
+#: ../../configuration.rst:409
+msgid "The LDAP server's user DN"
+msgstr ""
+
+#: ../../configuration.rst:415
+msgid "The LDAP server's group DN"
+msgstr ""
+
+#: ../../configuration.rst:421
+msgid "The LDAP server's bind user DN."
+msgstr ""
+
+#: ../../configuration.rst:423
+msgid "Default: ``cn=admin,ou=users=dc=example,dc=com``"
+msgstr ""
+
+#: ../../configuration.rst:427
+msgid "The bind user's password."
+msgstr ""
+
+#: ../../configuration.rst:429
+msgid "Default: ``password``"
+msgstr ""
+
+#: ../../configuration.rst:432
+msgid "Flask-Mailman settings"
+msgstr ""
+
+#: ../../configuration.rst:434
+msgid ""
+"These settings only take effect if ``OTS_ENABLE_EMAIL`` is ``True``. The "
+"defaults will send email via a Gmail account, just provide your username "
+"and `app password "
+"<https://support.google.com/accounts/answer/185833?hl=en>`__. See `Email "
+"<email.md>`__ for details."
+msgstr ""
+
+#: ../../configuration.rst:442 ../../configuration.rst:446
+msgid "Default ``False``"
+msgstr ""
+
+#: ../../configuration.rst:450 ../../configuration.rst:470
+#: ../../configuration.rst:474
+msgid "Default ``null``"
+msgstr ""
+
+#: ../../configuration.rst:454
+msgid "Default: ``null``"
+msgstr ""
+
+#: ../../configuration.rst:458
+msgid "Default ``587``"
+msgstr ""
+
+#: ../../configuration.rst:462
+msgid "Default ``smtp.gmail.com``"
+msgstr ""
+
+#: ../../configuration.rst:466 ../../configuration.rst:478
+msgid "Default ``false``"
+msgstr ""
+
+#: ../../configuration.rst:482
+msgid "Default ``true``"
+msgstr ""
+
+#: ../../configuration.rst:485
+msgid "MediaMTX"
+msgstr ""
+
+#: ../../configuration.rst:487
+msgid ""
+"OpenTAKServer’s default configuration assumes that MediaMTX is running on"
+" the same server and OpenTAKServer connects to it via the loopback "
+"interface. As of version 1.1.4, MediaMTX can now be hosted on a different"
+" server. To do so you will need to change two settings."
+msgstr ""
+
+#: ../../configuration.rst:492
+msgid ""
+"The first is ``OTS_MEDIAMTX_API_ADDRESS`` in ``config.yml``. Make sure to"
+" include the scheme (ie ``http://`` or ``https://``), server address, and"
+" port."
+msgstr ""
+
+#: ../../configuration.rst:496
+msgid ""
+"The nginx config also needs to be changed. In ``/etc/nginx/sites-"
+"enabled/ots_https`` (or "
+"``c:\\tools\\nginx-1.25.4\\conf\\ots\\ots_https.conf`` on Windows), look "
+"for the ``location`` blocks for webrtc and hls. Each should have a "
+"``proxy_pass`` line that starts with ``https://127.0.0.1``. Change that "
+"address (and port number if necessary) to the address of your MediaMTX "
+"server."
+msgstr ""
+
+#: ../../configuration.rst:504
+msgid ""
+"After changing these settings make sure to restart both OpenTAKServer and"
+" nginx."
+msgstr ""
+
+#: ../../configuration.rst:508
+msgid "Max Upload Size"
+msgstr ""
+
+#: ../../configuration.rst:510
+msgid ""
+"OpenTAKServer’s default configuration limits the size of uploaded files, "
+"including data packages, to 100MB. This setting is found in the "
+"``ots_http`` and ``ots_https`` nginx config files. In those files, change"
+" the line ``client_max_body_size 100M;`` to raise the limit. Change it to"
+" ``client_max_body_size 0;`` to disable the limit."
+msgstr ""
+

@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../security.md:1
+msgid "Security"
+msgstr ""
+
+#: ../../security.md:3
+msgid ""
+"For enhanced security, it is recommended that you disable the TCP CoT "
+"streaming port and disable nginx from listening for unencrypted HTTP "
+"requests on ports 80 and 8080. All data sent and received over these "
+"ports is unencrypted. Any third party that intercepts the data will be "
+"able to see things such as EUD locations, passwords, geochats, and other "
+"data in the clear. To disable the TCP CoT streaming port, simply click "
+"the switch in the TCP box of the UI's dashboard, or set the "
+"`OTS_ENABLE_TCP_STREAMING_PORT` option to `false` in `config.yml`"
+msgstr ""
+
+#: ../../security.md:9
+msgid ""
+"Another concern is the Marti API. When TAK clients query the Marti API on"
+" port 8080, they do not use any authentication. This means that any third"
+" party that can access port 8080 on your server can interact with the "
+"Marti API and do things such as upload/download data packages, query "
+"video feeds, get a list of EUDs, etc, all without any authentication. "
+"When querying the Marti API over HTTPS on port 8443, TAK clients sends a "
+"client certificate which the server will verify. These certificates can "
+"only be obtained by [certificate enrollment](certificate_enrollment.md) "
+"which requires a username and password, or by having an administrator "
+"generate a certificate data package and giving it to a user. To stop "
+"nginx from listening on ports 80 and 8080, delete `/etc/nginx/sites-"
+"enabled/ots_http` and restart nginx by running `sudo systemctl restart "
+"nginx`."
+msgstr ""
+
+#: ../../security.md:18
+msgid "Blocking Port Scanning Bots"
+msgstr ""
+
+#: ../../security.md:20
+msgid ""
+"The [ipsum](https://github.com/stamparm/ipsum) GitHub repo maintains a "
+"list of malicious IP addresses that updates daily. Blocking these IP "
+"addresses can be done with the following bash script that is run via a "
+"cron job."
+msgstr ""
+
+#: ../../security.md:32
+msgid "Setting up the ipsum Script"
+msgstr ""
+
+#: ../../security.md:34
+msgid ""
+"Copy and paste the above script to a file somewhere on your server, for "
+"example `/opt/ipsum.sh`."
+msgstr ""
+
+#: ../../security.md:35
+msgid ""
+"Make the script executable `sudo chmod +x /opt/ipsum.sh` (substitute "
+"`/opt/ipsum.sh` with the actual location you saved the script to)"
+msgstr ""
+
+#: ../../security.md:36
+msgid "Add a cron job to run every day at midnight"
+msgstr ""
+
+#: ../../security.md:37
+msgid ""
+"`sudo crontab -e` 2. Add the following line to the bottom of the crontab "
+"file `0 0 * * * /opt/ipsum.sh` 3. Save the crontab file. If you're using "
+"`nano`, press `ctrl+o` to save, press `enter` to confirm, then `ctrl+x` "
+"to exit"
+msgstr ""
+
+#: ../../security.md:41
+msgid "IPTables Rules"
+msgstr ""
+
+#: ../../security.md:43
+msgid ""
+"The following IPTables ruleset opens all ports used by OpenTAKServer and "
+"blocks all others. It also includes the ipsum ruleset. You can add or "
+"remove rules from this list as needed. After saving the rules to a file, "
+"you can load them with this command `iptables-restore < "
+"/path/to/iptables.rules`"
+msgstr ""
+
+#: ../../security.md:47
+msgid ""
+"Which rules to enable depends on which components you're using. The list "
+"of all services is available in [Architecture](architecture.md).  At a "
+"minimum, you'll need to open 8443, 443, 8089, and 8446 for TAK to work, "
+"and 8080, 80, and 8088 if you're using TCP."
+msgstr ""
+
+#: ../../security.md:85
+msgid ""
+"Once the rules are loaded, install the `iptables-persistent` package in "
+"Ubuntu to re-apply them after every reboot."
+msgstr ""
+

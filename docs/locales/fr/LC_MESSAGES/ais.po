@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../ais.md:1
+msgid "AIS"
+msgstr ""
+
+#: ../../ais.md:3
+msgid ""
+"OpenTAKServer can pull live AIS data from the "
+"[AISHub.net](https://www.aishub.net/). Vessels will be shown on your "
+"EUD's map and OpenTAKServer's map. You can find it under Scheduled Jobs "
+"in the UI."
+msgstr ""
+
+#: ../../ais.md:6
+msgid "AISHub API"
+msgstr ""
+
+#: ../../ais.md:8
+msgid ""
+"You will need an account on AISHub with API access. Generally this "
+"requires that you setup an AIS feeder and share your data with them. When"
+" querying the API, they limit requests to no more than one per minute. "
+"Keep this in mind when setting the query interval."
+msgstr ""
+
+#: ../../ais.md:11
+msgid "Settings"
+msgstr ""
+
+#: ../../ais.md:13
+msgid ""
+"`OTS_AISHUB_USERNAME` is the only required setting, the rest are "
+"optional. However, it's a good idea to only query a small geographical "
+"area or only a few specific vessels (or both). If you don't set a "
+"location or specific vessels to query, AISHub will return all its data, "
+"and you could end up with more than 50,000 points on your EUDs."
+msgstr ""
+
+#: ../../ais.md:17
+msgid ""
+"When querying a geographic location you are specifying a rectangle to "
+"search within. You'll need two points, the southwestern corner and the "
+"northeastern corner."
+msgstr ""
+
+#: ../../ais.md:20
+msgid "See [AISHub's API docs](https://www.aishub.net/api) for more details."
+msgstr ""
+
+#: ../../ais.md:22
+msgid "`OTS_AISHUB_USERNAME`"
+msgstr ""
+
+#: ../../ais.md:23
+msgid "`OTS_AISHUB_SOUTH_LAT` - Latitude of the southwest corner"
+msgstr ""
+
+#: ../../ais.md:24
+msgid "`OTS_AISHUB_WEST_LON` - Longitude of the southwest corner"
+msgstr ""
+
+#: ../../ais.md:25
+msgid "`OTS_AISHUB_NORTH_LAT` - Latitude of the northeast corner"
+msgstr ""
+
+#: ../../ais.md:26
+msgid "`OTS_AISHUB_EAST_LON` - Longitude of the northeast corner"
+msgstr ""
+
+#: ../../ais.md:27
+msgid ""
+"`OTS_AISHUB_MMSI_LIST` - A comma-separated string of MMSI numbers of "
+"specific vessels to search, for example `\"367658140,366902120\"`"
+msgstr ""
+
+#: ../../ais.md:28
+msgid ""
+"`OTS_AISHUB_IMO_LIST` - A comma-separated string of IMO numbers of "
+"specific vessels to search, for example `\"1234,5678\"`"
+msgstr ""
+
+#: ../../ais.md:30
+msgid "Screenshot"
+msgstr ""
+
+#: ../../ais.md:32
+msgid "![!Screenshot of AIS on the map](images/ais_map.png)"
+msgstr ""
+
+#: ../../ais.md:32
+msgid "!Screenshot of AIS on the map"
+msgstr ""
+

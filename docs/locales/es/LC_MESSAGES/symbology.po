@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../symbology.md:1
+msgid "Symbology"
+msgstr ""
+
+#: ../../symbology.md:3
+msgid "ATAK default icon sets"
+msgstr ""
+
+#: ../../symbology.md:5
+msgid ""
+"OpenTAKServer supports all the default icon sets that come with ATAK. The"
+" installer will automatically put them in OpenTAKServer's database in the"
+" icons table. If for some reason the icons are missing from the database,"
+" OpenTAKServer will automatically download them from the installer's "
+"GitHub repo when it starts up."
+msgstr ""
+
+#: ../../symbology.md:10
+msgid "MIL-STD-2525c"
+msgstr ""
+
+#: ../../symbology.md:12
+msgid ""
+"OpenTAKServer's web UI supports MIL-STD-2525C symbols thanks to the "
+"[milsymbol](https://github.com/spatialillusions/milsymbol)  javascript "
+"library. When OpenTAKServer received a CoT, it calculates the 2525c type "
+"from the CoT's type attribute. The web UI will automatically generate the"
+" icons on the fly."
+msgstr ""
+

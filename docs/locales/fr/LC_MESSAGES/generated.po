@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../generated/opentakserver.app.rst:2
+msgid "opentakserver.app"
+msgstr ""
+
+#: ../../generated/opentakserver.app.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../generated/opentakserver.app.rst:18:<autosummary>:1
+msgid ":py:obj:`create_app <opentakserver.app.create_app>`\\ \\(\\[cli\\]\\)"
+msgstr ""
+
+#: ../../generated/opentakserver.app.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`create_default_groups "
+"<opentakserver.app.create_default_groups>`\\ \\(app\\)"
+msgstr ""
+
+#: ../../generated/opentakserver.app.rst:18:<autosummary>:1
+msgid ":py:obj:`create_groups <opentakserver.app.create_groups>`\\ \\(app\\)"
+msgstr ""
+
+#: ../../generated/opentakserver.app.rst:18:<autosummary>:1
+msgid ":py:obj:`init_extensions <opentakserver.app.init_extensions>`\\ \\(app\\)"
+msgstr ""
+
+#: ../../generated/opentakserver.app.rst:18:<autosummary>:1
+msgid ":py:obj:`main <opentakserver.app.main>`\\ \\(app\\)"
+msgstr ""
+
+#: ../../generated/opentakserver.app.rst:18:<autosummary>:1
+msgid ":py:obj:`setup_logging <opentakserver.app.setup_logging>`\\ \\(app\\)"
+msgstr ""
+
+#: ../../generated/opentakserver.app.rst:18:<autosummary>:1
+msgid ":py:obj:`start <opentakserver.app.start>`\\ \\(\\)"
+msgstr ""
+
+#: ../../generated/opentakserver.app.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`user_registered_sighandler "
+"<opentakserver.app.user_registered_sighandler>`\\ \\(app\\, user\\, "
+"...\\)"
+msgstr ""
+

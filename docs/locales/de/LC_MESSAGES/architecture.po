@@ -1,0 +1,349 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../architecture.md:1
+msgid "Architecture"
+msgstr ""
+
+#: ../../architecture.md:3
+msgid ""
+"As of version 1.5.0, OpenTAKServer is split into three parts, the API, "
+"the EUD handler, and the CoT parser. Each part runs as its own separate "
+"process. This solves a bottleneck issue caused by the [Python Global "
+"Interpreter Lock "
+"(GIL)](https://wiki.python.org/moin/GlobalInterpreterLock)."
+msgstr ""
+
+#: ../../architecture.md:6
+msgid "EUD Handler"
+msgstr ""
+
+#: ../../architecture.md:8
+msgid ""
+"The EUD Handler listens on a TCP port, specified by "
+"`OTS_TCP_STREAMING_PORT` or `OTS_SSL_STREAMING_PORT`, and is the main "
+"point of interaction between OpenTAKServer and EUDs. When an EUD sends a "
+"CoT message, `eud_handler` will publish it to RabbitMQ for `cot_parser` "
+"to parse. Likewise, when another EUD publishes a CoT message, "
+"`eud_handler` consume the message and send it to the EUD."
+msgstr ""
+
+#: ../../architecture.md:12
+msgid "CoT Parser"
+msgstr ""
+
+#: ../../architecture.md:14
+msgid ""
+"The CoT Parser connects to the RabbitMQ server and parses CoT messages "
+"sent by EUDs. There can be multiple instances of CoT parsers running at "
+"once. This allows you to take full advantage of your CPU cores if you "
+"have a high number of incoming CoT messages per second. If there are too "
+"many incoming CoT messages for the server to handle, additional servers "
+"can run more instances of `cot_parser` for extra processing power."
+msgstr ""
+
+#: ../../architecture.md:19
+msgid "Ports"
+msgstr ""
+
+#: ../../architecture.md:21
+msgid ""
+"Below is a table of all default ports used by OpenTAKServer. For "
+"unencrypted TCP communications, ports 80, 8080, and 8088 are required. "
+"For SSL encrypted communications, ports 443, 8443, 8446, and 8089 are "
+"required. In either case, the rest of the ports are optional."
+msgstr ""
+
+#: ../../architecture.md
+msgid "Port"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Component"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Protocol"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Interface"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Description"
+msgstr ""
+
+#: ../../architecture.md
+msgid "80"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Nginx"
+msgstr ""
+
+#: ../../architecture.md
+msgid "TCP"
+msgstr ""
+
+#: ../../architecture.md
+msgid "All"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Web UI and proxy for HTTP API requests to OpenTAKServer port 8081"
+msgstr ""
+
+#: ../../architecture.md
+msgid "443"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Web UI and proxy for HTTPS requests to OpenTAKServer port 8081"
+msgstr ""
+
+#: ../../architecture.md
+msgid "1883"
+msgstr ""
+
+#: ../../architecture.md
+msgid "RabbitMQ"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Unencrypted MQTT port used for Meshtastic"
+msgstr ""
+
+#: ../../architecture.md
+msgid "1935"
+msgstr ""
+
+#: ../../architecture.md
+msgid "MediaMTX"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Publish and view RTMP video streams"
+msgstr ""
+
+#: ../../architecture.md
+msgid "1936"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Publish and view RTMPS video streams"
+msgstr ""
+
+#: ../../architecture.md
+msgid "5672"
+msgstr ""
+
+#: ../../architecture.md
+msgid "For AMPQ clients, should be blocked from external access in most cases"
+msgstr ""
+
+#: ../../architecture.md
+msgid "6502"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Mumble Server"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Loopback (127.0.0.1)"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Mumble's ICE server, used by OpenTAKServer to provide authentication"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8000"
+msgstr ""
+
+#: ../../architecture.md
+msgid "UDP"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Publish and view RTP video streams"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8001"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Publish and view RTCP video streams"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8080"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8081"
+msgstr ""
+
+#: ../../architecture.md
+msgid "OpenTAKServer"
+msgstr ""
+
+#: ../../architecture.md
+msgid "OTS listens on this port on the loopback interface for HTTP(S) requests"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8189"
+msgstr ""
+
+#: ../../architecture.md
+msgid "WebRTC"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8088"
+msgstr ""
+
+#: ../../architecture.md
+msgid "TCP CoT streaming port"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8089"
+msgstr ""
+
+#: ../../architecture.md
+msgid "SSL CoT streaming port"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8443"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Web UI and proxy for HTTPS API requests to OpenTAKServer port 8081"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8446"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Web UI and proxy for certificate enrollment to OpenTAKServer port 8081"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8322"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Publish and view RTSP(S) video streams"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8554"
+msgstr ""
+
+#: ../../architecture.md
+msgid "TCP/UDP"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Publish and view RTSP video streams"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8883"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Encrypted MQTT port used for Meshtastic"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8888"
+msgstr ""
+
+#: ../../architecture.md
+msgid "View HLS video streams"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8889"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Publish and view WebRTC streams"
+msgstr ""
+
+#: ../../architecture.md
+msgid "8890"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Publish and view SRT streams"
+msgstr ""
+
+#: ../../architecture.md
+msgid "9997"
+msgstr ""
+
+#: ../../architecture.md
+msgid "MediaMTX's API"
+msgstr ""
+
+#: ../../architecture.md
+msgid "25672"
+msgstr ""
+
+#: ../../architecture.md
+msgid "RabbitMQ Federation, external access should be blocked in most cases"
+msgstr ""
+
+#: ../../architecture.md
+msgid "64738"
+msgstr ""
+
+#: ../../architecture.md
+msgid "Mumble server voice streams"
+msgstr ""
+
+#: ../../architecture.md:52
+msgid "Diagram"
+msgstr ""
+
+#: ../../architecture.md:54
+msgid ""
+"Here is an attempt at a diagram to help visualize the components used in "
+"OpenTAKServer and how they interact."
+msgstr ""
+
+#: ../../architecture.md:56
+msgid "![!Diagram](images/diagram.png)"
+msgstr ""
+
+#: ../../architecture.md:56
+msgid "!Diagram"
+msgstr ""
+

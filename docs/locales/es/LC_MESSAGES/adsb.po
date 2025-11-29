@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../adsb.md:1
+msgid "ADS-B"
+msgstr ""
+
+#: ../../adsb.md:3
+msgid ""
+"OpenTAKServer can pull live ADS-B data from the free "
+"[Airplanes.live](https://airplanes.live/) [API](https://airplanes.live"
+"/api-guide/). Aircraft will show on both your EUD's map and "
+"OpenTAKServer's map with 2525c icons."
+msgstr ""
+
+#: ../../adsb.md:6
+msgid "Airplanes.live API Limits"
+msgstr ""
+
+#: ../../adsb.md:8
+msgid ""
+"Airplanes.live limits their API to at most one request per second and a "
+"radius of 250nm."
+msgstr ""
+
+#: ../../adsb.md:10
+msgid "Setting Location"
+msgstr ""
+
+#: ../../adsb.md:12
+msgid ""
+"You can change the location and radius to query in your `config.yml` "
+"file. The options are:"
+msgstr ""
+
+#: ../../adsb.md:14
+msgid "`OTS_AIRPLANES_LIVE_LAT`: Latitude"
+msgstr ""
+
+#: ../../adsb.md:15
+msgid "`OTS_AIRPLANES_LIVE_LON`: Longitude"
+msgstr ""
+
+#: ../../adsb.md:16
+msgid ""
+"`OTS_AIRPLANES_LIVE_RADIUS`: In nautical miles and cannot be greater than"
+" 250"
+msgstr ""
+
+#: ../../adsb.md:18
+msgid "Setting Query Frequency"
+msgstr ""
+
+#: ../../adsb.md:20
+msgid ""
+"While logged into the OTS web UI as an administrator, click on `Scheduled"
+" Jobs` in the navigation bar. Find the `Airplanes.live job` in the table "
+"and click the `Edit` button. Enter the desired amount of minutes and "
+"seconds to query the API and click the `Save` button."
+msgstr ""
+
+#: ../../adsb.md:24
+msgid "Click on the `Activate` switch to enable the job."
+msgstr ""
+
+#: ../../adsb.md:26
+msgid "Run a Query Immediately"
+msgstr ""
+
+#: ../../adsb.md:28
+msgid ""
+"You can query the API while the scheduled job is deactivated or before it"
+" is due to run. While logged into the web UI as an administrator, click "
+"on `Scheduled Jobs`, then click the `Run Now` button."
+msgstr ""
+
+#: ../../adsb.md:31
+msgid "Screenshot"
+msgstr ""
+
+#: ../../adsb.md:33
+msgid "![!ADS-B data on the map](images/adsb_map.png)"
+msgstr ""
+
+#: ../../adsb.md:33
+msgid "!ADS-B data on the map"
+msgstr ""
+

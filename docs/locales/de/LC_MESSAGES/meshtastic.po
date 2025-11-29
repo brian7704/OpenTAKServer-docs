@@ -1,0 +1,232 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 22:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../meshtastic.md:1
+msgid "Meshtastic"
+msgstr ""
+
+#: ../../meshtastic.md:3
+msgid "Meshtastic support is available starting with version 1.2.0."
+msgstr ""
+
+#: ../../meshtastic.md:5
+msgid "Features"
+msgstr ""
+
+#: ../../meshtastic.md:7
+msgid ""
+"OpenTAKServer supports two-way communication between Meshtastic devices "
+"and EUDs connected to OpenTAKServer. This means that Meshtastic devices "
+"will show up on the maps of EUDs connected to OpenTAKServer and EUDs will"
+" show up on on the Meshtastic app's map. The Meshtastic app can also send"
+" and receive messages to All Chat Rooms as well as send and receive DMs "
+"from EUDs."
+msgstr ""
+
+#: ../../meshtastic.md:12
+msgid ""
+"Additionally, if a Meshtastic device is attached to a phone running ATAK "
+"and the ATAK Meshtastic plugin, GeoChat and PLI messages can be exchanged"
+" between EUDs connected to OpenTAKServer and the EUD in the Meshtastic "
+"network."
+msgstr ""
+
+#: ../../meshtastic.md:15
+msgid "Notes"
+msgstr ""
+
+#: ../../meshtastic.md:17
+msgid ""
+"In order not to overload the Meshtastic network with too many messages, "
+"only PLI and GeoChat CoT messages will be published to Meshtastic "
+"devices. Data packages and other CoT's such as markers, routes, "
+"geofences, etc, will not be sent to the mesh network, even if a "
+"Meshtastic device is running ATAK with the ATAK Meshtastic plugin."
+msgstr ""
+
+#: ../../meshtastic.md:21
+msgid "Requirements"
+msgstr ""
+
+#: ../../meshtastic.md:23
+msgid ""
+"You will need at least two Meshtastic devices. One will be connected to a"
+" Wi-Fi network and act as a gateway while the others will be standard "
+"mesh nodes."
+msgstr ""
+
+#: ../../meshtastic.md:26
+msgid "Configuration"
+msgstr ""
+
+#: ../../meshtastic.md:28
+msgid ""
+"There are three configuration settings in `config.yml` for Meshtastic "
+"support:"
+msgstr ""
+
+#: ../../meshtastic.md:30
+msgid "`OTS_ENABLE_MESHTASTIC`: Default: `False`"
+msgstr ""
+
+#: ../../meshtastic.md:31
+msgid "Change to `True` to enable this feature"
+msgstr ""
+
+#: ../../meshtastic.md:32
+msgid "`OTS_MESHTASTIC_TOPIC`: Default `opentakserver`"
+msgstr ""
+
+#: ../../meshtastic.md:33
+msgid ""
+"This is the MQTT topic that OpenTAKServer will use when publishing "
+"messages bound for the Meshtastic network"
+msgstr ""
+
+#: ../../meshtastic.md:34
+msgid "`OTS_MESHTASTIC_PUBLISH_INTERVAL`: Default `30` (seconds)"
+msgstr ""
+
+#: ../../meshtastic.md:35
+msgid ""
+"In order not to overload the Meshtastic network with too many messages, "
+"PLI CoT's from EUDs connected to OpenTAKServer will only be sent at this "
+"interval. This setting has no effect on GeoChat messages"
+msgstr ""
+
+#: ../../meshtastic.md:38
+msgid "Gateway Node Setup"
+msgstr ""
+
+#: ../../meshtastic.md:40
+msgid ""
+"The gateway node is responsible for exchanging messages between "
+"OpenTAKServer and the Meshtastic network. You can have multiple gateway "
+"nodes connected to one OpenTAKServer and exchange messages on multiple "
+"Meshtastic channels. The gateway node should be set to either the "
+"`CLIENT` or `ROUTER_CLIENT` role."
+msgstr ""
+
+#: ../../meshtastic.md:44
+msgid "Network Connection"
+msgstr ""
+
+#: ../../meshtastic.md:46
+msgid ""
+"The gateway node needs to be connected to a network that can reach your "
+"OpenTAKServer. This can be on the same LAN as OpenTAKServer, or it can be"
+" at a remote site that can reach your OpenTAKServer via VPN or the "
+"internet. Refer to Meshtastic's documentation on how to [enable network "
+"connectivity](https://meshtastic.org/docs/configuration/radio/network/)."
+msgstr ""
+
+#: ../../meshtastic.md:50
+msgid "MQTT"
+msgstr ""
+
+#: ../../meshtastic.md:52
+msgid ""
+"Once the gateway node is connected to a network you must [enable "
+"MQTT](https://meshtastic.org/docs/configuration/module/mqtt/). The "
+"settings should be as follows:"
+msgstr ""
+
+#: ../../meshtastic.md:55
+msgid "MQTT: Enabled"
+msgstr ""
+
+#: ../../meshtastic.md:56
+msgid "MQTT Server Address: Your server's address"
+msgstr ""
+
+#: ../../meshtastic.md:57
+msgid "MQTT Username: A valid username from an account on your server"
+msgstr ""
+
+#: ../../meshtastic.md:58
+msgid "MQTT Password: The password for the above username"
+msgstr ""
+
+#: ../../meshtastic.md:59
+msgid "Encryption: Disabled (Messages will be encrypted in transit with TLS)"
+msgstr ""
+
+#: ../../meshtastic.md:60
+msgid "TLS: Enabled"
+msgstr ""
+
+#: ../../meshtastic.md:61
+msgid ""
+"Root Topic: Value of the `OTS_MESHTASTIC_TOPIC` setting which defaults to"
+" `opentakserver`"
+msgstr ""
+
+#: ../../meshtastic.md:62
+msgid "Proxy to client: Disabled"
+msgstr ""
+
+#: ../../meshtastic.md:63
+msgid "Map Reporting: Enabled (Optional)"
+msgstr ""
+
+#: ../../meshtastic.md:64
+msgid "Map Report Publish Interval: 86400 (Optional)"
+msgstr ""
+
+#: ../../meshtastic.md:65
+msgid "Position Precision: High (Optional)"
+msgstr ""
+
+#: ../../meshtastic.md:67
+msgid "Channels"
+msgstr ""
+
+#: ../../meshtastic.md:69
+msgid ""
+"OpenTAKServer's Web UI now includes a Meshtastic page which can generate "
+"channel configurations. In order to send messages from OpenTAKServer to "
+"the Meshtastic network, you must add a channel configuration on this UI "
+"page with the `downlink` setting enabled. When Meshtastic support is "
+"enabled, OpenTAKServer will publish messages to each channel that has the"
+" `downlink` option enabled."
+msgstr ""
+
+#: ../../meshtastic.md:74
+msgid ""
+"Once you add a channel configuration in the UI, click the QR code button "
+"and use the Meshtastic app to add the channel to your gateway node."
+msgstr ""
+
+#: ../../meshtastic.md:77
+msgid ""
+"![!Meshtastic UI Screenshot](images/meshtastic.png) ![!Add Meshtastic "
+"Channel Screenshot](images/meshtastic_add_channel.png)"
+msgstr ""
+
+#: ../../meshtastic.md:77
+msgid "!Meshtastic UI Screenshot"
+msgstr ""
+
+#: ../../meshtastic.md:77
+msgid "!Add Meshtastic Channel Screenshot"
+msgstr ""
+
