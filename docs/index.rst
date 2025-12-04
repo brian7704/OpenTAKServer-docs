@@ -113,6 +113,7 @@ open source.
    cot_routing.md
    certificate_enrollment.md
    mission_api.md
+   link_account.rst
    email.md
    authentication.md
    adsb.md
