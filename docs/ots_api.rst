@@ -1,5 +1,5 @@
-Generated API
--------------
+OpenTAKServer API
+-----------------
 
 .. autoflask:: opentakserver.app:create_app()
     :undoc-static:

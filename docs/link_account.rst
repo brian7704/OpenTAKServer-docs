@@ -6,7 +6,7 @@ and allows server administrators to query TAK.gov for ATAK plugins and download 
 for EUDs to download and install.
 
 Linking an Account
-==================
+------------------
 
 Before starting, log into your TAK.gov account. Once logged in, follow these steps to link your account.
 
@@ -15,7 +15,7 @@ Before starting, log into your TAK.gov account. Once logged in, follow these ste
 3. Click the ``Link Account`` button
 
 Plugin List
-===========
+-----------
 
 After the account is successfully linked, a list of available plugins will be displayed. Clicking the ``Download Plugin``
 button will download the plugin to the server and make it available to EUDs to install. The ATAK version and flavor (i.e.
@@ -23,7 +23,7 @@ ATAK-CIV, ATAK-GOV, and ATAK-MIL) can be selected. Note that you will only see t
 If your account is only allowed to see ATAK-CIV plugins, selecting ATAK-MIL will not show ATAK-MIL plugins.
 
 Screenshots
-==========
+-----------
 
 .. image:: images/link_account.png
 

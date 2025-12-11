@@ -36,7 +36,7 @@ users to groups, either or both directions may be specified.
 LDAP
 ----
 
-An LDAP or Microsoft Active Directory server can optionally be used to manage groups. See the `LDAP <ldap.html>`__  page
+An LDAP or Microsoft Active Directory server can optionally be used to manage groups. See the :ref:`ldap`  page
 for details on configuring this feature.
 
 When using LDAP, OpenTAKServer will consider users that are members of the group specified by ``OTS_LDAP_ADMIN_GROUP``

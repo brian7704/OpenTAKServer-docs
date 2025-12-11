@@ -26,9 +26,13 @@ Current Features
    tested)
 -  WinTAK support
 -  iTAK support
+-  TAKX support
+-  `CloudTAK <https://github.com/dfpc-coe/CloudTAK>`__ support
 -  TCP and SSL CoT streaming
--  `Plugin Update Server <update_server.md>`__
--  `Device Profiles <device_profiles.md>`__
+-  `Plugin Update Server <update_server.html>`__
+-  `Device Profiles <device_profiles.html>`__
+-  Groups/Channels
+-  LDAP/Active Directory
 -  Authentication
 
    -  Optional support for user registration with an email account
@@ -104,13 +108,13 @@ open source.
    public_server.md
    feature_comparison.md
    configuration.rst
-   API.rst
    lets_encrypt.md
    data_packages.md
-   groups.rst
    security.md
    database.md
    cot_routing.md
+   groups.rst
+   ldap.rst
    certificate_enrollment.md
    mission_api.md
    link_account.rst
@@ -126,7 +130,13 @@ open source.
    symbology.md
    video_streaming.md
    meshtastic.md
-   generated_api.rst
+
+.. toctree::
+   :caption: API and Database Models
+   :hidden:
+
+   marti_api.rst
+   ots_api.rst
    models.rst
 
 .. toctree::

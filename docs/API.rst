@@ -5,7 +5,7 @@ Authentication
 --------------
 
 All API calls except for ``/api/login`` require
-`authentication <authentication.md>`__. Some are restricted to
+`authentication <authentication.html>`__. Some are restricted to
 administrators only.
 
 Pagination
@@ -78,7 +78,6 @@ Creates a certificate data package for an EUD
 -  Content: ``{'uid': 'Android-123456789', 'callsign': 'BRAVO'}``
 
 /api/me
--------
 
 Returns user account details
 
