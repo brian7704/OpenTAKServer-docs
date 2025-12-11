@@ -4,26 +4,27 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-12-11 12:11+0000\n"
+"Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
+"Language-Team: Ukrainian <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/delete_old_data/uk/>\n"
 "Language: uk\n"
-"Language-Team: uk <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../delete_old_data.md:1
 msgid "Deleting Old Data"
-msgstr ""
+msgstr "Видалення старих даних"
 
 #: ../../delete_old_data.md:3
 msgid ""
@@ -34,26 +35,33 @@ msgid ""
 "or EUDs that haven't connected within the last week. This interval can be"
 " configured by adding or changing the following settings in config.yml"
 msgstr ""
+"OpenTAKServer може періодично видаляти старі дані з бази даних. Цю функцію "
+"може ввімкнути адміністратор на сторінці «Заплановані завдання» інтерфейсу "
+"користувача. Налаштування за замовчуванням видалятимуть дані (маркери, дані "
+"про місцезнаходження, лінії R&B, сповіщення, повідомлення CoT та EUD), які "
+"старіші за один тиждень, або EUD, які не підключалися протягом останнього "
+"тижня. Цей інтервал можна налаштувати, додавши або змінивши такі параметри у "
+"файлі config.yml"
 
 #: ../../delete_old_data.md:8
 msgid "`OTS_DELETE_OLD_DATA_SECONDS` default `0`"
-msgstr ""
+msgstr "`OTS_DELETE_OLD_DATA_SECONDS` за замовчуванням `0`"
 
 #: ../../delete_old_data.md:9
 msgid "`OTS_DELETE_OLD_DATA_MINUTES` default `0`"
-msgstr ""
+msgstr "`OTS_DELETE_OLD_DATA_MINUTES` за замовчуванням `0`"
 
 #: ../../delete_old_data.md:10
 msgid "`OTS_DELETE_OLD_DATA_HOURS` default `0`"
-msgstr ""
+msgstr "`OTS_DELETE_OLD_DATA_HOURS` за замовчуванням `0`"
 
 #: ../../delete_old_data.md:11
 msgid "`OTS_DELETE_OLD_DATA_DAYS` default `0`"
-msgstr ""
+msgstr "`OTS_DELETE_OLD_DATA_DAYS` за замовчуванням `0`"
 
 #: ../../delete_old_data.md:12
 msgid "`OTS_DELETE_OLD_DATA_WEEKS` default `1`"
-msgstr ""
+msgstr "`OTS_DELETE_OLD_DATA_WEEKS` за замовчуванням `1`"
 
 #: ../../delete_old_data.md:14
 msgid ""
@@ -62,4 +70,7 @@ msgid ""
 "and `OTS_DELETE_OLD_DATA_DAYS` to `1`, it will delete data older than 2 "
 "weeks and 1 day."
 msgstr ""
-
+"OpenTAKServer підсумує ці значення та видалить усі дані, старіші за "
+"інтервал. Наприклад, якщо встановити для `OTS_DELETE_OLD_DATA` значення `2` "
+"та для `OTS_DELETE_OLD_DATA_DAYS` значення `1`, буде видалено дані, старіші "
+"за 2 тижні та 1 день."
