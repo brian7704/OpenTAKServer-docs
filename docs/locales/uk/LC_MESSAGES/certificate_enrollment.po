@@ -148,10 +148,6 @@ msgstr ""
 "кнопку `Відкрити ATAK` замість сканування QR-коду, щоб розпочати процес "
 "реєстрації сертифіката."
 
-#: ../../certificate_enrollment.md:41
-msgid "!ATAK QR Code"
-msgstr "QR-код ATAK"
-
 #: ../../certificate_enrollment.md:44
 msgid "Instructions"
 msgstr "Інструкції"

@@ -109,10 +109,6 @@ msgid ""
 "certificate registration process."
 msgstr ""
 
-#: ../../certificate_enrollment.md:41
-msgid "!ATAK QR Code"
-msgstr ""
-
 #: ../../certificate_enrollment.md:44
 msgid "Instructions"
 msgstr ""
