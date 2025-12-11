@@ -4,21 +4,22 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-12-11 03:42+0000\n"
+"Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
+"Language-Team: Ukrainian <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/opentak_icu/uk/>\n"
 "Language: uk\n"
-"Language-Team: uk <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../opentak_icu/audio_codecs.md:1 ../../opentak_icu/index.md:29
@@ -274,7 +275,7 @@ msgstr ""
 
 #: ../../opentak_icu/index.md:40 ../../opentak_icu/tak_server.md:19
 msgid "Authentication"
-msgstr ""
+msgstr "Автентифікація"
 
 #: ../../opentak_icu/index.md:41 ../../opentak_icu/index.md:102
 msgid "Servers with self-signed certificates"
@@ -457,7 +458,7 @@ msgstr ""
 
 #: ../../opentak_icu/index.md:111
 msgid "Feature Comparison"
-msgstr ""
+msgstr "Порівняння характеристик"
 
 #: ../../opentak_icu/index.md:113 ../../opentak_icu/streaming_protocols.md:1
 msgid "Streaming Protocols"
@@ -860,4 +861,3 @@ msgstr ""
 #: ../../opentak_icu/video_filters.md:19
 msgid "!Chroma Key Test"
 msgstr ""
-
