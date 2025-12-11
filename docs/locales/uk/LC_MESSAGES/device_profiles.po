@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-11 04:46+0000\n"
+"PO-Revision-Date: 2025-12-11 12:11+0000\n"
 "Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/device_profiles/uk/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../device_profiles.md:1
 msgid "Device Profiles"
-msgstr ""
+msgstr "Профілі пристроїв"
 
 #: ../../device_profiles.md:3
 msgid ""

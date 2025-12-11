@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-11 03:42+0000\n"
+"PO-Revision-Date: 2025-12-11 12:11+0000\n"
 "Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/opentak_icu/uk/>\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: ../../opentak_icu/audio_codecs.md:1 ../../opentak_icu/index.md:29
 #: ../../opentak_icu/index.md:132
 msgid "Audio Codecs"
-msgstr ""
+msgstr "Аудіокодеки"
 
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/audio_codecs.md:3
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:32
@@ -69,7 +69,7 @@ msgstr ""
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/streaming_protocols.md:3
 #: ../../opentak_icu/video_codecs.md
 msgid "RTSP(S)"
-msgstr ""
+msgstr "RTSP(S)"
 
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/index.md
 #: ../../opentak_icu/video_codecs.md
@@ -79,7 +79,7 @@ msgstr ""
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/streaming_protocols.md:8
 #: ../../opentak_icu/video_codecs.md
 msgid "RTMP(S)"
-msgstr ""
+msgstr "RTMP(S)"
 
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/index.md
 #: ../../opentak_icu/video_codecs.md
@@ -90,7 +90,7 @@ msgstr ""
 #: ../../opentak_icu/streaming_protocols.md:12
 #: ../../opentak_icu/video_codecs.md
 msgid "SRT"
-msgstr ""
+msgstr "СТО"
 
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/index.md
 #: ../../opentak_icu/index.md:39 ../../opentak_icu/streaming_protocols.md:16
@@ -462,7 +462,7 @@ msgstr "Порівняння характеристик"
 
 #: ../../opentak_icu/index.md:113 ../../opentak_icu/streaming_protocols.md:1
 msgid "Streaming Protocols"
-msgstr ""
+msgstr "Протоколи потокової передачі"
 
 #: ../../opentak_icu/index.md
 msgid "TAK ICU"

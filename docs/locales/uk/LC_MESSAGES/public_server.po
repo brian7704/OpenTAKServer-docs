@@ -4,26 +4,27 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-12-11 12:11+0000\n"
+"Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
+"Language-Team: Ukrainian <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/public_server/uk/>\n"
 "Language: uk\n"
-"Language-Team: uk <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../public_server.md:1
 msgid "Public Server"
-msgstr ""
+msgstr "Публічний сервер"
 
 #: ../../public_server.md:3
 msgid ""
@@ -32,10 +33,14 @@ msgid ""
 "Enrollment](certificate_enrollment.md) for instruction to connect to the "
 "public server with ATAK."
 msgstr ""
+"Загальнодоступний OpenTAKServer доступний для ознайомлення за адресою "
+"<https://public.opentakserver.io>. Інструкції щодо підключення до публічного "
+"сервера за допомогою ATAK див. у розділі [Реєстрація сертифіката]"
+"(certificate_enrollment.md)."
 
 #: ../../public_server.md:6
 msgid "Account Registration"
-msgstr ""
+msgstr "Реєстрація облікового запису"
 
 #: ../../public_server.md:8
 msgid ""
@@ -45,10 +50,16 @@ msgid ""
 "  [Discord server](https://discord.gg/6uaVHjtfXN) and an admin can create"
 " one without the need for an email address."
 msgstr ""
+"Реєстрація облікового запису обов'язкова для всіх функцій, окрім підключення "
+"до ATAK через TCP. Ви можете отримати обліковий запис двома способами. Або "
+"зареєструйтесь, використовуючи адресу електронної пошти (це може бути "
+"тимчасова електронна адреса), або зв'яжіться з нами на нашому "
+"[сервері Discord](https://discord.gg/6uaVHjtfXN), і адміністратор зможе "
+"створити обліковий запис без необхідності вказувати адресу електронної пошти."
 
 #: ../../public_server.md:12
 msgid "ATAK Settings for TCP"
-msgstr ""
+msgstr "Налаштування ATAK для TCP"
 
 #: ../../public_server.md:14
 msgid ""
@@ -57,4 +68,7 @@ msgid ""
 "which is `TCP`. Note that any data transmitted between your EUD and this "
 "server will not be encrypted when using TCP."
 msgstr ""
-
+"У ATAK додайте новий сервер. Вам знадобляться лише адреса "
+"`public.opentakserver.io`, порт `8088` та протокол `TCP`. Зверніть увагу, що "
+"будь-які дані, що передаються між вашим EUD та цим сервером, не будуть "
+"зашифровані під час використання TCP."

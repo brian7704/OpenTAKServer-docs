@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-11 04:46+0000\n"
+"PO-Revision-Date: 2025-12-11 12:11+0000\n"
 "Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/video_streaming/uk/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../video_streaming.md:1
 msgid "Video Streaming"
-msgstr ""
+msgstr "Потокове відео"
 
 #: ../../video_streaming.md:3
 msgid ""
@@ -33,10 +33,14 @@ msgid ""
 "[OpenTAK ICU](https://github.com/brian7704/OpenTAK_ICU) and TAK ICU, as "
 "well as devices like drones and IP Cameras."
 msgstr ""
+"OpenTAKServer використовує [MediaMTX](https://github.com/bluenviron/mediamtx)"
+" для потокової передачі та запису відео. Він приймає потоки з таких програм, "
+"як [OpenTAK ICU](https://github.com/brian7704/OpenTAK_ICU) та TAK ICU, а "
+"також з таких пристроїв, як дрони та IP-камери."
 
 #: ../../video_streaming.md:6
 msgid "Streaming From Your Browser"
-msgstr ""
+msgstr "Потокове передавання з вашого браузера"
 
 #: ../../video_streaming.md:8
 msgid ""
@@ -49,6 +53,15 @@ msgid ""
 " users on the server but they have no app to do so. Laptop and desktop "
 "computers can also use this button to stream from their cameras."
 msgstr ""
+"OpenTAKServer підтримує потокову передачу з будь-якого пристрою, на якому є "
+"браузер і камеру. На сторінці «Відеопотоки» веб-інтерфейсу OpenTAKServer є "
+"кнопка з написом ` «Почати потокову передачу» `. Натискання цієї кнопки "
+"запропонує браузеру запитати дозвіл на використання камери та мікрофона "
+"вашого пристрою для потокової передачі аудіо та відео на MediaMTX. Це "
+"корисно в ситуаціях, коли хтось із пристроєм Android або iOS хоче "
+"транслювати відео іншим користувачам на сервері, але у нього немає програми "
+"для цього. Ноутбуки та настільні комп’ютери також можуть використовувати цю "
+"кнопку для потокової передачі зі своїх камер."
 
 #: ../../video_streaming.md:14
 msgid ""
@@ -57,46 +70,51 @@ msgid ""
 "with the stream, meaning there will be no icon on OpenTAKServer's or any "
 "EUD's maps for the location of the stream."
 msgstr ""
+"Зверніть увагу, що потокове передавання таким чином передає лише аудіо та "
+"відео. Користувачі можуть переглядати потокове передавання на своїх EUD, але "
+"інформація про місцезнаходження не додається до потокового передавання, "
+"тобто на картах OpenTAKServer або будь-яких EUD не буде значка для "
+"місцезнаходження потокового передавання."
 
 #: ../../video_streaming.md:18
 msgid "Streaming Protocols"
-msgstr ""
+msgstr "Протоколи потокової передачі"
 
 #: ../../video_streaming.md:20
 msgid "You can stream to MediaMTX using a variety of protocols:"
-msgstr ""
+msgstr "Ви можете транслювати на MediaMTX, використовуючи різні протоколи:"
 
 #: ../../video_streaming.md:22
 msgid "RTSP(S)"
-msgstr ""
+msgstr "RTSP(S)"
 
 #: ../../video_streaming.md:23
 msgid "RTMP(S)"
-msgstr ""
+msgstr "RTMP(S)"
 
 #: ../../video_streaming.md:24
 msgid "SRT"
-msgstr ""
+msgstr "СТО"
 
 #: ../../video_streaming.md:25
 msgid "HLS"
-msgstr ""
+msgstr "ЗСЖ"
 
 #: ../../video_streaming.md:26
 msgid "WebRTC"
-msgstr ""
+msgstr "WebRTC"
 
 #: ../../video_streaming.md:27
 msgid "UDP Multicast"
-msgstr ""
+msgstr "Багатоадресна розсилка UDP"
 
 #: ../../video_streaming.md:29
 msgid "Watching Video Streams"
-msgstr ""
+msgstr "Перегляд відеопотоків"
 
 #: ../../video_streaming.md:31
 msgid "In Browser"
-msgstr ""
+msgstr "У браузері"
 
 #: ../../video_streaming.md:33
 msgid ""
@@ -106,16 +124,22 @@ msgid ""
 "player sometimes doesn't show up. If that happens, refresh the page and "
 "try again."
 msgstr ""
+"У OpenTAKServer натисніть на `Відеопотоки`. У списку потоків натисніть "
+"кнопку `Дивитися` на потоці, який ви хочете переглянути. Під списком потоків "
+"з’явиться відеоплеєр. Існує відома проблема, через яку плеєр іноді не "
+"відображається. Якщо це станеться, оновіть сторінку та спробуйте ще раз."
 
 #: ../../video_streaming.md:37
 msgid ""
 "Alternatively, you can copy the WebRTC link of the video and paste it in "
 "a new tab."
 msgstr ""
+"Або ж ви можете скопіювати посилання WebRTC на відео та вставити його в нову "
+"вкладку."
 
 #: ../../video_streaming.md:39
 msgid "In ATAK"
-msgstr ""
+msgstr "В ATAK"
 
 #: ../../video_streaming.md:41
 msgid ""
@@ -125,10 +149,15 @@ msgid ""
 "the video settings and add your OpenTAKServer username and password. You "
 "can now view the video stream."
 msgstr ""
+"Коли ATAK підключено до OpenTAKServer, відкрийте інструмент «Відео», а потім "
+"натисніть кнопку завантаження. ATAK запитає у сервера список відеопотоків. "
+"Виберіть, який потік переглядати, і натисніть кнопку `ОК`. Далі відредагуйте "
+"налаштування відео та додайте своє ім’я користувача та пароль OpenTAKServer. "
+"Тепер ви можете переглядати відеопотік."
 
 #: ../../video_streaming.md:45
 msgid "In Kodi"
-msgstr ""
+msgstr "У Коді"
 
 #: ../../video_streaming.md:47
 msgid ""
@@ -138,6 +167,11 @@ msgid ""
 "To in stall the add-on, browse to Add-ons -> Download -> Video add-ons ->"
 " OpenTAKServer Video Plugin and select the install button."
 msgstr ""
+"Існує доповнення для [Kodi](https://kodi.tv/), яке дозволяє переглядати "
+"трансляції та записи з вашого сервера. Доповнення працює на всіх платформах, "
+"на яких працює Kodi (Windows, macOS, Linux, Android, iOS тощо). Щоб "
+"встановити доповнення, перейдіть до розділу Доповнення -> Завантажити -> "
+"Відеодоповнення -> Відеоплагін OpenTAKServer і натисніть кнопку встановлення."
 
 #: ../../video_streaming.md:51
 msgid ""
@@ -145,18 +179,20 @@ msgid ""
 "screen where you will need to enter your server's address, username, and "
 "password."
 msgstr ""
+"Під час першого запуску доповнення ви потрапите на екран налаштувань, де вам "
+"потрібно буде ввести адресу вашого сервера, ім'я користувача та пароль."
 
 #: ../../video_streaming.md:54
 msgid "![Kodi Add-on](images/kodi_screenshot_1.png)"
-msgstr ""
+msgstr "![Доповнення Kodi](images/kodi_screenshot_1.png)"
 
 #: ../../video_streaming.md:54
 msgid "Kodi Add-on"
-msgstr ""
+msgstr "Додаток Kodi"
 
 #: ../../video_streaming.md:56
 msgid "In VLC"
-msgstr ""
+msgstr "У VLC"
 
 #: ../../video_streaming.md:58
 msgid ""
@@ -165,10 +201,14 @@ msgid ""
 "be prompted for your OpenTAKServer username and password. Enter them and "
 "click Ok."
 msgstr ""
+"Скопіюйте посилання RTSP з OpenTAKServer. У VLC натисніть Media -> Open "
+"Network Stream. Вставте посилання RTSP і натисніть кнопку Play. Вам буде "
+"запропоновано ввести ім'я користувача та пароль OpenTAKServer. Введіть їх і "
+"натисніть OK."
 
 #: ../../video_streaming.md:61
 msgid "Recording Streams"
-msgstr ""
+msgstr "Запис потоків"
 
 #: ../../video_streaming.md:63
 msgid ""
@@ -179,6 +219,13 @@ msgid ""
 " can watch and download recording by clicking `Video Recordings` in the "
 "navigation bar."
 msgstr ""
+"Щоб записати трансляцію, просто натисніть на перемикач запису трансляції. Ви "
+"можете зробити це під час трансляції або коли трансляція не відбувається. "
+"Запис автоматично починається, коли трансляція починається в прямому ефірі, "
+"і зупиняється, коли трансляція зупиняється. Записані відео за замовчуванням "
+"зберігатимуться в `~/ots/mediamtx/recordings/<шлях_до_трансляції>`. Ви "
+"можете переглянути та завантажити запис, натиснувши `Відеозаписи` на панелі "
+"навігації."
 
 #: ../../video_streaming.md:68
 msgid "Screenshot"
@@ -186,7 +233,7 @@ msgstr "Знімок екрана"
 
 #: ../../video_streaming.md:70
 msgid "![!Video Streams](images/video_streams.png)"
-msgstr ""
+msgstr "![!Відеопотоки](images/video_streams.png)"
 
 #: ../../video_streaming.md:70
 msgid "!Video Streams"
