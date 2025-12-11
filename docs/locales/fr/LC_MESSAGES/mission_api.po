@@ -4,25 +4,26 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-12-11 03:42+0000\n"
+"Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
+"Language-Team: French <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/mission_api/fr/>\n"
 "Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../mission_api.md:1
 msgid "Mission API/Data Sync"
-msgstr ""
+msgstr "Synchronisation des données/API de mission"
 
 #: ../../mission_api.md:3
 msgid ""
@@ -33,4 +34,3 @@ msgid ""
 " encounter any problems, please open a [GitHub "
 "issue](https://github.com/brian7704/OpenTAKServer/issues)."
 msgstr ""
-
