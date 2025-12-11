@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt_BR\n"
+"Language-Team: pt_BR <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../database.md:1
+msgid "Database"
+msgstr ""
+
+#: ../../database.md:3
+msgid ""
+"OpenTAKServer uses SQLAlchemy to handle its database. SQLite is the "
+"default database engine. You can change this to any other database engine"
+" supported by SQLAlchemy using the `SQLALCHEMY_DATABASE_URI` option in "
+"`config.yml`. SQLAlchemy supports the following engines"
+msgstr ""
+
+#: ../../database.md:7
+msgid "SQLite"
+msgstr ""
+
+#: ../../database.md:8
+msgid "MySQL/MariaDB"
+msgstr ""
+
+#: ../../database.md:9 ../../database.md:15
+msgid "PostgreSQL"
+msgstr ""
+
+#: ../../database.md:10
+msgid "Microsoft SQL Server"
+msgstr ""
+
+#: ../../database.md:11
+msgid "Oracle"
+msgstr ""
+
+#: ../../database.md:13
+msgid ""
+"See [SQLAlchemy's "
+"documentation](https://docs.sqlalchemy.org/en/20/core/engines.html) for "
+"more details."
+msgstr ""
+
+#: ../../database.md:18
+msgid "OpenTAKServer can be configured to use PostgreSQL as its database backend."
+msgstr ""
+
+#: ../../database.md:20
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../database.md:22
+msgid "Before configuring OpenTAKServer to run on PostgreSQL, ensure you have:"
+msgstr ""
+
+#: ../../database.md:23
+msgid "The database CA certificate (if an SSL connection is desired or required)"
+msgstr ""
+
+#: ../../database.md:24
+msgid "Access to your PostgreSQL database with a typical database client"
+msgstr ""
+
+#: ../../database.md:25
+msgid "Database connection details (hostname, port, username, password)"
+msgstr ""
+
+#: ../../database.md:27
+msgid "Installation"
+msgstr ""
+
+#: ../../database.md:29
+msgid "Install the required PostgreSQL adapter in OpenTAKServer:"
+msgstr ""
+
+#: ../../database.md:36
+msgid ""
+"If `ssl_mode=required` is on, download the database CA certificate from "
+"your provider and place it in the `~/ots` directory."
+msgstr ""
+
+#: ../../database.md:38
+msgid "Modify the settings in `~/ots/config.yml` to include:"
+msgstr ""
+
+#: ../../database.md:49
+msgid ""
+"Replace `[user]`, `[password]`, `[hostname]`, `[port]`, and `[database]` "
+"with your actual database connection details. You can leave "
+"`SQLALCHEMY_ENGINE_OPTIONS` as is if the database does not use an SSL "
+"connection."
+msgstr ""
+
+#: ../../database.md:51
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../database.md:52
+msgid ""
+"OpenTAKServer does not produce detailed error reports when something is "
+"wrong with the configuration file or database. It's easier to temporarily"
+" turn the service off and run the program directly for debugging."
+msgstr ""
+
+#: ../../database.md:54
+msgid ""
+"To get detailed feedback about connection issues, run OpenTAKServer "
+"directly instead of as a service:"
+msgstr ""
+
+#: ../../database.md:61
+msgid ""
+"If you encounter schema permission issues, ensure the database user owns "
+"the `public` schema. You may need to recreate it with the correct "
+"ownership."
+msgstr ""
+
+#: ../../database.md:63
+msgid ""
+"Finally, stop the OTS process in the terminal (Ctrl+C) and restart the "
+"service:"
+msgstr ""
+
