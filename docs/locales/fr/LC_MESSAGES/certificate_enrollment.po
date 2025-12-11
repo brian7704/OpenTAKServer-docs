@@ -229,11 +229,7 @@ msgid "Screenshots"
 msgstr ""
 
 #: ../../certificate_enrollment.md:71
-msgid "![!Settings](images/certificate_enrollment/server_settings.png)"
-msgstr ""
-
-#: ../../certificate_enrollment.md:71
-msgid "!Settings"
+msgid "Settings"
 msgstr ""
 
 #: ../../certificate_enrollment.md:73
@@ -241,13 +237,7 @@ msgid "Self-Signed Certificate Settings"
 msgstr ""
 
 #: ../../certificate_enrollment.md:75
-msgid ""
-"![!Self-Signed Certificate "
-"Screenshot](images/certificate_enrollment/self_signed_settings.png)"
-msgstr ""
-
-#: ../../certificate_enrollment.md:75
-msgid "!Self-Signed Certificate Screenshot"
+msgid "Self-Signed Certificate Screenshot"
 msgstr ""
 
 #: ../../certificate_enrollment.md:77
@@ -255,11 +245,5 @@ msgid "Let's Encrypt Settings"
 msgstr ""
 
 #: ../../certificate_enrollment.md:79
-msgid ""
-"![!Let's Encrypt "
-"Settings](images/certificate_enrollment/lets_encrypt_settings.png)"
-msgstr ""
-
-#: ../../certificate_enrollment.md:79
-msgid "!Let's Encrypt Settings"
+msgid "Let's Encrypt Settings"
 msgstr ""
