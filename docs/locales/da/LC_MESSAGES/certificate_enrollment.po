@@ -247,7 +247,3 @@ msgstr ""
 msgid "Let's Encrypt Settings"
 msgstr ""
 
-#: ../../certificate_enrollment.md:79
-msgid "Let's Encrypt Settings"
-msgstr ""
-
