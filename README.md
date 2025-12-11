@@ -9,6 +9,7 @@ To build the docs, the following Python packages are required
 * sphinxext.opengraph
 * sphinxcontrib-httpdomain
 * sphinx_sqlalchemy
+* sphinx-intl
 
 
 <https://docs.opentakserver.io>

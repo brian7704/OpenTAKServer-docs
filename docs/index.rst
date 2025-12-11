@@ -130,6 +130,7 @@ open source.
    symbology.md
    video_streaming.md
    meshtastic.md
+   internationalization.rst
 
 .. toctree::
    :caption: API and Database Models
