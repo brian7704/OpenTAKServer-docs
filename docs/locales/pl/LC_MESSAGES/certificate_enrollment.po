@@ -110,10 +110,6 @@ msgid ""
 msgstr ""
 
 #: ../../certificate_enrollment.md:41
-msgid "![!ATAK QR Code](images/ATAK_QR_Code.PNG)"
-msgstr ""
-
-#: ../../certificate_enrollment.md:41
 msgid "!ATAK QR Code"
 msgstr ""
 
