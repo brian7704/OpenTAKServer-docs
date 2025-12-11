@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-11 03:42+0000\n"
+"PO-Revision-Date: 2025-12-11 04:46+0000\n"
 "Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/docs/uk/>\n"
@@ -97,7 +97,7 @@ msgstr ""
 
 #: ../../adsb.md:31
 msgid "Screenshot"
-msgstr ""
+msgstr "Знімок екрана"
 
 #: ../../adsb.md:33
 msgid "![!ADS-B data on the map](images/adsb_map.png)"
