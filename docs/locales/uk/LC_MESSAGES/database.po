@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-11 03:42+0000\n"
+"PO-Revision-Date: 2025-12-11 04:17+0000\n"
 "Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/database/uk/>\n"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../database.md:20
 msgid "Prerequisites"
-msgstr ""
+msgstr "Передумови"
 
 #: ../../database.md:22
 msgid "Before configuring OpenTAKServer to run on PostgreSQL, ensure you have:"
