@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-11 03:42+0000\n"
+"PO-Revision-Date: 2025-12-11 04:17+0000\n"
 "Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/certificate_enrollment/uk/>\n"
@@ -31,6 +31,8 @@ msgid ""
 "OpenTAKServer supports client certificate enrollment which defaults to "
 "port `8446`."
 msgstr ""
+"OpenTAKServer підтримує реєстрацію клієнтських сертифікатів, для яких за "
+"замовчуванням використовується порт `8446`."
 
 #: ../../certificate_enrollment.md:5
 msgid "Authentication"
@@ -42,10 +44,13 @@ msgid ""
 " an account on your OpenTAKServer or have an administrator make an "
 "account for you."
 msgstr ""
+"Реєстрація сертифіката вимагає автентифікації. Вам потрібно буде "
+"зареєструвати обліковий запис на вашому OpenTAKServer або попросити "
+"адміністратора створити обліковий запис для вас."
 
 #: ../../certificate_enrollment.md:10
 msgid "Prerequisites"
-msgstr ""
+msgstr "Передумови"
 
 #: ../../certificate_enrollment.md:12
 msgid ""
@@ -57,10 +62,18 @@ msgid ""
 "`https://your_server_address/api/truststore` or by logging into the web "
 "UI and clicking the `Download Truststore` button."
 msgstr ""
+"Порт за замовчуванням для реєстрації сертифікатів – `8446`. Цей порт "
+"використовуватиме один із двох типів сертифікатів: самопідписані або Let's "
+"Encrypt. За замовчуванням використовуються самопідписані сертифікати. Якщо "
+"ваш сервер використовує самопідписані сертифікати, вам знадобиться копія "
+"сертифіката сховища довірених сертифікатів вашого сервера для автоматичної "
+"реєстрації. Ви можете завантажити копію за адресою `https://"
+"your_server_address/api/truststore` або увійшовши у веб-інтерфейс і "
+"натиснувши кнопку `Завантажити сховище довірених сертифікатів`."
 
 #: ../../certificate_enrollment.md:17
 msgid "iTAK QR Code"
-msgstr ""
+msgstr "QR-код iTAK"
 
 #: ../../certificate_enrollment.md:19
 msgid ""
@@ -68,10 +81,13 @@ msgid ""
 "configured with a signed certificate from Let's Encrypt or a similar "
 "trusted certificate authority."
 msgstr ""
+"Щоб використовувати QR-код для реєстрації iTAK, ваш сервер має бути "
+"налаштований за допомогою підписаного сертифіката від Let's Encrypt або "
+"аналогічного довіреного центру сертифікації."
 
 #: ../../certificate_enrollment.md:22
 msgid "ATAK QR Code"
-msgstr ""
+msgstr "QR-код ATAK"
 
 #: ../../certificate_enrollment.md:24
 msgid ""
@@ -85,6 +101,15 @@ msgid ""
 "The QR code can also be deleted. If it's scanned after being deleted, "
 "certificate registration will fail."
 msgstr ""
+"Починаючи з версії 1.5.0, OpenTAKServer підтримує генерацію QR-кодів для "
+"реєстрації сертифіката ATAK. Ця функція вимагає, щоб ваш сервер мав доменне "
+"ім'я з довіреним сертифікатом від Let's Encrypt або подібного довіреного "
+"центру сертифікації. Під час генерації QR-коду ви можете за потреби вказати "
+"термін дії та максимальну кількість використань. Якщо вказано один або "
+"обидва варіанти, QR-код більше не працюватиме після закінчення терміну дії "
+"або максимальної кількості використань (залежно від того, що настане раніше)"
+". QR-код також можна видалити. Якщо його просканувати після видалення, "
+"реєстрація сертифіката не вдасться."
 
 #: ../../certificate_enrollment.md:30
 msgid ""
@@ -94,6 +119,11 @@ msgid ""
 "However, it is possible to generate a single QR code and let multiple "
 "users scan it."
 msgstr ""
+"Кожен користувач може мати лише один активний QR-код одночасно, але його "
+"можна видалити та створити повторно в будь-який час. QR-код унікальний для "
+"користувача, який його створив, і в більшості випадків його слід розглядати "
+"як пароль. Однак можна створити один QR-код і дозволити кільком користувачам "
+"сканувати його."
 
 #: ../../certificate_enrollment.md:34
 msgid ""
@@ -102,6 +132,11 @@ msgid ""
 "start the certificate registration process. This method does not require "
 "the user to uncheck the Preconfigured Trust option."
 msgstr ""
+"Щоб відсканувати QR-код, скористайтеся застосунком камери вашого EUD або "
+"будь-яким іншим застосунком для сканування QR-кодів. Після сканування "
+"відкриття посилання автоматично відкриє ATAK та розпочне процес реєстрації "
+"сертифіката. Цей метод не вимагає від користувача знімати прапорець біля "
+"опції «Попередньо налаштована довіра»."
 
 #: ../../certificate_enrollment.md:38
 msgid ""
@@ -109,50 +144,60 @@ msgid ""
 "the `Open ATAK` button instead of scanning the QR code to start the "
 "certificate registration process."
 msgstr ""
+"Або ж, якщо ви ввійшли у веб-інтерфейс на вашому EUD, ви можете натиснути "
+"кнопку `Відкрити ATAK` замість сканування QR-коду, щоб розпочати процес "
+"реєстрації сертифіката."
 
 #: ../../certificate_enrollment.md:41
 msgid "!ATAK QR Code"
-msgstr ""
+msgstr "QR-код ATAK"
 
 #: ../../certificate_enrollment.md:44
 msgid "Instructions"
-msgstr ""
+msgstr "Інструкції"
 
 #: ../../certificate_enrollment.md:46
 msgid ""
 "On the main ATAK screen, tap the hamburger icon in the top right corner "
 "and tap `Settings`"
 msgstr ""
+"На головному екрані ATAK торкніться значка гамбургера у верхньому правому "
+"куті та виберіть `Налаштування`"
 
 #: ../../certificate_enrollment.md:47
 msgid "Tap on `Network Preferences`"
-msgstr ""
+msgstr "Натисніть на `Налаштування мережі `"
 
 #: ../../certificate_enrollment.md:48
 msgid "Tap on `TAK Servers`"
-msgstr ""
+msgstr "Натисніть на ` Сервери TAK `"
 
 #: ../../certificate_enrollment.md:49
 msgid "Tap the three vertical dots button in the top right corner and tap `Add`"
 msgstr ""
+"Натисніть кнопку з трьома вертикальними крапками у верхньому правому куті та "
+"натисніть `Додати`"
 
 #: ../../certificate_enrollment.md:50
 msgid "Fill out your server's name and address"
-msgstr ""
+msgstr "Введіть назву та адресу вашого сервера"
 
 #: ../../certificate_enrollment.md:51
 msgid ""
 "Check the `Use Authentication` checkbox and enter your OpenTAKServer "
 "username and password"
 msgstr ""
+"Поставте прапорець `Використовувати автентифікацію` та введіть своє ім’я "
+"користувача та пароль OpenTAKServer"
 
 #: ../../certificate_enrollment.md:52
 msgid "Check the `Enroll for Client Certificate` checkbox"
-msgstr ""
+msgstr "Поставте прапорець `Зареєструвати сертифікат клієнта`"
 
 #: ../../certificate_enrollment.md:53
 msgid "Make sure Streaming Protocol is set to `SSL`"
 msgstr ""
+"Переконайтеся, що для протоколу потокової передачі встановлено значення `SSL`"
 
 #: ../../certificate_enrollment.md:54
 msgid ""
@@ -160,40 +205,52 @@ msgid ""
 "configured to use a different port. Ask your server's admin if you are "
 "unsure"
 msgstr ""
+"Порт сервера за замовчуванням — `8089`, якщо OpenTAKServer не налаштовано на "
+"використання іншого порту. Якщо ви не впевнені, зверніться до адміністратора "
+"вашого сервера"
 
 #: ../../certificate_enrollment.md:55
 msgid "Use default SSL/TLS Certificates"
-msgstr ""
+msgstr "Використовувати стандартні SSL/TLS-сертифікати"
 
 #: ../../certificate_enrollment.md:56
 msgid "Self-signed certificates (This is the most common setup)"
-msgstr ""
+msgstr "Самопідписані сертифікати (це найпоширеніша конфігурація)"
 
 #: ../../certificate_enrollment.md:57
 msgid ""
 "If your OpenTAKServer is using self-signed certificates, uncheck `Use "
 "default SSL/TLS Certificates`"
 msgstr ""
+"Якщо ваш OpenTAKServer використовує самопідписані сертифікати, зніміть "
+"позначку з `Використовувати сертифікати SSL/TLS за замовчуванням `"
 
 #: ../../certificate_enrollment.md:58
 msgid ""
 "Make sure that `Enroll with Preconfigured Trust` **IS** checked (you may "
 "not have this option if you're on an older version of ATAK)"
 msgstr ""
+"Переконайтеся, що позначено опцію `Зареєструватися з попередньо налаштованим "
+"довірчим керуванням` **Є** (ця опція може бути недоступна, якщо ви "
+"використовуєте старішу версію ATAK)"
 
 #: ../../certificate_enrollment.md:59
 msgid "Tap the Import Trust Store button and find your trust store file."
 msgstr ""
+"Натисніть кнопку «Імпортувати сховище довірених сертифікатів» і знайдіть "
+"файл свого сховища довірених сертифікатів."
 
 #: ../../certificate_enrollment.md:60
 msgid ""
 "In the password field next to that button, type your trust store "
 "certificate's password. The default is `atakatak`"
 msgstr ""
+"У полі пароля поруч із цією кнопкою введіть пароль сертифіката вашого "
+"сховища довірених сертифікатів. Пароль за замовчуванням — `atakatak`"
 
 #: ../../certificate_enrollment.md:61
 msgid "Tap OK"
-msgstr ""
+msgstr "Натисніть OK"
 
 #: ../../certificate_enrollment.md:62
 msgid "Let's Encrypt Certificates"

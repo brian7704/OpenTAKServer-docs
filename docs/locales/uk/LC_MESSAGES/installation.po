@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-11 03:42+0000\n"
+"PO-Revision-Date: 2025-12-11 04:17+0000\n"
 "Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/installation/uk/>\n"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../installation/docker.md:7
 msgid "Prerequisites"
-msgstr ""
+msgstr "Передумови"
 
 #: ../../installation/docker.md:11
 msgid ""
