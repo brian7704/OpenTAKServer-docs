@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../update_server.md:1
+msgid "Plugin Update Server"
+msgstr ""
+
+#: ../../update_server.md:3
+msgid ""
+"OpenTAKServer supports ATAK's plugin update system. An administrator of "
+"an OTS server can upload plugin APKs which will be automatically pushed "
+"out to EUDs when ATAK is opened."
+msgstr ""
+
+#: ../../update_server.md:6
+msgid "Obtaining Plugins"
+msgstr ""
+
+#: ../../update_server.md:8
+msgid ""
+"OpenTAKServer does not come with any plugins. Official plugins are "
+"available at [TAK.gov](https://tak.gov) and some open source plugins are "
+"available on GitHub. You must obtain them and upload them to your "
+"OpenTAKServer manually."
+msgstr ""
+
+#: ../../update_server.md:11
+msgid "Uploading Plugins"
+msgstr ""
+
+#: ../../update_server.md:13
+msgid ""
+"While logged in as an administrator, browse to the Plugin Updates page in"
+" the navbar. Here you will see the list of plugins that are currently "
+"available for EUDs to download. Click the Upload Plugin button to upload "
+"a plugin APK. The only required field is the Plugin File field. "
+"OpenTAKServer will automatically the extract required metadata  (i.e. "
+"revision code, plugin name, minimum required Android and ATAK versions, "
+"etc.), as well as automatically generate the required `product.infz` "
+"file."
+msgstr ""
+
+#: ../../update_server.md:19
+msgid ""
+"OpenTAKServer will also attempt to extract the plugin's icon from the "
+"APK. However, it will only succeed if the plugin's icon is in PNG format,"
+" not in Android vector xml format. Because of this, you can optionally "
+"specify a separate icon file in the upload form. The icon should be a PNG"
+" file."
+msgstr ""
+
+#: ../../update_server.md:23
+msgid "Plugin Versions"
+msgstr ""
+
+#: ../../update_server.md:25
+msgid ""
+"Starting in version 1.6.0, OpenTAKServer supports uploading plugins for "
+"different versions of ATAK. This is to support a feature introduced in "
+"ATAK 5.5 where ATAK will request a list of plugins for its version. ATAK "
+"5.4 and prior will still query for a list of all plugins."
+msgstr ""
+
+#: ../../update_server.md:29
+msgid "Screenshot"
+msgstr ""
+
+#: ../../update_server.md:31
+msgid "![!Plugin Updates Screenshot](images/plugin_updates.png)"
+msgstr ""
+
+#: ../../update_server.md:31
+msgid "!Plugin Updates Screenshot"
+msgstr ""
+
+#: ../../update_server.md:33
+msgid "ATAK Settings"
+msgstr ""
+
+#: ../../update_server.md:35
+msgid ""
+"When connecting an EUD to OpenTAKServer the first time, it is recommended"
+" to use [Certificate Enrollment](certificate_enrollment.md) or a data "
+"package generated in OpenTAKServer's UI. These connection methods will "
+"automatically enable ATAK's plugin update feature."
+msgstr ""
+
+#: ../../update_server.md:39
+msgid "For manual setup, follow these steps:"
+msgstr ""
+
+#: ../../update_server.md:41
+msgid ""
+"Click ATAK's hamburger icon (three horizontal lines in the top left "
+"corner)"
+msgstr ""
+
+#: ../../update_server.md:42
+msgid "Select the Plugin tool"
+msgstr ""
+
+#: ../../update_server.md:43
+msgid "Select the gear icon at the bottom of the screen"
+msgstr ""
+
+#: ../../update_server.md:44
+msgid "Enable `Plugin Loading`, `Auto Sync`, and `Update Server`"
+msgstr ""
+
+#: ../../update_server.md:45
+msgid ""
+"For `Update Server URL` enter "
+"`https://<YOUR_SERVER_ADDRESS>:8443/api/packages`"
+msgstr ""
+
+#: ../../update_server.md:46
+msgid ""
+"For `Update Server SSL/TLS Truststore Location`, select your "
+"OpenTAKServer's `truststore-root.p12` on your device"
+msgstr ""
+
+#: ../../update_server.md:47
+msgid ""
+"You can get a copy of your server's `truststore-root.p12` file by "
+"browsing to `https://<YOUR_SERVER_ADDRESS>/api/truststore`"
+msgstr ""
+
+#: ../../update_server.md:48
+msgid ""
+"For `Update Server SSL/TLS Truststore Password`, enter your truststore's "
+"password. The default is `atakatak`"
+msgstr ""
+

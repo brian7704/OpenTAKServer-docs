@@ -1,0 +1,476 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: da\n"
+"Language-Team: da <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../tak_meshtastic_gateway.md:1
+msgid "TAK Meshtastic Gateway"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:3
+msgid ""
+"TAK Meshtastic Gateway listens for multicast data from TAK clients (ATAK,"
+" WinTAK, and iTAK) and forwards it to a Meshtastic device which transmits"
+" it to a Meshtastic network. It will also forward messages from "
+"Meshtastic to  TAK clients via multicast. Additionally, it enables "
+"sending and receiving chat messages and locations between TAK clients and"
+" the Meshtastic app. For example, someone using WinTAK can send a message"
+" over a Meshtastic network to someone using  the Meshtastic app and vice "
+"versa."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:9
+msgid "Features"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:11
+msgid ""
+"Send chat and PLI messages from TAK clients (ATAK, WinTAK, and iTAK) over"
+" a Meshtastic network"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:12
+msgid ""
+"Receive chat and PLI messages from a Meshtastic network and display them "
+"in a TAK client"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:13
+msgid "See Meshtastic devices on the TAK client's map"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:14
+msgid "See the TAK client on the Meshtastic app's map"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:15
+msgid "Send and receive chat messages between the TAK client and Meshtastic app"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:17
+msgid ""
+"TAK Meshtastic Gateway currently only supports sending and receiving chat"
+" and PLI messages. Other data types such as data packages, markers, "
+"images, etc, are not supported due to the limited bandwidth of Meshtastic"
+" networks."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:20
+msgid "Python Requirements"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:22
+msgid ""
+"Due to an issue with the unishox2-py3 package, Windows requires Python "
+"version 3.12. Linux and macOS will work with Python versions 3.8 and up."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:25
+msgid "Known Issues"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:27
+msgid ""
+"On Windows, the `unishox2-py3` library fails to build from the source "
+"distribution with the command `pip install unishox2-py3`. TAK Meshtastic "
+"Gateway will instead install [this wheel](https://github.com/brian7704"
+"/OpenTAKServer-"
+"Installer/blob/master/unishox2_py3-1.0.0-cp312-cp312-win_amd64.whl). As a"
+" result, Python 3.12 is required when running TAK Meshtastic Gateway on "
+"Windows."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:31
+msgid "Using Windows Offline"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:33
+msgid ""
+"If you're using Windows offline with the Meshtastic node connected via "
+"USB, WinTAK might not send CoT messages over multicast. To fix that, a "
+"virtual loopback device needs to be installed."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:36
+msgid "Right click start button -> Device manager"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:37
+msgid "Select your PC at the top (otherwise menu item will be missing)"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:38
+msgid "Click on Action -> Add legacy hardware"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:39
+msgid ""
+"Click Next -> Install the hardware that I manually select from a list "
+"(Advanced) -> Next"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:40
+msgid "Select Network Adapters -> Next and then wait until list is loaded"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:41
+msgid ""
+"In the Manufacturer list, select Microsoft. In the Model list, select "
+"`Microsoft KM-TEST Loopback Adapter`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:42
+msgid "Click Next -> Finish"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:44
+msgid "Installation"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:46
+msgid ""
+"For installation you only need to create a Python virtual environment, "
+"activate the virtual environment, and install using pip."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:48
+msgid "Linux/macOS"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:50
+msgid ""
+"The unishox2-py3 Python library requires C build tools. In Debian based "
+"distros (i.e. Ubuntu) they can be installed with `apt install build-"
+"essential`."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:59
+msgid "Windows"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:68 ../../tak_meshtastic_gateway.md:97
+msgid "Usage"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:70
+msgid ""
+"When your virtual environment active, run the `tak-meshtastic-gateway` "
+"command"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:72
+msgid "Architecture"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:74
+msgid ""
+"In most scenarios, the user will run TAK Meshtastic Gateway on the same "
+"computer that runs WinTAK. The Meshtastic node can either be connected to"
+" the same computer via USB, or be on the same LAN as the computer. "
+"Connecting to the Meshtastic node over the LAN allows it to be mounted in"
+" a spot outside with good mesh reception while the computer is inside."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:78
+msgid "Meshtastic Node Configuration"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:80
+msgid ""
+"The Meshtastic node should be set to the TAK role. TAK Meshtastic Gateway"
+" will automatically change the node's long name  to the TAK client's "
+"callsign and the short name to the last four characters of the TAK "
+"client's UID. This ensures that  the callsign shows up correctly for mesh"
+" users who are only using the Meshtastic app as well as ATAK plugin "
+"users. TAK Meshtastic Gateway will also update the Meshtastic node's "
+"location with the location of the EUD."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:85
+msgid "ATAK Plugin Settings"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:87
+msgid ""
+"For best results, use the following settings on devices using the "
+"[Meshtastic ATAK "
+"Plugin.](https://meshtastic.org/docs/software/integrations/integrations-"
+"atak-plugin/). You can find the settings in ATAK by clicking the Settings"
+" tool -> Tool Preferences -> Specific Tool Preferences -> Meshtastic "
+"Preferences."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:91
+msgid "Show all Meshtastic devices: On"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:92
+msgid "Don't show Meshtastic devices without GPS: On"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:93
+msgid "Do not show your local Meshtastic device: On"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:95
+msgid "The rest of the settings can be changed as needed."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:99
+msgid ""
+"All arguments are optional. If an argument is not specified its default "
+"value will be used."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "Flag"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "Parameter"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "Description"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "Default"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`-i`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`--ip-address`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "The private IP address of the machine running TAK Meshtastic Gateway."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid ""
+"TAK Meshtastic Gateway will attempt to automatically find the IP of the "
+"computer it's running on"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`-s`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`--serial-device`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid ""
+"The serial device of the Meshtastic node (i.e. `COM3` or `/dev/ttyACM0`)."
+" Cannot be used simultaneously with `--mesh-ip`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid ""
+"TAK Meshtastic Gateway will attempt to automatically determine the serial"
+" device"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`-m`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`--mesh-ip`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid ""
+"The IP address or DNS name of the gateway Meshtastic node. Cannot be used"
+" simultaneously with `--serial-device`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "Uses a serial connection"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`-c`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`--tak-client-ip`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid ""
+"The IP address of the device running the TAK client (ATAK, WinTAK, or "
+"iTAK)"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`localhost`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`-p`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`--dm-socket-port`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "TCP Port to listen on for DMs"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`4243`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`-t`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`--tx-interval`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid ""
+"Minimum time (in seconds) to wait between PLI transmissions from the TAK "
+"client to the mesh network. This reduces strain on the mesh network."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`30`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`-l`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`--log-file`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "Save log messages to a file."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`None` (disabled)"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`-d`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`--debug`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "Enable debug log messages"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md
+msgid "`Disabled` Only messages at the `INFO` level or higher will be logged"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:112
+msgid "Permissions"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:114
+msgid ""
+"When the Meshtastic node is connected via USB, TAK Meshtastic Gateway "
+"needs to be run as root (or via `sudo`) in Linux and in an administrator "
+"PowerShell or Command Prompt in Windows. Connecting to the Meshtastic "
+"node via TCP does not require elevated permissions."
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:118
+msgid "Example Usage Scenarios"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:120
+msgid "Scenario 1"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:122 ../../tak_meshtastic_gateway.md:129
+msgid "WinTAK on a PC"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:123
+msgid "Meshtastic node connected to the PC via USB"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:124
+msgid "TAK Meshtastic Gateway running on the same PC"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:125
+msgid "Command: `tak_meshtastic_gateway`"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:127
+msgid "Scenario 2"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:130
+msgid "Meshtastic node on the same LAN as the PC"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:131
+msgid "TAK Meshtastic Gateway running on the same PC as WinTAK"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:132
+msgid ""
+"Command: `tak_meshtastic_gateway --mesh-ip MESHTASTIC_NODE_IP` Note: "
+"Substitute `MESHTASTIC_NODE_IP` with the node's actual IP (i.e. "
+"`192.168.1.10`)"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:135
+msgid "Scenario 3"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:137
+msgid "ATAK or iTAK on a mobile device connected to a Wi-Fi network"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:138
+msgid "Meshtastic node connected to the same network"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:139
+msgid "TAK Meshtastic Gateway running on a computer or VM on the same network"
+msgstr ""
+
+#: ../../tak_meshtastic_gateway.md:140
+msgid ""
+"Command: `tak_meshtastic_gateway --mesh-ip MESHTASTIC_NODE_IP --tak-"
+"client-ip TAK_CLIENT_IP` Note: Substitute `MESHTASTIC_NODE_IP` and "
+"`TAK_CLIENT_IP` with their actual IPs (i.e. `192.168.1.10` and "
+"`192.168.1.11`)"
+msgstr ""
+

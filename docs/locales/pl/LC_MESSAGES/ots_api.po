@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../ots_api.rst:2
+msgid "OpenTAKServer API"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Required by CloudTAK, returns the following"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Health check for Docker, returns the following"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Server status used on the Dashboard page of the web UI"
+msgstr ""
+
+#: ../../<autoflask>
+msgid "rtype"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "dict"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Get the details of the currently logged in user"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "User"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Get CoT messages. All parameters are optional."
+msgstr ""
+
+#: ../../ots_api.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The how attribute of the CoT message, i.e. ``m-g``, ``h-g-i-g-o``"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The type attribute of the CoT message, i.e. ``a-f-G-U-C``"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The callsign of the EUD that sent the CoT message"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The UID of the EUD that sent the CoT message"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The page number"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The number of results per page"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Get alerts. All parameters are optional."
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The alert's UID"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The UID of the EUD that sent the alert"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The type of alert"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Query points. All parameters are optional."
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The point's UID"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The point's callsign"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Query EUDS. All parameters are optional."
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The EUD's callsign"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The username that the EUD belongs to"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Downloads the server's truststore with no authentication required."
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Gets the latest data to be displayed on the web UI's map"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Query map icons. All parameters are optional."
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The iTAK QR string in the following format:"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "``OpenTAKServer_SERVER-ADDRESS,SERVER-ADDRESS,8089,SSL``"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Gets a list of group memberships for a user :parameter: username"
+msgstr ""
+
+#: ../../<autoflask>
+msgid "return"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "List of group memberships"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid ""
+"Adds a user to one or more groups :parameter: groups - List of groups to "
+"add a user to :parameter: username :parameter: direction - Group "
+"direction, must be either IN or OUT"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid ""
+"400 if LDAP is enabled, no group or username is specified, or if the "
+"specified group or user doesn't exist or the user is already in the "
+"group. 200 on success."
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Response"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Search groups with filters and pagination"
+msgstr ""
+
+#: ../../<autoflask>
+msgid "parameter"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "name"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "type"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "bitpos"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "active"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "page"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "per_page"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "JSON array of groups"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Get a list of all groups"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Get a list of members of a group"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "JSON array of group members"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Creates a new group"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid ""
+"400 if LDAP is enabled, the request is missing the name key or the group "
+"exists. 500 on server errors."
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid ""
+"Adds a users to a group. This will allow all the user's EUDs to subscribe"
+" and unsubscribe from the channels/groups they're allowed to see. "
+":parameter: users - A list of users to add to a group :parameter: "
+"group_name - Name of the group to add users to :parameter: direction - "
+"Group direction, can only be IN or OUT"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Provides an OAuth token for TAKX and CloudTAK"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "jwt"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid ""
+"Generates a QR string for ATAK certificate enrollment. ATAK certificate "
+"enrollment via QR code only works if your server has a Let's Encrypt "
+"certificate. Params are sent as JSON."
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The expiration time in unix epoch seconds i.e.1764260510"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid ""
+"Not Before, the token will not be valid until this date in unix epoch "
+"seconds."
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "The maximum number of uses for this token."
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid ""
+"String in the format of "
+"tak://com.atakmap.app/enroll?host=server_address.com&username=your_username&token=jwt_token"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Returns an existing ATAK QR string"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "Deletes a token"
+msgstr ""
+
+#: ../../<autoflask>:1
+msgid "200 on success"
+msgstr ""
+

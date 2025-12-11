@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../internationalization.rst:2
+msgid "Internationalization"
+msgstr ""
+
+#: ../../internationalization.rst:4
+msgid ""
+"As of version 1.7.0, OpenTAKServer supports internationalization. If you "
+"would like to contribute by translating OTS into your language you can "
+"log into the `OTS Weblate Server <https://weblate.opentakserver.io>`__ "
+"using GitHub OAuth. With GitHub OAuth you will be tagged as a contributor"
+" once the translation gets merged into the main branch."
+msgstr ""
+
+#: ../../internationalization.rst:9
+msgid "View Translation Status"
+msgstr ""
+
+#: ../../internationalization.rst:11
+msgid ""
+"To view the status of supported languages, browse to "
+"`https://weblate.opentakserver.io <https://weblate.opentakserver.io>`__ "
+"and click on OpenTAKServer. All supported languages, their percentage of "
+"completion, and the translations themselves can be viewed without logging"
+" in."
+msgstr ""
+
+#: ../../internationalization.rst:17
+msgid "Adding New Languages"
+msgstr ""
+
+#: ../../internationalization.rst:19
+msgid ""
+"If you would like a language added to OTS that isn't currently listed in "
+"Weblate, you can request it by opening a GitHub issue or in the discord "
+"server."
+msgstr ""
+
+#: ../../internationalization.rst:23
+msgid "Contributing"
+msgstr ""
+
+#: ../../internationalization.rst:25
+msgid ""
+"After logging in via GitHub OAuth you will be redirected to the Dashboard"
+" page. From there, click on the OpenTAKServer project, and then the "
+"language you'd like to translate. Then choose the Untranslated Strings "
+"option and you will be taken to the first untranslated string. On this "
+"page you can type the translation in the empty field below the English "
+"text and click the ``Save and Continue`` button to go to the next string."
+" See the screenshot at the bottom of this page for an example."
+msgstr ""
+
+#: ../../internationalization.rst:31
+msgid "Google Translate API"
+msgstr ""
+
+#: ../../internationalization.rst:33
+msgid ""
+"The Weblate server is configured with Google Translate API key. To use "
+"it, click on the ``Automatic Suggestions`` button on the translation "
+"screen. See the screenshot below for an example."
+msgstr ""
+

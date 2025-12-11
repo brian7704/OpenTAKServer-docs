@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../delete_old_data.md:1
+msgid "Deleting Old Data"
+msgstr ""
+
+#: ../../delete_old_data.md:3
+msgid ""
+"OpenTAKServer can periodically delete old data from the database. This "
+"feature can be enabled by an administrator on the Scheduled Jobs page of "
+"the UI. The default settings will delete data (markers, location data, "
+"R&B Lines, alerts, CoT messages, and EUDs) that are older than one week, "
+"or EUDs that haven't connected within the last week. This interval can be"
+" configured by adding or changing the following settings in config.yml"
+msgstr ""
+
+#: ../../delete_old_data.md:8
+msgid "`OTS_DELETE_OLD_DATA_SECONDS` default `0`"
+msgstr ""
+
+#: ../../delete_old_data.md:9
+msgid "`OTS_DELETE_OLD_DATA_MINUTES` default `0`"
+msgstr ""
+
+#: ../../delete_old_data.md:10
+msgid "`OTS_DELETE_OLD_DATA_HOURS` default `0`"
+msgstr ""
+
+#: ../../delete_old_data.md:11
+msgid "`OTS_DELETE_OLD_DATA_DAYS` default `0`"
+msgstr ""
+
+#: ../../delete_old_data.md:12
+msgid "`OTS_DELETE_OLD_DATA_WEEKS` default `1`"
+msgstr ""
+
+#: ../../delete_old_data.md:14
+msgid ""
+"OpenTAKServer will add up these values and delete any data that's older "
+"than the interval. For example, if you set `OTS_DELETE_OLD_DATA` to `2` "
+"and `OTS_DELETE_OLD_DATA_DAYS` to `1`, it will delete data older than 2 "
+"weeks and 1 day."
+msgstr ""
+

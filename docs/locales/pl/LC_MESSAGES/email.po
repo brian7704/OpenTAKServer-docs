@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../email.md:1
+msgid "Email"
+msgstr ""
+
+#: ../../email.md:3
+msgid ""
+"OpenTAKServer uses [Flask-Mailman](https://github.com/waynerv/flask-"
+"mailman) is used to handle emails.  Enabling email support also enables "
+"the following features:"
+msgstr ""
+
+#: ../../email.md:6
+msgid "User account self registration"
+msgstr ""
+
+#: ../../email.md:7
+msgid ""
+"Password reset - Without email, only administrators can change a user's "
+"password if they forget it"
+msgstr ""
+
+#: ../../email.md:8
+msgid "Two-factor authentication via email"
+msgstr ""
+
+#: ../../email.md:10
+msgid "Enabling Email Support"
+msgstr ""
+
+#: ../../email.md:12
+msgid ""
+"The following settings are required to enable email support. You can find"
+" them in your `config.yml` file."
+msgstr ""
+
+#: ../../email.md:14
+msgid ""
+"`OTS_ENABLE_EMAIL`: Other settings have no effect if this is set to "
+"`false`"
+msgstr ""
+
+#: ../../email.md:15
+msgid "`MAIL_SERVER`"
+msgstr ""
+
+#: ../../email.md:16
+msgid "`MAIL_PORT`"
+msgstr ""
+
+#: ../../email.md:17
+msgid "`MAIL_USERNAME`"
+msgstr ""
+
+#: ../../email.md:18
+msgid "`MAIL_PASSWORD`"
+msgstr ""
+
+#: ../../email.md:20
+msgid "These settings are optional and will depend on the email service you use."
+msgstr ""
+
+#: ../../email.md:22
+msgid "`MAIL_USE_SSL`"
+msgstr ""
+
+#: ../../email.md:23
+msgid "`MAIL_USE_TLS`"
+msgstr ""
+
+#: ../../email.md:25
+msgid ""
+"You can find a full list of Flask-Mailman's settings in their "
+"[documentation](https://waynerv.github.io/flask-mailman/)."
+msgstr ""
+
+#: ../../email.md:27
+msgid "Gmail"
+msgstr ""
+
+#: ../../email.md:29
+msgid ""
+"If you plan to use a Gmail account to send emails, you will need to log "
+"into your account and enable an app password. Your regular password will "
+"not work in OpenTAKServer. See [Google's "
+"documentation](https://support.google.com/accounts/answer/185833?hl=en)  "
+"for details."
+msgstr ""
+
+#: ../../email.md:33
+msgid "Gmail settings"
+msgstr ""
+
+#: ../../email.md
+msgid "Setting"
+msgstr ""
+
+#: ../../email.md
+msgid "Value"
+msgstr ""
+
+#: ../../email.md
+msgid "**MAIL_SERVER**"
+msgstr ""
+
+#: ../../email.md
+msgid "`smtp.gmail.com`"
+msgstr ""
+
+#: ../../email.md
+msgid "**MAIL_PORT**"
+msgstr ""
+
+#: ../../email.md
+msgid "`587`"
+msgstr ""
+
+#: ../../email.md
+msgid "**MAIL_USE_SSL**"
+msgstr ""
+
+#: ../../email.md
+msgid "`false`"
+msgstr ""
+
+#: ../../email.md
+msgid "**MAIL_USE_TLS**"
+msgstr ""
+
+#: ../../email.md
+msgid "`true`"
+msgstr ""
+
+#: ../../email.md
+msgid "**MAIL_USERNAME**"
+msgstr ""
+
+#: ../../email.md
+msgid "`your_username@gmail.com`"
+msgstr ""
+
+#: ../../email.md
+msgid "**MAIL_PASSWORD**"
+msgstr ""
+
+#: ../../email.md
+msgid "`your_app_password`"
+msgstr ""
+

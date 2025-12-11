@@ -1,0 +1,863 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../opentak_icu/audio_codecs.md:1 ../../opentak_icu/index.md:29
+#: ../../opentak_icu/index.md:132
+msgid "Audio Codecs"
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md ../../opentak_icu/audio_codecs.md:3
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:32
+msgid "OPUS"
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md:5
+msgid ""
+"The OPUS codec is supported when streaming in RTSP(S), SRT, and Multicast"
+" UDP protocols. If you will be viewing the  stream in a web browser via "
+"WebRTC, use this codec for the best quality."
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md ../../opentak_icu/audio_codecs.md:8
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:30
+msgid "AAC"
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md:10
+msgid ""
+"AAC is supported in all streaming protocols. If you will be viewing the "
+"stream in a web browser make sure to view it via HLS. HLS supports AAC "
+"audio while WebRTC does not."
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md ../../opentak_icu/audio_codecs.md:13
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:31
+msgid "G711"
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md:15
+msgid ""
+"The G711 codec is locked to a sample rate of 8000hz and mono audio. Both "
+"RTSP(S) and RTMP(S) support G711 while SRT does not."
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md:17 ../../opentak_icu/video_codecs.md:26
+msgid "Compatibility Matrix"
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md ../../opentak_icu/streaming_protocols.md:3
+#: ../../opentak_icu/video_codecs.md
+msgid "RTSP(S)"
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md ../../opentak_icu/index.md
+#: ../../opentak_icu/video_codecs.md
+msgid "Yes"
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md ../../opentak_icu/streaming_protocols.md:8
+#: ../../opentak_icu/video_codecs.md
+msgid "RTMP(S)"
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md ../../opentak_icu/index.md
+#: ../../opentak_icu/video_codecs.md
+msgid "No"
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md ../../opentak_icu/index.md
+#: ../../opentak_icu/streaming_protocols.md:12
+#: ../../opentak_icu/video_codecs.md
+msgid "SRT"
+msgstr ""
+
+#: ../../opentak_icu/audio_codecs.md ../../opentak_icu/index.md
+#: ../../opentak_icu/index.md:39 ../../opentak_icu/streaming_protocols.md:16
+#: ../../opentak_icu/video_codecs.md
+msgid "Multicast UDP"
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:1
+msgid "Encryption"
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:3
+msgid ""
+"OpenTAK ICU supports encryption when streaming with either RTSPS or "
+"RTMPS. This ensures that a 3rd party cannot intercept and view the stream"
+" while it's in transit to the server."
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:6
+msgid "CA Signed Certificates"
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:8
+msgid ""
+"If your server uses certificates signed by a trusted CA such as Let's "
+"Encrypt, simply choose the RTSPS or RTMPS protocol. No further action is "
+"required."
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:11
+msgid "Self-Signed Certificates"
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:13
+msgid ""
+"If your server uses self-signed certificates you will need to import them"
+" into OpenTAK ICU. The certificates should be in PKCS12 format, the same "
+"format that ATAK uses. To import them, use the following steps:"
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:16
+msgid "Copy your trust store and user certificates to your device"
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:17
+msgid "Tap the Settings icon in OpenTAK ICU"
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:18
+msgid "Tap Stream Settings"
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:19
+msgid "Tap the `Server uses Self-Signed Certificate` switch"
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:20
+msgid "Tap `Trust Store Certificate` and locate it"
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:21
+msgid ""
+"Tap `Trust Store Certificate Password` and enter it. If you're using the "
+"same certificates as your TAK server, the password is probably `atakatak`"
+msgstr ""
+
+#: ../../opentak_icu/encryption.md:22
+msgid ""
+"Tap `Test Certificate`. This step is required and validates that the "
+"certificate is a valid PKCS12 certificate and that the password is "
+"correct"
+msgstr ""
+
+#: ../../opentak_icu/index.md:1
+#, python-format
+msgid ""
+"![GitHub Release Date](https://img.shields.io/github/release-"
+"date/brian7704/OpenTAK_ICU) ![GitHub "
+"Release](https://img.shields.io/github/v/release/brian7704/OpenTAK_ICU) "
+"[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fbrian7704%2FOpenTAK_ICU&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)"
+" ![GitHub Downloads (all assets, all "
+"releases)](https://img.shields.io/github/downloads/brian7704/OpenTAK_ICU/total)"
+msgstr ""
+
+#: ../../opentak_icu/index.md:1
+msgid "GitHub Release Date"
+msgstr ""
+
+#: ../../opentak_icu/index.md:1
+msgid "GitHub Release"
+msgstr ""
+
+#: ../../opentak_icu/index.md:1
+msgid "Hits"
+msgstr ""
+
+#: ../../opentak_icu/index.md:1
+msgid "GitHub Downloads (all assets, all releases)"
+msgstr ""
+
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:8
+msgid "OpenTAK ICU"
+msgstr ""
+
+#: ../../opentak_icu/index.md:10
+msgid ""
+"OpenTAK ICU is a video streaming app based on "
+"[RootEncoder](https://github.com/pedroSG94/RootEncoder)  that can stream "
+"audio and video to RTSP(S), RTMP(S), and SRT servers such as  "
+"[MediaMTX](https://github.com/bluenviron/mediamtx). Its primary focus is "
+"to work with the TAK ecosystem."
+msgstr ""
+
+#: ../../opentak_icu/index.md:14
+msgid "Why?"
+msgstr ""
+
+#: ../../opentak_icu/index.md:16
+msgid ""
+"While ATAK already has the TAK ICU plugin, it doesn't seem to support a "
+"few features. Specifically it doesn't support streaming audio or using "
+"authentication and encryption (RTSPS) at the same time."
+msgstr ""
+
+#: ../../opentak_icu/index.md:19
+msgid "Download"
+msgstr ""
+
+#: ../../opentak_icu/index.md:21
+msgid ""
+"Get the APK from this repo's [latest "
+"release](https://github.com/brian7704/OpenTAK_ICU/releases/latest)"
+msgstr ""
+
+#: ../../opentak_icu/index.md:23
+msgid "Features"
+msgstr ""
+
+#: ../../opentak_icu/index.md:25 ../../opentak_icu/index.md:124
+#: ../../opentak_icu/video_codecs.md:1
+msgid "Video Codecs"
+msgstr ""
+
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:26
+#: ../../opentak_icu/video_codecs.md ../../opentak_icu/video_codecs.md:8
+msgid "H264"
+msgstr ""
+
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:27
+#: ../../opentak_icu/video_codecs.md ../../opentak_icu/video_codecs.md:12
+msgid "H265"
+msgstr ""
+
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:28
+#: ../../opentak_icu/video_codecs.md ../../opentak_icu/video_codecs.md:18
+msgid "AV1"
+msgstr ""
+
+#: ../../opentak_icu/index.md:33
+msgid "Streaming protocols"
+msgstr ""
+
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:34
+msgid "RTSP"
+msgstr ""
+
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:35
+msgid "RTSPS"
+msgstr ""
+
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:36
+msgid "RTMP"
+msgstr ""
+
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:37
+msgid "RTMPS"
+msgstr ""
+
+#: ../../opentak_icu/index.md:38
+msgid "SRT (SRT does not yet support authentication)"
+msgstr ""
+
+#: ../../opentak_icu/index.md:40 ../../opentak_icu/tak_server.md:19
+msgid "Authentication"
+msgstr ""
+
+#: ../../opentak_icu/index.md:41 ../../opentak_icu/index.md:102
+msgid "Servers with self-signed certificates"
+msgstr ""
+
+#: ../../opentak_icu/index.md:42
+msgid ""
+"Background streaming and recording - Continue streaming and recording "
+"audio and video even if the app is minimized or the screen is off."
+msgstr ""
+
+#: ../../opentak_icu/index.md:44
+msgid "Record video to the device while streaming"
+msgstr ""
+
+#: ../../opentak_icu/index.md:45
+msgid "Take photos while recording or streaming"
+msgstr ""
+
+#: ../../opentak_icu/index.md:46
+msgid "Change between front and back cameras during stream"
+msgstr ""
+
+#: ../../opentak_icu/index.md:47
+msgid "Adaptive bitrate"
+msgstr ""
+
+#: ../../opentak_icu/index.md:48 ../../opentak_icu/uvc_cameras.md:1
+msgid "UVC Cameras"
+msgstr ""
+
+#: ../../opentak_icu/index.md:49
+msgid "Optional text overlay with GPS location and timestamp"
+msgstr ""
+
+#: ../../opentak_icu/index.md:50
+msgid "Support for devices with built-in IR cameras"
+msgstr ""
+
+#: ../../opentak_icu/index.md:51
+msgid "Tested on the Ulefone Armor X13, Armor 22, and Armor 26 Ultra"
+msgstr ""
+
+#: ../../opentak_icu/index.md:52
+msgid "Requires root"
+msgstr ""
+
+#: ../../opentak_icu/index.md:53
+msgid "Video filters"
+msgstr ""
+
+#: ../../opentak_icu/index.md:55
+msgid "Planned features"
+msgstr ""
+
+#: ../../opentak_icu/index.md:57
+msgid "KLV"
+msgstr ""
+
+#: ../../opentak_icu/index.md:58
+msgid "Stream your device's screen instead of camera"
+msgstr ""
+
+#: ../../opentak_icu/index.md:60
+msgid "Servers"
+msgstr ""
+
+#: ../../opentak_icu/index.md:62
+msgid ""
+"This app has been developed using "
+"[MediaMTX](https://github.com/bluenviron/mediamtx) as the  streaming "
+"server but any RTSP/RTMP server should work."
+msgstr ""
+
+#: ../../opentak_icu/index.md:65
+msgid "Viewing OpenTAK ICU streams from MediaMTX in ATAK"
+msgstr ""
+
+#: ../../opentak_icu/index.md:67
+msgid ""
+"In the video tool, tap the + symbol to add a new stream and use the "
+"following settings:"
+msgstr ""
+
+#: ../../opentak_icu/index.md:68
+msgid "Type: rtsp"
+msgstr ""
+
+#: ../../opentak_icu/index.md:69
+msgid "Address: Your server's IP address or domain name"
+msgstr ""
+
+#: ../../opentak_icu/index.md:70
+msgid "Port: The defaults are 8554 for RTSP and 8322 for RTSPS"
+msgstr ""
+
+#: ../../opentak_icu/index.md:71
+msgid "Path: The stream's path that is set in OpenTAK ICU's settings"
+msgstr ""
+
+#: ../../opentak_icu/index.md:72
+msgid "Username/Password: Required only if your server enforces authentication"
+msgstr ""
+
+#: ../../opentak_icu/index.md:73
+msgid ""
+"Reliable P2P Connection: Enables a TCP connection and is required if "
+"there is a NAT/firewall between your EUD and the server."
+msgstr ""
+
+#: ../../opentak_icu/index.md:76
+msgid "Viewing the stream in a browser"
+msgstr ""
+
+#: ../../opentak_icu/index.md:78
+msgid ""
+"When using MediaMTX and streaming with H264, you can watch the live "
+"stream in a browser by going to"
+msgstr ""
+
+#: ../../opentak_icu/index.md:80
+msgid "`http://your_server_ip:8888/stream_path`"
+msgstr ""
+
+#: ../../opentak_icu/index.md:82
+msgid "for an HLS stream or"
+msgstr ""
+
+#: ../../opentak_icu/index.md:84
+msgid "`http://your_server_ip:8889/stream_path`"
+msgstr ""
+
+#: ../../opentak_icu/index.md:86
+msgid ""
+"for a WebRTC stream. Note that most browsers don't yet support H265. See "
+"[CanIUse](https://caniuse.com/hevc) for details. Also note that WebRTC "
+"does not support AAC audio so you will need to use OPUS or G711 if you're"
+" viewing the stream via WebRTC."
+msgstr ""
+
+#: ../../opentak_icu/index.md:90
+msgid "Viewing streams in VLC"
+msgstr ""
+
+#: ../../opentak_icu/index.md:92
+msgid "Click on Media -> Open Network Stream"
+msgstr ""
+
+#: ../../opentak_icu/index.md:93
+msgid "In the URL field enter `rtsp://your_server_address:8554/your_path`"
+msgstr ""
+
+#: ../../opentak_icu/index.md:94
+msgid "Click Play"
+msgstr ""
+
+#: ../../opentak_icu/index.md ../../opentak_icu/index.md:96
+msgid "Adaptive Bitrate"
+msgstr ""
+
+#: ../../opentak_icu/index.md:98
+msgid ""
+"When adaptive bitrate is enabled, the video bitrate will change based on "
+"your network/internet connection. If the connection can't send packets "
+"fast enough, the bitrate will lower. If the connection is good the "
+"bitrate will max out at what the bitrate setting's value is."
+msgstr ""
+
+#: ../../opentak_icu/index.md:104
+msgid ""
+"If your server is using self signed certificates and you wish to stream "
+"encrypted audio and video, you'll need your server's trust store "
+"certificate in PKCS12 (.p12 file extension) format. If your  RTSP server "
+"is using the same certificates as your TAK server, you can use the same "
+"trust store  certificate and certificate password in OpenTAK ICU. After "
+"selecting the certificate and providing the certificate password, press "
+"the Test Certificate button. This simply validates that the certificate "
+"is the correct format and that the password is correct."
+msgstr ""
+
+#: ../../opentak_icu/index.md:111
+msgid "Feature Comparison"
+msgstr ""
+
+#: ../../opentak_icu/index.md:113 ../../opentak_icu/streaming_protocols.md:1
+msgid "Streaming Protocols"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "TAK ICU"
+msgstr ""
+
+#: ../../opentak_icu/index.md:140
+msgid "Other Features"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Broadcast CoT on local network"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Send CoT to TAK server"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Show video on map (KLV)"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "View video in ATAK/WinTAK video tool"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Stream to Wowza"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Stream in background"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Take a photo while streaming"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Switch camera while streaming"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Turn on flashlight while streaming"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Record to device while streaming"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Change Video/Audio bitrate"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "1080p"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "4K"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Change FPS"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Compass Display"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Server Authentication"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Yes (only when using RTSP)"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Yes (RTSP(S) and RTMP(S)"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "UVC Camera Support"
+msgstr ""
+
+#: ../../opentak_icu/index.md ../../opentak_icu/video_filters.md:1
+msgid "Video Filters"
+msgstr ""
+
+#: ../../opentak_icu/index.md
+msgid "Text Overlay"
+msgstr ""
+
+#: ../../opentak_icu/ir_cameras.md:1
+msgid "IR Cameras"
+msgstr ""
+
+#: ../../opentak_icu/ir_cameras.md:3
+msgid ""
+"OpenTAK ICU supports devices with built-in IR cameras. It has been tested"
+" on the Ulefone Armor X13, Armor 22, and Armor 26 Ultra. If you try a "
+"different model, please let us know if it worked or not on the [Discord "
+"server](https://discord.gg/6uaVHjtfXN) or by opening an issue on the "
+"[GitHub repo](https://github.com/brian7704/OpenTAK_ICU/issues)."
+msgstr ""
+
+#: ../../opentak_icu/ir_cameras.md:7
+msgid "Root"
+msgstr ""
+
+#: ../../opentak_icu/ir_cameras.md:9
+msgid ""
+"Due to how the IR camera's LEDs are controlled, root is required to "
+"enable or disable them. OpenTAK ICU controls them by running the "
+"following commands as root."
+msgstr ""
+
+#: ../../opentak_icu/mediamtx.md:1
+msgid "MediaMTX"
+msgstr ""
+
+#: ../../opentak_icu/mediamtx.md:3
+msgid ""
+"[MediaMTX](https://github.com/bluenviron/mediamtx) can be used as your "
+"self-hosted streaming server. It supports all the streaming protocols, "
+"audio codecs, and video codecs that OpenTAK ICU uses. You can also view "
+"streams in a web browser via WebRTC or HLS, or in video apps such as VLC "
+"via RTSP."
+msgstr ""
+
+#: ../../opentak_icu/recording.md:1
+msgid "Recording"
+msgstr ""
+
+#: ../../opentak_icu/recording.md:3
+msgid ""
+"OpenTAK ICU supports recording video files to the local device while "
+"streaming. Note that for audio, only the AAC codec is supported. If OPUS "
+"or G711 codecs are used, the video will record without audio."
+msgstr ""
+
+#: ../../opentak_icu/recording.md:6
+msgid ""
+"There is also support for recording without streaming. Simply disable the"
+" `Stream video` in `Streaming Settings` and enable `Record video to this "
+"device` in `Video Settings`. Also make sure that the audio codec is set "
+"to AAC."
+msgstr ""
+
+#: ../../opentak_icu/streaming_protocols.md:5
+msgid ""
+"RTSP is OpenTAK ICU's default protocol and supports both TCP and UDP. If "
+"you're using TCP you can optionally enable RTSPS encryption. RTSP over "
+"UDP does not support encryption."
+msgstr ""
+
+#: ../../opentak_icu/streaming_protocols.md:10
+msgid ""
+"RTMP supports H264, H265, and AV1 video codecs as well as AAC and G711 "
+"audio codecs."
+msgstr ""
+
+#: ../../opentak_icu/streaming_protocols.md:14
+msgid ""
+"SRT supports H264 and H265 video codecs, as well as ACC and OPUS audio "
+"codecs. It does not support authentication yet."
+msgstr ""
+
+#: ../../opentak_icu/streaming_protocols.md:18
+msgid ""
+"Multicast UDP can be used to stream over your local network virtual "
+"network services such as ZeroTier and TailScale. No server is required "
+"when using Multicast. When your device has a location fix, OpenTAK ICU "
+"will send Multicast CoT messages which will put a sensor icon with its "
+"field of view on other EUD's in the same network."
+msgstr ""
+
+#: ../../opentak_icu/streaming_protocols.md:22
+msgid "Valid Multicast IPs"
+msgstr ""
+
+#: ../../opentak_icu/streaming_protocols.md:24
+msgid ""
+"The Multiicast IP range is 224.1.0.0 - 239.255.255.255, however some IPs "
+"and IP ranges are reserved and cannot be used. Most IPs in the 232.0.0.0 "
+"- 239.255.255.255 range are safe to use. See this [Wikipedia "
+"article](https://en.wikipedia.org/wiki/Multicast_address) for more "
+"details."
+msgstr ""
+
+#: ../../opentak_icu/tak_server.md:1
+msgid "TAK Server"
+msgstr ""
+
+#: ../../opentak_icu/tak_server.md:3
+msgid ""
+"OpenTAK ICU can connect to a TAK server and send Cursor-on-Target "
+"messages in XML. This will show a sensor icon on the maps  of all EUDs "
+"connected to the server. The icon will also show the field of view of the"
+" camera. Additionally, OpenTAK ICU will send an HTTP POST request to your"
+" server's /Marti/vcm API endpoint. This allows EUDs to download the video"
+" stream details in the video tool."
+msgstr ""
+
+#: ../../opentak_icu/tak_server.md:8
+msgid "TCP"
+msgstr ""
+
+#: ../../opentak_icu/tak_server.md:10
+msgid ""
+"If you're using TCP the only settings that are required are the server "
+"address and the port. The port defaults to 8088."
+msgstr ""
+
+#: ../../opentak_icu/tak_server.md:12
+msgid "SSL"
+msgstr ""
+
+#: ../../opentak_icu/tak_server.md:14
+msgid ""
+"If your server requires SSL, tap the `Connect to ATAK Server via SSL` "
+"switch. You'll then need to specify your trust store and client "
+"certificates, along with their passwords. These are the same certificates"
+" and passwords you use to connect ATAK to your TAK server. Once "
+"specifying both certs, make sure to tap the `Test Certificate` option to "
+"validate that the certificates are in the right format and the password "
+"is correct."
+msgstr ""
+
+#: ../../opentak_icu/tak_server.md:21
+msgid ""
+"If your TAK server requires authentication, tap the `Enable ATAK "
+"Authentication` switch and input your username and password."
+msgstr ""
+
+#: ../../opentak_icu/tak_server.md:23
+msgid "TAK Servers Tested"
+msgstr ""
+
+#: ../../opentak_icu/tak_server.md:25
+msgid ""
+"OpenTAK ICU has been tested and works with the official "
+"[tak.gov](https://tak.gov/) TAK server,  "
+"[OpenTAKServer](https://github.com/brian7704/OpenTAKServer) and "
+"[FreeTAKServer](https://github.com/FreeTAKTeam/FreeTakServer)."
+msgstr ""
+
+#: ../../opentak_icu/uvc_cameras.md:3
+msgid ""
+"OpenTAK ICU supports UVC cameras connected via USB such as the [MOHOC "
+"2](https://www.mohoc.com/product/mohoc-2-usb-uvc/). Any UVC cameras, "
+"includes cameras supported by HelmCam, should work. If you try a camera "
+"please let us know if it worked or not on the [Discord "
+"server](https://discord.gg/6uaVHjtfXN) or by opening an issue on the "
+"[GitHub repo](https://github.com/brian7704/OpenTAK_ICU/issues)."
+msgstr ""
+
+#: ../../opentak_icu/uvc_cameras.md:7
+msgid "Usage"
+msgstr ""
+
+#: ../../opentak_icu/uvc_cameras.md:9
+msgid ""
+"When you connect your camera to your phone via USB, a dialog box will pop"
+" up asking if you want to all OpenTAK ICU to use it. When you click yes, "
+"OpenTAK ICU will open automatically if it's not already opened."
+msgstr ""
+
+#: ../../opentak_icu/uvc_cameras.md:12
+msgid ""
+"To switch to the UVC camera instead of the device's internal cameras, "
+"either tap the settings button  (looks like ⚙) → Video Settings → Video "
+"Source → UVC camera, or tap the three vertical dots icon  (looks like ⋮) "
+"→ Video Source → UVC Camera."
+msgstr ""
+
+#: ../../opentak_icu/uvc_cameras.md:16
+msgid ""
+"When switching to the UVC Camera source, the camera does not have to be "
+"connected. If it is not connected you will see a black screen where the "
+"video should be. The video will start automatically when the camera is "
+"connected. Likewise, the camera can be disconnected and video will "
+"restart automatically when it is reconnected."
+msgstr ""
+
+#: ../../opentak_icu/uvc_cameras.md:20
+msgid "Setting Resolution"
+msgstr ""
+
+#: ../../opentak_icu/uvc_cameras.md:22
+msgid ""
+"OpenTAK ICU doesn't automatically detect the UVC camera's resolution. To "
+"set the resolution manually, tap on settings  (looks like ⚙) → Video "
+"Settings → UVC Camera Resolution Width and UVC Camera Resolution Height. "
+"If those options are greyed out, tap the Video Source option and choose "
+"UVC camera. Check your camera's documentation for the best resolution. "
+"The default resolution in OpenTAK ICU is 1920x1080."
+msgstr ""
+
+#: ../../opentak_icu/uvc_cameras.md:27
+msgid "Audio"
+msgstr ""
+
+#: ../../opentak_icu/uvc_cameras.md:29
+msgid ""
+"Only video is supported from UVC cameras. If your camera has audio "
+"capabilities, they will not be used. Instead, audio will come from your "
+"device's internal microphone."
+msgstr ""
+
+#: ../../opentak_icu/uvc_cameras.md:32
+msgid "Flashlight"
+msgstr ""
+
+#: ../../opentak_icu/uvc_cameras.md:34
+msgid "Your device's built-in flashlight can be enabled when using a UVC camera."
+msgstr ""
+
+#: ../../opentak_icu/video_codecs.md:3
+msgid "Hardware Encoding"
+msgstr ""
+
+#: ../../opentak_icu/video_codecs.md:5
+msgid ""
+"OpenTAK ICU uses your device's hardware video encoders. If your device "
+"doesn't have an encoder for a particular codec you will have to choose a "
+"different one."
+msgstr ""
+
+#: ../../opentak_icu/video_codecs.md:10
+msgid ""
+"H264 is widely supported both in Android devices and web browsers. Use "
+"this codec for the best compatibility."
+msgstr ""
+
+#: ../../opentak_icu/video_codecs.md:14
+msgid ""
+"H265 offers better compression than H264 which means a better quality "
+"video with less bandwidth required.  However, many web browsers still "
+"don't support it. Therefore, it's recommended to use H264 if you plan to "
+"view the stream in a browser. But if you will view the stream another "
+"way, such as [VLC](https://www.videolan.org/), H265 is preferred."
+msgstr ""
+
+#: ../../opentak_icu/video_codecs.md:20
+msgid ""
+"AV1 is supported by all streaming protocols. However, most devices do not"
+" have a hardware AV1 encoder. At the time of this writing (February "
+"2024), the Google Pixel 8 and Pixel 8 Pro seem to be the only devices "
+"with AV1 hardware encoders. But as of Android 14 Google is enforcing AV1 "
+"support. This means that if you are on Android 14 or greater you can use "
+"AV1 in  OpenTAK ICU, but if your device doesn't have a hardware encoder "
+"Android will use a software encoder which will probably drain the battery"
+" faster. AV1 is not supported when streaming via SRT."
+msgstr ""
+
+#: ../../opentak_icu/video_filters.md:3
+msgid ""
+"OpenTAK ICU supports a number of video filters provided by the "
+"[RootEncoder](https://github.com/pedroSG94/RootEncoder) library. These "
+"filters can be enabled and disabled while streaming from either the "
+"devices front or back cameras, or from a UVC camera."
+msgstr ""
+
+#: ../../opentak_icu/video_filters.md:6
+msgid "Text Overlay Filter"
+msgstr ""
+
+#: ../../opentak_icu/video_filters.md:8
+msgid ""
+"The text overlay filter will add the stream path, GPS location, and "
+"current timestamp to the bottom left corner of the video. There is an "
+"option under Settings → Video Settings → Text Overlay Time Zone to switch"
+" between UTC and your local time zone."
+msgstr ""
+
+#: ../../opentak_icu/video_filters.md:12
+msgid "Chroma Key Filter"
+msgstr ""
+
+#: ../../opentak_icu/video_filters.md:14
+msgid ""
+"The chroma key filter will replace a green background with either the "
+"default background image or an image of your choice. To set the image, "
+"tap on Settings → Video Settings → Chroma Key Background and choose any "
+"image on your device. This filter requires a bright green background. You"
+" can test it by enabling the filter in OpenTAK ICU and pointing your "
+"camera at the green rectangle below. You should see the default "
+"background or the image you selected."
+msgstr ""
+
+#: ../../opentak_icu/video_filters.md:19
+msgid "![!Chroma Key Test](../images/chroma_key.png)"
+msgstr ""
+
+#: ../../opentak_icu/video_filters.md:19
+msgid "!Chroma Key Test"
+msgstr ""
+

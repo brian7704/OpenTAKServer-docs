@@ -1,0 +1,253 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../index.rst:91
+msgid "Contents:"
+msgstr ""
+
+#: ../../index.rst:96
+msgid "Installation:"
+msgstr ""
+
+#: ../../index.rst:103
+msgid "Documentation:"
+msgstr ""
+
+#: ../../index.rst:135
+msgid "API and Database Models"
+msgstr ""
+
+#: ../../index.rst:143
+msgid "Server Plugins"
+msgstr ""
+
+#: ../../index.rst:149
+msgid "TAK Meshtastic Gateway:"
+msgstr ""
+
+#: ../../index.rst:155
+msgid "OpenTAK ICU:"
+msgstr ""
+
+#: ../../index.rst:9
+msgid "OpenTAKServer"
+msgstr ""
+
+#: ../../index.rst:11
+msgid "|PyPI - Downloads| |PyPI - Version| |Discord| |GitHub Release Date|"
+msgstr ""
+
+#: ../../index.rst:86
+msgid "PyPI - Downloads"
+msgstr ""
+
+#: ../../index.rst:87
+msgid "PyPI - Version"
+msgstr ""
+
+#: ../../index.rst:88
+msgid "Discord"
+msgstr ""
+
+#: ../../index.rst:89
+msgid "GitHub Release Date"
+msgstr ""
+
+#: ../../index.rst:13
+msgid ""
+"OpenTAKServer (OTS) is yet another open source TAK Server for ATAK, iTAK,"
+" and WinTAK. OTS’s goal is to be easy to install and use, and to run on "
+"both servers and SBCs (ie Raspberry Pi)."
+msgstr ""
+
+#: ../../index.rst:17
+msgid ""
+"This is a new project under active development. Feel free to report any "
+"bugs or feature requests to our `GitHub repo "
+"<https://github.com/brian7704/OpenTAKServer>`__. You can also join us on "
+"our `Discord server <https://discord.gg/6uaVHjtfXN>`__"
+msgstr ""
+
+#: ../../index.rst:23
+msgid "Current Features"
+msgstr ""
+
+#: ../../index.rst:25
+msgid "Support for ATAK 4.8 and up (Older versions may work, needs to be tested)"
+msgstr ""
+
+#: ../../index.rst:27
+msgid "WinTAK support"
+msgstr ""
+
+#: ../../index.rst:28
+msgid "iTAK support"
+msgstr ""
+
+#: ../../index.rst:29
+msgid "TAKX support"
+msgstr ""
+
+#: ../../index.rst:30
+msgid "`CloudTAK <https://github.com/dfpc-coe/CloudTAK>`__ support"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "TCP and SSL CoT streaming"
+msgstr ""
+
+#: ../../index.rst:32
+msgid "`Plugin Update Server <update_server.html>`__"
+msgstr ""
+
+#: ../../index.rst:33
+msgid "`Device Profiles <device_profiles.html>`__"
+msgstr ""
+
+#: ../../index.rst:34
+msgid "Groups/Channels"
+msgstr ""
+
+#: ../../index.rst:35
+msgid "LDAP/Active Directory"
+msgstr ""
+
+#: ../../index.rst:36
+msgid "Authentication"
+msgstr ""
+
+#: ../../index.rst:38
+msgid "Optional support for user registration with an email account"
+msgstr ""
+
+#: ../../index.rst:39
+msgid "Two-factor authentication via TOTP authenticator or email"
+msgstr ""
+
+#: ../../index.rst:41
+msgid "Client certificate enrollment"
+msgstr ""
+
+#: ../../index.rst:42
+msgid "Data Sync/Mission API"
+msgstr ""
+
+#: ../../index.rst:43
+msgid "CoT routing between EUDs"
+msgstr ""
+
+#: ../../index.rst:44
+msgid ""
+"`MediaMTX <https://github.com/bluenviron/mediamtx>`__ integration for "
+"video streaming"
+msgstr ""
+
+#: ../../index.rst:47
+msgid "Streams secured via SSL and authentication"
+msgstr ""
+
+#: ../../index.rst:48
+msgid ""
+"Stream video from TAK ICU and `OpenTAK ICU "
+"<https://github.com/brian7704/OpenTAK_ICU>`__"
+msgstr ""
+
+#: ../../index.rst:50
+msgid "Stream video from drones"
+msgstr ""
+
+#: ../../index.rst:51
+msgid "Connect to IP cameras"
+msgstr ""
+
+#: ../../index.rst:52
+msgid ""
+"Watch video streams in ATAK’s video tool, web browser, or video player "
+"such as VLC"
+msgstr ""
+
+#: ../../index.rst:54
+msgid "Record streams"
+msgstr ""
+
+#: ../../index.rst:56
+msgid "Upload data packages to share with other EUDs"
+msgstr ""
+
+#: ../../index.rst:57
+msgid ""
+"Live stream ADS-B and AIS data from the free Airplanes.live and "
+"AISHub.net APIs to EUDs"
+msgstr ""
+
+#: ../../index.rst:59
+msgid "WebUI"
+msgstr ""
+
+#: ../../index.rst:60
+msgid "Mumble Authentication"
+msgstr ""
+
+#: ../../index.rst:62
+msgid "Use your OpenTAKServer account to log into your Mumble server"
+msgstr ""
+
+#: ../../index.rst:65
+msgid "Supported Platforms"
+msgstr ""
+
+#: ../../index.rst:67
+msgid ""
+"There are installer scripts for Ubuntu, Raspberry Pi in the "
+"OpenTAKServer-Installer repo and an official docker image is in the "
+"works. Other platforms can be supported as well. The main requirements "
+"are Python 3.10 or greater, RabbitMQ, and OpenSSL."
+msgstr ""
+
+#: ../../index.rst:72
+msgid "Planned Features"
+msgstr ""
+
+#: ../../index.rst:74
+msgid "Federation"
+msgstr ""
+
+#: ../../index.rst:75
+msgid "Pull data from networked SDRs (ie dump1090, rtl_ais, rtl_tcp, etc)"
+msgstr ""
+
+#: ../../index.rst:76
+msgid "Traccar integration"
+msgstr ""
+
+#: ../../index.rst:79
+msgid "Supporting The Project"
+msgstr ""
+
+#: ../../index.rst:81
+msgid ""
+"If you’d like to support this project you can contribute `here "
+"<https://buymeacoffee.com/opentakserver>`__. Contributions are voluntary "
+"and never required. OpenTAKServer will always remain free and open "
+"source."
+msgstr ""
+

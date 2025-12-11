@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../installation/docker.md:1
+msgid "Docker Image"
+msgstr ""
+
+#: ../../installation/docker.md:5
+msgid ""
+"Thank you to [MilSmDK](https://github.com/milsimdk) for creating a "
+"[docker image for OpenTAKServer](https://github.com/milsimdk/ots-docker)."
+msgstr ""
+
+#: ../../installation/docker.md:7
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../installation/docker.md:11
+msgid ""
+"Please refer to [docker's installation "
+"instructions](https://docs.docker.com/engine/install/) to install docker "
+"for your OS"
+msgstr ""
+
+#: ../../installation/docker.md:14
+msgid "Building the docker image"
+msgstr ""
+
+#: ../../installation/docker.md:18
+msgid ""
+"Clone or download the [ots-docker](https://github.com/milsimdk/ots-"
+"docker) repo"
+msgstr ""
+
+#: ../../installation/docker.md:19
+msgid "If you downloaded the repo, extract it"
+msgstr ""
+
+#: ../../installation/docker.md:20
+msgid ""
+"Run the following commands in a terminal (i.e. bash in Linux or "
+"PowerShell in Windows)"
+msgstr ""
+
+#: ../../installation/installation.md:1
+msgid "OpenTAKServer-Installer"
+msgstr ""
+
+#: ../../installation/installation.md:5
+msgid ""
+"All the installers are on [GitHub](https://github.com/brian7704"
+"/OpenTAKServer-Installer). They should be run as a regular user, not as "
+"root or with the `sudo` command."
+msgstr ""
+
+#: ../../installation/installation.md:7 ../../installation/upgrading.md:19
+#: ../../installation/upgrading.md:50
+msgid "Ubuntu"
+msgstr ""
+
+#: ../../installation/installation.md:11
+msgid ""
+"Copy and paste the following command into your terminal for the Ubuntu "
+"installer. Use this installer for both servers/VMs running Ubuntu and "
+"Raspberry Pis running Ubuntu."
+msgstr ""
+
+#: ../../installation/installation.md:18
+msgid "Raspberry Pi OS"
+msgstr ""
+
+#: ../../installation/installation.md:22
+msgid ""
+"Use the following command for the Raspberry Pi installer. The installer "
+"supports Raspberry Pi OS Bookworm or newer versions."
+msgstr ""
+
+#: ../../installation/installation.md:28
+msgid "Features"
+msgstr ""
+
+#: ../../installation/installation.md:32
+msgid "Certificates"
+msgstr ""
+
+#: ../../installation/installation.md:34
+msgid ""
+"The installer will generate a CA and all the keys you need to get the "
+"server started. It will also configure the certificate authority "
+"automatically."
+msgstr ""
+
+#: ../../installation/installation.md:37
+msgid "ZeroTier"
+msgstr ""
+
+#: ../../installation/installation.md:39
+msgid ""
+"You can optionally install [ZeroTier](https://www.zerotier.com/) with the"
+" installer. If you plan to do so, make sure  you already have an account "
+"and a network ID before running the installer. The installer will ask for"
+" your network ID  so it can join the network automatically."
+msgstr ""
+
+#: ../../installation/installation.md:43
+msgid "MediaMTX"
+msgstr ""
+
+#: ../../installation/installation.md:45
+msgid ""
+"This installer will install the latest binaries for "
+"[MediaMTX](https://github.com/bluenviron/mediamtx) and make the  "
+"appropriate configuration changes in order to work with OpenTAKServer"
+msgstr ""
+
+#: ../../installation/upgrading.md:1
+msgid "Upgrading"
+msgstr ""
+
+#: ../../installation/upgrading.md:5
+msgid ""
+"Starting with version 1.2.0 there is an upgrade script which handles any "
+"new dependencies and database schema changes, as well as upgrading "
+"OpenTAKServer and the webUI. If you want to upgrade from version 1.1.10 "
+"or below, use this script."
+msgstr ""
+
+#: ../../installation/upgrading.md:9
+msgid "Backup your database"
+msgstr ""
+
+#: ../../installation/upgrading.md:13
+msgid ""
+"The upgrade script will modify your database schema to add new tables and"
+" make changes to existing ones. Please backup your database before "
+"upgrading. This ensures you can restore the backup copy if anything goes "
+"wrong during the schema migration. The default database is a SQLite file "
+"at `~/ots/ots.db` in Ubuntu and Raspberry Pi,  and "
+"`C:\\Users\\your_username\\ots\\ots.db` in Windows. Simply copying and "
+"pasting that file to another folder is sufficient to make a backup."
+msgstr ""
+
+#: ../../installation/upgrading.md:23 ../../installation/upgrading.md:33
+msgid ""
+"Run this command as the same user that runs OpenTAKServer. Do not run as "
+"root."
+msgstr ""
+
+#: ../../installation/upgrading.md:29 ../../installation/upgrading.md:56
+msgid "Raspberry Pi"
+msgstr ""
+
+#: ../../installation/upgrading.md:39
+msgid "Bleeding Edge"
+msgstr ""
+
+#: ../../installation/upgrading.md:43
+msgid ""
+"Both the Ubuntu and Raspberry Pi upgrade scripts have an option to "
+"install the latest, unstable versions of OpenTAKServer and OpenTAKServer-"
+"UI. This is for testing purposes only, **DO NOT USE THIS ON A PRODUCTION "
+"SERVER!** More than likely things will break or there will be bugs."
+msgstr ""
+
+#: ../../installation/upgrading.md:47
+msgid ""
+"When installing the bleeding edge version you will be prompted for which "
+"branch to install OpenTAKServer from. It defaults to the master branch."
+msgstr ""
+

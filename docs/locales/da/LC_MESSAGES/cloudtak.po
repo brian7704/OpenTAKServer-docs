@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: da\n"
+"Language-Team: da <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../cloudtak.md:1 ../../cloudtak.md:37
+msgid "CloudTAK"
+msgstr ""
+
+#: ../../cloudtak.md:3
+msgid ""
+"OpenTAKServer is compatible with [CloudTAK](https://github.com/dfpc-"
+"coe/CloudTAK), a fully featured, in-browser TAK client."
+msgstr ""
+
+#: ../../cloudtak.md:5
+msgid "Notes"
+msgstr ""
+
+#: ../../cloudtak.md:7
+msgid ""
+"CloudTAK has only been tested using an FQDN with a trusted certificate "
+"(i.e. Let's Encrypt). It may still work without an FQDN or trusted cert, "
+"but SSL is always required. For best results you should create a "
+"subdomain. For example, if your FQDN is `example.com`, your subdomain "
+"could be `cloudtak.example.com`."
+msgstr ""
+
+#: ../../cloudtak.md:10
+msgid ""
+"If you need support, please ask in the OTS discord rather than contacting"
+" COTAK (the creators of CloudTAK)."
+msgstr ""
+
+#: ../../cloudtak.md:12
+msgid "Installation"
+msgstr ""
+
+#: ../../cloudtak.md:14
+msgid ""
+"This guide assume that you're installing CloudTAK on the same server as "
+"OpenTAKServer."
+msgstr ""
+
+#: ../../cloudtak.md:16
+msgid "Docker"
+msgstr ""
+
+#: ../../cloudtak.md:18
+msgid ""
+"Run these commands to install Docker on Ubuntu. If you're not using "
+"Ubuntu, check the Docker docs on how to install for your distro."
+msgstr ""
+
+#: ../../cloudtak.md:39
+msgid "Clone the CloudTAK repo"
+msgstr ""
+
+#: ../../cloudtak.md:46
+msgid ""
+"Change `API_URL` in docker_compose.yml. It should be prefixed with "
+"`https://` and should be changed to the IP or FQDN that you'll use to "
+"access it. You should also remove `:5000` at the end. It cannot be "
+"localhost unless you're installing CloudTAK to the same computer you'll "
+"be accessing it from."
+msgstr ""
+
+#: ../../cloudtak.md:47
+msgid ""
+"Configure the nginx proxy. Copy the config below and paste it to a new "
+"file at `/etc/nginx/sites-available/cloudtak`. You also need to change "
+"the `server_name` line to your FQDN."
+msgstr ""
+
+#: ../../cloudtak.md:76
+msgid "Create a symbolic link to enable the new nginx config file."
+msgstr ""
+
+#: ../../cloudtak.md:82
+msgid ""
+"Edit `/etc/nginx/sites-available/ots_certificate_enrollment` and add the "
+"following inside the `server {}` stanza."
+msgstr ""
+
+#: ../../cloudtak.md:96
+msgid ""
+"Edit `/etc/nginx/sites-available/ots_https` and add this inside the "
+"listen 8443 `server {}`."
+msgstr ""
+
+#: ../../cloudtak.md:110
+msgid ""
+"Install certbot and nginx `sudo apt install nginx certbot python3"
+"-certbot-nginx -y`"
+msgstr ""
+
+#: ../../cloudtak.md:111
+msgid "Get a cert from Let's Encrypt `sudo certbot --nginx`"
+msgstr ""
+
+#: ../../cloudtak.md:112
+msgid "Restart nginx `sudo systemctl restart nginx`"
+msgstr ""
+
+#: ../../cloudtak.md:113
+msgid ""
+"Open a browser and enter your CloudTAK server's URL, i.e. "
+"https://cloudtak.example.com"
+msgstr ""
+

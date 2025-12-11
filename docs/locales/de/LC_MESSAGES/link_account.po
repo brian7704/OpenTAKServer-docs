@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Brian Wallen
+# This file is distributed under the same license as the OpenTAKServer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenTAKServer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 22:17-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../link_account.rst:2
+msgid "Link TAK.gov Account"
+msgstr ""
+
+#: ../../link_account.rst:4
+msgid ""
+"OpenTAKServer supports linking a TAK.gov account as of 1.7.0. This is the"
+" same as ATAK's ``Link EUD`` feature and allows server administrators to "
+"query TAK.gov for ATAK plugins and download them. The plugins are then "
+"available for EUDs to download and install."
+msgstr ""
+
+#: ../../link_account.rst:9
+msgid "Linking an Account"
+msgstr ""
+
+#: ../../link_account.rst:11
+msgid ""
+"Before starting, log into your TAK.gov account. Once logged in, follow "
+"these steps to link your account."
+msgstr ""
+
+#: ../../link_account.rst:13
+msgid "Click on the ``Get Link Code`` button"
+msgstr ""
+
+#: ../../link_account.rst:14
+msgid ""
+"Enter the code at `<https://tak.gov/register-device>`__. Note that this "
+"code will expire three minutes after it's generated."
+msgstr ""
+
+#: ../../link_account.rst:15
+msgid "Click the ``Link Account`` button"
+msgstr ""
+
+#: ../../link_account.rst:18
+msgid "Plugin List"
+msgstr ""
+
+#: ../../link_account.rst:20
+msgid ""
+"After the account is successfully linked, a list of available plugins "
+"will be displayed. Clicking the ``Download Plugin`` button will download "
+"the plugin to the server and make it available to EUDs to install. The "
+"ATAK version and flavor (i.e. ATAK-CIV, ATAK-GOV, and ATAK-MIL) can be "
+"selected. Note that you will only see the plugins that your account is "
+"allowed to see. If your account is only allowed to see ATAK-CIV plugins, "
+"selecting ATAK-MIL will not show ATAK-MIL plugins."
+msgstr ""
+
+#: ../../link_account.rst:26
+msgid "Screenshots"
+msgstr ""
+
