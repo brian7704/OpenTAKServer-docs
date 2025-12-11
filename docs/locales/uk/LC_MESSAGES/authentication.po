@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-11 03:42+0000\n"
+"PO-Revision-Date: 2025-12-11 04:46+0000\n"
 "Last-Translator: Brian Wallen <bwallen@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/authentication/uk/>\n"
@@ -31,10 +31,12 @@ msgid ""
 "OpenTAKServer uses [Flask-Security](https://flask-security-"
 "too.readthedocs.io/en/stable/) to provide authentication."
 msgstr ""
+"OpenTAKServer використовує [Flask-Security](https://flask-"
+"security-too.readthedocs.io/en/stable/) для забезпечення автентифікації."
 
 #: ../../authentication.md:5
 msgid "Administrator Account"
-msgstr ""
+msgstr "Обліковий запис адміністратора"
 
 #: ../../authentication.md:7
 msgid ""
@@ -43,10 +45,13 @@ msgid ""
 "password is `password`. You should immediately change the password when "
 "you first log in."
 msgstr ""
+"Під час першого запуску OpenTAKServer автоматично створюється обліковий "
+"запис адміністратора. Ім'я користувача — `administrator`, а пароль — "
+"`password`. Вам слід негайно змінити пароль під час першого входу в систему."
 
 #: ../../authentication.md:10
 msgid "Creating Accounts"
-msgstr ""
+msgstr "Створення облікових записів"
 
 #: ../../authentication.md:12
 msgid ""
@@ -54,10 +59,13 @@ msgid ""
 "can register their own accounts if an administrator enables "
 "[email](email.md) support."
 msgstr ""
+"За замовчуванням лише адміністратори можуть створювати облікові записи "
+"користувачів. Однак користувачі можуть реєструвати власні облікові записи, "
+"якщо адміністратор увімкне підтримку [електронної пошти](email.md)."
 
 #: ../../authentication.md:15
 msgid "Note on Passwords"
-msgstr ""
+msgstr "Примітка щодо паролів"
 
 #: ../../authentication.md:17
 msgid ""
@@ -71,10 +79,19 @@ msgid ""
 " a password with these characters will cause browsers and video players "
 "to incorrectly parse the URL."
 msgstr ""
+"OpenTAKServer забороняє використання символів `@` та `:` у паролях. У певних "
+"ситуаціях, коли використовується базова автентифікація, наприклад, перегляд "
+"потоків RTSP, наявність цих символів може призвести до недійсної URL-адреси. "
+"Типова URL-адреса під час використання базової автентифікації виглядає так: "
+"`rtsp://ім'я користувача:пароль@адреса_сервера:8554/шлях`. У цих ситуаціях "
+"символ ':' розділяє ім'я користувача та пароль, а символ `@` розділяє ім'я "
+"користувача/пароль від адреси сервера. Наявність пароля з цими символами "
+"призведе до того, що браузери та відеоплеєри неправильно розбиратимуть "
+"URL-адресу."
 
 #: ../../authentication.md:23
 msgid "Token Authentication"
-msgstr ""
+msgstr "Автентифікація токенів"
 
 #: ../../authentication.md:25
 msgid ""
@@ -82,6 +99,9 @@ msgid ""
 "interacting with OpenTAKServer via the [API](API_old). Use the following "
 "steps to authenticate with a token:"
 msgstr ""
+"OpenTAKServer підтримує автентифікацію за допомогою токенів, що може бути "
+"корисним під час взаємодії з OpenTAKServer через [API](API_old). Виконайте "
+"такі дії для автентифікації за допомогою токену:"
 
 #: ../../authentication.md:28
 msgid ""
@@ -89,12 +109,17 @@ msgid ""
 "This will remove the CSRF requirements for token auth but still require "
 "CSRF for basic and session auth."
 msgstr ""
+"Додайте ці налаштування до `~/ots/config.yml`, якщо вони ще не присутні. Це "
+"видалить вимоги CSRF для автентифікації за токеном, але все ще вимагатиме "
+"CSRF для базової та сеансової автентифікації."
 
 #: ../../authentication.md:37
 msgid ""
 "If you changed `config.yml` you must restart OpenTAKServer `sudo "
 "systemctl restart opentakserver`"
 msgstr ""
+"Якщо ви змінили `config.yml`, вам потрібно перезапустити OpenTAKServer `sudo "
+"systemctl restart opentakserver`"
 
 #: ../../authentication.md:39
 msgid ""
@@ -103,10 +128,14 @@ msgid ""
 "is an example in Python. If your server uses signed certs such as from "
 "Let's Encrypt you can remove `verify=False`."
 msgstr ""
+"Далі зробіть HTTP POST-запит до `/api/login` з параметром запиту "
+"`include_auth_token` та вашими обліковими даними у форматі JSON. Ось приклад "
+"на Python. Якщо ваш сервер використовує підписані сертифікати, такі як від "
+"Let's Encrypt, ви можете видалити `verify=False`."
 
 #: ../../authentication.md:47
 msgid "A successful login JSON response will be as follows"
-msgstr ""
+msgstr "JSON-відповідь для успішного входу буде такою"
 
 #: ../../authentication.md:63
 msgid ""
@@ -114,10 +143,13 @@ msgid ""
 "can be in a query parameter called `auth_token` or in an HTTP header "
 "called `Authentication-Token`"
 msgstr ""
+"`authentication_token` має надсилатися з кожним наступним запитом. Він може "
+"бути в параметрі запиту під назвою `auth_token` або в HTTP-заголовку під "
+"назвою `Authentication-Token`"
 
 #: ../../authentication.md:66
 msgid "Session Authentication"
-msgstr ""
+msgstr "Автентифікація сеансу"
 
 #: ../../authentication.md:68
 msgid ""
@@ -126,10 +158,14 @@ msgid ""
 "server uses signed certs such as from Let's Encrypt you can remove "
 "`verify=False`."
 msgstr ""
+"Для здійснення викликів API під час використання автентифікації сеансу "
+"потрібен токен CSRF. Ось приклад Python з використанням автентифікації "
+"сеансу. Якщо ваш сервер використовує підписані сертифікати, такі як від "
+"Let's Encrypt, ви можете видалити `verify=False`."
 
 #: ../../authentication.md:83
 msgid "Whitelisting and Blacklisting Email Domains"
-msgstr ""
+msgstr "Внесення доменів електронної пошти до білого та чорного списків"
 
 #: ../../authentication.md:85
 msgid ""
@@ -142,6 +178,16 @@ msgid ""
 "option. For example, adding `gov` and `mil` will allow only users with "
 ".gov or .mil email accounts to register accounts."
 msgstr ""
+"Якщо ввімкнено підтримку електронної пошти, для створення облікового запису "
+"можна використовувати будь-яку дійсну адресу електронної пошти. Однак "
+"існують білі списки для доменів електронної пошти та доменів верхнього "
+"рівня. Так само є й чорні списки. Наприклад, якщо додати `example.com` до "
+"опції `OTS_EMAIL_DOMAIN_WHITELIST`, облікові записи зможуть зареєструвати "
+"лише користувачі з адресами електронної пошти `@example.com`. Ви також "
+"можете додати домени верхнього рівня (TLD) до опції `OTS_EMAIL_TLD_WHITELIST`"
+". Наприклад, додавання `gov` та `mil` дозволить зареєструвати облікові "
+"записи лише користувачам з обліковими записами електронної пошти .gov або "
+".mil."
 
 #: ../../authentication.md:91
 msgid ""
@@ -149,14 +195,17 @@ msgid ""
 "except that any email address not in those lists will be able to register"
 " for an account."
 msgstr ""
+"`OTS_EMAIL_DOMAIN_BLACKLIST` та `OTS_EMAIL_TLD_BLACKLIST` схожі, за винятком "
+"того, що будь-яка адреса електронної пошти, яка не входить до цих списків, "
+"зможе зареєструвати обліковий запис."
 
 #: ../../authentication.md:94
 msgid "Two-Factor Authentication"
-msgstr ""
+msgstr "Двофакторна автентифікація"
 
 #: ../../authentication.md:96
 msgid "TOTP"
-msgstr ""
+msgstr "ТОТП"
 
 #: ../../authentication.md:98
 msgid ""
@@ -171,6 +220,18 @@ msgid ""
 " or copy and paste the code into the authenticator app. Your "
 "authenticator app will give you a PIN that you enter below the QR code."
 msgstr ""
+"Двофакторну автентифікацію можна ввімкнути для будь-яких облікових записів, "
+"що використовують TOTP, з програми-автентифікатора, такої як Google "
+"Authenticator ([Android](https://play.google.com/store/apps/"
+"details?id=com.google.android.apps.authenticator2&hl=en_US&gl=US)/[iOS]"
+"(https://apps.apple.com/us/app/google-authenticator/id388497605)) або "
+"Microsoft Authenticator ([Android](https://play.google.com/store/apps/"
+"details?id=com.azure.authenticator)/[iOS](https://apps.apple.com/us/app/"
+"microsoft-authenticator/id983156458)). Натисніть `Налаштування 2FA` на "
+"панелі навігації та виберіть опцію програми-автентифікатора. Вона згенерує "
+"код та QR-код. Або відскануйте QR-код за допомогою програми автентифікації, "
+"або скопіюйте та вставте код у програму автентифікації. Ваша програма "
+"автентифікації надасть вам PIN-код, який потрібно ввести під QR-кодом."
 
 #: ../../authentication.md:105
 msgid "Email"
@@ -182,14 +243,18 @@ msgid ""
 "has [enabled](email.md) email support. A code will be sent to your email "
 "address which you will need to enter when you log in."
 msgstr ""
+"Ви можете використовувати адресу електронної пошти як двофакторну "
+"аутентифікацію (2FA), якщо ваш адміністратор [увімкнув](email.md) підтримку "
+"електронної пошти. На вашу адресу електронної пошти буде надіслано код, який "
+"потрібно буде ввести під час входу."
 
 #: ../../authentication.md:110
 msgid "Screenshot"
-msgstr ""
+msgstr "Знімок екрана"
 
 #: ../../authentication.md:112
 msgid "![!2FA Setup](images/2fa_setup.png)"
-msgstr ""
+msgstr "![!Налаштування 2FA](images/2fa_setup.png)"
 
 #: ../../authentication.md:112
 msgid "!2FA Setup"
@@ -197,7 +262,7 @@ msgstr ""
 
 #: ../../authentication.md:114
 msgid "SSL Socket Authentication"
-msgstr ""
+msgstr "Автентифікація сокетів SSL"
 
 #: ../../authentication.md:116
 msgid ""
@@ -209,3 +274,10 @@ msgid ""
 " the connection. Two-Factor authentication is not required for the SSL "
 "socket."
 msgstr ""
+"Підключення до SSL-сокета OpenTAKServer вимагає автентифікації. У "
+"налаштуваннях сервера ATAK натисніть `Використовувати автентифікацію` та "
+"введіть своє ім'я користувача та пароль. Коли ATAK підключиться, він надішле "
+"`<auth>` CoT з іменем користувача та паролем. Якщо ім'я користувача та "
+"пароль неправильні, обліковий запис вимкнено або `<auth>` CoT не надіслано, "
+"OpenTAKServer закриє з'єднання. Двофакторна автентифікація не потрібна для "
+"SSL-сокета."
