@@ -4,25 +4,26 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-12-20 07:43+0000\n"
+"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/index/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../index.rst:91
 msgid "Contents:"
-msgstr ""
+msgstr "Inhalt:"
 
 #: ../../index.rst:96
 msgid "Installation:"
@@ -30,7 +31,7 @@ msgstr ""
 
 #: ../../index.rst:103
 msgid "Documentation:"
-msgstr ""
+msgstr "Dokumentation:"
 
 #: ../../index.rst:135
 msgid "API and Database Models"
@@ -38,7 +39,7 @@ msgstr ""
 
 #: ../../index.rst:143
 msgid "Server Plugins"
-msgstr ""
+msgstr "Serverplugins"
 
 #: ../../index.rst:149
 msgid "TAK Meshtastic Gateway:"
@@ -125,7 +126,7 @@ msgstr ""
 
 #: ../../index.rst:34
 msgid "Groups/Channels"
-msgstr ""
+msgstr "Gruppe/Kanal"
 
 #: ../../index.rst:35
 msgid "LDAP/Active Directory"
@@ -133,7 +134,7 @@ msgstr ""
 
 #: ../../index.rst:36
 msgid "Authentication"
-msgstr ""
+msgstr "Authorisierung"
 
 #: ../../index.rst:38
 msgid "Optional support for user registration with an email account"
@@ -256,4 +257,3 @@ msgstr ""
 
 #~ msgid "`Device Profiles <device_profiles.md>`__"
 #~ msgstr ""
-
