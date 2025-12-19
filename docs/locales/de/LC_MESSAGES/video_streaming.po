@@ -4,25 +4,26 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-12-20 07:43+0000\n"
+"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/video_streaming/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../video_streaming.md:1
 msgid "Video Streaming"
-msgstr ""
+msgstr "Videostreaming"
 
 #: ../../video_streaming.md:3
 msgid ""
@@ -189,4 +190,3 @@ msgstr ""
 #: ../../video_streaming.md:70
 msgid "!Video Streams"
 msgstr ""
-
