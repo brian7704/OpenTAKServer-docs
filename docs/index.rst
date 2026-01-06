@@ -68,6 +68,11 @@ There are installer scripts for Ubuntu, Raspberry Pi in the OpenTAKServer-Instal
 repo and an official docker image is in the works. Other platforms can be supported as well.
 The main requirements are Python 3.10 or greater, RabbitMQ, and OpenSSL.
 
+Supported Languages
+-------------------
+
+.. image:: https://weblate.opentakserver.io/widget/opentakserver/multi-auto.svg
+
 Planned Features
 ----------------
 
