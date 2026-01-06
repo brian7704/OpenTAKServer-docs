@@ -71,6 +71,10 @@ The main requirements are Python 3.10 or greater, RabbitMQ, and OpenSSL.
 Supported Languages
 -------------------
 
+If you would like a language to be added feel free to open a GitHub issue or ask on the Discord server. You can also
+help translate OpenTAKServer by creating a free account on the `OTS Weblate server <https://weblate.opentakserver.io>`__.
+Below is a list of currently supported languages.
+
 .. image:: https://weblate.opentakserver.io/widget/opentakserver/multi-auto.svg
 
 Planned Features
