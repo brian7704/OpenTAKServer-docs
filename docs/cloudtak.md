@@ -71,6 +71,40 @@ server {
 
 listen 80;
 }
+
+server {
+
+   root /var/www/html;
+
+   # Add index.php to the list if you are using PHP
+   index index.html index.htm index.nginx-debian.html;
+
+   server_name tiles.cloudtak.anhangueramilsim.com.br; # <------- Change this to your FQDN
+
+   location / {
+           
+
+           proxy_pass http://localhost:5002; 
+           proxy_ssl_verify off;
+           proxy_ssl_session_reuse on;
+           proxy_buffering off;
+           proxy_set_header Upgrade $http_upgrade;
+           proxy_set_header Connection "upgrade";
+           proxy_set_header Referer $scheme://$host/;
+           #proxy_hide_header Authorization;
+           #proxy_set_header Referer '';
+           #proxy_set_header Origin '';
+           #proxy_set_header Origin '$http_origin' ;
+           #proxy_set_header Origin 'http://localhost:5002';
+           #add_header 'Access-Control-Allow-Origin' '*';
+           #add_header 'Access-Control-Allow-Headers' 'Content-Type';
+
+   }
+
+listen 80;
+
+
+}
 ```
 
 4. Create a symbolic link to enable the new nginx config file.
