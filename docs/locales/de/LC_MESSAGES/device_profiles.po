@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/device_profiles/de/>\n"
@@ -120,8 +120,8 @@ msgstr "Screenshot"
 
 #: ../../device_profiles.md:27
 msgid "![!Screenshot](images/device_profiles.png)"
-msgstr ""
+msgstr "![!Screenshot](images/device_profiles.png)"
 
 #: ../../device_profiles.md:27
 msgid "!Screenshot"
-msgstr ""
+msgstr "Screenshot"
