@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/ais/de/>\n"
@@ -103,23 +103,29 @@ msgstr "`OTS_AISHUB_WEST_LON` - Längengrad der südwestlichen Ecke"
 
 #: ../../ais.md:25
 msgid "`OTS_AISHUB_NORTH_LAT` - Latitude of the northeast corner"
-msgstr ""
+msgstr "`OTS_AISHUB_NORTH_LAT` - Breitengrad der nordöstlichen Ecke"
 
 #: ../../ais.md:26
 msgid "`OTS_AISHUB_EAST_LON` - Longitude of the northeast corner"
-msgstr ""
+msgstr "`OTS_AISHUB_EAST_LON` - Längengrad der nordöstlichen Ecke"
 
 #: ../../ais.md:27
 msgid ""
 "`OTS_AISHUB_MMSI_LIST` - A comma-separated string of MMSI numbers of "
 "specific vessels to search, for example `\"367658140,366902120\"`"
 msgstr ""
+"`OTS_AISHUB_MMSI_LIST` - Eine durch Kommas getrennte Zeichenkette von MMSI-"
+"Nummern bestimmter Schiffe, die durchsucht werden sollen, zum Beispiel `"
+"\"367658140,366902120\"`"
 
 #: ../../ais.md:28
 msgid ""
 "`OTS_AISHUB_IMO_LIST` - A comma-separated string of IMO numbers of "
 "specific vessels to search, for example `\"1234,5678\"`"
 msgstr ""
+"`OTS_AISHUB_IMO_LIST` - Eine durch Kommas getrennte Zeichenkette von IMO-"
+"Nummern bestimmter Schiffe, nach denen gesucht werden soll, zum Beispiel `"
+"\"1234,5678\"`"
 
 #: ../../ais.md:30
 msgid "Screenshot"
@@ -127,8 +133,8 @@ msgstr "Screenshot"
 
 #: ../../ais.md:32
 msgid "![!Screenshot of AIS on the map](images/ais_map.png)"
-msgstr ""
+msgstr "![!Screenshot von AIS auf der Karte](images/ais_map.png)"
 
 #: ../../ais.md:32
 msgid "!Screenshot of AIS on the map"
-msgstr ""
+msgstr "Screenshot von AIS auf der Karte"
