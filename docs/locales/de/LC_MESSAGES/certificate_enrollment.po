@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/certificate-enrollment/de/>\n"
 "Language: de\n"
@@ -30,6 +30,8 @@ msgid ""
 "OpenTAKServer supports client certificate enrollment which defaults to "
 "port `8446`."
 msgstr ""
+"OpenTAKServer unterstützt Client Zertifikat Enrollment über den default port "
+"`8446`."
 
 #: ../../certificate_enrollment.md:5
 msgid "Authentication"
@@ -41,10 +43,13 @@ msgid ""
 " an account on your OpenTAKServer or have an administrator make an "
 "account for you."
 msgstr ""
+"Die Zertifikatseinschreibung erfordert eine Authentifizierung. Sie müssen "
+"ein Konto auf Ihrem OpenTAKServer registrieren oder sich von einem "
+"Administrator ein Konto anlegen lassen."
 
 #: ../../certificate_enrollment.md:10
 msgid "Prerequisites"
-msgstr ""
+msgstr "Voraussetzungen"
 
 #: ../../certificate_enrollment.md:12
 msgid ""
@@ -56,10 +61,18 @@ msgid ""
 "`https://your_server_address/api/truststore` or by logging into the web "
 "UI and clicking the `Download Truststore` button."
 msgstr ""
+"Der Standardport für die Zertifikatsregistrierung ist 8446. Über diesen Port "
+"werden entweder selbstsignierte Zertifikate oder Let's Encrypt-Zertifikate "
+"verwendet. Standardmäßig werden selbstsignierte Zertifikate verwendet. Wenn "
+"Ihr Server selbstsignierte Zertifikate nutzt, benötigen Sie für die "
+"automatische Registrierung eine Kopie des Truststore-Zertifikats Ihres "
+"Servers. Sie können diese unter   `https://your_server_address/api/"
+"truststore` herunterladen oder indem Sie sich in der Web-Oberfläche anmelden "
+"und auf die Schaltfläche  `Download Truststore` klicken."
 
 #: ../../certificate_enrollment.md:17
 msgid "iTAK QR Code"
-msgstr ""
+msgstr "iTAK QR Code"
 
 #: ../../certificate_enrollment.md:19
 msgid ""
@@ -67,10 +80,13 @@ msgid ""
 "configured with a signed certificate from Let's Encrypt or a similar "
 "trusted certificate authority."
 msgstr ""
+"Um einen QR-Code für die iTAK-Registrierung verwenden zu können, muss Ihr "
+"Server mit einem signierten Zertifikat von Let's Encrypt oder einer "
+"ähnlichen vertrauenswürdigen Zertifizierungsstelle konfiguriert sein."
 
 #: ../../certificate_enrollment.md:22
 msgid "ATAK QR Code"
-msgstr ""
+msgstr "ATAK QR-Code"
 
 #: ../../certificate_enrollment.md:24
 msgid ""
@@ -84,6 +100,16 @@ msgid ""
 "The QR code can also be deleted. If it's scanned after being deleted, "
 "certificate registration will fail."
 msgstr ""
+"Ab Version 1.5.0 unterstützt OpenTAKServer die Generierung von QR-Codes für "
+"die ATAK-Zertifikatsregistrierung. Diese Funktion setzt voraus, dass Ihr "
+"Server über einen Domainnamen mit einem vertrauenswürdigen Zertifikat von "
+"Let's Encrypt oder einer vergleichbaren Zertifizierungsstelle verfügt. Beim "
+"Generieren eines QR-Codes können Sie optional ein Ablaufdatum und eine "
+"maximale Anzahl an Nutzungen festlegen. Sind eines oder beides angegeben, "
+"ist der QR-Code nach Ablauf des Gültigkeitsdatums oder Erreichen der "
+"maximalen Anzahl an Nutzungen (je nachdem, was zuerst eintritt) nicht mehr "
+"gültig. Der QR-Code kann auch gelöscht werden. Wird er nach dem Löschen "
+"gescannt, schlägt die Zertifikatsregistrierung fehl."
 
 #: ../../certificate_enrollment.md:30
 msgid ""
@@ -93,6 +119,11 @@ msgid ""
 "However, it is possible to generate a single QR code and let multiple "
 "users scan it."
 msgstr ""
+"Jeder Benutzer kann jeweils nur einen aktiven QR-Code besitzen. Dieser kann "
+"jedoch jederzeit gelöscht und neu generiert werden. Der QR-Code ist "
+"benutzerspezifisch und sollte in den meisten Fällen wie ein Passwort "
+"behandelt werden. Es ist jedoch möglich, einen einzigen QR-Code zu "
+"generieren, den mehrere Benutzer scannen können."
 
 #: ../../certificate_enrollment.md:34
 msgid ""
@@ -101,6 +132,11 @@ msgid ""
 "start the certificate registration process. This method does not require "
 "the user to uncheck the Preconfigured Trust option."
 msgstr ""
+"Scannen Sie den QR-Code mit der Kamera-App Ihres Endgeräts oder einer "
+"beliebigen QR-Code-Scanner-App. Nach dem Scannen öffnet sich ATAK "
+"automatisch und der Zertifikatsregistrierungsprozess startet. Bei dieser "
+"Methode muss die Option „Vorkonfiguriertes Vertrauen“ nicht deaktiviert "
+"werden."
 
 #: ../../certificate_enrollment.md:38
 msgid ""
@@ -222,11 +258,11 @@ msgstr ""
 
 #: ../../certificate_enrollment.md:69
 msgid "Screenshots"
-msgstr ""
+msgstr "Screenshots"
 
 #: ../../certificate_enrollment.md:71
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: ../../certificate_enrollment.md:73
 msgid "Self-Signed Certificate Settings"
