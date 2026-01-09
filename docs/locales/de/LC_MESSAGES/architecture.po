@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/architecture/de/>\n"
 "Language: de\n"
@@ -33,10 +33,15 @@ msgid ""
 "Interpreter Lock "
 "(GIL)](https://wiki.python.org/moin/GlobalInterpreterLock)."
 msgstr ""
+"Ab Version 1.5.0 ist OpenTAKServer in drei Teile aufgeteilt: die API, den "
+"EUD-Handler und den CoT-Parser. Jeder Teil läuft als eigener, separater "
+"Prozess. Dadurch wird ein Engpassproblem behoben, das durch den "
+"[Python Global Interpreter Lock (GIL)](https://wiki.python.org/moin/"
+"GlobalInterpreterLock) von Python verursacht wurde."
 
 #: ../../architecture.md:6
 msgid "EUD Handler"
-msgstr ""
+msgstr "EUD Handler"
 
 #: ../../architecture.md:8
 msgid ""
@@ -47,10 +52,17 @@ msgid ""
 "to parse. Likewise, when another EUD publishes a CoT message, "
 "`eud_handler` consume the message and send it to the EUD."
 msgstr ""
+"Der EUD-Handler lauscht auf einem TCP-Port, der durch "
+"`OTS_TCP_STREAMING_PORT` oder `OTS_SSL_STREAMING_PORT` festgelegt ist, und "
+"ist der zentrale Interaktionspunkt zwischen OpenTAKServer und den EUDs. Wenn "
+"ein EUD eine CoT-Nachricht sendet, veröffentlicht `eud_handler` diese zur "
+"Verarbeitung durch `cot_parser` in RabbitMQ. Entsprechend konsumiert "
+"`eud_handler` CoT-Nachrichten, die von anderen EUDs veröffentlicht wurden, "
+"und sendet sie an das jeweilige EUD weiter."
 
 #: ../../architecture.md:12
 msgid "CoT Parser"
-msgstr ""
+msgstr "CoT Parser"
 
 #: ../../architecture.md:14
 msgid ""
@@ -61,10 +73,17 @@ msgid ""
 "many incoming CoT messages for the server to handle, additional servers "
 "can run more instances of `cot_parser` for extra processing power."
 msgstr ""
+"Der CoT-Parser verbindet sich mit dem RabbitMQ-Server und analysiert die von "
+"den Endgeräten (EUDs) gesendeten CoT-Nachrichten. Es können mehrere "
+"Instanzen des CoT-Parsers gleichzeitig ausgeführt werden. Dadurch können Sie "
+"die CPU-Kerne optimal nutzen, wenn viele CoT-Nachrichten pro Sekunde "
+"eingehen. Falls der Server mit der Verarbeitungskapazität des "
+"Nachrichtenaufkommens überfordert ist, können zusätzliche Server weitere "
+"Instanzen von `cot_parser` ausführen, um die Rechenleistung zu erhöhen."
 
 #: ../../architecture.md:19
 msgid "Ports"
-msgstr ""
+msgstr "Ports"
 
 #: ../../architecture.md:21
 msgid ""
@@ -73,22 +92,27 @@ msgid ""
 "For SSL encrypted communications, ports 443, 8443, 8446, and 8089 are "
 "required. In either case, the rest of the ports are optional."
 msgstr ""
+"Nachfolgend finden Sie eine Tabelle aller Standardports, die von "
+"OpenTAKServer verwendet werden. Für unverschlüsselte TCP-Kommunikation "
+"werden die Ports 80, 8080 und 8088 benötigt. Für SSL-verschlüsselte "
+"Kommunikation werden die Ports 443, 8443, 8446 und 8089 benötigt. Die "
+"übrigen Ports sind optional."
 
 #: ../../architecture.md
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: ../../architecture.md
 msgid "Component"
-msgstr ""
+msgstr "Komponente"
 
 #: ../../architecture.md
 msgid "Protocol"
-msgstr ""
+msgstr "Protokoll"
 
 #: ../../architecture.md
 msgid "Interface"
-msgstr ""
+msgstr "Schnittstelle"
 
 #: ../../architecture.md
 msgid "Description"
@@ -104,7 +128,7 @@ msgstr ""
 
 #: ../../architecture.md
 msgid "TCP"
-msgstr ""
+msgstr "TCP"
 
 #: ../../architecture.md
 msgid "All"
@@ -208,7 +232,7 @@ msgstr ""
 
 #: ../../architecture.md
 msgid "OpenTAKServer"
-msgstr ""
+msgstr "OpenTAKServer"
 
 #: ../../architecture.md
 msgid "OTS listens on this port on the loopback interface for HTTP(S) requests"
@@ -220,7 +244,7 @@ msgstr ""
 
 #: ../../architecture.md
 msgid "WebRTC"
-msgstr ""
+msgstr "WebRTC"
 
 #: ../../architecture.md
 msgid "8088"
