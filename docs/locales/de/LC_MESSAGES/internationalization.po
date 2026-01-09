@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/internationalization/de/>\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../internationalization.rst:9
 msgid "View Translation Status"
-msgstr "Übersetzungsstatus ansehen"
+msgstr "Übersetzungsstatus anzeigen"
 
 #: ../../internationalization.rst:11
 msgid ""
