@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/marti_api/de/>\n"
@@ -52,7 +52,7 @@ msgstr "Wird vom Data-Sync-Plugin verwendet, um einen Feed zu löschen"
 #: ../../<autoflask>:1
 msgid "Used by the Data Sync plugin to add a password to a feed"
 msgstr ""
-"Wird vom Data-Sync-Plugin verwendet, um einem Feed ein Passwort hinzuzufügen."
+"Wird vom Data-Sync-Plugin verwendet, um einem Feed ein Passwort hinzuzufügen"
 
 #: ../../<autoflask>:1
 msgid ""
@@ -76,7 +76,7 @@ msgid ""
 "upload files and data packages"
 msgstr ""
 "Wird vom Data-Sync-Plugin beim Hinzufügen von Dateien zu einer Mission "
-"verwendet. Wird auch zum Hochladen von Dateien und Datenpaketen verwendet."
+"verwendet. Wird auch zum Hochladen von Dateien und Datenpaketen verwendet"
 
 #: ../../<autoflask>
 msgid "return"
@@ -84,14 +84,16 @@ msgstr "zurückkehren"
 
 #: ../../<autoflask>:1
 msgid "flask.Response"
-msgstr ""
+msgstr "flask.Response"
 
 #: ../../<autoflask>:1
 msgid "Associates content/files with a mission"
-msgstr ""
+msgstr "Verknüpft Inhalte/Dateien mit einer Mission"
 
 #: ../../<autoflask>:1
 msgid ""
 "Used by the Data Sync plugin to get all CoTs associated with a feed. "
 "Returns the CoTs encapsulated by an <events> tag"
 msgstr ""
+"Wird vom Data-Sync-Plugin verwendet, um alle einem Feed zugeordneten CoTs "
+"abzurufen. Gibt die in einem <events>-Tag gekapselten CoTs zurück"
