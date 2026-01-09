@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/email/de/>\n"
@@ -81,7 +81,7 @@ msgstr "`MAIL_PORT`"
 
 #: ../../email.md:17
 msgid "`MAIL_USERNAME`"
-msgstr "MAIL_Benutzername"
+msgstr "`MAIL_Benutzername`"
 
 #: ../../email.md:18
 msgid "`MAIL_PASSWORD`"
@@ -90,24 +90,28 @@ msgstr "`MAIL_PASSWORD`"
 #: ../../email.md:20
 msgid "These settings are optional and will depend on the email service you use."
 msgstr ""
+"Diese Einstellungen sind optional und hängen vom verwendeten E-Mail-Dienst "
+"ab."
 
 #: ../../email.md:22
 msgid "`MAIL_USE_SSL`"
-msgstr ""
+msgstr "`MAIL_USE_SSL`"
 
 #: ../../email.md:23
 msgid "`MAIL_USE_TLS`"
-msgstr ""
+msgstr "`MAIL_USE_TLS`"
 
 #: ../../email.md:25
 msgid ""
 "You can find a full list of Flask-Mailman's settings in their "
 "[documentation](https://waynerv.github.io/flask-mailman/)."
 msgstr ""
+"Eine vollständige Liste der Einstellungen von Flask-Mailman finden Sie in "
+"deren [Dokumentation](https://waynerv.github.io/flask-mailman/)."
 
 #: ../../email.md:27
 msgid "Gmail"
-msgstr ""
+msgstr "Gmail"
 
 #: ../../email.md:29
 msgid ""
@@ -117,63 +121,68 @@ msgid ""
 "documentation](https://support.google.com/accounts/answer/185833?hl=en)  "
 "for details."
 msgstr ""
+"Wenn Sie E-Mails mit einem Gmail-Konto versenden möchten, müssen Sie sich "
+"anmelden und ein App-Passwort aktivieren. Ihr reguläres Passwort "
+"funktioniert nicht in OpenTAKServer. Weitere Informationen finden Sie in der "
+"[Google-Dokumentation](https://support.google.com/accounts/answer/"
+"185833?hl=en)."
 
 #: ../../email.md:33
 msgid "Gmail settings"
-msgstr ""
+msgstr "Gmail-Einstellungen"
 
 #: ../../email.md
 msgid "Setting"
-msgstr ""
+msgstr "Einstellung"
 
 #: ../../email.md
 msgid "Value"
-msgstr ""
+msgstr "Wert"
 
 #: ../../email.md
 msgid "**MAIL_SERVER**"
-msgstr ""
+msgstr "**MAIL_SERVER**"
 
 #: ../../email.md
 msgid "`smtp.gmail.com`"
-msgstr ""
+msgstr "`smtp.gmail.com`"
 
 #: ../../email.md
 msgid "**MAIL_PORT**"
-msgstr ""
+msgstr "**MAIL_PORT**"
 
 #: ../../email.md
 msgid "`587`"
-msgstr ""
+msgstr "`587`"
 
 #: ../../email.md
 msgid "**MAIL_USE_SSL**"
-msgstr ""
+msgstr "**MAIL_USE_SSL**"
 
 #: ../../email.md
 msgid "`false`"
-msgstr ""
+msgstr "`falsch`"
 
 #: ../../email.md
 msgid "**MAIL_USE_TLS**"
-msgstr ""
+msgstr "**MAIL_USE_TLS**"
 
 #: ../../email.md
 msgid "`true`"
-msgstr ""
+msgstr "`true`"
 
 #: ../../email.md
 msgid "**MAIL_USERNAME**"
-msgstr ""
+msgstr "**MAIL_Benutzername**"
 
 #: ../../email.md
 msgid "`your_username@gmail.com`"
-msgstr ""
+msgstr "`your_username@gmail.com`"
 
 #: ../../email.md
 msgid "**MAIL_PASSWORD**"
-msgstr ""
+msgstr "**MAIL_PASSWORD**"
 
 #: ../../email.md
 msgid "`your_app_password`"
-msgstr ""
+msgstr "`Ihr_App-Passwort`"
