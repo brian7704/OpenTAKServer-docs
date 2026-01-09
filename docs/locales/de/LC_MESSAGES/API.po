@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/api/de/>\n"
 "Language: de\n"
@@ -34,10 +34,12 @@ msgid ""
 "All API calls except for ``/api/login`` require `authentication "
 "<authentication.html>`__. Some are restricted to administrators only."
 msgstr ""
+"Alle API Abfragen, außer ``/api/login`` erfordern `authentication "
+"<authentication.html>`__. Einige sind auf Admins beschränkt."
 
 #: ../../API.rst:12
 msgid "Pagination"
-msgstr ""
+msgstr "Seitenzahlen"
 
 #: ../../API.rst:14
 msgid ""
@@ -45,43 +47,48 @@ msgid ""
 "``per_page`` parameters to specify which page to get and how many results"
 " should be returned."
 msgstr ""
+"Die meisten ``GET``-Abfragen sind paginiert. Sie können die Parameter "
+"``page`` und ``per_page`` angeben, um festzulegen, welche Seite abgerufen "
+"werden soll und wie viele Ergebnisse zurückgegeben werden sollen."
 
 #: ../../API.rst:19
 msgid "/api/status"
-msgstr ""
+msgstr "/api/status"
 
 #: ../../API.rst:21
 msgid ""
 "Returns information about the server including disk usage, memory, usage,"
 " OS type and version, etc."
 msgstr ""
+"Gibt Informationen über den Server zurück, einschließlich "
+"Festplattennutzung, Speicherauslastung, Betriebssystemtyp und -version usw."
 
 #: ../../API.rst:24 ../../API.rst:32 ../../API.rst:40 ../../API.rst:48
 #: ../../API.rst:56 ../../API.rst:64 ../../API.rst:84 ../../API.rst:113
 #: ../../API.rst:132 ../../API.rst:142 ../../API.rst:158 ../../API.rst:173
 #: ../../API.rst:187 ../../API.rst:202 ../../API.rst:288
 msgid "HTTP Method: ``GET``"
-msgstr ""
+msgstr "HTTP-Methode: ``GET``"
 
 #: ../../API.rst:25 ../../API.rst:85 ../../API.rst:93 ../../API.rst:103
 #: ../../API.rst:114 ../../API.rst:133 ../../API.rst:143 ../../API.rst:159
 #: ../../API.rst:174 ../../API.rst:188 ../../API.rst:203 ../../API.rst:229
 #: ../../API.rst:276 ../../API.rst:289 ../../API.rst:304
 msgid "Access: Everyone"
-msgstr ""
+msgstr "Zugang: Für alle"
 
 #: ../../API.rst:28
 msgid "/api/tcp/start"
-msgstr ""
+msgstr "/api/tcp/start"
 
 #: ../../API.rst:30
 msgid "Starts the TCP CoT streaming server."
-msgstr ""
+msgstr "Startet den TCP CoT Streaming-Server."
 
 #: ../../API.rst:33 ../../API.rst:41 ../../API.rst:49 ../../API.rst:57
 #: ../../API.rst:65 ../../API.rst:76
 msgid "Access: Administrators only"
-msgstr ""
+msgstr "Zugriff: Nur für Administratoren"
 
 #: ../../API.rst:36
 msgid "/api/tcp/stop"
@@ -283,7 +290,7 @@ msgstr ""
 #: ../../API.rst:175 ../../API.rst:189 ../../API.rst:204 ../../API.rst:277
 #: ../../API.rst:290
 msgid "Parameters"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../API.rst:177
 msgid "``uid`` - UID of the EUD that created the point"
