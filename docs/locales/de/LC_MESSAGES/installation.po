@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/installation/de/>\n"
@@ -103,13 +103,16 @@ msgstr ""
 
 #: ../../installation/installation.md:18
 msgid "Raspberry Pi OS"
-msgstr ""
+msgstr "Raspberry Pi OS"
 
 #: ../../installation/installation.md:22
 msgid ""
 "Use the following command for the Raspberry Pi installer. The installer "
 "supports Raspberry Pi OS Bookworm or newer versions."
 msgstr ""
+"Verwenden Sie den folgenden Befehl für das Raspberry Pi-"
+"Installationsprogramm. Das Installationsprogramm unterstützt Raspberry Pi OS "
+"Bookworm oder neuere Versionen."
 
 #: ../../installation/installation.md:28
 msgid "Features"
@@ -117,7 +120,7 @@ msgstr "Features"
 
 #: ../../installation/installation.md:32
 msgid "Certificates"
-msgstr ""
+msgstr "Zertifikate"
 
 #: ../../installation/installation.md:34
 msgid ""
@@ -125,10 +128,13 @@ msgid ""
 "server started. It will also configure the certificate authority "
 "automatically."
 msgstr ""
+"Das Installationsprogramm generiert eine Zertifizierungsstelle und alle "
+"Schlüssel, die Sie zum Starten des Servers benötigen. Es konfiguriert die "
+"Zertifizierungsstelle außerdem automatisch."
 
 #: ../../installation/installation.md:37
 msgid "ZeroTier"
-msgstr ""
+msgstr "ZeroTier"
 
 #: ../../installation/installation.md:39
 msgid ""
@@ -137,10 +143,15 @@ msgid ""
 "and a network ID before running the installer. The installer will ask for"
 " your network ID  so it can join the network automatically."
 msgstr ""
+"Sie können [ZeroTier](https://www.zerotier.com/) optional mit dem "
+"Installationsprogramm installieren. Falls Sie dies planen, stellen Sie "
+"sicher, dass Sie bereits ein Konto und eine Netzwerk-ID besitzen, bevor Sie "
+"das Installationsprogramm ausführen. Das Installationsprogramm fragt nach "
+"Ihrer Netzwerk-ID, um sich automatisch mit dem Netzwerk zu verbinden."
 
 #: ../../installation/installation.md:43
 msgid "MediaMTX"
-msgstr ""
+msgstr "MediaMTX"
 
 #: ../../installation/installation.md:45
 msgid ""
@@ -148,10 +159,14 @@ msgid ""
 "[MediaMTX](https://github.com/bluenviron/mediamtx) and make the  "
 "appropriate configuration changes in order to work with OpenTAKServer"
 msgstr ""
+"Dieses Installationsprogramm installiert die neuesten Binärdateien für "
+"[MediaMTX](https://github.com/bluenviron/mediamtx) und nimmt die "
+"erforderlichen Konfigurationsänderungen vor, um die Kompatibilität mit "
+"OpenTAKServer zu gewährleisten"
 
 #: ../../installation/upgrading.md:1
 msgid "Upgrading"
-msgstr ""
+msgstr "Upgrade"
 
 #: ../../installation/upgrading.md:5
 msgid ""
@@ -160,10 +175,14 @@ msgid ""
 "OpenTAKServer and the webUI. If you want to upgrade from version 1.1.10 "
 "or below, use this script."
 msgstr ""
+"Ab Version 1.2.0 steht ein Upgrade-Skript zur Verfügung, das neue "
+"Abhängigkeiten und Änderungen am Datenbankschema sowie OpenTAKServer und die "
+"Web-Oberfläche aktualisiert. Verwenden Sie dieses Skript, wenn Sie von "
+"Version 1.1.10 oder älter aktualisieren möchten."
 
 #: ../../installation/upgrading.md:9
 msgid "Backup your database"
-msgstr ""
+msgstr "Sichern Sie Ihre Datenbank"
 
 #: ../../installation/upgrading.md:13
 msgid ""
@@ -175,20 +194,30 @@ msgid ""
 "`C:\\Users\\your_username\\ots\\ots.db` in Windows. Simply copying and "
 "pasting that file to another folder is sufficient to make a backup."
 msgstr ""
+"Das Upgrade-Skript ändert Ihr Datenbankschema, um neue Tabellen hinzuzufügen "
+"und bestehende zu bearbeiten. Bitte erstellen Sie vor dem Upgrade eine "
+"Sicherungskopie Ihrer Datenbank. So können Sie die Sicherungskopie "
+"wiederherstellen, falls während der Schema-Migration ein Fehler auftritt. "
+"Die Standarddatenbank ist eine SQLite-Datei unter `~/ots/ots.db` in Ubuntu "
+"und Raspberry Pi und unter `C:\\Users\\Ihr_Benutzername\\ots\\ots.db` in "
+"Windows. Es genügt, die Datei einfach in einen anderen Ordner zu kopieren "
+"und einzufügen, um eine Sicherungskopie zu erstellen."
 
 #: ../../installation/upgrading.md:23 ../../installation/upgrading.md:33
 msgid ""
 "Run this command as the same user that runs OpenTAKServer. Do not run as "
 "root."
 msgstr ""
+"Führen Sie diesen Befehl als derselbe Benutzer aus, unter dem OpenTAKServer "
+"läuft. Führen Sie ihn nicht als Root aus."
 
 #: ../../installation/upgrading.md:29 ../../installation/upgrading.md:56
 msgid "Raspberry Pi"
-msgstr ""
+msgstr "Raspberry Pi"
 
 #: ../../installation/upgrading.md:39
 msgid "Bleeding Edge"
-msgstr ""
+msgstr "Neueste Version"
 
 #: ../../installation/upgrading.md:43
 msgid ""
@@ -197,9 +226,17 @@ msgid ""
 "UI. This is for testing purposes only, **DO NOT USE THIS ON A PRODUCTION "
 "SERVER!** More than likely things will break or there will be bugs."
 msgstr ""
+"Sowohl das Ubuntu- als auch das Raspberry-Pi-Upgrade-Skript bieten die "
+"Option, die neuesten, instabilen Versionen von OpenTAKServer und "
+"OpenTAKServer-UI zu installieren. Dies dient ausschließlich Testzwecken. **"
+"VERWENDEN SIE DIES NICHT AUF EINEM PRODUKTIONSSERVER!** Es ist sehr "
+"wahrscheinlich, dass dadurch Fehler auftreten oder Probleme entstehen."
 
 #: ../../installation/upgrading.md:47
 msgid ""
 "When installing the bleeding edge version you will be prompted for which "
 "branch to install OpenTAKServer from. It defaults to the master branch."
 msgstr ""
+"Bei der Installation der neuesten Version werden Sie aufgefordert, den "
+"Installationszweig für OpenTAKServer auszuwählen. Standardmäßig wird der "
+"Master-Zweig verwendet."
