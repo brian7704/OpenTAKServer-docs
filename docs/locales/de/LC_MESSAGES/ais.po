@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/ais/de/>\n"
 "Language: de\n"
@@ -32,10 +32,14 @@ msgid ""
 "EUD's map and OpenTAKServer's map. You can find it under Scheduled Jobs "
 "in the UI."
 msgstr ""
+"OpenTAKServer kann Live-AIS-Daten von [AISHub.net](https://www.aishub.net/) "
+"abrufen. Schiffe werden sowohl auf der Karte des EUDs als auch auf der Karte "
+"von OpenTAKServer angezeigt. Die Funktion ist in der Benutzeroberfläche "
+"unter Scheduled Jobs zu finden."
 
 #: ../../ais.md:6
 msgid "AISHub API"
-msgstr ""
+msgstr "AISHub API"
 
 #: ../../ais.md:8
 msgid ""
@@ -44,10 +48,15 @@ msgid ""
 " querying the API, they limit requests to no more than one per minute. "
 "Keep this in mind when setting the query interval."
 msgstr ""
+"Sie benötigen ein Konto bei AISHub mit API-Zugriff. In der Regel setzt dies "
+"voraus, dass Sie einen AIS-Feeder einrichten und Ihre Daten mit AISHub "
+"teilen. Bei API-Abfragen ist die Anzahl der Anfragen auf höchstens eine pro "
+"Minute begrenzt. Berücksichtigen Sie dies bei der Einstellung des "
+"Abfrageintervalls."
 
 #: ../../ais.md:11
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: ../../ais.md:13
 msgid ""
@@ -57,6 +66,12 @@ msgid ""
 "location or specific vessels to query, AISHub will return all its data, "
 "and you could end up with more than 50,000 points on your EUDs."
 msgstr ""
+"`OTS_AISHUB_USERNAME` ist die einzige erforderliche Einstellung, die übrigen "
+"sind optional. Es empfiehlt sich jedoch, nur ein kleines geografisches "
+"Gebiet oder nur wenige bestimmte Schiffe (oder beides) abzufragen. Wenn Sie "
+"keinen Standort oder keine bestimmten Schiffe für die Abfrage angeben, "
+"liefert AISHub alle Daten, und Sie könnten am Ende mehr als 50.000 Punkte "
+"auf Ihren EUDs erhalten."
 
 #: ../../ais.md:17
 msgid ""
@@ -64,22 +79,27 @@ msgid ""
 "search within. You'll need two points, the southwestern corner and the "
 "northeastern corner."
 msgstr ""
+"Bei der Abfrage eines geografischen Standorts geben Sie ein Rechteck an, "
+"innerhalb dessen gesucht werden soll. Sie benötigen zwei Punkte: die "
+"südwestliche und die nordöstliche Ecke."
 
 #: ../../ais.md:20
 msgid "See [AISHub's API docs](https://www.aishub.net/api) for more details."
 msgstr ""
+"Weitere Details finden Sie in der [AISHub API-Dokumentation](https://"
+"www.aishub.net/api)."
 
 #: ../../ais.md:22
 msgid "`OTS_AISHUB_USERNAME`"
-msgstr ""
+msgstr "`OTS_AISHUB_Benutzername`"
 
 #: ../../ais.md:23
 msgid "`OTS_AISHUB_SOUTH_LAT` - Latitude of the southwest corner"
-msgstr ""
+msgstr "`OTS_AISHUB_SOUTH_LAT` - Breitengrad der südwestlichen Ecke"
 
 #: ../../ais.md:24
 msgid "`OTS_AISHUB_WEST_LON` - Longitude of the southwest corner"
-msgstr ""
+msgstr "`OTS_AISHUB_WEST_LON` - Längengrad der südwestlichen Ecke"
 
 #: ../../ais.md:25
 msgid "`OTS_AISHUB_NORTH_LAT` - Latitude of the northeast corner"
@@ -103,7 +123,7 @@ msgstr ""
 
 #: ../../ais.md:30
 msgid "Screenshot"
-msgstr ""
+msgstr "Screenshot"
 
 #: ../../ais.md:32
 msgid "![!Screenshot of AIS on the map](images/ais_map.png)"
