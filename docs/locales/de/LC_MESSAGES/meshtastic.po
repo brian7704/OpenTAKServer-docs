@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/meshtastic/de/>\n"
 "Language: de\n"
@@ -27,11 +27,11 @@ msgstr "Meshtastic"
 
 #: ../../meshtastic.md:3
 msgid "Meshtastic support is available starting with version 1.2.0."
-msgstr ""
+msgstr "Meshtastic Support ist ab Version 1.2.0 verfügbar."
 
 #: ../../meshtastic.md:5
 msgid "Features"
-msgstr ""
+msgstr "Features"
 
 #: ../../meshtastic.md:7
 msgid ""
@@ -42,6 +42,13 @@ msgid ""
 " and receive messages to All Chat Rooms as well as send and receive DMs "
 "from EUDs."
 msgstr ""
+"OpenTAKServer unterstützt die bidirektionale Kommunikation zwischen "
+"Meshtastic-Geräten und EUDs, die mit OpenTAKServer verbunden sind. Das "
+"bedeutet, dass Meshtastic-Geräte auf den Karten der mit OpenTAKServer "
+"verbundenen EUDs angezeigt werden und EUDs auf der Karte der Meshtastic-App "
+"erscheinen. Die Meshtastic-App kann außerdem Nachrichten an alle Chaträume "
+"senden und empfangen sowie Direktnachrichten (DMs) von und an EUDs senden "
+"und empfangen."
 
 #: ../../meshtastic.md:12
 msgid ""
@@ -50,10 +57,14 @@ msgid ""
 " between EUDs connected to OpenTAKServer and the EUD in the Meshtastic "
 "network."
 msgstr ""
+"Zusätzlich können GeoChat- und PLI-Nachrichten zwischen EUDs, die mit "
+"OpenTAKServer verbunden sind, und dem EUD im Meshtastic-Netzwerk "
+"ausgetauscht werden, wenn ein Meshtastic-Gerät mit einem Telefon verbunden "
+"ist, auf dem ATAK und das ATAK-Meshtastic-Plugin ausgeführt werden."
 
 #: ../../meshtastic.md:15
 msgid "Notes"
-msgstr ""
+msgstr "Notizen"
 
 #: ../../meshtastic.md:17
 msgid ""
@@ -63,10 +74,15 @@ msgid ""
 "geofences, etc, will not be sent to the mesh network, even if a "
 "Meshtastic device is running ATAK with the ATAK Meshtastic plugin."
 msgstr ""
+"Um das Meshtastic-Netzwerk nicht mit zu vielen Nachrichten zu überlasten, "
+"werden nur PLI- und GeoChat-CoT-Nachrichten an Meshtastic-Geräte gesendet. "
+"Datenpakete und andere CoTs wie Marker, Routen, Geofences usw. werden nicht "
+"an das Mesh-Netzwerk gesendet, selbst wenn auf einem Meshtastic-Gerät ATAK "
+"mit dem ATAK-Meshtastic-Plugin ausgeführt wird."
 
 #: ../../meshtastic.md:21
 msgid "Requirements"
-msgstr ""
+msgstr "Anforderungen"
 
 #: ../../meshtastic.md:23
 msgid ""
@@ -74,6 +90,9 @@ msgid ""
 " Wi-Fi network and act as a gateway while the others will be standard "
 "mesh nodes."
 msgstr ""
+"Sie benötigen mindestens zwei Meshtastic-Geräte. Eines davon wird mit einem "
+"WLAN-Netzwerk verbunden und fungiert als Gateway, während die anderen als "
+"Standard-Mesh-Knoten fungieren."
 
 #: ../../meshtastic.md:26
 msgid "Configuration"
@@ -84,10 +103,12 @@ msgid ""
 "There are three configuration settings in `config.yml` for Meshtastic "
 "support:"
 msgstr ""
+"Es gibt drei Konfigurationseinstellungen in `config.yml` für die Meshtastic-"
+"Unterstützung:"
 
 #: ../../meshtastic.md:30
 msgid "`OTS_ENABLE_MESHTASTIC`: Default: `False`"
-msgstr ""
+msgstr "`OTS_ENABLE_MESHTASTIC`: Standard: `False`"
 
 #: ../../meshtastic.md:31
 msgid "Change to `True` to enable this feature"
