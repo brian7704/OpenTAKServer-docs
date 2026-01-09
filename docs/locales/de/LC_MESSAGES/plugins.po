@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/plugins/de/>\n"
 "Language: de\n"
@@ -27,7 +27,7 @@ msgstr "Serverplugins"
 
 #: ../../plugins.rst:5
 msgid "As of version 1.5.0, OpenTAKServer includes a plugin system."
-msgstr ""
+msgstr "Ab Version 1.5.0, verfügt OpenTAKServer über ein Plugin System."
 
 #: ../../plugins.rst:7
 msgid ""
@@ -36,12 +36,18 @@ msgid ""
 " plugins are `Flask Blueprints "
 "<https://flask.palletsprojects.com/en/stable/tutorial/views/>`_."
 msgstr ""
+"Wie OpenTAKServer werden auch Plugins mit dem Python-Framework `Flask "
+"<https://flask.palletsprojects.com/en/stable/>`_ erstellt. Konkret handelt "
+"es sich bei Plugins um `Flask Blueprints <https://flask.palletsprojects.com/"
+"en/stable/tutorial/views/>`_."
 
 #: ../../plugins.rst:10
 msgid ""
 "Plugins classes must be a subclass of "
 "``opentakserver.plugins.Plugin.Plugin``"
 msgstr ""
+"Plugin Klassen müssen eine Unterklasse von "
+"``opentakserver.plugins.Plugin.Plugin`` sein"
 
 #: ../../plugins.rst:12
 msgid ""
@@ -49,10 +55,13 @@ msgid ""
 "Template <https://github.com/brian7704/OTS-Plugin-Template>`_. See the "
 "screenshot below."
 msgstr ""
+"Plugins können erstellt werden, indem ein neues Repository aus `OTS-Plugin-"
+"Template <https://github.com/brian7704/OTS-Plugin-Template>`_ erstellt wird. "
+"Siehe Screenshot unten."
 
 #: ../../plugins.rst:20
 msgid "Web UI"
-msgstr ""
+msgstr "Web-Benutzeroberfläche"
 
 #: ../../plugins.rst:22
 msgid ""
@@ -64,6 +73,15 @@ msgid ""
 "should be separate from the plugin's repo. See the `SkyFi Plugin's UI "
 "<https://github.com/brian7704/OTS-SkyFi-Plugin-UI>`_ for an example."
 msgstr ""
+"Plugins können optional eine Web-Oberfläche enthalten, die in einem iFrame "
+"in der OpenTAKServer-Benutzeroberfläche angezeigt wird. Plugin-Oberflächen "
+"werden im React-Framework `Mantine <https://mantine.dev/>`_ geschrieben. Um "
+"eine neue Plugin-Oberfläche zu erstellen, legen Sie ein neues Repository aus "
+"der Vorlage `OTS-UI-Plugin-Template <https://github.com/brian7704/OTS-UI-"
+"Plugin-Template>`_ an. Das Repository der Benutzeroberfläche sollte vom "
+"Repository des Plugins getrennt sein. Ein Beispiel finden Sie in der "
+"Benutzeroberfläche des `SkyFi-Plugins <https://github.com/brian7704/OTS-"
+"SkyFi-Plugin-UI>`_."
 
 #: ../../plugins.rst:27
 msgid ""
@@ -77,10 +95,19 @@ msgid ""
 "Template/blob/bf00f38321d24572a85210d40809ec8cc2454893/vite.config.mjs#L13>`_"
 " file"
 msgstr ""
+"Beim Erstellen der Benutzeroberfläche Ihres Plugins wird davon ausgegangen, "
+"dass sich Ihr Code in ``~/Webstorm Projects/Your-OTS-Plugin-UI`` und Ihr "
+"Plugin in ``~/PyCharm Projects/Your-OTS-Plugin``befindet. Der Befehl ``npm "
+"build`` speichert die erstellten UI-Dateien automatisch in ``~/PyCharm "
+"Projects/Your-OTS-Plugin/ui``. Befindet sich Ihr Code in einem anderen "
+"Verzeichnis, bearbeiten Sie die Option ``outDir`` in der Datei `"
+"vite.config.mjs <https://github.com/brian7704/OTS-UI-Plugin-Template/blob/"
+"bf00f38321d24572a85210d40809ec8cc2454893/vite.config.mjs#L13>`Ihrer "
+"Benutzeroberfläche"
 
 #: ../../plugins.rst:34
 msgid "Licensing"
-msgstr ""
+msgstr "Lizenzierung"
 
 #: ../../plugins.rst:36
 msgid ""
@@ -88,10 +115,13 @@ msgid ""
 "`compatible <https://gplv3.fsf.org/wiki/index.php/Compatible_licenses>`_ "
 "license."
 msgstr ""
+"Öffentlich vertriebene Plugins müssen unter der GPLv3 oder einer anderen `"
+"kompatiblen <https://gplv3.fsf.org/wiki/index.php/Compatible_licenses>`"
+"_Lizenz stehen."
 
 #: ../../plugins.rst:40
 msgid "Public Repo"
-msgstr ""
+msgstr "Öffentliches Repository"
 
 #: ../../plugins.rst:42
 msgid ""
@@ -103,6 +133,14 @@ msgid ""
 " from this repo from within the web UI. The repo can be browsed at "
 "https://repo.opentakserver.io."
 msgstr ""
+"Plugins können nach Belieben des Autors veröffentlicht oder privat gehalten "
+"werden (auch auf PyPI). Es steht jedoch ein öffentliches Plugin-Repository "
+"zur Verfügung. Plugins in diesem Repository werden nach einer Code-"
+"Überprüfung akzeptiert, um sicherzustellen, dass sie die Plugin-"
+"Anforderungen erfüllen, wie vorgesehen funktionieren und keinen Schadcode "
+"enthalten. Nach der Akzeptanz können OpenTAKServer-Benutzer Plugins aus "
+"diesem Repository über die Web-Oberfläche installieren. Das Repository kann "
+"unter https://repo.opentakserver.io eingesehen werden."
 
 #: ../../plugins.rst:49
 msgid "Development"
