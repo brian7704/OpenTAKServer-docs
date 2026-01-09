@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/cloudtak/de/>\n"
@@ -117,6 +117,8 @@ msgstr ""
 #: ../../cloudtak.md:76
 msgid "Create a symbolic link to enable the new nginx config file."
 msgstr ""
+"Erstellen Sie einen symbolischen Link, um die neue nginx-Konfigurationsdatei "
+"zu aktivieren."
 
 #: ../../cloudtak.md:82
 #, python-brace-format
@@ -124,6 +126,8 @@ msgid ""
 "Edit `/etc/nginx/sites-available/ots_certificate_enrollment` and add the "
 "following inside the `server {}` stanza."
 msgstr ""
+"Bearbeiten Sie `/etc/nginx/sites-available/ots_certificate_enrollment` und "
+"fügen Sie Folgendes innerhalb des `server {}`-Abschnitts hinzu."
 
 #: ../../cloudtak.md:96
 #, python-brace-format
@@ -131,23 +135,29 @@ msgid ""
 "Edit `/etc/nginx/sites-available/ots_https` and add this inside the "
 "listen 8443 `server {}`."
 msgstr ""
+"Bearbeiten Sie `/etc/nginx/sites-available/ots_https` und fügen Sie dies "
+"innerhalb von listen 8443 `server {}` hinzu."
 
 #: ../../cloudtak.md:110
 msgid ""
 "Install certbot and nginx `sudo apt install nginx certbot python3"
 "-certbot-nginx -y`"
 msgstr ""
+"Installieren Sie certbot und nginx `sudo apt install nginx certbot python3"
+"-certbot-nginx -y`"
 
 #: ../../cloudtak.md:111
 msgid "Get a cert from Let's Encrypt `sudo certbot --nginx`"
-msgstr ""
+msgstr "Holen Sie sich ein Zertifikat von Let's Encrypt `sudo certbot --nginx`"
 
 #: ../../cloudtak.md:112
 msgid "Restart nginx `sudo systemctl restart nginx`"
-msgstr ""
+msgstr "nginx neu starten `sudo systemctl restart nginx`"
 
 #: ../../cloudtak.md:113
 msgid ""
 "Open a browser and enter your CloudTAK server's URL, i.e. "
 "https://cloudtak.example.com"
 msgstr ""
+"Öffnen Sie einen Browser und geben Sie die URL Ihres CloudTAK-Servers ein, "
+"z. B. https://cloudtak.example.com"
