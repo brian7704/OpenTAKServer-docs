@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/generated/de/>\n"
 "Language: de\n"
@@ -27,33 +27,36 @@ msgstr "opentakserver.app"
 
 #: ../../generated/opentakserver.app.rst:8
 msgid "Functions"
-msgstr ""
+msgstr "Funktionen"
 
 #: ../../generated/opentakserver.app.rst:18:<autosummary>:1
 msgid ":py:obj:`create_app <opentakserver.app.create_app>`\\ \\(\\[cli\\]\\)"
-msgstr ""
+msgstr ":py:obj:`erstelle_app <opentakserver.app.create_app>`\\ \\(\\[cli\\]\\)"
 
 #: ../../generated/opentakserver.app.rst:18:<autosummary>:1
 msgid ""
 ":py:obj:`create_default_groups "
 "<opentakserver.app.create_default_groups>`\\ \\(app\\)"
 msgstr ""
+":py:obj:`erstelle_standard_gruppen <opentakserver.app.create_default_groups>`"
+"\\ \\(app\\)"
 
 #: ../../generated/opentakserver.app.rst:18:<autosummary>:1
 msgid ":py:obj:`init_extensions <opentakserver.app.init_extensions>`\\ \\(app\\)"
 msgstr ""
+":py:obj:`init_erweiterungen <opentakserver.app.init_extensions>`\\ \\(app\\)"
 
 #: ../../generated/opentakserver.app.rst:18:<autosummary>:1
 msgid ":py:obj:`main <opentakserver.app.main>`\\ \\(app\\)"
-msgstr ""
+msgstr ":py:obj:`main <opentakserver.app.main>`\\ \\(app\\)"
 
 #: ../../generated/opentakserver.app.rst:18:<autosummary>:1
 msgid ":py:obj:`setup_logging <opentakserver.app.setup_logging>`\\ \\(app\\)"
-msgstr ""
+msgstr ":py:obj:`setup_logging <opentakserver.app.setup_logging>`\\ \\(app\\)"
 
 #: ../../generated/opentakserver.app.rst:18:<autosummary>:1
 msgid ":py:obj:`start <opentakserver.app.start>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`start <opentakserver.app.start>`\\ \\(\\)"
 
 #: ../../generated/opentakserver.app.rst:18:<autosummary>:1
 msgid ""
@@ -61,6 +64,8 @@ msgid ""
 "<opentakserver.app.user_registered_sighandler>`\\ \\(app\\, user\\, "
 "...\\)"
 msgstr ""
+":py:obj:`user_registered_sighandler "
+"<opentakserver.app.user_registered_sighandler>`\\ \\(app\\, user\\, ...\\)"
 
 #~ msgid ":py:obj:`create_groups <opentakserver.app.create_groups>`\\ \\(app\\)"
 #~ msgstr ""
