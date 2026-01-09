@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/video_streaming/de/>\n"
 "Language: de\n"
@@ -32,10 +32,14 @@ msgid ""
 "[OpenTAK ICU](https://github.com/brian7704/OpenTAK_ICU) and TAK ICU, as "
 "well as devices like drones and IP Cameras."
 msgstr ""
+"OpenTAKServer verwendet [MediaMTX](https://github.com/bluenviron/mediamtx) "
+"für Videoaufnahmen und Streaming. Das Protokoll akzeptiert Streams von Apps "
+"wie z.B.[OpenTAK ICU](https://github.com/brian7704/OpenTAK_ICU) und TAK ICU, "
+"Dronen und IP Kameras."
 
 #: ../../video_streaming.md:6
 msgid "Streaming From Your Browser"
-msgstr ""
+msgstr "Streaming über den Browser"
 
 #: ../../video_streaming.md:8
 msgid ""
@@ -48,6 +52,16 @@ msgid ""
 " users on the server but they have no app to do so. Laptop and desktop "
 "computers can also use this button to stream from their cameras."
 msgstr ""
+"OpenTAKServer unterstützt das Streaming von jedem Gerät, das über einen "
+"Browser und eine Kamera verfügt. Auf der Seite Video Streams der Web-UI von "
+"OpenTAKServer befindet sich eine Schaltfläche mit der Bezeichnung `Start "
+"Streaming`. Durch Anklicken dieser Schaltfläche fordert der Browser die "
+"Berechtigung an, die Kamera und das Mikrofon Ihres Geräts zu verwenden, um "
+"Audio und Video an MediaMTX zu streamen. Dies ist hilfreich in Situationen, "
+"in denen jemand mit einem Android- oder iOS-Gerät an andere Benutzer auf dem "
+"Server streamen möchte, dafür jedoch keine App zur Verfügung hat. Auch "
+"Laptop- und Desktop-Computer können diese Schaltfläche nutzen, um über ihre "
+"Kameras zu streamen."
 
 #: ../../video_streaming.md:14
 msgid ""
@@ -56,34 +70,39 @@ msgid ""
 "with the stream, meaning there will be no icon on OpenTAKServer's or any "
 "EUD's maps for the location of the stream."
 msgstr ""
+"Beachten Sie, dass bei dieser Art des Streamings ausschließlich Audio und "
+"Video übertragen werden. Benutzer können den Stream auf ihren EUDs ansehen, "
+"es werden jedoch keine Positionsinformationen mit dem Stream übertragen. Das "
+"bedeutet, dass weder auf der Karte von OpenTAKServer noch auf den Karten der "
+"EUDs ein Symbol für den Standort des Streams angezeigt wird."
 
 #: ../../video_streaming.md:18
 msgid "Streaming Protocols"
-msgstr ""
+msgstr "Streaming-Protokolle"
 
 #: ../../video_streaming.md:20
 msgid "You can stream to MediaMTX using a variety of protocols:"
-msgstr ""
+msgstr "Sie können über verschiedene Protokolle zu MediaMTX streamen:"
 
 #: ../../video_streaming.md:22
 msgid "RTSP(S)"
-msgstr ""
+msgstr "RTSP(S)"
 
 #: ../../video_streaming.md:23
 msgid "RTMP(S)"
-msgstr ""
+msgstr "RTMP(S)"
 
 #: ../../video_streaming.md:24
 msgid "SRT"
-msgstr ""
+msgstr "SRT"
 
 #: ../../video_streaming.md:25
 msgid "HLS"
-msgstr ""
+msgstr "HLS"
 
 #: ../../video_streaming.md:26
 msgid "WebRTC"
-msgstr ""
+msgstr "WebRTC"
 
 #: ../../video_streaming.md:27
 msgid "UDP Multicast"
@@ -181,7 +200,7 @@ msgstr ""
 
 #: ../../video_streaming.md:68
 msgid "Screenshot"
-msgstr ""
+msgstr "Screenshot"
 
 #: ../../video_streaming.md:70
 msgid "![!Video Streams](images/video_streams.png)"
