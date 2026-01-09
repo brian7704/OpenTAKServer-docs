@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/generated_api/de/>\n"
 "Language: de\n"
@@ -31,43 +31,43 @@ msgstr "Wird von CloudTAK benötigt und gibt Folgendes zurück"
 
 #: ../../<autoflask>:1
 msgid "Health check for Docker, returns the following"
-msgstr ""
+msgstr "Health-Check für Docker, gibt Folgendes zurück"
 
 #: ../../<autoflask>:1
 msgid "Server status used on the Dashboard page of the web UI"
-msgstr ""
+msgstr "Serverstatus, der auf der Dashboard-Seite der Web-UI verwendet wird"
 
 #: ../../<autoflask>
 msgid "rtype"
-msgstr ""
+msgstr "rtype"
 
 #: ../../<autoflask>:1
 msgid "dict"
-msgstr ""
+msgstr "Wörterbuch"
 
 #: ../../<autoflask>:1
 msgid "Get the details of the currently logged in user"
-msgstr ""
+msgstr "Die Details des aktuell angemeldeten Benutzers abrufen"
 
 #: ../../<autoflask>:1
 msgid "User"
-msgstr ""
+msgstr "Benutzer"
 
 #: ../../<autoflask>:1
 msgid "Get CoT messages. All parameters are optional."
-msgstr ""
+msgstr "CoT-Nachrichten abrufen. Alle Parameter sind optional."
 
 #: ../../generated_api.rst
 msgid "Parameters"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../<autoflask>:1
 msgid "The how attribute of the CoT message, i.e. ``m-g``, ``h-g-i-g-o``"
-msgstr ""
+msgstr "Das „Wie“-Attribut der CoT-Nachricht, d. h. „`m-g``, „`h-g-i-g-o``"
 
 #: ../../<autoflask>:1
 msgid "The type attribute of the CoT message, i.e. ``a-f-G-U-C``"
-msgstr ""
+msgstr "Das Typattribut der CoT-Nachricht, d.h. „a-f-G-U-C“"
 
 #: ../../<autoflask>:1
 msgid "The callsign of the EUD that sent the CoT message"
@@ -151,7 +151,7 @@ msgstr ""
 
 #: ../../<autoflask>
 msgid "return"
-msgstr ""
+msgstr "zurückkehren"
 
 #: ../../<autoflask>:1
 msgid "List of group memberships"
