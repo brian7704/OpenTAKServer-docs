@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/database/de/>\n"
@@ -92,10 +92,11 @@ msgstr ""
 #: ../../database.md:24
 msgid "Access to your PostgreSQL database with a typical database client"
 msgstr ""
+"Zugriff auf Ihre PostgreSQL-Datenbank mit einem typischen Datenbankclient"
 
 #: ../../database.md:25
 msgid "Database connection details (hostname, port, username, password)"
-msgstr ""
+msgstr "Datenbankverbindungsdetails (Hostname, Port, Benutzername, Passwort)"
 
 #: ../../database.md:27
 msgid "Installation"
@@ -104,16 +105,20 @@ msgstr "Installation"
 #: ../../database.md:29
 msgid "Install the required PostgreSQL adapter in OpenTAKServer:"
 msgstr ""
+"Installieren Sie den erforderlichen PostgreSQL-Adapter in OpenTAKServer:"
 
 #: ../../database.md:36
 msgid ""
 "If `ssl_mode=required` is on, download the database CA certificate from "
 "your provider and place it in the `~/ots` directory."
 msgstr ""
+"Wenn `ssl_mode=required` aktiviert ist, laden Sie das Datenbank-CA-"
+"Zertifikat von Ihrem Anbieter herunter und legen Sie es im Verzeichnis "
+"`~/ots` ab."
 
 #: ../../database.md:38
 msgid "Modify the settings in `~/ots/config.yml` to include:"
-msgstr ""
+msgstr "Ändern Sie die Einstellungen in `~/ots/config.yml` wie folgt:"
 
 #: ../../database.md:49
 msgid ""
@@ -122,10 +127,14 @@ msgid ""
 "`SQLALCHEMY_ENGINE_OPTIONS` as is if the database does not use an SSL "
 "connection."
 msgstr ""
+"Ersetzen Sie `[user]`, `[password]`, `[hostname]`, `[port]` und `[database]` "
+"durch Ihre tatsächlichen Datenbankverbindungsdaten. Sie können "
+"`SQLALCHEMY_ENGINE_OPTIONS` unverändert lassen, wenn die Datenbank keine SSL-"
+"Verbindung verwendet."
 
 #: ../../database.md:51
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Fehlerbehebung"
 
 #: ../../database.md:52
 msgid ""
@@ -133,12 +142,18 @@ msgid ""
 "wrong with the configuration file or database. It's easier to temporarily"
 " turn the service off and run the program directly for debugging."
 msgstr ""
+"OpenTAKServer erzeugt keine detaillierten Fehlerberichte, wenn ein Problem "
+"mit der Konfigurationsdatei oder der Datenbank vorliegt. Zur Fehlersuche ist "
+"es einfacher, den Dienst vorübergehend zu deaktivieren und das Programm "
+"direkt auszuführen."
 
 #: ../../database.md:54
 msgid ""
 "To get detailed feedback about connection issues, run OpenTAKServer "
 "directly instead of as a service:"
 msgstr ""
+"Um detailliertes Feedback zu Verbindungsproblemen zu erhalten, führen Sie "
+"OpenTAKServer direkt und nicht als Dienst aus:"
 
 #: ../../database.md:61
 msgid ""
@@ -146,9 +161,14 @@ msgid ""
 "the `public` schema. You may need to recreate it with the correct "
 "ownership."
 msgstr ""
+"Sollten Sie auf Probleme mit Schemaberechtigungen stoßen, stellen Sie "
+"sicher, dass der Datenbankbenutzer Eigentümer des Schemas `public` ist. "
+"Gegebenenfalls müssen Sie es mit den korrekten Besitzrechten neu erstellen."
 
 #: ../../database.md:63
 msgid ""
 "Finally, stop the OTS process in the terminal (Ctrl+C) and restart the "
 "service:"
 msgstr ""
+"Zum Schluss beenden Sie den OTS-Prozess im Terminal (Strg+C) und starten den "
+"Dienst neu:"
