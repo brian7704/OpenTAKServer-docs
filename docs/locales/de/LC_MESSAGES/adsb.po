@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/docs/de/>\n"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../adsb.md:26
 msgid "Run a Query Immediately"
-msgstr ""
+msgstr "Führen Sie sofort eine Abfrage aus"
 
 #: ../../adsb.md:28
 msgid ""
@@ -108,6 +108,10 @@ msgid ""
 " is due to run. While logged into the web UI as an administrator, click "
 "on `Scheduled Jobs`, then click the `Run Now` button."
 msgstr ""
+"Sie können die API abfragen, während der geplante Auftrag deaktiviert ist "
+"oder bevor er ausgeführt werden soll. Melden Sie sich als Administrator in "
+"der Web-Oberfläche an, klicken Sie auf `Geplante Aufträge` und anschließend "
+"auf die Schaltfläche `Jetzt ausführen`."
 
 #: ../../adsb.md:31
 msgid "Screenshot"
@@ -115,8 +119,8 @@ msgstr "Screenshot"
 
 #: ../../adsb.md:33
 msgid "![!ADS-B data on the map](images/adsb_map.png)"
-msgstr ""
+msgstr "![!ADS-B-Daten auf der Karte](images/adsb_map.png)"
 
 #: ../../adsb.md:33
 msgid "!ADS-B data on the map"
-msgstr ""
+msgstr "!ADS-B-Daten auf der Karte"
