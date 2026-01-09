@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/installation/de/>\n"
 "Language: de\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../installation/docker.md:1
 msgid "Docker Image"
-msgstr ""
+msgstr "Docker Image"
 
 #: ../../installation/docker.md:5
 msgid ""
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../installation/docker.md:7
 msgid "Prerequisites"
-msgstr ""
+msgstr "Voraussetzungen"
 
 #: ../../installation/docker.md:11
 msgid ""
@@ -44,30 +44,37 @@ msgid ""
 "instructions](https://docs.docker.com/engine/install/) to install docker "
 "for your OS"
 msgstr ""
+"Bitte folgen Sie den [Installationsanweisungen von Docker](https://"
+"docs.docker.com/engine/install/), um Docker für Ihr Betriebssystem zu "
+"installieren"
 
 #: ../../installation/docker.md:14
 msgid "Building the docker image"
-msgstr ""
+msgstr "Erstellen des Docker-Images"
 
 #: ../../installation/docker.md:18
 msgid ""
 "Clone or download the [ots-docker](https://github.com/milsimdk/ots-"
 "docker) repo"
 msgstr ""
+"Klonen oder laden Sie das [ots-docker](https://github.com/milsimdk/ots-"
+"docker)-Repository herunter."
 
 #: ../../installation/docker.md:19
 msgid "If you downloaded the repo, extract it"
-msgstr ""
+msgstr "Wenn Sie das Repository heruntergeladen haben, extrahieren Sie es"
 
 #: ../../installation/docker.md:20
 msgid ""
 "Run the following commands in a terminal (i.e. bash in Linux or "
 "PowerShell in Windows)"
 msgstr ""
+"Führen Sie die folgenden Befehle in einem Terminal aus (z. B. bash unter "
+"Linux oder PowerShell unter Windows)"
 
 #: ../../installation/installation.md:1
 msgid "OpenTAKServer-Installer"
-msgstr ""
+msgstr "OpenTAKServer-Installer"
 
 #: ../../installation/installation.md:5
 msgid ""
@@ -75,11 +82,14 @@ msgid ""
 "/OpenTAKServer-Installer). They should be run as a regular user, not as "
 "root or with the `sudo` command."
 msgstr ""
+"Alle Installationsprogramme befinden sich auf [GitHub](https://github.com/"
+"brian7704/OpenTAKServer-Installer). Sie sollten als normaler Benutzer und "
+"nicht als Root oder mit dem Befehl `sudo` ausgeführt werden."
 
 #: ../../installation/installation.md:7 ../../installation/upgrading.md:19
 #: ../../installation/upgrading.md:50
 msgid "Ubuntu"
-msgstr ""
+msgstr "Ubuntu"
 
 #: ../../installation/installation.md:11
 msgid ""
@@ -87,6 +97,9 @@ msgid ""
 "installer. Use this installer for both servers/VMs running Ubuntu and "
 "Raspberry Pis running Ubuntu."
 msgstr ""
+"Kopieren Sie den folgenden Befehl und fügen Sie ihn in Ihr Terminal ein, um "
+"Ubuntu zu installieren. Verwenden Sie dieses Installationsprogramm sowohl "
+"für Server/VMs mit Ubuntu als auch für Raspberry Pis mit Ubuntu."
 
 #: ../../installation/installation.md:18
 msgid "Raspberry Pi OS"
@@ -100,7 +113,7 @@ msgstr ""
 
 #: ../../installation/installation.md:28
 msgid "Features"
-msgstr ""
+msgstr "Features"
 
 #: ../../installation/installation.md:32
 msgid "Certificates"
