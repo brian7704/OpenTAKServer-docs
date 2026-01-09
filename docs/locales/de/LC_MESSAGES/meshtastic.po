@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/meshtastic/de/>\n"
@@ -112,21 +112,23 @@ msgstr "`OTS_ENABLE_MESHTASTIC`: Standard: `False`"
 
 #: ../../meshtastic.md:31
 msgid "Change to `True` to enable this feature"
-msgstr ""
+msgstr "Ändern Sie den Wert auf `True`, um diese Funktion zu aktivieren"
 
 #: ../../meshtastic.md:32
 msgid "`OTS_MESHTASTIC_TOPIC`: Default `opentakserver`"
-msgstr ""
+msgstr "`OTS_MESHTASTIC_TOPIC`: Standard `opentakserver`"
 
 #: ../../meshtastic.md:33
 msgid ""
 "This is the MQTT topic that OpenTAKServer will use when publishing "
 "messages bound for the Meshtastic network"
 msgstr ""
+"Dies ist das MQTT-Thema, das OpenTAKServer beim Veröffentlichen von "
+"Nachrichten für das Meshtastic-Netzwerk verwendet"
 
 #: ../../meshtastic.md:34
 msgid "`OTS_MESHTASTIC_PUBLISH_INTERVAL`: Default `30` (seconds)"
-msgstr ""
+msgstr "`OTS_MESHTASTIC_PUBLISH_INTERVAL`: Standard `30` (Sekunden)"
 
 #: ../../meshtastic.md:35
 msgid ""
@@ -134,10 +136,14 @@ msgid ""
 "PLI CoT's from EUDs connected to OpenTAKServer will only be sent at this "
 "interval. This setting has no effect on GeoChat messages"
 msgstr ""
+"Um das Meshtastic-Netzwerk nicht mit zu vielen Nachrichten zu überlasten, "
+"werden PLI CoTs von EUDs, die mit dem OpenTAKServer verbunden sind, nur in "
+"diesem Intervall gesendet. Diese Einstellung hat keine Auswirkung auf "
+"GeoChat-Nachrichten"
 
 #: ../../meshtastic.md:38
 msgid "Gateway Node Setup"
-msgstr ""
+msgstr "Gateway-Knoten-Einrichtung"
 
 #: ../../meshtastic.md:40
 msgid ""
@@ -147,10 +153,15 @@ msgid ""
 "Meshtastic channels. The gateway node should be set to either the "
 "`CLIENT` or `ROUTER_CLIENT` role."
 msgstr ""
+"Der Gateway-Knoten ist für den Nachrichtenaustausch zwischen OpenTAKServer "
+"und dem Meshtastic-Netzwerk zuständig. Mehrere Gateway-Knoten können mit "
+"einem OpenTAKServer verbunden sein und Nachrichten über verschiedene "
+"Meshtastic-Kanäle austauschen. Der Gateway-Knoten sollte entweder die Rolle "
+"`CLIENT` oder `ROUTER_CLIENT` zugewiesen bekommen."
 
 #: ../../meshtastic.md:44
 msgid "Network Connection"
-msgstr ""
+msgstr "Netzwerkverbindung"
 
 #: ../../meshtastic.md:46
 msgid ""
@@ -160,10 +171,17 @@ msgid ""
 "internet. Refer to Meshtastic's documentation on how to [enable network "
 "connectivity](https://meshtastic.org/docs/configuration/radio/network/)."
 msgstr ""
+"Der Gateway-Knoten muss mit einem Netzwerk verbunden sein, das Ihren "
+"OpenTAKServer erreichen kann. Dieser kann sich im selben LAN wie der "
+"OpenTAKServer befinden oder an einem entfernten Standort, der über VPN oder "
+"das Internet mit Ihrem OpenTAKServer verbunden ist. Informationen zum "
+"Aktivieren der Netzwerkverbindung finden Sie in der Dokumentation von "
+"Meshtastic [enable network connectivity](https://meshtastic.org/docs/"
+"configuration/radio/network/)."
 
 #: ../../meshtastic.md:50
 msgid "MQTT"
-msgstr ""
+msgstr "MQTT"
 
 #: ../../meshtastic.md:52
 msgid ""
@@ -171,56 +189,64 @@ msgid ""
 "MQTT](https://meshtastic.org/docs/configuration/module/mqtt/). The "
 "settings should be as follows:"
 msgstr ""
+"Sobald der Gateway-Knoten mit einem Netzwerk verbunden ist, müssen Sie MQTT "
+"aktivieren [enable MQTT](https://meshtastic.org/docs/configuration/module/"
+"mqtt/). Die Einstellungen sollten wie folgt lauten:"
 
 #: ../../meshtastic.md:55
 msgid "MQTT: Enabled"
-msgstr ""
+msgstr "MQTT: Aktiviert"
 
 #: ../../meshtastic.md:56
 msgid "MQTT Server Address: Your server's address"
-msgstr ""
+msgstr "MQTT-Serveradresse: Die Adresse Ihres Servers"
 
 #: ../../meshtastic.md:57
 msgid "MQTT Username: A valid username from an account on your server"
 msgstr ""
+"MQTT-Benutzername: Ein gültiger Benutzername eines Kontos auf Ihrem Server"
 
 #: ../../meshtastic.md:58
 msgid "MQTT Password: The password for the above username"
-msgstr ""
+msgstr "MQTT-Passwort: Das Passwort für den oben genannten Benutzernamen"
 
 #: ../../meshtastic.md:59
 msgid "Encryption: Disabled (Messages will be encrypted in transit with TLS)"
 msgstr ""
+"Verschlüsselung: Deaktiviert (Nachrichten werden während der Übertragung mit "
+"TLS verschlüsselt)"
 
 #: ../../meshtastic.md:60
 msgid "TLS: Enabled"
-msgstr ""
+msgstr "TLS: Aktiviert"
 
 #: ../../meshtastic.md:61
 msgid ""
 "Root Topic: Value of the `OTS_MESHTASTIC_TOPIC` setting which defaults to"
 " `opentakserver`"
 msgstr ""
+"Root-Thema: Wert der Einstellung `OTS_MESHTASTIC_TOPIC`, der standardmäßig "
+"auf `opentakserver` gesetzt ist"
 
 #: ../../meshtastic.md:62
 msgid "Proxy to client: Disabled"
-msgstr ""
+msgstr "Proxy zum Client: Deaktiviert"
 
 #: ../../meshtastic.md:63
 msgid "Map Reporting: Enabled (Optional)"
-msgstr ""
+msgstr "Kartenberichterstattung: Aktiviert (optional)"
 
 #: ../../meshtastic.md:64
 msgid "Map Report Publish Interval: 86400 (Optional)"
-msgstr ""
+msgstr "Veröffentlichungsintervall für Kartenberichte: 86400 (optional)"
 
 #: ../../meshtastic.md:65
 msgid "Position Precision: High (Optional)"
-msgstr ""
+msgstr "Positionsgenauigkeit: Hoch (optional)"
 
 #: ../../meshtastic.md:67
 msgid "Channels"
-msgstr ""
+msgstr "Kanäle"
 
 #: ../../meshtastic.md:69
 msgid ""
@@ -231,23 +257,35 @@ msgid ""
 "enabled, OpenTAKServer will publish messages to each channel that has the"
 " `downlink` option enabled."
 msgstr ""
+"Die Web-Oberfläche von OpenTAKServer enthält nun eine Meshtastic-Seite, über "
+"die Kanalkonfigurationen generiert werden können. Um Nachrichten von "
+"OpenTAKServer an das Meshtastic-Netzwerk zu senden, muss auf dieser Seite "
+"eine Kanalkonfiguration mit aktivierter Einstellung `downlink` hinzugefügt "
+"werden. Bei aktivierter Meshtastic-Unterstützung veröffentlicht "
+"OpenTAKServer Nachrichten an jeden Kanal, für den die Option `downlink` "
+"aktiviert ist."
 
 #: ../../meshtastic.md:74
 msgid ""
 "Once you add a channel configuration in the UI, click the QR code button "
 "and use the Meshtastic app to add the channel to your gateway node."
 msgstr ""
+"Sobald Sie eine Kanalkonfiguration in der Benutzeroberfläche hinzugefügt "
+"haben, klicken Sie auf die Schaltfläche „QR-Code“ und verwenden Sie die "
+"Meshtastic-App, um den Kanal zu Ihrem Gateway-Knoten hinzuzufügen."
 
 #: ../../meshtastic.md:77
 msgid ""
 "![!Meshtastic UI Screenshot](images/meshtastic.png) ![!Add Meshtastic "
 "Channel Screenshot](images/meshtastic_add_channel.png)"
 msgstr ""
+"![!Meshtastic UI Screenshot](images/meshtastic.png) !"
+"[!Add Meshtastic Channel Screenshot](images/meshtastic_add_channel.png)"
 
 #: ../../meshtastic.md:77
 msgid "!Meshtastic UI Screenshot"
-msgstr ""
+msgstr "!Meshtastic UI Screenshot"
 
 #: ../../meshtastic.md:77
 msgid "!Add Meshtastic Channel Screenshot"
-msgstr ""
+msgstr "!Screenshot vom Meshtastic-Kanal hinzufügen"
