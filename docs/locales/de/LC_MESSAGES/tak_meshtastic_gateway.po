@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/tak_meshtastic_gateway/de/>\n"
 "Language: de\n"
@@ -36,34 +36,48 @@ msgid ""
 " over a Meshtastic network to someone using  the Meshtastic app and vice "
 "versa."
 msgstr ""
+"TAK Meshtastic Gateway hört auf Multicast-Daten von TAK-Clients (ATAK, "
+"WinTAK und iTAK) und leitet diese an ein Meshtastic-Gerät weiter, das sie in "
+"ein Meshtastic-Netzwerk überträgt. Ebenso werden Nachrichten von Meshtastic "
+"per Multicast an   TAK-Clients weitergeleitet. Zusätzlich ermöglicht es das "
+"Senden und Empfangen von Chatnachrichten und Positionsdaten zwischen TAK-"
+"Clients und der Meshtastic-App. So kann beispielsweise jemand mit WinTAK "
+"eine Nachricht über ein Meshtastic-Netzwerk an eine Person senden, die die "
+"Meshtastic-App nutzt, und umgekehrt."
 
 #: ../../tak_meshtastic_gateway.md:9
 msgid "Features"
-msgstr ""
+msgstr "Features"
 
 #: ../../tak_meshtastic_gateway.md:11
 msgid ""
 "Send chat and PLI messages from TAK clients (ATAK, WinTAK, and iTAK) over"
 " a Meshtastic network"
 msgstr ""
+"Chat- und PLI-Nachrichten von TAK-Clients (ATAK, WinTAK und iTAK) über ein "
+"Meshtastic-Netzwerk senden"
 
 #: ../../tak_meshtastic_gateway.md:12
 msgid ""
 "Receive chat and PLI messages from a Meshtastic network and display them "
 "in a TAK client"
 msgstr ""
+"Chat- und PLI-Nachrichten aus einem Meshtastic-Netzwerk empfangen und in "
+"einem TAK-Client anzeigen"
 
 #: ../../tak_meshtastic_gateway.md:13
 msgid "See Meshtastic devices on the TAK client's map"
-msgstr ""
+msgstr "Meshtastic-Geräte auf der Karte des TAK-Clients ansehen"
 
 #: ../../tak_meshtastic_gateway.md:14
 msgid "See the TAK client on the Meshtastic app's map"
-msgstr ""
+msgstr "Den TAK-Client finden Sie auf der Karte der Meshtastic-App"
 
 #: ../../tak_meshtastic_gateway.md:15
 msgid "Send and receive chat messages between the TAK client and Meshtastic app"
 msgstr ""
+"Senden und Empfangen von Chatnachrichten zwischen dem TAK-Client und der "
+"Meshtastic-App"
 
 #: ../../tak_meshtastic_gateway.md:17
 msgid ""
@@ -72,20 +86,26 @@ msgid ""
 "images, etc, are not supported due to the limited bandwidth of Meshtastic"
 " networks."
 msgstr ""
+"TAK Meshtastic Gateway unterstützt derzeit nur das Senden und Empfangen von "
+"Chat- und PLI-Nachrichten. Andere Datentypen wie Datenpakete, Marker, Bilder "
+"usw. werden aufgrund der begrenzten Bandbreite von Meshtastic-Netzwerken "
+"nicht unterstützt."
 
 #: ../../tak_meshtastic_gateway.md:20
 msgid "Python Requirements"
-msgstr ""
+msgstr "Python-Anforderungen"
 
 #: ../../tak_meshtastic_gateway.md:22
 msgid ""
 "Due to an issue with the unishox2-py3 package, Windows requires Python "
 "version 3.12. Linux and macOS will work with Python versions 3.8 and up."
 msgstr ""
+"Aufgrund eines Problems mit dem Paket unishox2-py3 benötigt Windows Python "
+"Version 3.12. Linux und macOS funktionieren mit Python Version 3.8 und höher."
 
 #: ../../tak_meshtastic_gateway.md:25
 msgid "Known Issues"
-msgstr ""
+msgstr "Bekannte Probleme"
 
 #: ../../tak_meshtastic_gateway.md:27
 msgid ""
@@ -143,7 +163,7 @@ msgstr ""
 
 #: ../../tak_meshtastic_gateway.md:44
 msgid "Installation"
-msgstr ""
+msgstr "Installation"
 
 #: ../../tak_meshtastic_gateway.md:46
 msgid ""
@@ -168,7 +188,7 @@ msgstr ""
 
 #: ../../tak_meshtastic_gateway.md:68 ../../tak_meshtastic_gateway.md:97
 msgid "Usage"
-msgstr ""
+msgstr "Auslastung"
 
 #: ../../tak_meshtastic_gateway.md:70
 msgid ""
