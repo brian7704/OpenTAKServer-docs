@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/models/de/>\n"
 "Language: de\n"
@@ -27,12 +27,12 @@ msgstr "Modelle"
 
 #: ../../models.rst
 msgid "Columns:"
-msgstr ""
+msgstr "Spalten:"
 
 #: ../../models.rst
 msgid "Constraints:"
-msgstr ""
+msgstr "Einschränkungen:"
 
 #: ../../models.rst
 msgid "Indexes:"
-msgstr ""
+msgstr "Indexe:"
