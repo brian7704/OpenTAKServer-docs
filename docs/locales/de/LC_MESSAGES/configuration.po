@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/configuration/de/>\n"
 "Language: de\n"
@@ -27,7 +27,7 @@ msgstr "Konfiguration"
 
 #: ../../configuration.rst:5
 msgid "Config file"
-msgstr ""
+msgstr "Konfigurationsdatei"
 
 #: ../../configuration.rst:7
 msgid ""
@@ -35,10 +35,14 @@ msgid ""
 "generated for you at ``~/ots/config.yml``. You can override the defaults "
 "there. You must restart OpenTAKServer for the changes to take effect."
 msgstr ""
+"Beim ersten Start von OpenTAKServer wird eine Standardkonfigurationsdatei "
+"unter ``~/ots/config.yml`` für Sie erstellt. Dort können Sie die "
+"Standardeinstellungen überschreiben. Damit die Änderungen wirksam werden, "
+"muss OpenTAKServer neu gestartet werden."
 
 #: ../../configuration.rst:12
 msgid "Secrets"
-msgstr ""
+msgstr "Sensible Daten"
 
 #: ../../configuration.rst:14
 msgid ""
@@ -49,36 +53,45 @@ msgid ""
 "before posting. If these settings are mistakenly shared publicly, change "
 "them immediately."
 msgstr ""
+"Die folgenden sensiblen Optionen gefährden die Sicherheit Ihres Servers, "
+"wenn sie offengelegt werden. Wenn Sie Unterstützung über öffentliche Kanäle "
+"wie `Discord <https://discord.gg/6uaVHjtfXN>`__ oder `GitHub <https://"
+"github.com/brian7704/OpenTAKServer>`__ anfragen, entfernen Sie diese "
+"Einstellungen vor dem Veröffentlichen. Sollten diese Einstellungen "
+"versehentlich öffentlich geteilt werden, ändern Sie sie umgehend."
 
 #: ../../configuration.rst:21
 msgid "SECRET_KEY"
-msgstr ""
+msgstr "Geheimer_Schlüssel"
 
 #: ../../configuration.rst:22
 msgid "SECURITY_PASSWORD_SALT"
-msgstr ""
+msgstr "SECURITY_PASSWORD_SALT"
 
 #: ../../configuration.rst:23
 msgid "OTS_MEDIAMTX_TOKEN"
-msgstr ""
+msgstr "OTS_MEDIAMTX_TOKEN"
 
 #: ../../configuration.rst:24
 msgid "MAIL_USERNAME"
-msgstr ""
+msgstr "MAIL_Benutzername"
 
 #: ../../configuration.rst:25
 msgid "MAIL_PASSWORD"
-msgstr ""
+msgstr "Mail-Passwort"
 
 #: ../../configuration.rst:28
 msgid "Config Options"
-msgstr ""
+msgstr "Konfigurationsoptionen"
 
 #: ../../configuration.rst:32
 msgid ""
 "This setting puts Flask in debug mode and will produce many more log "
 "messages. Do not use on production servers. Default ``False``"
 msgstr ""
+"Diese Einstellung versetzt Flask in den Debug-Modus und erzeugt deutlich "
+"mehr Logmeldungen. Nicht auf Produktionsservern verwenden. Standardwert: "
+"``False``"
 
 #: ../../configuration.rst:37
 msgid ""
