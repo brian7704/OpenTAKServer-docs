@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/opentak_icu/de/>\n"
 "Language: de\n"
@@ -29,7 +29,7 @@ msgstr "Audio-Codecs"
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/audio_codecs.md:3
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:32
 msgid "OPUS"
-msgstr ""
+msgstr "OPUS"
 
 #: ../../opentak_icu/audio_codecs.md:5
 msgid ""
@@ -44,7 +44,7 @@ msgstr ""
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/audio_codecs.md:8
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:30
 msgid "AAC"
-msgstr ""
+msgstr "AAC"
 
 #: ../../opentak_icu/audio_codecs.md:10
 msgid ""
@@ -52,47 +52,52 @@ msgid ""
 "stream in a web browser make sure to view it via HLS. HLS supports AAC "
 "audio while WebRTC does not."
 msgstr ""
+"AAC wird in allen Streaming-Protokollen unterstützt. Wenn Sie den Stream in "
+"einem Webbrowser ansehen, stellen Sie sicher, dass Sie ihn über HLS abrufen. "
+"HLS unterstützt AAC-Audio, während WebRTC dies nicht tut."
 
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/audio_codecs.md:13
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:31
 msgid "G711"
-msgstr ""
+msgstr "G711"
 
 #: ../../opentak_icu/audio_codecs.md:15
 msgid ""
 "The G711 codec is locked to a sample rate of 8000hz and mono audio. Both "
 "RTSP(S) and RTMP(S) support G711 while SRT does not."
 msgstr ""
+"Der G711-Codec ist auf eine Abtastrate von 8000 Hz und Mono-Audio "
+"festgelegt. RTSP(S) und RTMP(S) unterstützen G711, SRT hingegen nicht."
 
 #: ../../opentak_icu/audio_codecs.md:17 ../../opentak_icu/video_codecs.md:26
 msgid "Compatibility Matrix"
-msgstr ""
+msgstr "Kompatibilitätsmatrix"
 
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/streaming_protocols.md:3
 #: ../../opentak_icu/video_codecs.md
 msgid "RTSP(S)"
-msgstr ""
+msgstr "RTSP(S)"
 
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/index.md
 #: ../../opentak_icu/video_codecs.md
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/streaming_protocols.md:8
 #: ../../opentak_icu/video_codecs.md
 msgid "RTMP(S)"
-msgstr ""
+msgstr "RTMP(S)"
 
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/index.md
 #: ../../opentak_icu/video_codecs.md
 msgid "No"
-msgstr ""
+msgstr "NEIN"
 
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/index.md
 #: ../../opentak_icu/streaming_protocols.md:12
 #: ../../opentak_icu/video_codecs.md
 msgid "SRT"
-msgstr ""
+msgstr "SRT"
 
 #: ../../opentak_icu/audio_codecs.md ../../opentak_icu/index.md
 #: ../../opentak_icu/index.md:39 ../../opentak_icu/streaming_protocols.md:16
@@ -229,7 +234,7 @@ msgstr ""
 
 #: ../../opentak_icu/index.md:23
 msgid "Features"
-msgstr ""
+msgstr "Features"
 
 #: ../../opentak_icu/index.md:25 ../../opentak_icu/index.md:124
 #: ../../opentak_icu/video_codecs.md:1
@@ -464,7 +469,7 @@ msgstr "Funktionsvergleich"
 
 #: ../../opentak_icu/index.md:113 ../../opentak_icu/streaming_protocols.md:1
 msgid "Streaming Protocols"
-msgstr ""
+msgstr "Streaming-Protokolle"
 
 #: ../../opentak_icu/index.md
 msgid "TAK ICU"
@@ -671,7 +676,7 @@ msgstr ""
 
 #: ../../opentak_icu/tak_server.md:8
 msgid "TCP"
-msgstr ""
+msgstr "TCP"
 
 #: ../../opentak_icu/tak_server.md:10
 msgid ""
@@ -681,7 +686,7 @@ msgstr ""
 
 #: ../../opentak_icu/tak_server.md:12
 msgid "SSL"
-msgstr ""
+msgstr "SSL"
 
 #: ../../opentak_icu/tak_server.md:14
 msgid ""
@@ -724,7 +729,7 @@ msgstr ""
 
 #: ../../opentak_icu/uvc_cameras.md:7
 msgid "Usage"
-msgstr ""
+msgstr "Auslastung"
 
 #: ../../opentak_icu/uvc_cameras.md:9
 msgid ""
