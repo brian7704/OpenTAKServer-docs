@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/update_server/de/>\n"
 "Language: de\n"
@@ -31,6 +31,9 @@ msgid ""
 "an OTS server can upload plugin APKs which will be automatically pushed "
 "out to EUDs when ATAK is opened."
 msgstr ""
+"OpenTAKServer unterstützt das Plugin-Update-System von ATAK. Ein "
+"Administrator eines OTS-Servers kann Plugin-APKs hochladen, die automatisch "
+"an EUDs verteilt werden, sobald ATAK geöffnet wird."
 
 #: ../../update_server.md:6
 msgid "Obtaining Plugins"
@@ -43,10 +46,14 @@ msgid ""
 "available on GitHub. You must obtain them and upload them to your "
 "OpenTAKServer manually."
 msgstr ""
+"OpenTAKServer wird ohne Plugins ausgeliefert. Offizielle Plugins sind unter "
+"[TAK.gov](https://tak.gov) verfügbar, und einige Open-Source-Plugins sind "
+"auf GitHub zu finden. Sie müssen diese selbst beschaffen und manuell auf "
+"Ihren OpenTAKServer hochladen."
 
 #: ../../update_server.md:11
 msgid "Uploading Plugins"
-msgstr ""
+msgstr "Plugins hochladen"
 
 #: ../../update_server.md:13
 msgid ""
@@ -59,6 +66,14 @@ msgid ""
 "etc.), as well as automatically generate the required `product.infz` "
 "file."
 msgstr ""
+"Melden Sie sich als Administrator an und navigieren Sie in der "
+"Navigationsleiste zur Seite „Plugin-Updates“. Dort finden Sie die Liste der "
+"aktuell für Endbenutzer verfügbaren Plugins. Klicken Sie auf „Plugin "
+"hochladen“, um eine Plugin-APK-Datei hochzuladen. Das einzige Pflichtfeld "
+"ist das Feld „Plugin-Datei“. OpenTAKServer extrahiert automatisch die "
+"benötigten Metadaten (z. B. Revisionscode, Plugin-Name, Mindestversionen von "
+"Android und ATAK usw.) und generiert automatisch die erforderliche Datei "
+"`product.infz`."
 
 #: ../../update_server.md:19
 msgid ""
@@ -68,10 +83,15 @@ msgid ""
 "specify a separate icon file in the upload form. The icon should be a PNG"
 " file."
 msgstr ""
+"OpenTAKServer versucht außerdem, das Plugin-Symbol aus der APK-Datei zu "
+"extrahieren. Dies gelingt jedoch nur, wenn das Symbol im PNG-Format "
+"vorliegt, nicht im Android-Vektor-XML-Format. Daher können Sie optional im "
+"Upload-Formular eine separate Symboldatei angeben. Das Symbol muss im PNG-"
+"Format vorliegen."
 
 #: ../../update_server.md:23
 msgid "Plugin Versions"
-msgstr ""
+msgstr "Plugin-Versionen"
 
 #: ../../update_server.md:25
 msgid ""
@@ -80,18 +100,24 @@ msgid ""
 "ATAK 5.5 where ATAK will request a list of plugins for its version. ATAK "
 "5.4 and prior will still query for a list of all plugins."
 msgstr ""
+"Ab Version 1.6.0 unterstützt OpenTAKServer das Hochladen von Plugins für "
+"verschiedene ATAK-Versionen. Dies dient der Unterstützung einer in ATAK 5.5 "
+"eingeführten Funktion, bei der ATAK eine Liste der für die jeweilige Version "
+"benötigten Plugins anfordert. ATAK 5.4 und ältere Versionen fragen weiterhin "
+"eine Liste aller Plugins ab."
 
 #: ../../update_server.md:29
 msgid "Screenshot"
-msgstr ""
+msgstr "Screenshot"
 
 #: ../../update_server.md:31
 msgid "![!Plugin Updates Screenshot](images/plugin_updates.png)"
-msgstr ""
+msgstr "![!Plugin Updates Screenshot](images/plugin_updates.png)"
 
 #: ../../update_server.md:31
+#, fuzzy
 msgid "!Plugin Updates Screenshot"
-msgstr ""
+msgstr "!Plugin Updates Screenshot"
 
 #: ../../update_server.md:33
 msgid "ATAK Settings"
