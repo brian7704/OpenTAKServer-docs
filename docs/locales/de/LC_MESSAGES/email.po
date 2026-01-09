@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-12-20 07:43+0000\n"
-"Last-Translator: Inco Mode <opentakserver.io@incomode.de>\n"
+"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/email/de/>\n"
 "Language: de\n"
@@ -37,49 +37,55 @@ msgstr ""
 
 #: ../../email.md:6
 msgid "User account self registration"
-msgstr ""
+msgstr "User Account Selbstregistrierung"
 
 #: ../../email.md:7
 msgid ""
 "Password reset - Without email, only administrators can change a user's "
 "password if they forget it"
 msgstr ""
+"Passwortzurücksetzung – Ohne E-Mail können nur Administratoren das Passwort "
+"eines Benutzers ändern, wenn es vergessen wurde"
 
 #: ../../email.md:8
 msgid "Two-factor authentication via email"
-msgstr ""
+msgstr "Zwei-Faktor-Authentifizierung per E-Mail"
 
 #: ../../email.md:10
 msgid "Enabling Email Support"
-msgstr ""
+msgstr "E-Mail-Unterstützung aktivieren"
 
 #: ../../email.md:12
 msgid ""
 "The following settings are required to enable email support. You can find"
 " them in your `config.yml` file."
 msgstr ""
+"Folgende Einstellungen sind erforderlich, um die E-Mail-Unterstützung zu "
+"aktivieren. Sie finden diese in Ihrer `config.yml`-Datei."
 
 #: ../../email.md:14
 msgid ""
 "`OTS_ENABLE_EMAIL`: Other settings have no effect if this is set to "
 "`false`"
 msgstr ""
+"`OTS_ENABLE_EMAIL`: Andere Einstellungen haben keine Auswirkung, wenn diese "
+"auf `false` gesetzt ist"
 
 #: ../../email.md:15
 msgid "`MAIL_SERVER`"
-msgstr ""
+msgstr "`MAIL_SERVER`"
 
 #: ../../email.md:16
 msgid "`MAIL_PORT`"
-msgstr ""
+msgstr "`MAIL_PORT`"
 
 #: ../../email.md:17
 msgid "`MAIL_USERNAME`"
-msgstr ""
+msgstr "MAIL_Benutzername"
 
 #: ../../email.md:18
 msgid "`MAIL_PASSWORD`"
-msgstr ""
+msgstr "`MAIL_PASSWORD`"
 
 #: ../../email.md:20
 msgid "These settings are optional and will depend on the email service you use."
