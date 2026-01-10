@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/certificate_enrollment/de/>\n"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../certificate_enrollment.md:5
 msgid "Authentication"
-msgstr "Authorisierung"
+msgstr "Authentifizierung"
 
 #: ../../certificate_enrollment.md:7
 msgid ""
@@ -144,46 +144,56 @@ msgid ""
 "the `Open ATAK` button instead of scanning the QR code to start the "
 "certificate registration process."
 msgstr ""
+"Alternativ können Sie, wenn Sie in der Web-Benutzeroberfläche Ihres EUD "
+"angemeldet sind, auf die Schaltfläche `ATAK öffnen` tippen, anstatt den QR-"
+"Code zu scannen, um den Zertifikatsregistrierungsprozess zu starten."
 
 #: ../../certificate_enrollment.md:44
 msgid "Instructions"
-msgstr ""
+msgstr "Anweisungen"
 
 #: ../../certificate_enrollment.md:46
 msgid ""
 "On the main ATAK screen, tap the hamburger icon in the top right corner "
 "and tap `Settings`"
 msgstr ""
+"Tippen Sie auf dem Hauptbildschirm von ATAK auf das Hamburger-Symbol in der "
+"oberen rechten Ecke und tippen Sie auf `Einstellungen`"
 
 #: ../../certificate_enrollment.md:47
 msgid "Tap on `Network Preferences`"
-msgstr ""
+msgstr "Tippen Sie auf `Netzwerkeinstellungen`"
 
 #: ../../certificate_enrollment.md:48
 msgid "Tap on `TAK Servers`"
-msgstr ""
+msgstr "Tippe auf `TAK Server`"
 
 #: ../../certificate_enrollment.md:49
 msgid "Tap the three vertical dots button in the top right corner and tap `Add`"
 msgstr ""
+"Tippe auf die Schaltfläche mit den drei vertikalen Punkten in der oberen "
+"rechten Ecke und tippe dann auf `Hinzufügen`"
 
 #: ../../certificate_enrollment.md:50
 msgid "Fill out your server's name and address"
-msgstr ""
+msgstr "Geben Sie den Namen und die Adresse Ihres Servers ein"
 
 #: ../../certificate_enrollment.md:51
 msgid ""
 "Check the `Use Authentication` checkbox and enter your OpenTAKServer "
 "username and password"
 msgstr ""
+"Aktivieren Sie das Kontrollkästchen `Authentifizierung verwenden` und geben "
+"Sie Ihren OpenTAKServer-Benutzernamen und Ihr Passwort ein"
 
 #: ../../certificate_enrollment.md:52
 msgid "Check the `Enroll for Client Certificate` checkbox"
-msgstr ""
+msgstr "Aktivieren Sie das Kontrollkästchen `Für Clientzertifikat registrieren`"
 
 #: ../../certificate_enrollment.md:53
 msgid "Make sure Streaming Protocol is set to `SSL`"
 msgstr ""
+"Stellen Sie sicher, dass das Streaming-Protokoll auf `SSL` eingestellt ist"
 
 #: ../../certificate_enrollment.md:54
 msgid ""
@@ -191,70 +201,91 @@ msgid ""
 "configured to use a different port. Ask your server's admin if you are "
 "unsure"
 msgstr ""
+"Der Standard-Serverport ist `8089`, sofern OpenTAKServer nicht für die "
+"Verwendung eines anderen Ports konfiguriert wurde. Fragen Sie im "
+"Zweifelsfall Ihren Serveradministrator"
 
 #: ../../certificate_enrollment.md:55
 msgid "Use default SSL/TLS Certificates"
-msgstr ""
+msgstr "Standard-SSL/TLS-Zertifikate verwenden"
 
 #: ../../certificate_enrollment.md:56
 msgid "Self-signed certificates (This is the most common setup)"
-msgstr ""
+msgstr "Selbstsignierte Zertifikate (Dies ist die gängigste Konfiguration)"
 
 #: ../../certificate_enrollment.md:57
 msgid ""
 "If your OpenTAKServer is using self-signed certificates, uncheck `Use "
 "default SSL/TLS Certificates`"
 msgstr ""
+"Wenn Ihr OpenTAKServer selbstsignierte Zertifikate verwendet, deaktivieren "
+"Sie `Standard-SSL/TLS-Zertifikate verwenden`"
 
 #: ../../certificate_enrollment.md:58
 msgid ""
 "Make sure that `Enroll with Preconfigured Trust` **IS** checked (you may "
 "not have this option if you're on an older version of ATAK)"
 msgstr ""
+"Stellen Sie sicher, dass `Mit vorkonfigurierter Vertrauensstellung "
+"registrieren` **IS** aktiviert ist (diese Option ist möglicherweise nicht "
+"verfügbar, wenn Sie eine ältere Version von ATAK verwenden)"
 
 #: ../../certificate_enrollment.md:59
 msgid "Tap the Import Trust Store button and find your trust store file."
 msgstr ""
+"Tippen Sie auf die Schaltfläche „Truststore importieren“ und suchen Sie Ihre "
+"Truststore-Datei."
 
 #: ../../certificate_enrollment.md:60
 msgid ""
 "In the password field next to that button, type your trust store "
 "certificate's password. The default is `atakatak`"
 msgstr ""
+"Geben Sie im Passwortfeld neben dieser Schaltfläche das Passwort Ihres "
+"Truststore-Zertifikats ein. Der Standardwert lautet `atakatak`"
 
 #: ../../certificate_enrollment.md:61
 msgid "Tap OK"
-msgstr ""
+msgstr "Tippen Sie auf OK"
 
 #: ../../certificate_enrollment.md:62
 msgid "Let's Encrypt Certificates"
-msgstr ""
+msgstr "Let's Encrypt-Zertifikate"
 
 #: ../../certificate_enrollment.md:63
 msgid "Leave `Use default SSL/TLS Certificates` checked"
 msgstr ""
+"Die Option `Standard-SSL/TLS-Zertifikate verwenden` sollte aktiviert bleiben"
 
 #: ../../certificate_enrollment.md:64
 msgid ""
 "Make sure that `Enroll with Preconfigured Trust` **IS NOT** checked (you "
 "may not have this option if you're on an older version of ATAK)"
 msgstr ""
+"Stellen Sie sicher, dass `Mit vorkonfigurierter Vertrauensstellung "
+"registrieren` ** NICHT** aktiviert ist (diese Option ist möglicherweise "
+"nicht verfügbar, wenn Sie eine ältere Version von ATAK verwenden)"
 
 #: ../../certificate_enrollment.md:65
 msgid "Tap the `Ok` button at the bottom of the screen"
-msgstr ""
+msgstr "Tippen Sie unten auf dem Bildschirm auf die Schaltfläche `Ok`"
 
 #: ../../certificate_enrollment.md:66
 msgid ""
 "After a few seconds you should see a message that registration has "
 "succeeded, and you will be automatically connected to the server"
 msgstr ""
+"Nach wenigen Sekunden sollte eine Meldung erscheinen, dass die Registrierung "
+"erfolgreich war, und Sie werden automatisch mit dem Server verbunden"
 
 #: ../../certificate_enrollment.md:67
 msgid ""
 "Any data packages, plugins, and device profiles that have been set by the"
 " server admin to install on enrollment will be automatically installed"
 msgstr ""
+"Alle Datenpakete, Plugins und Geräteprofile, die vom Serveradministrator zur "
+"Installation bei der Registrierung festgelegt wurden, werden automatisch "
+"installiert"
 
 #: ../../certificate_enrollment.md:69
 msgid "Screenshots"
@@ -266,12 +297,12 @@ msgstr "Einstellungen"
 
 #: ../../certificate_enrollment.md:73
 msgid "Self-Signed Certificate Settings"
-msgstr ""
+msgstr "Einstellungen für selbstsignierte Zertifikate"
 
 #: ../../certificate_enrollment.md:75
 msgid "Self-Signed Certificate Screenshot"
-msgstr ""
+msgstr "Screenshot des selbstsignierten Zertifikats"
 
 #: ../../certificate_enrollment.md:77
 msgid "Let's Encrypt Settings"
-msgstr ""
+msgstr "Let's Encrypt-Einstellungen"
