@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/plugins/de/>\n"
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../../plugins.rst:49
 msgid "Development"
-msgstr ""
+msgstr "Entwicklung"
 
 #: ../../plugins.rst:51
 msgid ""
@@ -153,20 +153,28 @@ msgid ""
 "and `Webstorm <https://www.jetbrains.com/webstorm/>`_ for the UI. Both "
 "PyCharm and Webstorm have free versions which can be used."
 msgstr ""
+"Obwohl jede IDE für die Entwicklung verwendet werden kann, konzentriert sich "
+"diese Anleitung auf `PyCharm <https://www.jetbrains.com/pycharm/download>`_ "
+"für das Plugin und `Webstorm <https://www.jetbrains.com/webstorm/>`_  für "
+"die Benutzeroberfläche. Sowohl PyCharm als auch WebStorm bieten kostenlose "
+"Versionen an."
 
 #: ../../plugins.rst:57
 msgid "Poetry"
-msgstr ""
+msgstr "Poetry"
 
 #: ../../plugins.rst:59
 msgid ""
 "`Poetry <https://python-poetry.org/>`_ is used to build, package, and "
 "version plugins, as well as manage dependencies."
 msgstr ""
+"`Poetry <https://python-poetry.org/>`_ wird verwendet, um Plugins zu "
+"erstellen, zu verpacken und zu versionieren sowie Abhängigkeiten zu "
+"verwalten."
 
 #: ../../plugins.rst:63
 msgid "Versioning"
-msgstr ""
+msgstr "Versionierung"
 
 #: ../../plugins.rst:65
 msgid ""
@@ -179,58 +187,76 @@ msgid ""
 "``poetry build`` command, the sdist and wheel files will be automatically"
 " tagged with this version number."
 msgstr ""
+"`Die dynamische Versionierung von Poetry <https://github.com/mtkennerly/"
+"poetry-dynamic-versioning>`_ dient der Versionierung von Plugins anhand von "
+"Git-Tags. Sobald eine neue Version Ihres Plugins veröffentlicht werden soll, "
+"wird mithilfe der `semantischen Versionierung  <https://semver.org/>`_ ein "
+"neuer Git-Tag mit der Plugin-Version erstellt. Der erste Versions-Tag könnte "
+"beispielsweise ``1.0.0`` lauten. Beim anschließenden Erstellen des Plugins "
+"für die Verteilung mit dem Befehl ``poetry build`` werden die sdist- und "
+"wheel-Dateien automatisch mit dieser Versionsnummer versehen."
 
 #: ../../plugins.rst:72
 msgid "Start Developing Your Plugin"
-msgstr ""
+msgstr "Beginnen Sie mit der Entwicklung Ihres Plugins"
 
 #: ../../plugins.rst:74
 msgid ""
 "The things that need to be changed are marked with ``TODO`` comments in "
 "OTS-Plugin-Template and OTS-UI-Plugin-Template."
 msgstr ""
+"Die zu ändernden Punkte sind in OTS-Plugin-Template und OTS-UI-Plugin-"
+"Template mit ``TODO``-Kommentaren gekennzeichnet."
 
 #: ../../plugins.rst:76
 msgid "pyproject.toml"
-msgstr ""
+msgstr "pyproject.toml"
 
 #: ../../plugins.rst:77
 msgid "Set the name, description, author information, and URLs"
-msgstr ""
+msgstr "Name, Beschreibung, Autoreninformationen und URLs festlegen"
 
 #: ../../plugins.rst:78
 msgid "*. The name must start with ``OTS-``"
-msgstr ""
+msgstr "*. Der Name muss mit ``OTS-`` beginnen."
 
 #: ../../plugins.rst:79
 msgid ""
 "Change the ``include`` option under ``[tool.poetry]`` to the name of the "
 "folder that contains your plugin's code"
 msgstr ""
+"Ändern Sie die Option ``include`` unter ``[tool.poetry]`` in den Namen des "
+"Ordners, der den Code Ihres Plugins enthält"
 
 #: ../../plugins.rst:80
 msgid "Do the same for ``tool.poetry-dynamic-versioning.files``"
 msgstr ""
+"Führen Sie das gleiche Verfahren für ``tool.poetry-dynamic-versioning.files``"
+" durch."
 
 #: ../../plugins.rst:81
 msgid "app.py"
-msgstr ""
+msgstr "app.py"
 
 #: ../../plugins.rst:82
 msgid "Change the class name"
-msgstr ""
+msgstr "Ändern Sie den Klassennamen"
 
 #: ../../plugins.rst:83
 msgid ""
 "Change the name of the blueprint from ``PluginTemplate`` to your plugin's"
 " name"
 msgstr ""
+"Ändern Sie den Namen der Vorlage von ``PluginTemplate`` in den Namen Ihres "
+"Plugins"
 
 #: ../../plugins.rst:84
 msgid ""
 "Add API routes as necessary. Remember to protect your routes using the "
 "``@auth_required`` or ``@roles_accepted`` decorators"
 msgstr ""
+"Fügen Sie bei Bedarf API-Routen hinzu. Denken Sie daran, Ihre Routen mit den "
+"Dekoratoren ``@auth_required`` oder ``@roles_accepted`` zu schützen"
 
 #: ../../plugins.rst:85
 msgid ""
@@ -238,19 +264,26 @@ msgid ""
 "background. For example, the AISStream plugin uses the ``activate()`` "
 "method to connect to AISStream's servers to pull data."
 msgstr ""
+"Bearbeiten Sie die ``activate()``-Methode, wenn Ihr Plugin im Hintergrund "
+"ausgeführt werden soll. Das AISStream-Plugin verwendet beispielsweise die "
+"``activate()``-Methode, um eine Verbindung zu den AISStream-Servern "
+"herzustellen und Daten abzurufen."
 
 #: ../../plugins.rst:86
 msgid "default_config.py"
-msgstr ""
+msgstr "default_config.py"
 
 #: ../../plugins.rst:87
 msgid "Rename ``OTS_PLUGIN_TEMPLATE_ENABLED`` to your plugin's name"
 msgstr ""
+"Benennen Sie ``OTS_PLUGIN_TEMPLATE_ENABLED`` in den Namen Ihres Plugins um"
 
 #: ../../plugins.rst:88
 msgid "Add config options as necessary"
-msgstr ""
+msgstr "Fügen Sie bei Bedarf Konfigurationsoptionen hinzu"
 
 #: ../../plugins.rst:89
 msgid "Edit the validate() method to validate user input"
 msgstr ""
+"Bearbeiten Sie die Methode `validate()`, um die Benutzereingaben zu "
+"validieren"
