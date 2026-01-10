@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/update_server/de/>\n"
@@ -115,13 +115,12 @@ msgid "![!Plugin Updates Screenshot](images/plugin_updates.png)"
 msgstr "![!Plugin Updates Screenshot](images/plugin_updates.png)"
 
 #: ../../update_server.md:31
-#, fuzzy
 msgid "!Plugin Updates Screenshot"
-msgstr "!Plugin Updates Screenshot"
+msgstr "Screenshot der Plugin-Updates"
 
 #: ../../update_server.md:33
 msgid "ATAK Settings"
-msgstr ""
+msgstr "ATAK-Einstellungen"
 
 #: ../../update_server.md:35
 msgid ""
@@ -130,49 +129,65 @@ msgid ""
 "package generated in OpenTAKServer's UI. These connection methods will "
 "automatically enable ATAK's plugin update feature."
 msgstr ""
+"Bei der erstmaligen Verbindung eines Endgeräts mit OpenTAKServer wird die "
+"Verwendung der [Zertifikatregistrierung](certificate_enrollment.md) oder "
+"eines in der OpenTAKServer-Benutzeroberfläche generierten Datenpakets "
+"empfohlen. Diese Verbindungsmethoden aktivieren automatisch die Plugin-"
+"Update-Funktion von ATAK."
 
 #: ../../update_server.md:39
 msgid "For manual setup, follow these steps:"
-msgstr ""
+msgstr "Für die manuelle Einrichtung befolgen Sie diese Schritte:"
 
 #: ../../update_server.md:41
 msgid ""
 "Click ATAK's hamburger icon (three horizontal lines in the top left "
 "corner)"
 msgstr ""
+"Klicken Sie auf das Hamburger-Symbol von ATAK (drei horizontale Linien in "
+"der oberen linken Ecke)"
 
 #: ../../update_server.md:42
 msgid "Select the Plugin tool"
-msgstr ""
+msgstr "Wählen Sie das Plugin-Werkzeug aus"
 
 #: ../../update_server.md:43
 msgid "Select the gear icon at the bottom of the screen"
-msgstr ""
+msgstr "Wählen Sie das Zahnradsymbol am unteren Bildschirmrand aus"
 
 #: ../../update_server.md:44
 msgid "Enable `Plugin Loading`, `Auto Sync`, and `Update Server`"
-msgstr ""
+msgstr "Aktivieren Sie `Plugin Loading`, `Auto Sync` und `Update Server`"
 
 #: ../../update_server.md:45
 msgid ""
 "For `Update Server URL` enter "
 "`https://<YOUR_SERVER_ADDRESS>:8443/api/packages`"
 msgstr ""
+"Für `Update Server URL` geben Sie `https://<IHRE_SERVER_ADRESSE>:8443/api/"
+"packages` ein"
 
 #: ../../update_server.md:46
 msgid ""
 "For `Update Server SSL/TLS Truststore Location`, select your "
 "OpenTAKServer's `truststore-root.p12` on your device"
 msgstr ""
+"Wählen Sie für `Update Server SSL/TLS Truststore Location` die Datei "
+"`truststore-root.p12` Ihres OpenTAKServers auf Ihrem Gerät aus"
 
 #: ../../update_server.md:47
 msgid ""
 "You can get a copy of your server's `truststore-root.p12` file by "
 "browsing to `https://<YOUR_SERVER_ADDRESS>/api/truststore`"
 msgstr ""
+"Sie können eine Kopie der Datei `truststore-root.p12` Ihres Servers "
+"erhalten, indem Sie zu  `https://<YOUR_SERVER_ADDRESS>/api/truststore` "
+"navigieren"
 
 #: ../../update_server.md:48
 msgid ""
 "For `Update Server SSL/TLS Truststore Password`, enter your truststore's "
 "password. The default is `atakatak`"
 msgstr ""
+"Geben Sie unter `Update Server SSL/TLS Truststore Password` das Passwort "
+"Ihres Truststores ein. Der Standardwert ist `atakatak`"
