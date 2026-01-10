@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/configuration/de/>\n"
@@ -100,6 +100,9 @@ msgid ""
 " generated automatically with ``secrets.token_hex()`` the first time you "
 "run OpenTAKServer."
 msgstr ""
+"Der `Flask-Geheimschlüssel <https://flask.palletsprojects.com/en/2.3.x/"
+"config/#SECRET_KEY>`__. Er wird beim ersten Ausführen von OpenTAKServer "
+"automatisch mit ``secrets.token_hex()`` generiert."
 
 #: ../../configuration.rst:43
 msgid ""
@@ -111,40 +114,58 @@ msgid ""
 "generated the first time you run OpenTAKServer using "
 "``secrets.SystemRandom().getrandbits(128)``"
 msgstr ""
+"Wird von `Flask-Security <https://flask-security-too.readthedocs.io/en/"
+"stable/configuration/#SECURITY_PASSWORD_SALT>`__ verwendet, um gehashte "
+"Passwörter zu salzen. Wenn Sie dies ändern, nachdem Benutzerkonten erstellt "
+"wurden, werden diese gesperrt, bis ihre Passwörter zurückgesetzt wurden. "
+"Dies betrifft auch den Administrator. Es wird beim ersten Start von "
+"OpenTAKServer automatisch mit ``secrets.SystemRandom().getrandbits(128)`` "
+"generiert"
 
 #: ../../configuration.rst:51
 msgid "OpenTAKServer Settings"
-msgstr ""
+msgstr "OpenTAKServer-Einstellungen"
 
 #: ../../configuration.rst:55
 msgid ""
 "Folder for all of OpenTAKServer’s data (sqlite db, video recordings, "
 "uploaded files, etc). Default: ``~/ots``"
 msgstr ""
+"Ordner für alle Daten des OpenTAKServers (SQLite-Datenbank, Videoaufnahmen, "
+"hochgeladene Dateien usw.). Standard: ``~/ots``"
 
 #: ../../configuration.rst:60
 msgid ""
 "OpenTAKServer’s API listens on this port on the loopback interface. Nginx"
 " will proxy HTTP requests to this port. Default ``8081``"
 msgstr ""
+"Die API von OpenTAKServer lauscht auf diesem Port über die Loopback-"
+"Schnittstelle. Nginx leitet HTTP-Anfragen an diesen Port weiter. "
+"Standardmäßig ist dies „8081“"
 
 #: ../../configuration.rst:66
 msgid ""
 "Port that nginx listens on for HTTP requests. Nginx will proxy these "
 "requests to OTS_LISTENER_PORT. Default ``8080``"
 msgstr ""
+"Port, an dem nginx auf HTTP-Anfragen wartet. Nginx leitet diese Anfragen an "
+"OTS_LISTENER_PORT weiter. Standardwert: 8080"
 
 #: ../../configuration.rst:71
 msgid ""
 "Nginx listens on this port for HTTPS requests and proxies them to "
 "OTS_LISTENER_PORT. Default ``8443``"
 msgstr ""
+"Nginx lauscht an diesem Port auf HTTPS-Anfragen und leitet sie an "
+"OTS_LISTENER_PORT weiter. Standardwert: 8443"
 
 #: ../../configuration.rst:76
 msgid ""
 "Nginx listens on this port for certificate enrollment requests and "
 "proxies them to OTS_LISTENER_PORT. Default ``8446``"
 msgstr ""
+"Nginx lauscht an diesem Port auf Zertifikatsregistrierungsanfragen und "
+"leitet sie an OTS_LISTENER_PORT weiter. Standardwert: 8446"
 
 #: ../../configuration.rst:81
 msgid ""
@@ -152,22 +173,29 @@ msgid ""
 "certificate in this HTTP header to identify the username via the "
 "certificate's common name."
 msgstr ""
+"Bei den meisten Marti-API-Endpunkten sucht OpenTAKServer im HTTP-Header nach "
+"dem Client-Zertifikat, um den Benutzernamen über den allgemeinen Namen des "
+"Zertifikats zu identifizieren."
 
 #: ../../configuration.rst:84
 msgid "Default: ``X-Ssl-Cert``"
-msgstr ""
+msgstr "Standardwert: ``X-Ssl-Cert``"
 
 #: ../../configuration.rst:88
 msgid ""
 "OpenTAKServer listens on this port for TCP connections from ATAK, WinTAK,"
 " and iTAK. Default ``8088``"
 msgstr ""
+"OpenTAKServer lauscht an diesem Port auf TCP-Verbindungen von ATAK, WinTAK "
+"und iTAK. Standardwert: „8088“"
 
 #: ../../configuration.rst:93
 msgid ""
 "OpenTAKServer listens on this port for SSL connections from ATAK, WinTAK,"
 " and iTAK. Default ``8089``"
 msgstr ""
+"OpenTAKServer lauscht an diesem Port auf SSL-Verbindungen von ATAK, WinTAK "
+"und iTAK. Standardmäßig wird der Port 8089 verwendet"
 
 #: ../../configuration.rst:98
 msgid ""
@@ -175,36 +203,49 @@ msgid ""
 "setting determines the number of days to keep rotated logs Log files "
 "older than this setting will be automatically deleted. Default ``7``"
 msgstr ""
+"Die Protokolldateien im Verzeichnis ``~/ots/logs/`` werden jede Nacht um "
+"Mitternacht rotiert. Diese Einstellung bestimmt die Anzahl der Tage, die die "
+"rotierten Protokolle aufbewahrt werden. Protokolldateien, die älter als "
+"diese Einstellung sind, werden automatisch gelöscht. Standardwert: ``7``"
 
 #: ../../configuration.rst:105
 msgid "Address of the RabbitMQ server. Default ``127.0.0.1``"
-msgstr ""
+msgstr "Adresse des RabbitMQ-Servers. Standardwert: „127.0.0.1“"
 
 #: ../../configuration.rst:109
 msgid ""
 "Time To Live setting for messages published to RabbitMQ. Default: "
 "``86400000`` (one day)"
 msgstr ""
+"Gültigkeitsdauer (Time-to-Live) für in RabbitMQ veröffentlichte Nachrichten. "
+"Standardwert: ``86400000`` (ein Tag)"
 
 #: ../../configuration.rst:114
 msgid "Number of CoT messages to prefetch from the RabbitMQ queue. Default: ``2``"
 msgstr ""
+"Anzahl der CoT-Nachrichten, die aus der RabbitMQ-Warteschlange vorab "
+"abgerufen werden sollen. Standardwert: ``2``"
 
 #: ../../configuration.rst:118
 msgid "Number of ``cot_parser`` processes to run. Default: ``1``"
-msgstr ""
+msgstr "Anzahl der auszuführenden „cot_parser“-Prozesse. Standardwert: „1“"
 
 #: ../../configuration.rst:122
 msgid ""
 "Address for MediaMTX’s API server. Make sure to include the scheme (ie "
 "``http://``), address, and port. Default ``http://localhost:9997``"
 msgstr ""
+"Adresse des MediaMTX-API-Servers. Bitte geben Sie das Schema (z. B. "
+"„http://“), die Adresse und den Port an. Standardmäßig "
+"„http://localhost:9997“"
 
 #: ../../configuration.rst:128
 msgid ""
 "This token protects the /api/mediamtx/webhook endpoint. It is generated "
 "using ``python3 -c 'import secrets; print(secrets.token_hex())``"
 msgstr ""
+"Dieses Token schützt den Endpunkt /api/mediaamtx/webhook. Es wird mit ``"
+"python3 -c 'import secrets; print(secrets.token_hex())`` generiert"
 
 #: ../../configuration.rst:133
 msgid ""
@@ -212,6 +253,10 @@ msgid ""
 "<https://docs.python.org/3/library/ssl.html#ssl.SSLContext.verify_mode>`__"
 " for more details. Default ``ssl.CERT_REQUIRED``"
 msgstr ""
+"SSL-Verifizierungsmodus für den SSL-CoT-Port. Weitere Informationen finden "
+"Sie in der Python-Dokumentation <https://docs.python.org/3/library/ssl.html#"
+"ssl.SSLContext.verify_mode>. Standardmäßig ist `ssl.CERT_REQUIRED` "
+"eingestellt"
 
 #: ../../configuration.rst:139
 msgid ""
@@ -220,100 +265,123 @@ msgid ""
 "print(''.join(random.choices(string.ascii_lowercase + string.digits, "
 "k=64)))``"
 msgstr ""
+"Die eindeutige Knoten-ID dieses Servers. Sie kann mit folgendem Befehl "
+"generiert werden: ``python3 -c \"import random; import string; "
+"print(''.join(random.choices(string.ascii_lowercase + string.digits, "
+"k=64)))``"
 
 #: ../../configuration.rst:145
 msgid "Name for your certificate authority. Default ``OpenTAKServer-CA``"
-msgstr ""
+msgstr "Name Ihrer Zertifizierungsstelle. Standardwert: „OpenTAKServer-CA“"
 
 #: ../../configuration.rst:149
 msgid "Location of your certificate authority. Default ``~/ots/ca``"
-msgstr ""
+msgstr "Speicherort Ihrer Zertifizierungsstelle. Standardmäßig ``~/ots/ca``"
 
 #: ../../configuration.rst:153
 msgid "Password for all generated certificate. Default ``atakatak``"
-msgstr ""
+msgstr "Passwort für alle generierten Zertifikate. Standardwert: ``atakatak``"
 
 #: ../../configuration.rst:157
 msgid ""
 "Number of days that generated certificates should be valid. Default "
 "``3650``"
 msgstr ""
+"Anzahl der Tage, für die die Zertifikate gültig sein sollten. Standardwert: "
+"„3650“."
 
 #: ../../configuration.rst:162
 msgid "ISO country code for your certificate authority. Default ``WW``"
-msgstr ""
+msgstr "ISO-Ländercode für Ihre Zertifizierungsstelle. Standardwert: „WW“"
 
 #: ../../configuration.rst:166
 msgid "State abbreviation for your certificate authority. Default ``XX``"
 msgstr ""
+"Abkürzung des Bundesstaates für Ihre Zertifizierungsstelle. Standardwert: "
+"``XX``"
 
 #: ../../configuration.rst:170
 msgid "City name for your certificate authority. Default ``YY``"
-msgstr ""
+msgstr "Stadtname Ihrer Zertifizierungsstelle. Standardwert: „JJ“"
 
 #: ../../configuration.rst:174
 msgid "Organization name for your certificate authority. Default ``ZZ``"
-msgstr ""
+msgstr "Name der Organisation Ihrer Zertifizierungsstelle. Standardwert: ``ZZ``"
 
 #: ../../configuration.rst:178
 msgid "Organizational Unit (OU) name for your certificate authority."
-msgstr ""
+msgstr "Name der Organisationseinheit (OU) Ihrer Zertifizierungsstelle."
 
 #: ../../configuration.rst:182
 msgid ""
 "Subject for your certificate authority. Default "
 "``/C=OTS_CA_COUNTRY/ST=OTS_CA_STATE/L=OTS_CA_CITY/O=OTS_CA_ORGANIZATION/OU=OTS_CA_ORGANIZATIONAL_UNIT``"
 msgstr ""
+"Subjekt für Ihre Zertifizierungsstelle. Standardwert: ``/C=OTS_CA_COUNTRY/ST="
+"OTS_CA_STATE/L=OTS_CA_CITY/O=OTS_CA_ORGANIZATION/"
+"OU=OTS_CA_ORGANIZATIONAL_UNIT``"
 
 #: ../../configuration.rst:187
 msgid ""
 "Latitude used to query ADS-B data from `Airplanes.live "
 "<https://airplanes.live/>`__. Default ``40.744213`` (Manhattan)"
 msgstr ""
+"Breitengrad, der zum Abfragen von ADS-B-Daten von `Airplanes.live <https://"
+"airplanes.live/>`__ verwendet wird. Standardwert: ``40.744213`` (Manhattan)"
 
 #: ../../configuration.rst:193
 msgid ""
 "Longitude used to query ADS-B data from `Airplanes.live "
 "<https://airplanes.live/>`__. Default ``-73.986939`` (Manhattan)"
 msgstr ""
+"Längengrad, der zum Abfragen von ADS-B-Daten von `Airplanes.live <https://"
+"airplanes.live/>`__ verwendet wird. Standardwert: ``-73.986939`` (Manhattan)"
 
 #: ../../configuration.rst:199
 msgid ""
 "Radius in nautical miles to query ADSB from `Airplanes.live "
 "<https://airplanes.live/>`__. Default ``10`` Max ``250``"
 msgstr ""
+"Radius in Seemeilen für die ADSB-Abfrage von `Airplanes.live <https://"
+"airplanes.live/>`__. Standardwert: ``10`` Maximalwert: ``250``"
 
 #: ../../configuration.rst:205
 msgid "Username of your AISHub.net account. Default: ``None``"
-msgstr ""
+msgstr "Benutzername Ihres AISHub.net-Kontos. Standard: ``None``"
 
 #: ../../configuration.rst:209
 msgid "Southern latitude. Default: ``None``"
-msgstr ""
+msgstr "Südliche Breite. Standardwert: ``Keine``"
 
 #: ../../configuration.rst:213
 msgid "Western longitude. Default: ``None``"
-msgstr ""
+msgstr "Westliche Längengradangabe. Standardwert: ``Keine``"
 
 #: ../../configuration.rst:217
 msgid "Northern latitude. Default: ``None``"
-msgstr ""
+msgstr "Nördliche Breite. Standardwert: ``Keine``"
 
 #: ../../configuration.rst:221
 msgid "Eastern Longitude. Default: ``None``"
-msgstr ""
+msgstr "Östliche Längengradangabe. Standardwert: ``Keine``"
 
 #: ../../configuration.rst:225
 msgid ""
 "A comma-separated string of MMSI numbers of specific vessels to search, "
 "for example ``\"367658140,366902120\"`` Default: ``\"\"``"
 msgstr ""
+"Eine durch Kommas getrennte Zeichenkette mit MMSI-Nummern bestimmter "
+"Schiffe, nach denen gesucht werden soll, z. B. ``\"367658140,366902120\"`` "
+"Standard: ``\"\"``"
 
 #: ../../configuration.rst:230
 msgid ""
 "A comma-separated string of IMO numbers of specific vessels to search, "
 "for example ``\"1234,5678\"`` Default: ``\"\"``"
 msgstr ""
+"Eine durch Kommas getrennte Zeichenkette von IMO-Nummern bestimmter Schiffe, "
+"nach denen gesucht werden soll, zum Beispiel ``\"1234,5678\"`` Standard: ``\""
+"\"``"
 
 #: ../../configuration.rst:235
 msgid ""
@@ -321,6 +389,9 @@ msgid ""
 "<https://github.com/joshuafuller/ATAK-Maps.git>`__ when an EUD first "
 "connects to the server. Default: ``true``"
 msgstr ""
+"Automatische Installation von Kartenkachelquellen von `ATAK-Maps <https://"
+"github.com/joshuafuller/ATAK-Maps.git>`__ beim ersten Verbindungsaufbau "
+"eines EUD zum Server. Standard: ``true``"
 
 #: ../../configuration.rst:241
 msgid ""
@@ -329,6 +400,10 @@ msgid ""
 "username and password. This also prevents anyone without an account on "
 "your OpenTAKServer from connecting. Default: ``False``"
 msgstr ""
+"Diese Option dient der Authentifizierung für Ihren Mumble-Server. Beim "
+"Verbinden mit dem Mumble-Server müssen Sie Ihren OpenTAKServer-Benutzernamen "
+"und Ihr Passwort verwenden. Dadurch wird verhindert, dass sich Personen ohne "
+"Konto auf Ihrem OpenTAKServer verbinden können. Standard: ``False``"
 
 #: ../../configuration.rst:249
 msgid ""
@@ -337,6 +412,10 @@ msgid ""
 "passwords, and optionally for two-factor authentication. Default "
 "``False``"
 msgstr ""
+"Ermöglichen Sie Benutzern die Selbstregistrierung von Konten mit einer E"
+"-Mail-Adresse. E-Mails werden nur an Benutzer gesendet, um ihre "
+"Registrierung zu bestätigen, ihr Passwort zurückzusetzen und optional die "
+"Zwei-Faktor-Authentifizierung zu ermöglichen. Standardmäßig ``False``"
 
 #: ../../configuration.rst:256
 msgid ""
@@ -347,6 +426,13 @@ msgid ""
 "Leave the default setting to allow any domain to register. Default: "
 "``[]``"
 msgstr ""
+"Wenn ``OTS_ENABLE_EMAIL`` auf ``True`` gesetzt ist, können Sie mithilfe "
+"dieser Whitelist festlegen, dass sich nur Nutzer mit E-Mail-Konten "
+"bestimmter Domains registrieren dürfen. Wenn Sie diese Option beispielsweise "
+"auf ``['gmail.com', 'yahoo.com']`` setzen, können sich nur Nutzer mit "
+"gmail.com- oder yahoo.com-E-Mail-Adressen registrieren. Die "
+"Standardeinstellung erlaubt die Registrierung für alle Domains. Standard: "
+"``[]``"
 
 #: ../../configuration.rst:265
 msgid ""
@@ -354,6 +440,10 @@ msgid ""
 "domains from registering accounts. Leave the default setting to allow any"
 " domain to register. Default: ``[]``"
 msgstr ""
+"Ähnlich wie ``OTS_EMAIL_DOMAIN_WHITELIST``, verhindert jedoch, dass "
+"bestimmte E-Mail-Domänen Konten registrieren. Belassen Sie die "
+"Standardeinstellung, um die Registrierung jeder Domäne zu ermöglichen. "
+"Standard: ``[]``"
 
 #: ../../configuration.rst:271
 msgid ""
@@ -363,6 +453,12 @@ msgid ""
 "addresses to register. Do not put a dot before the TLD. Leave the default"
 " setting to allow any TLD to register. Default: ``[]``"
 msgstr ""
+"Ähnlich wie ``OTS_EMAIL_DOMAIN_WHITELIST``, erlaubt diese Einstellung jedoch "
+"nur Nutzern mit bestimmten Top-Level-Domains die Registrierung. "
+"Beispielsweise können Sie ``['gov', 'mil']`` festlegen, um nur Nutzern mit "
+".gov- oder .mil-E-Mail-Adressen die Registrierung zu ermöglichen. Setzen Sie "
+"keinen Punkt vor die TLD. Belassen Sie die Standardeinstellung, um die "
+"Registrierung mit jeder TLD zu erlauben. Standard: ``[]``"
 
 #: ../../configuration.rst:280
 msgid ""
@@ -370,19 +466,26 @@ msgid ""
 "domains from registering accounts. Leave the default setting to allow any"
 " TLD to register. Default: ``[]``"
 msgstr ""
+"Ähnlich wie ``OTS_EMAIL_TLD_WHITELIST``, verhindert jedoch die Registrierung "
+"von Konten für bestimmte Top-Level-Domains. Die Standardeinstellung erlaubt "
+"die Registrierung für alle TLDs. Standard: ``[]``"
 
 #: ../../configuration.rst:286 ../../configuration.rst:290
 #: ../../configuration.rst:294 ../../configuration.rst:298
 msgid "Used by the Delete Old Data scheduled job. Default: ``0``"
 msgstr ""
+"Wird vom geplanten Auftrag „Alte Daten löschen“ verwendet. Standardwert: "
+"``0``"
 
 #: ../../configuration.rst:302
 msgid "Used by the Delete Old Data scheduled job. Default: ``1``"
 msgstr ""
+"Wird vom geplanten Auftrag „Alte Daten löschen“ verwendet. Standardwert: "
+"``1``"
 
 #: ../../configuration.rst:306
 msgid "Enable or disable server plugins. Default: ``True``"
-msgstr ""
+msgstr "Server-Plugins aktivieren oder deaktivieren. Standard: ``True``"
 
 #: ../../configuration.rst:310
 msgid ""
@@ -390,98 +493,118 @@ msgid ""
 "repo, but server admins can setup their own private repos with devpi and "
 "change this option to the URL of the private server."
 msgstr ""
+"Die URL des Plugin-Repository-Servers. Standardmäßig wird das offizielle "
+"Repository von OpenTAKServer verwendet, Serveradministratoren können jedoch "
+"mit devpi eigene private Repositories einrichten und diese Option auf die "
+"URL des privaten Servers ändern."
 
 #: ../../configuration.rst:314
 msgid "Default: ``https://repo.opentakserver.io/brian/prod/``"
-msgstr ""
+msgstr "Standard: ``https://repo.opentakserver.io/brian/prod/``"
 
 #: ../../configuration.rst:318
 msgid ""
 "Python libraries with the prefix defined in this option are considered to"
 " be OpenTAKServer plugins."
 msgstr ""
+"Python-Bibliotheken mit dem in dieser Option definierten Präfix werden als "
+"OpenTAKServer-Plugins betrachtet."
 
 #: ../../configuration.rst:321
 msgid "Default: ``[\"ots-\", \"ots_\"]``"
-msgstr ""
+msgstr "Standardwert: ``[\"ots-\", \"ots_\"]``"
 
 #: ../../configuration.rst:325
 msgid "Enables LDAP for user and group administration."
-msgstr ""
+msgstr "Aktiviert LDAP für die Benutzer- und Gruppenverwaltung."
 
 #: ../../configuration.rst:327
 msgid "Default: ``False``"
-msgstr ""
+msgstr "Standardwert: ``False``"
 
 #: ../../configuration.rst:331
 msgid "Users in the LDAP group will be considered administrators in OpenTAKServer"
 msgstr ""
+"Benutzer der LDAP-Gruppe werden in OpenTAKServer als Administratoren "
+"betrachtet"
 
 #: ../../configuration.rst:333
 msgid "Default: ``ots_admin``"
-msgstr ""
+msgstr "Standardwert: ``ots_admin``"
 
 #: ../../configuration.rst:337
 msgid "Use this LDAP user attribute to assign team colors to users."
 msgstr ""
+"Verwenden Sie dieses LDAP-Benutzerattribut, um Benutzern Teamfarben "
+"zuzuweisen."
 
 #: ../../configuration.rst:339
 msgid "Default: ``colorAttribute``"
-msgstr ""
+msgstr "Standardwert: ``colorAttribute``"
 
 #: ../../configuration.rst:343
 msgid "Use this LDAP user attribute to assign team roles to users."
 msgstr ""
+"Verwenden Sie dieses LDAP-Benutzerattribut, um Benutzern Teamrollen "
+"zuzuweisen."
 
 #: ../../configuration.rst:345
 msgid "Default: ``roleAttribute``"
-msgstr ""
+msgstr "Standardwert: ``roleAttribute``"
 
 #: ../../configuration.rst:349
 msgid "Use this LDAP user attribute to assign callsigns to users"
 msgstr ""
+"Verwenden Sie dieses LDAP-Benutzerattribut, um Benutzern Rufzeichen "
+"zuzuweisen"
 
 #: ../../configuration.rst:351
 msgid "Default: ``callsignAttribute``"
-msgstr ""
+msgstr "Standardwert: ``callsignAttribute``"
 
 #: ../../configuration.rst:355
 msgid ""
 "User attributes with this prefix can be used to change settings in ATAK "
 "the same way device profiles can."
 msgstr ""
+"Benutzerattribute mit diesem Präfix können verwendet werden, um "
+"Einstellungen in ATAK auf die gleiche Weise zu ändern wie Geräteprofile."
 
 #: ../../configuration.rst:358
 msgid "Default: ``ots_``"
-msgstr ""
+msgstr "Standardwert: ``ots_``"
 
 #: ../../configuration.rst:362
 msgid "The Airplanes.live scheduled job will publish data to this group."
 msgstr ""
+"Der geplante Job von Airplanes.live wird Daten an diese Gruppe "
+"veröffentlichen."
 
 #: ../../configuration.rst:364
 msgid "Default: ``ADS-B``"
-msgstr ""
+msgstr "Standard: ``ADS-B``"
 
 #: ../../configuration.rst:368
 msgid "The AISHub scheduled job will publish data to this group."
-msgstr ""
+msgstr "Der geplante AISHub-Job wird Daten an diese Gruppe veröffentlichen."
 
 #: ../../configuration.rst:370
 msgid "Default: ``AIS``"
-msgstr ""
+msgstr "Standardwert: ``AIS``"
 
 #: ../../configuration.rst:374
 msgid "Meshtastic data received via MQTT will be published to this group."
 msgstr ""
+"Die über MQTT empfangenen Meshtastic-Daten werden in dieser Gruppe "
+"veröffentlicht."
 
 #: ../../configuration.rst:376
 msgid "Default: ``Meshtastic``"
-msgstr ""
+msgstr "Standard: ``Meshtastic``"
 
 #: ../../configuration.rst:381
 msgid "Flask-Security"
-msgstr ""
+msgstr "Flask-Security"
 
 #: ../../configuration.rst:383
 msgid ""
@@ -491,10 +614,15 @@ msgid ""
 "you can check Flask-Security’s `documentation <https://flask-security-"
 "too.readthedocs.io/en/stable/configuration.html>`__."
 msgstr ""
+"Die Einstellungen, die OpenTAKServer verwendet, finden Sie in der Datei `"
+"defaultconfig.py <https://github.com/brian7704/OpenTAKServer/blob/master/"
+"opentakserver/defaultconfig.py>`__. Weitere Informationen zu den einzelnen "
+"Einstellungen finden Sie in der Dokumentation von Flask-Security <https"
+"://flask-security-too.readthedocs.io/en/stable/configuration.html>`__."
 
 #: ../../configuration.rst:390
 msgid "Flask-LDAP3-Login"
-msgstr ""
+msgstr "Flask-LDAP3-Login"
 
 #: ../../configuration.rst:392
 msgid ""
@@ -502,47 +630,50 @@ msgid ""
 "<https://flask-ldap3-login.readthedocs.io/en/latest/>`__ for more "
 "details."
 msgstr ""
+"Flask-LDAP3-Login wird für die LDAP-Unterstützung verwendet. Weitere "
+"Informationen finden Sie in der zugehörigen Dokumentation <https://flask-"
+"ldap3-login.readthedocs.io/en/latest/>."
 
 #: ../../configuration.rst:397
 msgid "The address of the LDAP server."
-msgstr ""
+msgstr "Die Adresse des LDAP-Servers."
 
 #: ../../configuration.rst:399 ../../configuration.rst:405
 #: ../../configuration.rst:411 ../../configuration.rst:417
 msgid "Default: ``Blank String``"
-msgstr ""
+msgstr "Standardwert: ``Leere Zeichenkette``"
 
 #: ../../configuration.rst:403
 msgid "The LDAP server's base DN"
-msgstr ""
+msgstr "Der Basis-DN des LDAP-Servers"
 
 #: ../../configuration.rst:409
 msgid "The LDAP server's user DN"
-msgstr ""
+msgstr "Der Benutzer-DN des LDAP-Servers"
 
 #: ../../configuration.rst:415
 msgid "The LDAP server's group DN"
-msgstr ""
+msgstr "Der Gruppen-DN des LDAP-Servers"
 
 #: ../../configuration.rst:421
 msgid "The LDAP server's bind user DN."
-msgstr ""
+msgstr "Der Bind-Benutzer-DN des LDAP-Servers."
 
 #: ../../configuration.rst:423
 msgid "Default: ``cn=admin,ou=users=dc=example,dc=com``"
-msgstr ""
+msgstr "Standardwert: ``cn=admin,ou=users=dc=example,dc=com``"
 
 #: ../../configuration.rst:427
 msgid "The bind user's password."
-msgstr ""
+msgstr "Das Passwort des Bind-Benutzers."
 
 #: ../../configuration.rst:429
 msgid "Default: ``password``"
-msgstr ""
+msgstr "Standardwert: ``password``"
 
 #: ../../configuration.rst:432
 msgid "Flask-Mailman settings"
-msgstr ""
+msgstr "Flask-Mailman-Einstellungen"
 
 #: ../../configuration.rst:434
 msgid ""
@@ -552,39 +683,44 @@ msgid ""
 "<https://support.google.com/accounts/answer/185833?hl=en>`__. See `Email "
 "<email.md>`__ for details."
 msgstr ""
+"Diese Einstellungen werden nur wirksam, wenn ``OTS_ENABLE_EMAIL`` auf "
+"``True`` gesetzt ist. Standardmäßig werden E-Mails über ein Gmail-Konto "
+"versendet. Geben Sie dazu einfach Ihren Benutzernamen und Ihr `App Passwort "
+"<https://support.google.com/accounts/answer/185833?hl=en>`__ an. Weitere "
+"Informationen finden Sie unter `E-Mail <email.md>`."
 
 #: ../../configuration.rst:442 ../../configuration.rst:446
 msgid "Default ``False``"
-msgstr ""
+msgstr "Standardwert ``Falsch``"
 
 #: ../../configuration.rst:450 ../../configuration.rst:470
 #: ../../configuration.rst:474
 msgid "Default ``null``"
-msgstr ""
+msgstr "Standardwert ``null``"
 
 #: ../../configuration.rst:454
 msgid "Default: ``null``"
-msgstr ""
+msgstr "Standardwert: ``null``"
 
 #: ../../configuration.rst:458
 msgid "Default ``587``"
-msgstr ""
+msgstr "Standardwert ``587``"
 
 #: ../../configuration.rst:462
 msgid "Default ``smtp.gmail.com``"
-msgstr ""
+msgstr "Standardmäßig ``smtp.gmail.com``"
 
 #: ../../configuration.rst:466 ../../configuration.rst:478
 msgid "Default ``false``"
-msgstr ""
+msgstr "Standardwert ``Falsch``"
 
 #: ../../configuration.rst:482
 msgid "Default ``true``"
-msgstr ""
+msgstr "Standardwert ``true``"
 
 #: ../../configuration.rst:485
 msgid "MediaMTX"
-msgstr ""
+msgstr "MediaMTX"
 
 #: ../../configuration.rst:487
 msgid ""
@@ -593,6 +729,11 @@ msgid ""
 "interface. As of version 1.1.4, MediaMTX can now be hosted on a different"
 " server. To do so you will need to change two settings."
 msgstr ""
+"Die Standardkonfiguration von OpenTAKServer geht davon aus, dass MediaMTX "
+"auf demselben Server läuft und OpenTAKServer sich über die Loopback-"
+"Schnittstelle mit diesem verbindet. Ab Version 1.1.4 kann MediaMTX nun auch "
+"auf einem anderen Server gehostet werden. Dazu müssen Sie zwei Einstellungen "
+"ändern."
 
 #: ../../configuration.rst:492
 msgid ""
@@ -600,6 +741,9 @@ msgid ""
 " include the scheme (ie ``http://`` or ``https://``), server address, and"
 " port."
 msgstr ""
+"Die erste Variable ist ``OTS_MEDIAMTX_API_ADDRESS`` in der Datei "
+"``config.yml``. Achten Sie darauf, das Schema (z. B. ``http://`` oder "
+"``https://``), die Serveradresse und den Port anzugeben."
 
 #: ../../configuration.rst:496
 msgid ""
@@ -611,16 +755,25 @@ msgid ""
 "address (and port number if necessary) to the address of your MediaMTX "
 "server."
 msgstr ""
+"Die nginx-Konfiguration muss ebenfalls angepasst werden. Suchen Sie in ``/"
+"etc/nginx/sites-enabled/ots_https`` (oder ``c:\\tools\\n"
+"ginx-1.25.4\\conf\\ots\\ots_https.conf`` unter Windows) nach den "
+"``location``-Blöcken für WebRTC und HLS. Jeder dieser Blöcke sollte eine "
+"``proxy_pass``-Zeile enthalten, die mit ``https://127.0.0.1`` beginnt. "
+"Ändern Sie diese Adresse (und gegebenenfalls die Portnummer) in die Adresse "
+"Ihres MediaMTX-Servers."
 
 #: ../../configuration.rst:504
 msgid ""
 "After changing these settings make sure to restart both OpenTAKServer and"
 " nginx."
 msgstr ""
+"Nach der Änderung dieser Einstellungen müssen Sie sowohl OpenTAKServer als "
+"auch nginx neu starten."
 
 #: ../../configuration.rst:508
 msgid "Max Upload Size"
-msgstr ""
+msgstr "Maximale Uploadgröße"
 
 #: ../../configuration.rst:510
 msgid ""
@@ -630,3 +783,9 @@ msgid ""
 " the line ``client_max_body_size 100M;`` to raise the limit. Change it to"
 " ``client_max_body_size 0;`` to disable the limit."
 msgstr ""
+"OpenTAKServer beschränkt standardmäßig die Größe hochgeladener Dateien, "
+"einschließlich Datenpakete, auf 100 MB. Diese Einstellung finden Sie in den "
+"Nginx-Konfigurationsdateien ``ots_http`` und ``ots_https``. Ändern Sie in "
+"diesen Dateien die Zeile ``client_max_body_size 100M;``, um das Limit zu "
+"erhöhen. Ändern Sie sie in ``client_max_body_size 0;``, um die Beschränkung "
+"aufzuheben."
