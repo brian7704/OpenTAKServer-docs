@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-09 21:34+0000\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
 "Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/opentak_icu/de/>\n"
@@ -103,11 +103,11 @@ msgstr "SRT"
 #: ../../opentak_icu/index.md:39 ../../opentak_icu/streaming_protocols.md:16
 #: ../../opentak_icu/video_codecs.md
 msgid "Multicast UDP"
-msgstr ""
+msgstr "Multicast UDP"
 
 #: ../../opentak_icu/encryption.md:1
 msgid "Encryption"
-msgstr ""
+msgstr "Verschlüsselung"
 
 #: ../../opentak_icu/encryption.md:3
 msgid ""
@@ -115,10 +115,13 @@ msgid ""
 "RTMPS. This ensures that a 3rd party cannot intercept and view the stream"
 " while it's in transit to the server."
 msgstr ""
+"OpenTAK ICU unterstützt die Verschlüsselung beim Streaming mit RTSPS oder "
+"RTMPS. Dadurch wird sichergestellt, dass Dritte den Stream während der "
+"Übertragung zum Server nicht abfangen und einsehen können."
 
 #: ../../opentak_icu/encryption.md:6
 msgid "CA Signed Certificates"
-msgstr ""
+msgstr "CA-signierte Zertifikate"
 
 #: ../../opentak_icu/encryption.md:8
 msgid ""
@@ -126,10 +129,14 @@ msgid ""
 "Encrypt, simply choose the RTSPS or RTMPS protocol. No further action is "
 "required."
 msgstr ""
+"Wenn Ihr Server Zertifikate verwendet, die von einer vertrauenswürdigen "
+"Zertifizierungsstelle wie Let's Encrypt signiert wurden, wählen Sie einfach "
+"das RTSPS- oder RTMPS-Protokoll. Es sind keine weiteren Maßnahmen "
+"erforderlich."
 
 #: ../../opentak_icu/encryption.md:11
 msgid "Self-Signed Certificates"
-msgstr ""
+msgstr "Selbstsignierte Zertifikate"
 
 #: ../../opentak_icu/encryption.md:13
 msgid ""
@@ -137,32 +144,42 @@ msgid ""
 " into OpenTAK ICU. The certificates should be in PKCS12 format, the same "
 "format that ATAK uses. To import them, use the following steps:"
 msgstr ""
+"Wenn Ihr Server selbstsignierte Zertifikate verwendet, müssen Sie diese in "
+"OpenTAK ICU importieren. Die Zertifikate sollten im PKCS12-Format vorliegen, "
+"dem gleichen Format, das auch ATAK verwendet. Gehen Sie zum Importieren wie "
+"folgt vor:"
 
 #: ../../opentak_icu/encryption.md:16
 msgid "Copy your trust store and user certificates to your device"
 msgstr ""
+"Kopieren Sie Ihren Vertrauensspeicher und Ihre Benutzerzertifikate auf Ihr "
+"Gerät"
 
 #: ../../opentak_icu/encryption.md:17
 msgid "Tap the Settings icon in OpenTAK ICU"
-msgstr ""
+msgstr "Tippen Sie in OpenTAK ICU auf das Symbol „Einstellungen“"
 
 #: ../../opentak_icu/encryption.md:18
 msgid "Tap Stream Settings"
-msgstr ""
+msgstr "Tap-Stream-Einstellungen"
 
 #: ../../opentak_icu/encryption.md:19
 msgid "Tap the `Server uses Self-Signed Certificate` switch"
 msgstr ""
+"Tippen Sie auf den Schalter `Server verwendet selbstsigniertes Zertifikat`"
 
 #: ../../opentak_icu/encryption.md:20
 msgid "Tap `Trust Store Certificate` and locate it"
-msgstr ""
+msgstr "Tippen Sie auf `Trust Store Certificate` und suchen Sie es"
 
 #: ../../opentak_icu/encryption.md:21
 msgid ""
 "Tap `Trust Store Certificate Password` and enter it. If you're using the "
 "same certificates as your TAK server, the password is probably `atakatak`"
 msgstr ""
+"Tippen Sie auf `Trust Store Certificate Password` und geben Sie es ein. Wenn "
+"Sie dieselben Zertifikate wie Ihr TAK-Server verwenden, lautet das Passwort "
+"wahrscheinlich `atakatak`"
 
 #: ../../opentak_icu/encryption.md:22
 msgid ""
@@ -170,6 +187,9 @@ msgid ""
 "certificate is a valid PKCS12 certificate and that the password is "
 "correct"
 msgstr ""
+"Tippen Sie auf `Zertifikat testen`. Dieser Schritt ist erforderlich und "
+"überprüft, ob es sich um ein gültiges PKCS12-Zertifikat handelt und ob das "
+"Passwort korrekt ist"
 
 #: ../../opentak_icu/index.md:1
 #, python-format
@@ -181,26 +201,33 @@ msgid ""
 " ![GitHub Downloads (all assets, all "
 "releases)](https://img.shields.io/github/downloads/brian7704/OpenTAK_ICU/total)"
 msgstr ""
+"![GitHub-Veröffentlichungsdatum](https://img.shields.io/github/release-date/"
+"brian7704/OpenTAK_ICU) ![GitHub-Veröffentlichung](https://img.shields.io/"
+"github/v/release/brian7704/OpenTAK_ICU) [![Hits](https://hits.seeyoufarm.com/"
+"api/count/incr/"
+"badge.svg?url=https%3A%2F%2Fgithub.com%2Fbrian7704%2FOpenTAK_ICU&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)"
+" ![GitHub Downloads (all assets, all releases)](https://img.shields.io/"
+"github/downloads/brian7704/OpenTAK_ICU/total)"
 
 #: ../../opentak_icu/index.md:1
 msgid "GitHub Release Date"
-msgstr ""
+msgstr "GitHub-Veröffentlichungsdatum"
 
 #: ../../opentak_icu/index.md:1
 msgid "GitHub Release"
-msgstr ""
+msgstr "GitHub-Veröffentlichung"
 
 #: ../../opentak_icu/index.md:1
 msgid "Hits"
-msgstr ""
+msgstr "Hits"
 
 #: ../../opentak_icu/index.md:1
 msgid "GitHub Downloads (all assets, all releases)"
-msgstr ""
+msgstr "GitHub-Downloads (alle Assets, alle Versionen)"
 
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:8
 msgid "OpenTAK ICU"
-msgstr ""
+msgstr "OpenTAK ICU"
 
 #: ../../opentak_icu/index.md:10
 msgid ""
@@ -210,10 +237,15 @@ msgid ""
 "[MediaMTX](https://github.com/bluenviron/mediamtx). Its primary focus is "
 "to work with the TAK ecosystem."
 msgstr ""
+"OpenTAK ICU ist eine Videostreaming-Anwendung, die auf [RootEncoder](https://"
+"github.com/pedroSG94/RootEncoder) basiert und Audio und Video an RTSP(S)-, "
+"RTMP(S)- und SRT-Server wie [MediaMTX](https://github.com/bluenviron/"
+"mediamtx) streamen kann. Ihr Hauptaugenmerk liegt auf der Integration in das "
+"TAK-Ökosystem."
 
 #: ../../opentak_icu/index.md:14
 msgid "Why?"
-msgstr ""
+msgstr "Warum?"
 
 #: ../../opentak_icu/index.md:16
 msgid ""
@@ -221,16 +253,22 @@ msgid ""
 "few features. Specifically it doesn't support streaming audio or using "
 "authentication and encryption (RTSPS) at the same time."
 msgstr ""
+"ATAK verfügt zwar bereits über das TAK ICU-Plugin, dieses scheint jedoch "
+"einige Funktionen nicht zu unterstützen. Insbesondere werden weder "
+"Audiostreaming noch die gleichzeitige Verwendung von Authentifizierung und "
+"Verschlüsselung (RTSPS) unterstützt."
 
 #: ../../opentak_icu/index.md:19
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
 #: ../../opentak_icu/index.md:21
 msgid ""
 "Get the APK from this repo's [latest "
 "release](https://github.com/brian7704/OpenTAK_ICU/releases/latest)"
 msgstr ""
+"Laden Sie die APK-Datei aus der [neuesten Version](https://github.com/"
+"brian7704/OpenTAK_ICU/releases/latest) dieses Repos herunter"
 
 #: ../../opentak_icu/index.md:23
 msgid "Features"
@@ -239,116 +277,119 @@ msgstr "Features"
 #: ../../opentak_icu/index.md:25 ../../opentak_icu/index.md:124
 #: ../../opentak_icu/video_codecs.md:1
 msgid "Video Codecs"
-msgstr ""
+msgstr "Video-Codecs"
 
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:26
 #: ../../opentak_icu/video_codecs.md ../../opentak_icu/video_codecs.md:8
 msgid "H264"
-msgstr ""
+msgstr "H264"
 
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:27
 #: ../../opentak_icu/video_codecs.md ../../opentak_icu/video_codecs.md:12
 msgid "H265"
-msgstr ""
+msgstr "H265"
 
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:28
 #: ../../opentak_icu/video_codecs.md ../../opentak_icu/video_codecs.md:18
 msgid "AV1"
-msgstr ""
+msgstr "AV1"
 
 #: ../../opentak_icu/index.md:33
 msgid "Streaming protocols"
-msgstr ""
+msgstr "Streaming-Protokolle"
 
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:34
 msgid "RTSP"
-msgstr ""
+msgstr "RTSP"
 
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:35
 msgid "RTSPS"
-msgstr ""
+msgstr "RTSPS"
 
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:36
 msgid "RTMP"
-msgstr ""
+msgstr "RTMP"
 
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:37
 msgid "RTMPS"
-msgstr ""
+msgstr "RTMPS"
 
 #: ../../opentak_icu/index.md:38
 msgid "SRT (SRT does not yet support authentication)"
-msgstr ""
+msgstr "SRT (SRT unterstützt noch keine Authentifizierung)"
 
 #: ../../opentak_icu/index.md:40 ../../opentak_icu/tak_server.md:19
 msgid "Authentication"
-msgstr "Authorisierung"
+msgstr "Authentifizierung"
 
 #: ../../opentak_icu/index.md:41 ../../opentak_icu/index.md:102
 msgid "Servers with self-signed certificates"
-msgstr ""
+msgstr "Server mit selbstsignierten Zertifikaten"
 
 #: ../../opentak_icu/index.md:42
 msgid ""
 "Background streaming and recording - Continue streaming and recording "
 "audio and video even if the app is minimized or the screen is off."
 msgstr ""
+"Hintergrund-Streaming und -Aufnahme – Audio- und Video-Streaming und -"
+"Aufnahme werden auch dann fortgesetzt, wenn die App minimiert oder der "
+"Bildschirm ausgeschaltet ist."
 
 #: ../../opentak_icu/index.md:44
 msgid "Record video to the device while streaming"
-msgstr ""
+msgstr "Nehmen Sie während des Streamings Videos auf dem Gerät auf"
 
 #: ../../opentak_icu/index.md:45
 msgid "Take photos while recording or streaming"
-msgstr ""
+msgstr "Machen Sie Fotos während der Aufnahme oder des Streamings"
 
 #: ../../opentak_icu/index.md:46
 msgid "Change between front and back cameras during stream"
-msgstr ""
+msgstr "Wechsel zwischen Front- und Rückkamera während des Streams"
 
 #: ../../opentak_icu/index.md:47
 msgid "Adaptive bitrate"
-msgstr ""
+msgstr "Adaptive Bitrate"
 
 #: ../../opentak_icu/index.md:48 ../../opentak_icu/uvc_cameras.md:1
 msgid "UVC Cameras"
-msgstr ""
+msgstr "UVC-Kameras"
 
 #: ../../opentak_icu/index.md:49
 msgid "Optional text overlay with GPS location and timestamp"
-msgstr ""
+msgstr "Optionale Textüberlagerung mit GPS-Standort und Zeitstempel"
 
 #: ../../opentak_icu/index.md:50
 msgid "Support for devices with built-in IR cameras"
-msgstr ""
+msgstr "Unterstützung für Geräte mit integrierten IR-Kameras"
 
 #: ../../opentak_icu/index.md:51
 msgid "Tested on the Ulefone Armor X13, Armor 22, and Armor 26 Ultra"
-msgstr ""
+msgstr "Getestet mit dem Ulefone Armor X13, Armor 22 und Armor 26 Ultra"
 
 #: ../../opentak_icu/index.md:52
 msgid "Requires root"
-msgstr ""
+msgstr "Erfordert Root-Zugriff"
 
 #: ../../opentak_icu/index.md:53
 msgid "Video filters"
-msgstr ""
+msgstr "Videofilter"
 
 #: ../../opentak_icu/index.md:55
 msgid "Planned features"
-msgstr ""
+msgstr "Geplante Funktionen"
 
 #: ../../opentak_icu/index.md:57
 msgid "KLV"
-msgstr ""
+msgstr "KLV"
 
 #: ../../opentak_icu/index.md:58
 msgid "Stream your device's screen instead of camera"
-msgstr ""
+msgstr "Streamen Sie den Bildschirm Ihres Geräts anstelle der Kamera"
 
 #: ../../opentak_icu/index.md:60
 msgid "Servers"
-msgstr ""
+msgstr "Server"
 
 #: ../../opentak_icu/index.md:62
 msgid ""
@@ -356,64 +397,77 @@ msgid ""
 "[MediaMTX](https://github.com/bluenviron/mediamtx) as the  streaming "
 "server but any RTSP/RTMP server should work."
 msgstr ""
+"Diese App wurde unter Verwendung von [MediaMTX](https://github.com/"
+"bluenviron/mediaamtx) als Streaming-Server entwickelt, aber jeder RTSP/RTMP-"
+"Server sollte funktionieren."
 
 #: ../../opentak_icu/index.md:65
 msgid "Viewing OpenTAK ICU streams from MediaMTX in ATAK"
-msgstr ""
+msgstr "Anzeige von OpenTAK ICU-Streams von MediaMTX in ATAK"
 
 #: ../../opentak_icu/index.md:67
 msgid ""
 "In the video tool, tap the + symbol to add a new stream and use the "
 "following settings:"
 msgstr ""
+"Tippen Sie im Videotool auf das Plus-Symbol, um einen neuen Stream "
+"hinzuzufügen, und verwenden Sie die folgenden Einstellungen:"
 
 #: ../../opentak_icu/index.md:68
 msgid "Type: rtsp"
-msgstr ""
+msgstr "Typ: rtsp"
 
 #: ../../opentak_icu/index.md:69
 msgid "Address: Your server's IP address or domain name"
-msgstr ""
+msgstr "Adresse: Die IP-Adresse oder der Domainname Ihres Servers"
 
 #: ../../opentak_icu/index.md:70
 msgid "Port: The defaults are 8554 for RTSP and 8322 for RTSPS"
-msgstr ""
+msgstr "Port: Die Standardports sind 8554 für RTSP und 8322 für RTSPS"
 
 #: ../../opentak_icu/index.md:71
 msgid "Path: The stream's path that is set in OpenTAK ICU's settings"
 msgstr ""
+"Pfad: Der in den OpenTAK ICU-Einstellungen festgelegte Pfad des Datenstroms"
 
 #: ../../opentak_icu/index.md:72
 msgid "Username/Password: Required only if your server enforces authentication"
 msgstr ""
+"Benutzername/Passwort: Nur erforderlich, wenn Ihr Server eine "
+"Authentifizierung erzwingt"
 
 #: ../../opentak_icu/index.md:73
 msgid ""
 "Reliable P2P Connection: Enables a TCP connection and is required if "
 "there is a NAT/firewall between your EUD and the server."
 msgstr ""
+"Zuverlässige P2P-Verbindung: Ermöglicht eine TCP-Verbindung und ist "
+"erforderlich, wenn sich zwischen Ihrem Endgerät und dem Server ein NAT/eine "
+"Firewall befindet."
 
 #: ../../opentak_icu/index.md:76
 msgid "Viewing the stream in a browser"
-msgstr ""
+msgstr "Den Stream im Browser ansehen"
 
 #: ../../opentak_icu/index.md:78
 msgid ""
 "When using MediaMTX and streaming with H264, you can watch the live "
 "stream in a browser by going to"
 msgstr ""
+"Bei Verwendung von MediaMTX und Streaming mit H264 können Sie den Livestream "
+"in einem Browser ansehen, indem Sie zu folgender Adresse gehen"
 
 #: ../../opentak_icu/index.md:80
 msgid "`http://your_server_ip:8888/stream_path`"
-msgstr ""
+msgstr "`http://your_server_ip:8888/stream_path`"
 
 #: ../../opentak_icu/index.md:82
 msgid "for an HLS stream or"
-msgstr ""
+msgstr "für einen HLS-Stream oder"
 
 #: ../../opentak_icu/index.md:84
 msgid "`http://your_server_ip:8889/stream_path`"
-msgstr ""
+msgstr "`http://your_server_ip:8889/stream_path`"
 
 #: ../../opentak_icu/index.md:86
 msgid ""
@@ -422,26 +476,31 @@ msgid ""
 "does not support AAC audio so you will need to use OPUS or G711 if you're"
 " viewing the stream via WebRTC."
 msgstr ""
+"Für einen WebRTC-Stream. Beachten Sie, dass die meisten Browser H.265 noch "
+"nicht unterstützen. Weitere Informationen finden Sie unter [CanIUse](https://"
+"caniuse.com/hevc). Beachten Sie außerdem, dass WebRTC kein AAC-Audio "
+"unterstützt. Sie benötigen daher OPUS oder G.711, wenn Sie den Stream über "
+"WebRTC ansehen."
 
 #: ../../opentak_icu/index.md:90
 msgid "Viewing streams in VLC"
-msgstr ""
+msgstr "Streams in VLC ansehen"
 
 #: ../../opentak_icu/index.md:92
 msgid "Click on Media -> Open Network Stream"
-msgstr ""
+msgstr "Klicken Sie auf Medien -> Netzwerkstream öffnen"
 
 #: ../../opentak_icu/index.md:93
 msgid "In the URL field enter `rtsp://your_server_address:8554/your_path`"
-msgstr ""
+msgstr "Geben Sie im Feld URL `rtsp://Ihre_Serveradresse:8554/Ihr_Pfad` ein"
 
 #: ../../opentak_icu/index.md:94
 msgid "Click Play"
-msgstr ""
+msgstr "Auf „Abspielen“ klicken"
 
 #: ../../opentak_icu/index.md ../../opentak_icu/index.md:96
 msgid "Adaptive Bitrate"
-msgstr ""
+msgstr "Adaptive Bitrate"
 
 #: ../../opentak_icu/index.md:98
 msgid ""
@@ -450,6 +509,10 @@ msgid ""
 "fast enough, the bitrate will lower. If the connection is good the "
 "bitrate will max out at what the bitrate setting's value is."
 msgstr ""
+"Wenn die adaptive Bitrate aktiviert ist, passt sich die Videobitrate Ihrer "
+"Netzwerk-/Internetverbindung an. Ist die Verbindung zu langsam, wird die "
+"Bitrate reduziert. Bei einer guten Verbindung wird die Bitrate auf den in "
+"der Einstellung festgelegten Maximalwert erhöht."
 
 #: ../../opentak_icu/index.md:104
 msgid ""
@@ -462,6 +525,15 @@ msgid ""
 "the Test Certificate button. This simply validates that the certificate "
 "is the correct format and that the password is correct."
 msgstr ""
+"Wenn Ihr Server selbstsignierte Zertifikate verwendet und Sie verschlüsselte "
+"Audio- und Videodaten streamen möchten, benötigen Sie das Truststore-"
+"Zertifikat Ihres Servers im PKCS12-Format (Dateiendung .p12). Falls Ihr RTSP-"
+"Server dieselben Zertifikate wie Ihr TAK-Server verwendet, können Sie "
+"dasselbe Truststore-Zertifikat und dasselbe Zertifikatpasswort in OpenTAK "
+"ICU verwenden. Nachdem Sie das Zertifikat ausgewählt und das "
+"Zertifikatpasswort eingegeben haben, klicken Sie auf die Schaltfläche „"
+"Zertifikat testen“. Dadurch wird lediglich überprüft, ob das Zertifikat das "
+"korrekte Format aufweist und das Passwort korrekt ist."
 
 #: ../../opentak_icu/index.md:111
 msgid "Feature Comparison"
@@ -473,99 +545,99 @@ msgstr "Streaming-Protokolle"
 
 #: ../../opentak_icu/index.md
 msgid "TAK ICU"
-msgstr ""
+msgstr "TAK ICU"
 
 #: ../../opentak_icu/index.md:140
 msgid "Other Features"
-msgstr ""
+msgstr "Weitere Funktionen"
 
 #: ../../opentak_icu/index.md
 msgid "Broadcast CoT on local network"
-msgstr ""
+msgstr "CoT wird im lokalen Netzwerk ausgestrahlt"
 
 #: ../../opentak_icu/index.md
 msgid "Send CoT to TAK server"
-msgstr ""
+msgstr "Sende CoT an den TAK-Server"
 
 #: ../../opentak_icu/index.md
 msgid "Show video on map (KLV)"
-msgstr ""
+msgstr "Video auf Karte anzeigen (KLV)"
 
 #: ../../opentak_icu/index.md
 msgid "View video in ATAK/WinTAK video tool"
-msgstr ""
+msgstr "Video im ATAK/WinTAK-Videotool ansehen"
 
 #: ../../opentak_icu/index.md
 msgid "Stream to Wowza"
-msgstr ""
+msgstr "Streamen Sie zu Wowza"
 
 #: ../../opentak_icu/index.md
 msgid "Stream in background"
-msgstr ""
+msgstr "Stream im Hintergrund"
 
 #: ../../opentak_icu/index.md
 msgid "Take a photo while streaming"
-msgstr ""
+msgstr "Mach ein Foto, während du streamst"
 
 #: ../../opentak_icu/index.md
 msgid "Switch camera while streaming"
-msgstr ""
+msgstr "Kamera während des Streamings wechseln"
 
 #: ../../opentak_icu/index.md
 msgid "Turn on flashlight while streaming"
-msgstr ""
+msgstr "Schalte das Licht wärend des Streamings ein"
 
 #: ../../opentak_icu/index.md
 msgid "Record to device while streaming"
-msgstr ""
+msgstr "Aufnahme auf dem Gerät während des Streamings"
 
 #: ../../opentak_icu/index.md
 msgid "Change Video/Audio bitrate"
-msgstr ""
+msgstr "Video-/Audio-Bitrate ändern"
 
 #: ../../opentak_icu/index.md
 msgid "1080p"
-msgstr ""
+msgstr "1080p"
 
 #: ../../opentak_icu/index.md
 msgid "4K"
-msgstr ""
+msgstr "4K"
 
 #: ../../opentak_icu/index.md
 msgid "Change FPS"
-msgstr ""
+msgstr "FPS ändern"
 
 #: ../../opentak_icu/index.md
 msgid "Compass Display"
-msgstr ""
+msgstr "Kompassanzeige"
 
 #: ../../opentak_icu/index.md
 msgid "Server Authentication"
-msgstr ""
+msgstr "Serverauthentifizierung"
 
 #: ../../opentak_icu/index.md
 msgid "Yes (only when using RTSP)"
-msgstr ""
+msgstr "Ja (nur bei Verwendung von RTSP)"
 
 #: ../../opentak_icu/index.md
 msgid "Yes (RTSP(S) and RTMP(S)"
-msgstr ""
+msgstr "Ja (RTSP(S) und RTMP(S))"
 
 #: ../../opentak_icu/index.md
 msgid "UVC Camera Support"
-msgstr ""
+msgstr "UVC-Kameraunterstützung"
 
 #: ../../opentak_icu/index.md ../../opentak_icu/video_filters.md:1
 msgid "Video Filters"
-msgstr ""
+msgstr "Videofilter"
 
 #: ../../opentak_icu/index.md
 msgid "Text Overlay"
-msgstr ""
+msgstr "Textüberlagerung"
 
 #: ../../opentak_icu/ir_cameras.md:1
 msgid "IR Cameras"
-msgstr ""
+msgstr "IR-Kameras"
 
 #: ../../opentak_icu/ir_cameras.md:3
 msgid ""
@@ -575,10 +647,16 @@ msgid ""
 "server](https://discord.gg/6uaVHjtfXN) or by opening an issue on the "
 "[GitHub repo](https://github.com/brian7704/OpenTAK_ICU/issues)."
 msgstr ""
+"OpenTAK ICU unterstützt Geräte mit integrierten Infrarotkameras. Es wurde "
+"auf dem Ulefone Armor X13, Armor 22 und Armor 26 Ultra getestet. Falls Sie "
+"ein anderes Modell ausprobieren, teilen Sie uns bitte auf dem "
+"[Discord-Server](https://discord.gg/6uaVHjtfXN) oder durch Erstellen eines "
+"Issues im [GitHub-Repository](https://github.com/brian7704/OpenTAK_ICU/"
+"issues) mit, ob es funktioniert hat oder nicht."
 
 #: ../../opentak_icu/ir_cameras.md:7
 msgid "Root"
-msgstr ""
+msgstr "Root"
 
 #: ../../opentak_icu/ir_cameras.md:9
 msgid ""
@@ -586,10 +664,13 @@ msgid ""
 "enable or disable them. OpenTAK ICU controls them by running the "
 "following commands as root."
 msgstr ""
+"Da die LEDs der IR-Kamera auf bestimmte Weise gesteuert werden, sind Root-"
+"Rechte erforderlich, um sie zu aktivieren oder zu deaktivieren. OpenTAK ICU "
+"steuert sie durch Ausführen der folgenden Befehle als Root."
 
 #: ../../opentak_icu/mediamtx.md:1
 msgid "MediaMTX"
-msgstr ""
+msgstr "MediaMTX"
 
 #: ../../opentak_icu/mediamtx.md:3
 msgid ""
@@ -599,10 +680,15 @@ msgid ""
 "streams in a web browser via WebRTC or HLS, or in video apps such as VLC "
 "via RTSP."
 msgstr ""
+"[MediaMTX](https://github.com/bluenviron/mediamtx) kann als selbstgehosteter "
+"Streaming-Server verwendet werden. Er unterstützt alle Streaming-Protokolle, "
+"Audio- und Videocodecs, die auch von OpenTAK ICU genutzt werden. Streams "
+"können über WebRTC oder HLS im Webbrowser oder über RTSP in Videoanwendungen "
+"wie VLC wiedergegeben werden."
 
 #: ../../opentak_icu/recording.md:1
 msgid "Recording"
-msgstr ""
+msgstr "Aufnahme"
 
 #: ../../opentak_icu/recording.md:3
 msgid ""
@@ -610,6 +696,10 @@ msgid ""
 "streaming. Note that for audio, only the AAC codec is supported. If OPUS "
 "or G711 codecs are used, the video will record without audio."
 msgstr ""
+"OpenTAK ICU unterstützt die Aufzeichnung von Videodateien auf dem lokalen "
+"Gerät während des Streamings. Beachten Sie, dass für Audio nur der AAC-Codec "
+"unterstützt wird. Bei Verwendung der Codecs OPUS oder G711 wird das Video "
+"ohne Ton aufgezeichnet."
 
 #: ../../opentak_icu/recording.md:6
 msgid ""
@@ -618,6 +708,11 @@ msgid ""
 "device` in `Video Settings`. Also make sure that the audio codec is set "
 "to AAC."
 msgstr ""
+"Es besteht auch die Möglichkeit, ohne Streaming aufzunehmen. Deaktivieren "
+"Sie dazu einfach die Option  `Video streamen` in den `Streaming-"
+"Einstellungen` und aktivieren Sie die Option `Video auf diesem Gerät "
+"aufnehmen` in den `Video Einstellungen`. Stellen Sie außerdem sicher, dass "
+"der Audio-Codec auf AAC eingestellt ist."
 
 #: ../../opentak_icu/streaming_protocols.md:5
 msgid ""
@@ -625,18 +720,25 @@ msgid ""
 "you're using TCP you can optionally enable RTSPS encryption. RTSP over "
 "UDP does not support encryption."
 msgstr ""
+"RTSP ist das Standardprotokoll von OpenTAK ICU und unterstützt sowohl TCP "
+"als auch UDP. Bei Verwendung von TCP kann die RTSP-Verschlüsselung optional "
+"aktiviert werden. RTSP über UDP unterstützt keine Verschlüsselung."
 
 #: ../../opentak_icu/streaming_protocols.md:10
 msgid ""
 "RTMP supports H264, H265, and AV1 video codecs as well as AAC and G711 "
 "audio codecs."
 msgstr ""
+"RTMP unterstützt die Videocodecs H264, H265 und AV1 sowie die Audiocodecs "
+"AAC und G711."
 
 #: ../../opentak_icu/streaming_protocols.md:14
 msgid ""
 "SRT supports H264 and H265 video codecs, as well as ACC and OPUS audio "
 "codecs. It does not support authentication yet."
 msgstr ""
+"SRT unterstützt die Videocodecs H264 und H265 sowie die Audiocodecs AAC und "
+"OPUS. Eine Authentifizierung wird derzeit noch nicht unterstützt."
 
 #: ../../opentak_icu/streaming_protocols.md:18
 msgid ""
@@ -646,10 +748,16 @@ msgid ""
 "will send Multicast CoT messages which will put a sensor icon with its "
 "field of view on other EUD's in the same network."
 msgstr ""
+"Multicast-UDP ermöglicht das Streaming über virtuelle Netzwerkdienste Ihres "
+"lokalen Netzwerks wie ZeroTier und TailScale. Für die Verwendung von "
+"Multicast ist kein Server erforderlich. Sobald Ihr Gerät eine "
+"Standortbestimmung durchgeführt hat, sendet OpenTAK ICU Multicast-CoT-"
+"Nachrichten, die anderen Endgeräten im selben Netzwerk ein Sensorsymbol mit "
+"dem zugehörigen Sichtfeld anzeigen."
 
 #: ../../opentak_icu/streaming_protocols.md:22
 msgid "Valid Multicast IPs"
-msgstr ""
+msgstr "Gültige Multicast-IPs"
 
 #: ../../opentak_icu/streaming_protocols.md:24
 msgid ""
@@ -659,10 +767,15 @@ msgid ""
 "article](https://en.wikipedia.org/wiki/Multicast_address) for more "
 "details."
 msgstr ""
+"Der Multicast-IP-Adressbereich liegt zwischen 224.1.0.0 und 239.255.255.255. "
+"Einige IPs und IP-Bereiche sind jedoch reserviert und können nicht verwendet "
+"werden. Die meisten IPs im Bereich von 232.0.0.0 bis 239.255.255.255 können "
+"bedenkenlos verwendet werden. Weitere Informationen finden Sie in diesem "
+"[Wikipedia-Artikel](https://en.wikipedia.org/wiki/Multicast_address)."
 
 #: ../../opentak_icu/tak_server.md:1
 msgid "TAK Server"
-msgstr ""
+msgstr "TAK-Server"
 
 #: ../../opentak_icu/tak_server.md:3
 msgid ""
@@ -673,6 +786,13 @@ msgid ""
 " server's /Marti/vcm API endpoint. This allows EUDs to download the video"
 " stream details in the video tool."
 msgstr ""
+"OpenTAK ICU kann sich mit einem TAK-Server verbinden und Cursor-on-Target-"
+"Nachrichten im XML-Format senden. Dadurch wird auf den Karten aller mit dem "
+"Server verbundenen Endgeräte ein Sensorsymbol angezeigt. Das Symbol zeigt "
+"außerdem das Sichtfeld der Kamera an. Zusätzlich sendet OpenTAK ICU eine "
+"HTTP-POST-Anfrage an den API-Endpunkt /Marti/vcm Ihres Servers. Dies "
+"ermöglicht es den Endgeräten, die Videostream-Details im Videotool "
+"herunterzuladen."
 
 #: ../../opentak_icu/tak_server.md:8
 msgid "TCP"
@@ -683,6 +803,8 @@ msgid ""
 "If you're using TCP the only settings that are required are the server "
 "address and the port. The port defaults to 8088."
 msgstr ""
+"Bei Verwendung von TCP sind lediglich die Serveradresse und der Port "
+"erforderlich. Der Standardport ist 8088."
 
 #: ../../opentak_icu/tak_server.md:12
 msgid "SSL"
@@ -698,16 +820,26 @@ msgid ""
 "validate that the certificates are in the right format and the password "
 "is correct."
 msgstr ""
+"Wenn Ihr Server SSL benötigt, tippen Sie auf den Schalter `Mit ATAK-Server "
+"über SSL verbinden`. Anschließend müssen Sie Ihre Truststore- und "
+"Clientzertifikate sowie die zugehörigen Passwörter angeben. Dies sind "
+"dieselben Zertifikate und Passwörter, die Sie für die Verbindung von ATAK "
+"mit Ihrem TAK-Server verwenden. Nachdem Sie beide Zertifikate angegeben "
+"haben, tippen Sie auf die Option `Zertifikat testen`, um zu überprüfen, ob "
+"die Zertifikate das richtige Format haben und das Passwort korrekt ist."
 
 #: ../../opentak_icu/tak_server.md:21
 msgid ""
 "If your TAK server requires authentication, tap the `Enable ATAK "
 "Authentication` switch and input your username and password."
 msgstr ""
+"Falls Ihr TAK-Server eine Authentifizierung erfordert, tippen Sie auf den "
+"Schalter `ATAK-Authentifizierung aktivieren` und geben Sie Ihren "
+"Benutzernamen und Ihr Passwort ein."
 
 #: ../../opentak_icu/tak_server.md:23
 msgid "TAK Servers Tested"
-msgstr ""
+msgstr "TAK-Server getestet"
 
 #: ../../opentak_icu/tak_server.md:25
 msgid ""
@@ -716,6 +848,10 @@ msgid ""
 "[OpenTAKServer](https://github.com/brian7704/OpenTAKServer) and "
 "[FreeTAKServer](https://github.com/FreeTAKTeam/FreeTakServer)."
 msgstr ""
+"OpenTAK ICU wurde getestet und funktioniert mit dem offiziellen TAK-Server "
+"[tak.gov](https://tak.gov/), [OpenTAKServer](https://github.com/brian7704/"
+"OpenTAKServer) und [FreeTAKServer](https://github.com/FreeTAKTeam/"
+"FreeTakServer)."
 
 #: ../../opentak_icu/uvc_cameras.md:3
 msgid ""
@@ -726,6 +862,13 @@ msgid ""
 "server](https://discord.gg/6uaVHjtfXN) or by opening an issue on the "
 "[GitHub repo](https://github.com/brian7704/OpenTAK_ICU/issues)."
 msgstr ""
+"OpenTAK ICU unterstützt UVC-Kameras, die über USB angeschlossen sind, wie z. "
+"B. die [MOHOC 2](https://www.mohoc.com/product/mohoc-2-usb-uvc/). Alle UVC-"
+"Kameras, einschließlich der von HelmCam unterstützten, sollten "
+"funktionieren. Wenn Sie eine Kamera testen, teilen Sie uns bitte auf dem "
+"[Discord-Server](https://discord.gg/6uaVHjtfXN) oder durch Erstellen eines "
+"Issues im [GitHub-Repository](https://github.com/brian7704/OpenTAK_ICU/"
+"issues) mit, ob sie funktioniert hat oder nicht."
 
 #: ../../opentak_icu/uvc_cameras.md:7
 msgid "Usage"
@@ -737,6 +880,10 @@ msgid ""
 " up asking if you want to all OpenTAK ICU to use it. When you click yes, "
 "OpenTAK ICU will open automatically if it's not already opened."
 msgstr ""
+"Wenn Sie Ihre Kamera per USB mit Ihrem Smartphone verbinden, erscheint ein "
+"Dialogfeld, in dem Sie gefragt werden, ob OpenTAK ICU die Kamera verwenden "
+"soll. Wenn Sie auf „Ja“ klicken, öffnet sich OpenTAK ICU automatisch, sofern "
+"es noch nicht geöffnet ist."
 
 #: ../../opentak_icu/uvc_cameras.md:12
 msgid ""
@@ -745,6 +892,10 @@ msgid ""
 "Source → UVC camera, or tap the three vertical dots icon  (looks like ⋮) "
 "→ Video Source → UVC Camera."
 msgstr ""
+"Um von den internen Kameras des Geräts zur UVC-Kamera zu wechseln, tippen "
+"Sie entweder auf die Schaltfläche „Einstellungen“ (sieht aus wie ⚙) → "
+"Videoeinstellungen → Videoquelle → UVC-Kamera oder tippen Sie auf das Symbol "
+"mit den drei vertikalen Punkten (sieht aus wie ⋮) → Videoquelle → UVC-Kamera."
 
 #: ../../opentak_icu/uvc_cameras.md:16
 msgid ""
@@ -754,10 +905,16 @@ msgid ""
 "connected. Likewise, the camera can be disconnected and video will "
 "restart automatically when it is reconnected."
 msgstr ""
+"Beim Umschalten auf die UVC-Kameraquelle muss die Kamera nicht angeschlossen "
+"sein. Ist sie nicht angeschlossen, wird anstelle des Videobildes ein "
+"schwarzer Bildschirm angezeigt. Die Videowiedergabe startet automatisch, "
+"sobald die Kamera angeschlossen ist. Ebenso kann die Kamera getrennt werden; "
+"die Videowiedergabe wird automatisch neu gestartet, sobald die Kamera wieder "
+"angeschlossen wird."
 
 #: ../../opentak_icu/uvc_cameras.md:20
 msgid "Setting Resolution"
-msgstr ""
+msgstr "Auflösung einstellen"
 
 #: ../../opentak_icu/uvc_cameras.md:22
 msgid ""
@@ -768,10 +925,17 @@ msgid ""
 "UVC camera. Check your camera's documentation for the best resolution. "
 "The default resolution in OpenTAK ICU is 1920x1080."
 msgstr ""
+"OpenTAK ICU erkennt die Auflösung der UVC-Kamera nicht automatisch. Um die "
+"Auflösung manuell einzustellen, tippen Sie auf Einstellungen (⚙) → "
+"Videoeinstellungen → UVC-Kamera-Auflösung (Breite) und UVC-Kamera-Auflösung "
+"(Höhe). Falls diese Optionen ausgegraut sind, tippen Sie auf Videoquelle und "
+"wählen Sie UVC-Kamera. Informationen zur optimalen Auflösung finden Sie in "
+"der Dokumentation Ihrer Kamera. Die Standardauflösung in OpenTAK ICU beträgt "
+"1920x1080."
 
 #: ../../opentak_icu/uvc_cameras.md:27
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 #: ../../opentak_icu/uvc_cameras.md:29
 msgid ""
@@ -779,18 +943,23 @@ msgid ""
 "capabilities, they will not be used. Instead, audio will come from your "
 "device's internal microphone."
 msgstr ""
+"UVC-Kameras unterstützen ausschließlich Videoaufnahmen. Falls Ihre Kamera "
+"über Audiofunktionen verfügt, werden diese nicht genutzt. Der Ton wird "
+"stattdessen über das interne Mikrofon Ihres Geräts ausgegeben."
 
 #: ../../opentak_icu/uvc_cameras.md:32
 msgid "Flashlight"
-msgstr ""
+msgstr "Licht"
 
 #: ../../opentak_icu/uvc_cameras.md:34
 msgid "Your device's built-in flashlight can be enabled when using a UVC camera."
 msgstr ""
+"Das in Ihrem Gerät integrierte Licht kann bei Verwendung einer UVC-Kamera "
+"aktiviert werden."
 
 #: ../../opentak_icu/video_codecs.md:3
 msgid "Hardware Encoding"
-msgstr ""
+msgstr "Hardware-Codierung"
 
 #: ../../opentak_icu/video_codecs.md:5
 msgid ""
@@ -798,12 +967,17 @@ msgid ""
 "doesn't have an encoder for a particular codec you will have to choose a "
 "different one."
 msgstr ""
+"OpenTAK ICU nutzt die Hardware-Video-Encoder Ihres Geräts. Falls Ihr Gerät "
+"keinen Encoder für einen bestimmten Codec besitzt, müssen Sie einen anderen "
+"auswählen."
 
 #: ../../opentak_icu/video_codecs.md:10
 msgid ""
 "H264 is widely supported both in Android devices and web browsers. Use "
 "this codec for the best compatibility."
 msgstr ""
+"H264 wird sowohl von Android-Geräten als auch von Webbrowsern weitgehend "
+"unterstützt. Verwenden Sie diesen Codec für optimale Kompatibilität."
 
 #: ../../opentak_icu/video_codecs.md:14
 msgid ""
@@ -813,6 +987,12 @@ msgid ""
 "view the stream in a browser. But if you will view the stream another "
 "way, such as [VLC](https://www.videolan.org/), H265 is preferred."
 msgstr ""
+"H.265 bietet eine bessere Komprimierung als H.264, was eine höhere "
+"Videoqualität bei geringerem Bandbreitenbedarf bedeutet. Viele Webbrowser "
+"unterstützen H.265 jedoch noch nicht. Daher empfiehlt sich die Verwendung "
+"von H.264, wenn Sie den Stream in einem Browser ansehen möchten. Für andere "
+"Wiedergabemethoden, wie beispielsweise [VLC](https://www.videolan.org/), ist "
+"H.265 vorzuziehen."
 
 #: ../../opentak_icu/video_codecs.md:20
 msgid ""
@@ -825,6 +1005,15 @@ msgid ""
 "Android will use a software encoder which will probably drain the battery"
 " faster. AV1 is not supported when streaming via SRT."
 msgstr ""
+"AV1 wird von allen Streaming-Protokollen unterstützt. Die meisten Geräte "
+"verfügen jedoch nicht über einen Hardware-AV1-Encoder. Zum Zeitpunkt der "
+"Veröffentlichung dieses Artikels (Februar 2024) scheinen das Google Pixel 8 "
+"und das Pixel 8 Pro die einzigen Geräte mit AV1-Hardware-Encodern zu sein. "
+"Ab Android 14 erzwingt Google jedoch die AV1-Unterstützung. Das bedeutet: "
+"Wenn Sie Android 14 oder höher verwenden, können Sie AV1 in OpenTAK ICU "
+"nutzen. Geräte ohne Hardware-Encoder verwenden hingegen einen Software-"
+"Encoder, was den Akkuverbrauch wahrscheinlich erhöht. AV1 wird beim "
+"Streaming über SRT nicht unterstützt."
 
 #: ../../opentak_icu/video_filters.md:3
 msgid ""
@@ -833,10 +1022,14 @@ msgid ""
 "filters can be enabled and disabled while streaming from either the "
 "devices front or back cameras, or from a UVC camera."
 msgstr ""
+"OpenTAK ICU unterstützt verschiedene Videofilter der [RootEncoder](https://"
+"github.com/pedroSG94/RootEncoder)-Bibliothek. Diese Filter lassen sich "
+"während des Streamings von der Vorder- oder Rückkamera des Geräts oder von "
+"einer UVC-Kamera aktivieren und deaktivieren."
 
 #: ../../opentak_icu/video_filters.md:6
 msgid "Text Overlay Filter"
-msgstr ""
+msgstr "Textüberlagerungsfilter"
 
 #: ../../opentak_icu/video_filters.md:8
 msgid ""
@@ -845,10 +1038,14 @@ msgid ""
 "option under Settings → Video Settings → Text Overlay Time Zone to switch"
 " between UTC and your local time zone."
 msgstr ""
+"Der Text-Overlay-Filter fügt den Streampfad, die GPS-Position und den "
+"aktuellen Zeitstempel in die linke untere Ecke des Videos ein. Unter "
+"Einstellungen → Videoeinstellungen → Zeitzone für Text-Overlay können Sie "
+"zwischen UTC und Ihrer lokalen Zeitzone umschalten."
 
 #: ../../opentak_icu/video_filters.md:12
 msgid "Chroma Key Filter"
-msgstr ""
+msgstr "Chroma-Key-Filter"
 
 #: ../../opentak_icu/video_filters.md:14
 msgid ""
@@ -860,11 +1057,19 @@ msgid ""
 "camera at the green rectangle below. You should see the default "
 "background or the image you selected."
 msgstr ""
+"Der Chroma-Key-Filter ersetzt den grünen Hintergrund entweder durch das "
+"Standardhintergrundbild oder ein Bild Ihrer Wahl. Um ein Bild festzulegen, "
+"tippen Sie auf „Einstellungen“ → „Videoeinstellungen“ → „Chroma-Key-"
+"Hintergrund“ und wählen Sie ein beliebiges Bild von Ihrem Gerät aus. Dieser "
+"Filter benötigt einen hellgrünen Hintergrund. Sie können ihn testen, indem "
+"Sie ihn in OpenTAK ICU aktivieren und Ihre Kamera auf das grüne Rechteck "
+"unten richten. Sie sollten den Standardhintergrund oder das von Ihnen "
+"ausgewählte Bild sehen."
 
 #: ../../opentak_icu/video_filters.md:19
 msgid "![!Chroma Key Test](../images/chroma_key.png)"
-msgstr ""
+msgstr "![!Chroma Key Test](../images/chroma_key.png)"
 
 #: ../../opentak_icu/video_filters.md:19
 msgid "!Chroma Key Test"
-msgstr ""
+msgstr "!Chroma-Schlüsseltest"
