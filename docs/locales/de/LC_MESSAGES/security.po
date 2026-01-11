@@ -4,25 +4,26 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/security/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../security.md:1
 msgid "Security"
-msgstr ""
+msgstr "Sicherheit"
 
 #: ../../security.md:3
 msgid ""
@@ -35,6 +36,15 @@ msgid ""
 "the switch in the TCP box of the UI's dashboard, or set the "
 "`OTS_ENABLE_TCP_STREAMING_PORT` option to `false` in `config.yml`"
 msgstr ""
+"Zur Erhöhung der Sicherheit wird empfohlen, den TCP-CoT-Streaming-Port zu "
+"deaktivieren und nginx so zu konfigurieren, dass es keine unverschlüsselten "
+"HTTP-Anfragen auf den Ports 80 und 8080 mehr entgegennimmt. Alle über diese "
+"Ports gesendeten und empfangenen Daten sind unverschlüsselt. Jeder Dritte, "
+"der diese Daten abfängt, kann Informationen wie EUD-Positionen, Passwörter, "
+"Geochats und andere Daten im Klartext einsehen. Um den TCP-CoT-Streaming-"
+"Port zu deaktivieren, klicken Sie einfach den Schalter im TCP-Bereich des "
+"Dashboards der Benutzeroberfläche oder setzen die Option "
+"`OTS_ENABLE_TCP_STREAMING_PORT` option to `false` in `config.yml`"
 
 #: ../../security.md:9
 msgid ""
@@ -52,10 +62,24 @@ msgid ""
 "enabled/ots_http` and restart nginx by running `sudo systemctl restart "
 "nginx`."
 msgstr ""
+"Ein weiteres Problem stellt die Marti API dar. Wenn TAK-Clients die Marti "
+"API über Port 8080 abfragen, wird keinerlei Authentifizierung verwendet. Das "
+"bedeutet, dass jeder Dritte, der Zugriff auf Port 8080 Ihres Servers hat, "
+"mit der Marti API interagieren kann und beispielsweise Datenpakete hoch- "
+"oder herunterladen, Videostreams abfragen, eine Liste von EUDs abrufen usw. "
+"kann – alles ohne Authentifizierung. Bei der Abfrage der Marti API über "
+"HTTPS auf Port 8443 senden TAK-Clients hingegen ein Client-Zertifikat, das "
+"vom Server überprüft wird. Diese Zertifikate können ausschließlich über die "
+"[certificate enrollment](certificate_enrollment.md) bezogen werden, die "
+"einen Benutzernamen und ein Passwort erfordert, oder indem ein Administrator "
+"ein Zertifikats-Datenpaket erstellt und dieses einem Benutzer zur Verfügung "
+"stellt. Um zu verhindern, dass nginx auf den Ports 80 und 8080 lauscht, "
+"löschen Sie `/etc/nginx/sites-enabled/ots_http` und starten nginx "
+"anschließend mit `sudo systemctl restart nginx` neu."
 
 #: ../../security.md:18
 msgid "Blocking Port Scanning Bots"
-msgstr ""
+msgstr "Blockieren von Port-Scanning-Bots"
 
 #: ../../security.md:20
 msgid ""
@@ -64,26 +88,35 @@ msgid ""
 "addresses can be done with the following bash script that is run via a "
 "cron job."
 msgstr ""
+"Das GitHub-Repository [ipsum](https://github.com/stamparm/ipsum) führt eine "
+"täglich aktualisierte Liste schädlicher IP-Adressen. Diese IP-Adressen "
+"können mit dem folgenden Bash-Skript blockiert werden, das per Cronjob "
+"ausgeführt wird."
 
 #: ../../security.md:32
 msgid "Setting up the ipsum Script"
-msgstr ""
+msgstr "Einrichten des ipsum-Skripts"
 
 #: ../../security.md:34
 msgid ""
 "Copy and paste the above script to a file somewhere on your server, for "
 "example `/opt/ipsum.sh`."
 msgstr ""
+"Kopieren Sie das obige Skript und fügen Sie es in eine Datei an einem "
+"beliebigen Ort auf Ihrem Server ein, zum Beispiel `/opt/ipsum.sh`."
 
 #: ../../security.md:35
 msgid ""
 "Make the script executable `sudo chmod +x /opt/ipsum.sh` (substitute "
 "`/opt/ipsum.sh` with the actual location you saved the script to)"
 msgstr ""
+"Machen Sie das Skript ausführbar `sudo chmod +x /opt/ipsum.sh` (ersetzen Sie "
+"`/opt/ipsum.sh` durch den tatsächlichen Speicherort, an dem Sie das Skript "
+"gespeichert haben)"
 
 #: ../../security.md:36
 msgid "Add a cron job to run every day at midnight"
-msgstr ""
+msgstr "Füge einen Cronjob hinzu, der jeden Tag um Mitternacht ausgeführt wird"
 
 #: ../../security.md:37
 msgid ""
@@ -92,10 +125,14 @@ msgid ""
 "`nano`, press `ctrl+o` to save, press `enter` to confirm, then `ctrl+x` "
 "to exit"
 msgstr ""
+"`sudo crontab -e` 2. Fügen Sie die folgende Zeile am Ende der Crontab-Datei "
+"hinzu: `0 0 * * * /opt/ipsum.sh` 3. Speichern Sie die Crontab-Datei. Wenn "
+"Sie `nano` verwenden, drücken Sie `ctrl+o` zum Speichern, `enter` zum "
+"Bestätigen und anschließend `ctrl+x` zum Beenden"
 
 #: ../../security.md:41
 msgid "IPTables Rules"
-msgstr ""
+msgstr "IPTables-Regeln"
 
 #: ../../security.md:43
 msgid ""
@@ -105,6 +142,11 @@ msgid ""
 "you can load them with this command `iptables-restore < "
 "/path/to/iptables.rules`"
 msgstr ""
+"Das folgende IPTables-Regelset öffnet alle von OpenTAKServer verwendeten "
+"Ports und blockiert alle anderen. Es enthält auch das ipsum-Regelset. Sie "
+"können dieser Liste nach Bedarf Regeln hinzufügen oder entfernen. Nachdem "
+"Sie die Regeln in einer Datei gespeichert haben, können Sie sie mit diesem "
+"Befehl laden: `iptables-restore < /Pfad/zu/iptables.rules`"
 
 #: ../../security.md:47
 msgid ""
@@ -113,10 +155,16 @@ msgid ""
 "minimum, you'll need to open 8443, 443, 8089, and 8446 for TAK to work, "
 "and 8080, 80, and 8088 if you're using TCP."
 msgstr ""
+"Welche Regeln aktiviert werden müssen, hängt von den verwendeten Komponenten "
+"ab. Die Liste aller Dienste finden Sie in der Datei [Architecture]"
+"(architecture.md). Für die Funktion von TAK müssen mindestens die Ports "
+"8443, 443, 8089 und 8446 geöffnet sein, bei Verwendung von TCP zusätzlich "
+"die Ports 8080, 80 und 8088."
 
 #: ../../security.md:85
 msgid ""
 "Once the rules are loaded, install the `iptables-persistent` package in "
 "Ubuntu to re-apply them after every reboot."
 msgstr ""
-
+"Sobald die Regeln geladen sind, installieren Sie das Paket `iptables-"
+"persistent` unter Ubuntu, um sie nach jedem Neustart erneut anzuwenden."

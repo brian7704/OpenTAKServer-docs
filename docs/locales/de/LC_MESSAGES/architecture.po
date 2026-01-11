@@ -4,25 +4,26 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/architecture/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../architecture.md:1
 msgid "Architecture"
-msgstr ""
+msgstr "Architektur"
 
 #: ../../architecture.md:3
 msgid ""
@@ -32,10 +33,15 @@ msgid ""
 "Interpreter Lock "
 "(GIL)](https://wiki.python.org/moin/GlobalInterpreterLock)."
 msgstr ""
+"Ab Version 1.5.0 ist OpenTAKServer in drei Teile aufgeteilt: die API, den "
+"EUD-Handler und den CoT-Parser. Jeder Teil läuft als eigener, separater "
+"Prozess. Dadurch wird ein Engpassproblem behoben, das durch den "
+"[Python Global Interpreter Lock (GIL)](https://wiki.python.org/moin/"
+"GlobalInterpreterLock) von Python verursacht wurde."
 
 #: ../../architecture.md:6
 msgid "EUD Handler"
-msgstr ""
+msgstr "EUD Handler"
 
 #: ../../architecture.md:8
 msgid ""
@@ -46,10 +52,17 @@ msgid ""
 "to parse. Likewise, when another EUD publishes a CoT message, "
 "`eud_handler` consume the message and send it to the EUD."
 msgstr ""
+"Der EUD-Handler lauscht auf einem TCP-Port, der durch "
+"`OTS_TCP_STREAMING_PORT` oder `OTS_SSL_STREAMING_PORT` festgelegt ist, und "
+"ist der zentrale Interaktionspunkt zwischen OpenTAKServer und den EUDs. Wenn "
+"ein EUD eine CoT-Nachricht sendet, veröffentlicht `eud_handler` diese zur "
+"Verarbeitung durch `cot_parser` in RabbitMQ. Entsprechend konsumiert "
+"`eud_handler` CoT-Nachrichten, die von anderen EUDs veröffentlicht wurden, "
+"und sendet sie an das jeweilige EUD weiter."
 
 #: ../../architecture.md:12
 msgid "CoT Parser"
-msgstr ""
+msgstr "CoT Parser"
 
 #: ../../architecture.md:14
 msgid ""
@@ -60,10 +73,17 @@ msgid ""
 "many incoming CoT messages for the server to handle, additional servers "
 "can run more instances of `cot_parser` for extra processing power."
 msgstr ""
+"Der CoT-Parser verbindet sich mit dem RabbitMQ-Server und analysiert die von "
+"den Endgeräten (EUDs) gesendeten CoT-Nachrichten. Es können mehrere "
+"Instanzen des CoT-Parsers gleichzeitig ausgeführt werden. Dadurch können Sie "
+"die CPU-Kerne optimal nutzen, wenn viele CoT-Nachrichten pro Sekunde "
+"eingehen. Falls der Server mit der Verarbeitungskapazität des "
+"Nachrichtenaufkommens überfordert ist, können zusätzliche Server weitere "
+"Instanzen von `cot_parser` ausführen, um die Rechenleistung zu erhöhen."
 
 #: ../../architecture.md:19
 msgid "Ports"
-msgstr ""
+msgstr "Ports"
 
 #: ../../architecture.md:21
 msgid ""
@@ -72,278 +92,293 @@ msgid ""
 "For SSL encrypted communications, ports 443, 8443, 8446, and 8089 are "
 "required. In either case, the rest of the ports are optional."
 msgstr ""
+"Nachfolgend finden Sie eine Tabelle aller Standardports, die von "
+"OpenTAKServer verwendet werden. Für unverschlüsselte TCP-Kommunikation "
+"werden die Ports 80, 8080 und 8088 benötigt. Für SSL-verschlüsselte "
+"Kommunikation werden die Ports 443, 8443, 8446 und 8089 benötigt. Die "
+"übrigen Ports sind optional."
 
 #: ../../architecture.md
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: ../../architecture.md
 msgid "Component"
-msgstr ""
+msgstr "Komponente"
 
 #: ../../architecture.md
 msgid "Protocol"
-msgstr ""
+msgstr "Protokoll"
 
 #: ../../architecture.md
 msgid "Interface"
-msgstr ""
+msgstr "Schnittstelle"
 
 #: ../../architecture.md
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../../architecture.md
 msgid "80"
-msgstr ""
+msgstr "80"
 
 #: ../../architecture.md
 msgid "Nginx"
-msgstr ""
+msgstr "Nginx"
 
 #: ../../architecture.md
 msgid "TCP"
-msgstr ""
+msgstr "TCP"
 
 #: ../../architecture.md
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: ../../architecture.md
 msgid "Web UI and proxy for HTTP API requests to OpenTAKServer port 8081"
-msgstr ""
+msgstr "Web-UI und Proxy für HTTP-API-Anfragen an OpenTAKServer Port 8081"
 
 #: ../../architecture.md
 msgid "443"
-msgstr ""
+msgstr "443"
 
 #: ../../architecture.md
 msgid "Web UI and proxy for HTTPS requests to OpenTAKServer port 8081"
-msgstr ""
+msgstr "Web-UI und Proxy für HTTPS-Anfragen an OpenTAKServer Port 8081"
 
 #: ../../architecture.md
 msgid "1883"
-msgstr ""
+msgstr "1883"
 
 #: ../../architecture.md
 msgid "RabbitMQ"
-msgstr ""
+msgstr "RabbitMQ"
 
 #: ../../architecture.md
 msgid "Unencrypted MQTT port used for Meshtastic"
-msgstr ""
+msgstr "Unverschlüsselter MQTT-Port für Meshtastic"
 
 #: ../../architecture.md
 msgid "1935"
-msgstr ""
+msgstr "1935"
 
 #: ../../architecture.md
 msgid "MediaMTX"
-msgstr ""
+msgstr "MediaMTX"
 
 #: ../../architecture.md
 msgid "Publish and view RTMP video streams"
-msgstr ""
+msgstr "RTMP-Videostreams veröffentlichen und ansehen"
 
 #: ../../architecture.md
 msgid "1936"
-msgstr ""
+msgstr "1936"
 
 #: ../../architecture.md
 msgid "Publish and view RTMPS video streams"
-msgstr ""
+msgstr "RTMPS-Videostreams veröffentlichen und ansehen"
 
 #: ../../architecture.md
 msgid "5672"
-msgstr ""
+msgstr "5672"
 
 #: ../../architecture.md
 msgid "For AMPQ clients, should be blocked from external access in most cases"
 msgstr ""
+"Für AMPQ-Clients sollte der externe Zugriff in den meisten Fällen gesperrt "
+"werden"
 
 #: ../../architecture.md
 msgid "6502"
-msgstr ""
+msgstr "6502"
 
 #: ../../architecture.md
 msgid "Mumble Server"
-msgstr ""
+msgstr "Mumble-Server"
 
 #: ../../architecture.md
 msgid "Loopback (127.0.0.1)"
-msgstr ""
+msgstr "Loopback (127.0.0.1)"
 
 #: ../../architecture.md
 msgid "Mumble's ICE server, used by OpenTAKServer to provide authentication"
 msgstr ""
+"Der ICE-Server von Mumble, der von OpenTAKServer zur Authentifizierung "
+"verwendet wird"
 
 #: ../../architecture.md
 msgid "8000"
-msgstr ""
+msgstr "8000"
 
 #: ../../architecture.md
 msgid "UDP"
-msgstr ""
+msgstr "UDP"
 
 #: ../../architecture.md
 msgid "Publish and view RTP video streams"
-msgstr ""
+msgstr "RTP-Videostreams veröffentlichen und ansehen"
 
 #: ../../architecture.md
 msgid "8001"
-msgstr ""
+msgstr "8001"
 
 #: ../../architecture.md
 msgid "Publish and view RTCP video streams"
-msgstr ""
+msgstr "RTCP-Videostreams veröffentlichen und ansehen"
 
 #: ../../architecture.md
 msgid "8080"
-msgstr ""
+msgstr "8080"
 
 #: ../../architecture.md
 msgid "8081"
-msgstr ""
+msgstr "8081"
 
 #: ../../architecture.md
 msgid "OpenTAKServer"
-msgstr ""
+msgstr "OpenTAKServer"
 
 #: ../../architecture.md
 msgid "OTS listens on this port on the loopback interface for HTTP(S) requests"
 msgstr ""
+"OTS lauscht an diesem Port auf der Loopback-Schnittstelle auf "
+"HTTP(S)-Anfragen"
 
 #: ../../architecture.md
 msgid "8189"
-msgstr ""
+msgstr "8189"
 
 #: ../../architecture.md
 msgid "WebRTC"
-msgstr ""
+msgstr "WebRTC"
 
 #: ../../architecture.md
 msgid "8088"
-msgstr ""
+msgstr "8088"
 
 #: ../../architecture.md
 msgid "TCP CoT streaming port"
-msgstr ""
+msgstr "TCP CoT Streaming-Port"
 
 #: ../../architecture.md
 msgid "8089"
-msgstr ""
+msgstr "8089"
 
 #: ../../architecture.md
 msgid "SSL CoT streaming port"
-msgstr ""
+msgstr "SSL CoT Streaming-Port"
 
 #: ../../architecture.md
 msgid "8443"
-msgstr ""
+msgstr "8443"
 
 #: ../../architecture.md
 msgid "Web UI and proxy for HTTPS API requests to OpenTAKServer port 8081"
-msgstr ""
+msgstr "Web-UI und Proxy für HTTPS-API-Anfragen an OpenTAKServer Port 8081"
 
 #: ../../architecture.md
 msgid "8446"
-msgstr ""
+msgstr "8446"
 
 #: ../../architecture.md
 msgid "Web UI and proxy for certificate enrollment to OpenTAKServer port 8081"
 msgstr ""
+"Web-UI und Proxy für die Zertifikatsregistrierung an OpenTAKServer Port 8081"
 
 #: ../../architecture.md
 msgid "8322"
-msgstr ""
+msgstr "8322"
 
 #: ../../architecture.md
 msgid "Publish and view RTSP(S) video streams"
-msgstr ""
+msgstr "RTSP(S)-Videostreams veröffentlichen und ansehen"
 
 #: ../../architecture.md
 msgid "8554"
-msgstr ""
+msgstr "8554"
 
 #: ../../architecture.md
 msgid "TCP/UDP"
-msgstr ""
+msgstr "TCP/UDP"
 
 #: ../../architecture.md
 msgid "Publish and view RTSP video streams"
-msgstr ""
+msgstr "RTSP(S)-Videostreams veröffentlichen und ansehen"
 
 #: ../../architecture.md
 msgid "8883"
-msgstr ""
+msgstr "8883"
 
 #: ../../architecture.md
 msgid "Encrypted MQTT port used for Meshtastic"
-msgstr ""
+msgstr "Verschlüsselter MQTT-Port, der für Meshtastic verwendet wird"
 
 #: ../../architecture.md
 msgid "8888"
-msgstr ""
+msgstr "8888"
 
 #: ../../architecture.md
 msgid "View HLS video streams"
-msgstr ""
+msgstr "HLS-Videostreams ansehen"
 
 #: ../../architecture.md
 msgid "8889"
-msgstr ""
+msgstr "8889"
 
 #: ../../architecture.md
 msgid "Publish and view WebRTC streams"
-msgstr ""
+msgstr "WebRTC-Streams veröffentlichen und anzeigen"
 
 #: ../../architecture.md
 msgid "8890"
-msgstr ""
+msgstr "8890"
 
 #: ../../architecture.md
 msgid "Publish and view SRT streams"
-msgstr ""
+msgstr "SRT-Streams veröffentlichen und anzeigen"
 
 #: ../../architecture.md
 msgid "9997"
-msgstr ""
+msgstr "9997"
 
 #: ../../architecture.md
 msgid "MediaMTX's API"
-msgstr ""
+msgstr "MediaMTX-API"
 
 #: ../../architecture.md
 msgid "25672"
-msgstr ""
+msgstr "25672"
 
 #: ../../architecture.md
 msgid "RabbitMQ Federation, external access should be blocked in most cases"
 msgstr ""
+"RabbitMQ Federation: Externer Zugriff sollte in den meisten Fällen blockiert "
+"werden"
 
 #: ../../architecture.md
 msgid "64738"
-msgstr ""
+msgstr "64738"
 
 #: ../../architecture.md
 msgid "Mumble server voice streams"
-msgstr ""
+msgstr "Sprachstreams des Mumble-Servers"
 
 #: ../../architecture.md:52
 msgid "Diagram"
-msgstr ""
+msgstr "Diagramm"
 
 #: ../../architecture.md:54
 msgid ""
 "Here is an attempt at a diagram to help visualize the components used in "
 "OpenTAKServer and how they interact."
 msgstr ""
+"Hier ist der Versuch eines Diagramms, um die in OpenTAKServer verwendeten "
+"Komponenten und deren Zusammenspiel zu veranschaulichen."
 
 #: ../../architecture.md:56
 msgid "![!Diagram](images/diagram.png)"
-msgstr ""
+msgstr "![!Diagramm](images/diagram.png)"
 
 #: ../../architecture.md:56
 msgid "!Diagram"
-msgstr ""
-
+msgstr "!Diagramm"

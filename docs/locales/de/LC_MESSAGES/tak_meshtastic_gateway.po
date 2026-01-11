@@ -4,25 +4,26 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/tak_meshtastic_gateway/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tak_meshtastic_gateway.md:1
 msgid "TAK Meshtastic Gateway"
-msgstr ""
+msgstr "TAK Meshtastic Gateway"
 
 #: ../../tak_meshtastic_gateway.md:3
 msgid ""
@@ -35,34 +36,48 @@ msgid ""
 " over a Meshtastic network to someone using  the Meshtastic app and vice "
 "versa."
 msgstr ""
+"TAK Meshtastic Gateway hört auf Multicast-Daten von TAK-Clients (ATAK, "
+"WinTAK und iTAK) und leitet diese an ein Meshtastic-Gerät weiter, das sie in "
+"ein Meshtastic-Netzwerk überträgt. Ebenso werden Nachrichten von Meshtastic "
+"per Multicast an   TAK-Clients weitergeleitet. Zusätzlich ermöglicht es das "
+"Senden und Empfangen von Chatnachrichten und Positionsdaten zwischen TAK-"
+"Clients und der Meshtastic-App. So kann beispielsweise jemand mit WinTAK "
+"eine Nachricht über ein Meshtastic-Netzwerk an eine Person senden, die die "
+"Meshtastic-App nutzt, und umgekehrt."
 
 #: ../../tak_meshtastic_gateway.md:9
 msgid "Features"
-msgstr ""
+msgstr "Features"
 
 #: ../../tak_meshtastic_gateway.md:11
 msgid ""
 "Send chat and PLI messages from TAK clients (ATAK, WinTAK, and iTAK) over"
 " a Meshtastic network"
 msgstr ""
+"Chat- und PLI-Nachrichten von TAK-Clients (ATAK, WinTAK und iTAK) über ein "
+"Meshtastic-Netzwerk senden"
 
 #: ../../tak_meshtastic_gateway.md:12
 msgid ""
 "Receive chat and PLI messages from a Meshtastic network and display them "
 "in a TAK client"
 msgstr ""
+"Chat- und PLI-Nachrichten aus einem Meshtastic-Netzwerk empfangen und in "
+"einem TAK-Client anzeigen"
 
 #: ../../tak_meshtastic_gateway.md:13
 msgid "See Meshtastic devices on the TAK client's map"
-msgstr ""
+msgstr "Meshtastic-Geräte auf der Karte des TAK-Clients ansehen"
 
 #: ../../tak_meshtastic_gateway.md:14
 msgid "See the TAK client on the Meshtastic app's map"
-msgstr ""
+msgstr "Den TAK-Client finden Sie auf der Karte der Meshtastic-App"
 
 #: ../../tak_meshtastic_gateway.md:15
 msgid "Send and receive chat messages between the TAK client and Meshtastic app"
 msgstr ""
+"Senden und Empfangen von Chatnachrichten zwischen dem TAK-Client und der "
+"Meshtastic-App"
 
 #: ../../tak_meshtastic_gateway.md:17
 msgid ""
@@ -71,20 +86,26 @@ msgid ""
 "images, etc, are not supported due to the limited bandwidth of Meshtastic"
 " networks."
 msgstr ""
+"TAK Meshtastic Gateway unterstützt derzeit nur das Senden und Empfangen von "
+"Chat- und PLI-Nachrichten. Andere Datentypen wie Datenpakete, Marker, Bilder "
+"usw. werden aufgrund der begrenzten Bandbreite von Meshtastic-Netzwerken "
+"nicht unterstützt."
 
 #: ../../tak_meshtastic_gateway.md:20
 msgid "Python Requirements"
-msgstr ""
+msgstr "Python-Anforderungen"
 
 #: ../../tak_meshtastic_gateway.md:22
 msgid ""
 "Due to an issue with the unishox2-py3 package, Windows requires Python "
 "version 3.12. Linux and macOS will work with Python versions 3.8 and up."
 msgstr ""
+"Aufgrund eines Problems mit dem Paket unishox2-py3 benötigt Windows Python "
+"Version 3.12. Linux und macOS funktionieren mit Python Version 3.8 und höher."
 
 #: ../../tak_meshtastic_gateway.md:25
 msgid "Known Issues"
-msgstr ""
+msgstr "Bekannte Probleme"
 
 #: ../../tak_meshtastic_gateway.md:27
 msgid ""
@@ -96,10 +117,16 @@ msgid ""
 " result, Python 3.12 is required when running TAK Meshtastic Gateway on "
 "Windows."
 msgstr ""
+"Unter Windows schlägt die Installation der Bibliothek `unishox2-py3` aus dem "
+"Quellcode mit dem Befehl `pip install unishox2-py3` fehl. TAK Meshtastic "
+"Gateway installiert stattdessen [dieses Wheel](https://github.com/brian7704/"
+"OpenTAKServer-Installer/blob/master/"
+"unishox2_py3-1.0.0-cp312-cp312-win_amd64.whl). Daher ist Python 3.12 "
+"erforderlich, um TAK Meshtastic Gateway unter Windows auszuführen."
 
 #: ../../tak_meshtastic_gateway.md:31
 msgid "Using Windows Offline"
-msgstr ""
+msgstr "Windows Offline verwenden"
 
 #: ../../tak_meshtastic_gateway.md:33
 msgid ""
@@ -107,52 +134,64 @@ msgid ""
 "USB, WinTAK might not send CoT messages over multicast. To fix that, a "
 "virtual loopback device needs to be installed."
 msgstr ""
+"Wenn Sie Windows offline verwenden und der Meshtastic-Knoten über USB "
+"angeschlossen ist, sendet WinTAK möglicherweise keine CoT-Nachrichten per "
+"Multicast. Um dies zu beheben, muss ein virtuelles Loopback-Gerät "
+"installiert werden."
 
 #: ../../tak_meshtastic_gateway.md:36
 msgid "Right click start button -> Device manager"
-msgstr ""
+msgstr "Rechtsklick auf die Start-Schaltfläche -> Geräte-Manager"
 
 #: ../../tak_meshtastic_gateway.md:37
 msgid "Select your PC at the top (otherwise menu item will be missing)"
-msgstr ""
+msgstr "Wählen Sie oben Ihren PC aus (ansonsten fehlt der Menüpunkt)"
 
 #: ../../tak_meshtastic_gateway.md:38
 msgid "Click on Action -> Add legacy hardware"
-msgstr ""
+msgstr "Klicken Sie auf Aktion -> Legacy-Hardware hinzufügen"
 
 #: ../../tak_meshtastic_gateway.md:39
 msgid ""
 "Click Next -> Install the hardware that I manually select from a list "
 "(Advanced) -> Next"
 msgstr ""
+"Klicken Sie auf Weiter -> Installieren Sie die Hardware, die ich manuell aus "
+"einer Liste auswähle (Erweitert) -> Weiter"
 
 #: ../../tak_meshtastic_gateway.md:40
 msgid "Select Network Adapters -> Next and then wait until list is loaded"
 msgstr ""
+"Wählen Sie „Netzwerkadapter“ → „Weiter“ und warten Sie, bis die Liste "
+"geladen ist"
 
 #: ../../tak_meshtastic_gateway.md:41
 msgid ""
 "In the Manufacturer list, select Microsoft. In the Model list, select "
 "`Microsoft KM-TEST Loopback Adapter`"
 msgstr ""
+"Wählen Sie in der Herstellerliste Microsoft aus. Wählen Sie in der "
+"Modellliste `Microsoft KM-TEST Loopback-Adapter` aus"
 
 #: ../../tak_meshtastic_gateway.md:42
 msgid "Click Next -> Finish"
-msgstr ""
+msgstr "Weiter -> Fertigstellen"
 
 #: ../../tak_meshtastic_gateway.md:44
 msgid "Installation"
-msgstr ""
+msgstr "Installation"
 
 #: ../../tak_meshtastic_gateway.md:46
 msgid ""
 "For installation you only need to create a Python virtual environment, "
 "activate the virtual environment, and install using pip."
 msgstr ""
+"Für die Installation müssen Sie lediglich eine virtuelle Python-Umgebung "
+"erstellen, diese aktivieren und anschließend mit pip installieren."
 
 #: ../../tak_meshtastic_gateway.md:48
 msgid "Linux/macOS"
-msgstr ""
+msgstr "Linux/macOS"
 
 #: ../../tak_meshtastic_gateway.md:50
 msgid ""
@@ -160,24 +199,29 @@ msgid ""
 "distros (i.e. Ubuntu) they can be installed with `apt install build-"
 "essential`."
 msgstr ""
+"Die Python-Bibliothek unishox2-py3 benötigt C-Build-Tools. In Debian-"
+"basierten Distributionen (z. B. Ubuntu) können diese mit `apt install build-"
+"essential` installiert werden."
 
 #: ../../tak_meshtastic_gateway.md:59
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../tak_meshtastic_gateway.md:68 ../../tak_meshtastic_gateway.md:97
 msgid "Usage"
-msgstr ""
+msgstr "Auslastung"
 
 #: ../../tak_meshtastic_gateway.md:70
 msgid ""
 "When your virtual environment active, run the `tak-meshtastic-gateway` "
 "command"
 msgstr ""
+"Wenn Ihre virtuelle Umgebung aktiv ist, führen Sie den Befehl `tak-"
+"meshtastic-gateway` aus"
 
 #: ../../tak_meshtastic_gateway.md:72
 msgid "Architecture"
-msgstr ""
+msgstr "Architektur"
 
 #: ../../tak_meshtastic_gateway.md:74
 msgid ""
@@ -187,10 +231,16 @@ msgid ""
 "Connecting to the Meshtastic node over the LAN allows it to be mounted in"
 " a spot outside with good mesh reception while the computer is inside."
 msgstr ""
+"In den meisten Fällen wird der Benutzer TAK Meshtastic Gateway auf demselben "
+"Computer ausführen, auf dem auch WinTAK läuft. Der Meshtastic-Knoten kann "
+"entweder per USB mit demselben Computer verbunden oder im selben LAN wie der "
+"Computer betrieben werden. Durch die LAN-Verbindung kann der Meshtastic-"
+"Knoten an einem Ort im Freien mit gutem Mesh-Empfang montiert werden, "
+"während sich der Computer im Haus befindet."
 
 #: ../../tak_meshtastic_gateway.md:78
 msgid "Meshtastic Node Configuration"
-msgstr ""
+msgstr "Meshtastic-Knotenkonfiguration"
 
 #: ../../tak_meshtastic_gateway.md:80
 msgid ""
@@ -202,10 +252,18 @@ msgid ""
 "users. TAK Meshtastic Gateway will also update the Meshtastic node's "
 "location with the location of the EUD."
 msgstr ""
+"Der Meshtastic-Knoten sollte der TAK-Rolle zugewiesen werden. Das TAK "
+"Meshtastic Gateway ändert automatisch den langen Namen des Knotens in das "
+"Rufzeichen des TAK-Clients und den kurzen Namen in die letzten vier Zeichen "
+"der UID des TAK-Clients. Dadurch wird sichergestellt, dass das Rufzeichen "
+"sowohl für Mesh-Nutzer, die nur die Meshtastic-App verwenden, als auch für "
+"ATAK-Plugin-Nutzer korrekt angezeigt wird. Das TAK Meshtastic Gateway "
+"aktualisiert außerdem den Standort des Meshtastic-Knotens mit dem Standort "
+"des EUD."
 
 #: ../../tak_meshtastic_gateway.md:85
 msgid "ATAK Plugin Settings"
-msgstr ""
+msgstr "ATAK-Plugin-Einstellungen"
 
 #: ../../tak_meshtastic_gateway.md:87
 msgid ""
@@ -216,188 +274,207 @@ msgid ""
 " tool -> Tool Preferences -> Specific Tool Preferences -> Meshtastic "
 "Preferences."
 msgstr ""
+"Für optimale Ergebnisse verwenden Sie auf Geräten mit dem "
+"[Meshtastic ATAK Plugin.](https://meshtastic.org/docs/software/integrations/"
+"integrations-atak-plugin/) die folgenden Einstellungen. Sie finden die "
+"Einstellungen in ATAK unter „Einstellungen“ → „Werkzeugeinstellungen“ → „"
+"Spezifische Werkzeugeinstellungen“ → „Meshtastic-Einstellungen“."
 
 #: ../../tak_meshtastic_gateway.md:91
 msgid "Show all Meshtastic devices: On"
-msgstr ""
+msgstr "Alle Meshtastic-Geräte anzeigen: Ein"
 
 #: ../../tak_meshtastic_gateway.md:92
 msgid "Don't show Meshtastic devices without GPS: On"
-msgstr ""
+msgstr "Meshtastic-Geräte ohne GPS nicht anzeigen: Ein"
 
 #: ../../tak_meshtastic_gateway.md:93
 msgid "Do not show your local Meshtastic device: On"
-msgstr ""
+msgstr "Lokales Meshtastic-Gerät nicht anzeigen: Ein"
 
 #: ../../tak_meshtastic_gateway.md:95
 msgid "The rest of the settings can be changed as needed."
-msgstr ""
+msgstr "Die übrigen Einstellungen können nach Bedarf geändert werden."
 
 #: ../../tak_meshtastic_gateway.md:99
 msgid ""
 "All arguments are optional. If an argument is not specified its default "
 "value will be used."
 msgstr ""
+"Alle Argumente sind optional. Wird ein Argument nicht angegeben, wird sein "
+"Standardwert verwendet."
 
 #: ../../tak_meshtastic_gateway.md
 msgid "Flag"
-msgstr ""
+msgstr "Flagge"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "Parameter"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`-i`"
-msgstr ""
+msgstr "`-i`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`--ip-address`"
-msgstr ""
+msgstr "`--IP-Adresse`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "The private IP address of the machine running TAK Meshtastic Gateway."
 msgstr ""
+"Die private IP-Adresse des Rechners, auf dem TAK Meshtastic Gateway läuft."
 
 #: ../../tak_meshtastic_gateway.md
 msgid ""
 "TAK Meshtastic Gateway will attempt to automatically find the IP of the "
 "computer it's running on"
 msgstr ""
+"TAK Meshtastic Gateway versucht, die IP-Adresse des Computers, auf dem es "
+"ausgeführt wird, automatisch zu ermitteln"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`-s`"
-msgstr ""
+msgstr "`-s`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`--serial-device`"
-msgstr ""
+msgstr "`--serial-device`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid ""
 "The serial device of the Meshtastic node (i.e. `COM3` or `/dev/ttyACM0`)."
 " Cannot be used simultaneously with `--mesh-ip`"
 msgstr ""
+"Das serielle Gerät des Meshtastic-Knotens (d. h. `COM3` oder `/dev/ttyACM0`)"
+". Kann nicht gleichzeitig mit `--mesh-ip` verwendet werden."
 
 #: ../../tak_meshtastic_gateway.md
 msgid ""
 "TAK Meshtastic Gateway will attempt to automatically determine the serial"
 " device"
 msgstr ""
+"TAK Meshtastic Gateway versucht, das serielle Gerät automatisch zu ermitteln"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`-m`"
-msgstr ""
+msgstr "`-m`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`--mesh-ip`"
-msgstr ""
+msgstr "`--mesh-ip`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid ""
 "The IP address or DNS name of the gateway Meshtastic node. Cannot be used"
 " simultaneously with `--serial-device`"
 msgstr ""
+"Die IP-Adresse oder der DNS-Name des Meshtastic-Gateway-Knotens. Kann nicht "
+"gleichzeitig mit `--serial-device` verwendet werden"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "Uses a serial connection"
-msgstr ""
+msgstr "Verwendet eine serielle Verbindung"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`-c`"
-msgstr ""
+msgstr "`-c`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`--tak-client-ip`"
-msgstr ""
+msgstr "`--tak-client-ip`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid ""
 "The IP address of the device running the TAK client (ATAK, WinTAK, or "
 "iTAK)"
 msgstr ""
+"Die IP-Adresse des Geräts, auf dem der TAK-Client (ATAK, WinTAK oder iTAK) "
+"ausgeführt wird"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`localhost`"
-msgstr ""
+msgstr "`localhost`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`-p`"
-msgstr ""
+msgstr "`-p`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`--dm-socket-port`"
-msgstr ""
+msgstr "`--dm-socket-port`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "TCP Port to listen on for DMs"
-msgstr ""
+msgstr "TCP-Port, auf dem Direktnachrichten empfangen werden sollen"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`4243`"
-msgstr ""
+msgstr "`4243`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`-t`"
-msgstr ""
+msgstr "`-t`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`--tx-interval`"
-msgstr ""
+msgstr "`--tx-interval`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid ""
 "Minimum time (in seconds) to wait between PLI transmissions from the TAK "
 "client to the mesh network. This reduces strain on the mesh network."
 msgstr ""
+"Minimale Wartezeit (in Sekunden) zwischen PLI-Übertragungen vom TAK-Client "
+"an das Mesh-Netzwerk. Dies reduziert die Belastung des Mesh-Netzwerks."
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`30`"
-msgstr ""
+msgstr "`30`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`-l`"
-msgstr ""
+msgstr "`-l`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`--log-file`"
-msgstr ""
+msgstr "`--log-file`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "Save log messages to a file."
-msgstr ""
+msgstr "Speichere Protokollmeldungen in einer Datei."
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`None` (disabled)"
-msgstr ""
+msgstr "`Keine` (deaktiviert)"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`-d`"
-msgstr ""
+msgstr "`-d`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`--debug`"
-msgstr ""
+msgstr "`--debug`"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "Enable debug log messages"
-msgstr ""
+msgstr "Debug-Protokollmeldungen aktivieren"
 
 #: ../../tak_meshtastic_gateway.md
 msgid "`Disabled` Only messages at the `INFO` level or higher will be logged"
-msgstr ""
+msgstr "`Deaktiviert` Es werden nur Meldungen ab der Stufe `INFO` protokolliert"
 
 #: ../../tak_meshtastic_gateway.md:112
 msgid "Permissions"
-msgstr ""
+msgstr "Berechtigungen"
 
 #: ../../tak_meshtastic_gateway.md:114
 msgid ""
@@ -406,42 +483,47 @@ msgid ""
 "PowerShell or Command Prompt in Windows. Connecting to the Meshtastic "
 "node via TCP does not require elevated permissions."
 msgstr ""
+"Wenn der Meshtastic-Knoten über USB angeschlossen ist, muss TAK Meshtastic "
+"Gateway unter Linux als Root (oder mit `sudo`) und unter Windows in einer "
+"PowerShell-Konsole oder Eingabeaufforderung mit Administratorrechten "
+"ausgeführt werden. Für die Verbindung zum Meshtastic-Knoten über TCP sind "
+"keine erhöhten Berechtigungen erforderlich."
 
 #: ../../tak_meshtastic_gateway.md:118
 msgid "Example Usage Scenarios"
-msgstr ""
+msgstr "Beispielhafte Anwendungsszenarien"
 
 #: ../../tak_meshtastic_gateway.md:120
 msgid "Scenario 1"
-msgstr ""
+msgstr "Szenario 1"
 
 #: ../../tak_meshtastic_gateway.md:122 ../../tak_meshtastic_gateway.md:129
 msgid "WinTAK on a PC"
-msgstr ""
+msgstr "WinTAK auf einem PC"
 
 #: ../../tak_meshtastic_gateway.md:123
 msgid "Meshtastic node connected to the PC via USB"
-msgstr ""
+msgstr "Der Meshtastic-Knoten ist über USB mit dem PC verbunden"
 
 #: ../../tak_meshtastic_gateway.md:124
 msgid "TAK Meshtastic Gateway running on the same PC"
-msgstr ""
+msgstr "TAK Meshtastic Gateway läuft auf demselben PC"
 
 #: ../../tak_meshtastic_gateway.md:125
 msgid "Command: `tak_meshtastic_gateway`"
-msgstr ""
+msgstr "Befehl: `tak_meshtastic_gateway`"
 
 #: ../../tak_meshtastic_gateway.md:127
 msgid "Scenario 2"
-msgstr ""
+msgstr "Szenario 2"
 
 #: ../../tak_meshtastic_gateway.md:130
 msgid "Meshtastic node on the same LAN as the PC"
-msgstr ""
+msgstr "Meshtastic-Knoten im selben LAN wie der PC"
 
 #: ../../tak_meshtastic_gateway.md:131
 msgid "TAK Meshtastic Gateway running on the same PC as WinTAK"
-msgstr ""
+msgstr "TAK Meshtastic Gateway läuft auf demselben PC wie WinTAK"
 
 #: ../../tak_meshtastic_gateway.md:132
 msgid ""
@@ -449,22 +531,29 @@ msgid ""
 "Substitute `MESHTASTIC_NODE_IP` with the node's actual IP (i.e. "
 "`192.168.1.10`)"
 msgstr ""
+"Befehl: `tak_meshtastic_gateway --mesh-ip MESHTASTIC_NODE_IP` Hinweis: "
+"Ersetzen Sie `MESHTASTIC_NODE_IP` durch die tatsächliche IP-Adresse des "
+"Knotens (z. B. `192.168.1.10`)"
 
 #: ../../tak_meshtastic_gateway.md:135
 msgid "Scenario 3"
-msgstr ""
+msgstr "Szenario 3"
 
 #: ../../tak_meshtastic_gateway.md:137
 msgid "ATAK or iTAK on a mobile device connected to a Wi-Fi network"
 msgstr ""
+"ATAK oder iTAK auf einem Mobilgerät, das mit einem WLAN-Netzwerk verbunden "
+"ist"
 
 #: ../../tak_meshtastic_gateway.md:138
 msgid "Meshtastic node connected to the same network"
-msgstr ""
+msgstr "Der Meshtastic-Knoten ist mit demselben Netzwerk verbunden"
 
 #: ../../tak_meshtastic_gateway.md:139
 msgid "TAK Meshtastic Gateway running on a computer or VM on the same network"
 msgstr ""
+"TAK Meshtastic Gateway läuft auf einem Computer oder einer VM im selben "
+"Netzwerk"
 
 #: ../../tak_meshtastic_gateway.md:140
 msgid ""
@@ -473,4 +562,7 @@ msgid ""
 "`TAK_CLIENT_IP` with their actual IPs (i.e. `192.168.1.10` and "
 "`192.168.1.11`)"
 msgstr ""
-
+"Befehl: `tak_meshtastic_gateway --mesh-ip MESHTASTIC_NODE_IP --tak-client-ip "
+"TAK_CLIENT_IP` Hinweis: Ersetzen Sie `MESHTASTIC_NODE_IP` und `TAK_CLIENT_IP`"
+" durch ihre tatsächlichen IP-Adressen (d. h. `192.168.1.10` und "
+"`192.168.1.11`)"

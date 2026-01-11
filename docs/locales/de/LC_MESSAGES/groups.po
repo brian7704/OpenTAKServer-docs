@@ -4,31 +4,34 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/groups/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../groups.rst:2
 msgid "Groups/Channels"
-msgstr ""
+msgstr "Gruppe/Kanal"
 
 #: ../../groups.rst:4
 msgid ""
 "**Note**: The terms group and channel will be used interchangeably. They "
 "can be thought of as the same thing."
 msgstr ""
+"**Hinweis**: Der Begriff Gruppe und Kanal wird parallel verwendet. Gruppe "
+"ist gleichbedeutend mit Kanal."
 
 #: ../../groups.rst:6
 msgid ""
@@ -36,10 +39,13 @@ msgid ""
 "administrators to restrict what CoT messages users will be able to send "
 "and receive."
 msgstr ""
+"OpenTAKServer unterstützt ab Version 1.6.0 Gruppen. Mithilfe von Gruppen "
+"können Administratoren einschränken, welche CoT-Nachrichten Benutzer senden "
+"und empfangen können."
 
 #: ../../groups.rst:10
 msgid "The __ANON__ Group"
-msgstr ""
+msgstr "unbekannte_Nutzer_Gruppe"
 
 #: ../../groups.rst:12
 msgid ""
@@ -48,10 +54,14 @@ msgid ""
 " group will be assigned to this group. The __ANON__ group is the only "
 "group that can't be deleted."
 msgstr ""
+"Benutzer, die keiner Gruppe zugewiesen sind, werden automatisch der Gruppe "
+"``__ANON__`` zugeordnet. Ebenso werden alle Missionen, die keiner Gruppe "
+"zugewiesen sind, dieser Gruppe zugeordnet. Die Gruppe __ANON__ group ist die "
+"einzige Gruppe, die nicht gelöscht werden kann."
 
 #: ../../groups.rst:16
 msgid "Default Groups"
-msgstr ""
+msgstr "Standardgruppen"
 
 #: ../../groups.rst:18
 msgid ""
@@ -62,6 +72,12 @@ msgid ""
 "can be changed via the ``OTS_ADSB_GROUP``, ``OTS_AIS_GROUP``, and "
 "``OTS_MESHTASTIC_GROUP`` respectively."
 msgstr ""
+"Beim Start von OpenTAKServer werden automatisch vier Gruppen erstellt: "
+"``__ANON__``, ``ADS-B``, ``AIS`` und ``Meshtastic``. Die Gruppe ``__ANON__`` "
+"ist integraler Bestandteil des TAK-Ökosystems und kann weder geändert noch "
+"gelöscht werden. Die Namen der Gruppen ``ADS-B``, ``AIS`` und ``Meshtastic`` "
+"lassen sich jedoch über die jeweiligen Gruppen ``OTS_ADSB_GROUP``, "
+"``OTS_AIS_GROUP`` und ``OTS_MESHTASTIC_GROUP`` ändern."
 
 #: ../../groups.rst:22
 msgid ""
@@ -74,10 +90,17 @@ msgid ""
 "change these settings to ``__ANON__`` to send ADS-B, AIS, or Meshtastic "
 "data to everyone."
 msgstr ""
+"Der geplante Job „Airplanes.live“ veröffentlicht alle Daten in der Gruppe "
+"``OTS_ADSB_GROUP``, der geplante Job „AISHub“ in der Gruppe ``OTS_AIS_GROUP``"
+" und die von Meshtastic-Knoten über MQTT empfangenen Daten in der Gruppe "
+"``OTS_MESHTASTIC_GROUP``. Dadurch können Benutzer die gewünschten Kanäle "
+"aktivieren oder deaktivieren. Der Serveradministrator kann diese "
+"Einstellungen jedoch auf ``__ANON__`` ändern, um ADS-B-, AIS- oder "
+"Meshtastic-Daten an alle zu senden."
 
 #: ../../groups.rst:28
 msgid "Direction"
-msgstr ""
+msgstr "Richtung"
 
 #: ../../groups.rst:30
 msgid ""
@@ -88,10 +111,17 @@ msgid ""
 "is specified. When assigning users to groups, either or both directions "
 "may be specified."
 msgstr ""
+"Beim Zuordnen von Benutzern zu einer Gruppe kann festgelegt werden, ob diese "
+"Daten von der Gruppe lesen/empfangen, Daten an die Gruppe senden/schreiben "
+"oder beides dürfen. Um Benutzern das Senden von CoT-Nachrichten an die "
+"Gruppe zu ermöglichen, wird die Richtung ``IN`` angegeben. Um Benutzern das "
+"Empfangen von CoT-Nachrichten von der Gruppe zu ermöglichen, wird die "
+"Richtung ``OUT`` angegeben. Beim Zuordnen von Benutzern zu Gruppen können "
+"eine oder beide Richtungen angegeben werden."
 
 #: ../../groups.rst:37
 msgid "LDAP"
-msgstr ""
+msgstr "LDAP"
 
 #: ../../groups.rst:39
 msgid ""
@@ -99,6 +129,9 @@ msgid ""
 "manage groups. See the :ref:`ldap`  page for details on configuring this "
 "feature."
 msgstr ""
+"Zur Gruppenverwaltung kann optional ein LDAP- oder Microsoft Active "
+"Directory-Server verwendet werden. Details zur Konfiguration dieser Funktion "
+"finden Sie auf der Seite :ref:`ldap`."
 
 #: ../../groups.rst:42
 msgid ""
@@ -106,6 +139,9 @@ msgid ""
 "the group specified by ``OTS_LDAP_ADMIN_GROUP`` to be OTS administrators."
 " The default name for this group is ``ots_admin``."
 msgstr ""
+"Bei Verwendung von LDAP betrachtet OpenTAKServer Benutzer, die Mitglieder "
+"der durch ``OTS_LDAP_ADMIN_GROUP`` angegebenen Gruppe sind, als OTS-"
+"Administratoren. Der Standardname für diese Gruppe lautet ``ots_admin``."
 
 #: ../../groups.rst:45
 msgid ""
@@ -119,6 +155,15 @@ msgid ""
 " three are required. Then an administrator can assign ``ots_group1_read``"
 " and ``ots_group1_write`` to users as needed."
 msgstr ""
+"LDAP-Gruppen müssen mit dem Präfix ``OTS_LDAP_GROUP_PREFIX`` (Standard: "
+"``ots_``) beginnen. Gruppen ohne dieses Präfix werden ignoriert. Die "
+"Leserichtung wird mit den Suffixen ``_READ`` und ``_WRITE`` angegeben. Diese "
+"Suffixe unterscheiden nicht zwischen Groß- und Kleinschreibung. Daher müssen "
+"Sie beim Erstellen einer TAK-Gruppe auf Ihrem LDAP-Server drei Gruppen "
+"anlegen. Wenn die Gruppe beispielsweise ``group1`` heißt, erstellen Sie "
+"``ots_group1``, ``ots_group1_read`` und ``ots_group1_write``. Alle drei "
+"Gruppen sind erforderlich. Ein Administrator kann dann ``ots_group1_read`` "
+"und ``ots_group1_write`` Benutzern nach Bedarf zuweisen."
 
 #~ msgid ""
 #~ "An LDAP or Microsoft Active Directory"
@@ -127,4 +172,3 @@ msgstr ""
 #~ "<ldap.html>`__  page for details on "
 #~ "configuring this feature."
 #~ msgstr ""
-

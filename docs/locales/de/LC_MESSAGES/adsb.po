@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2025-11-29 04:45+0000\n"
-"Last-Translator: Brian <opentakserver@gmail.com>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/docs/de/>\n"
 "Language: de\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../adsb.md:1
 msgid "ADS-B"
-msgstr ""
+msgstr "ADS-B"
 
 #: ../../adsb.md:3
 msgid ""
@@ -32,16 +32,22 @@ msgid ""
 "/api-guide/). Aircraft will show on both your EUD's map and "
 "OpenTAKServer's map with 2525c icons."
 msgstr ""
+"OpenTAKServer kann live ADS-B Daten kostenlos von [Airplanes.live](https://"
+"airplanes.live/) [API](https://airplanes.live/api-guide/) beziehen. Die "
+"Flugzeuge werden auf dem Endgerät und der OpenTAKServer Karte mit 2525c "
+"Symbolen dargestellt."
 
 #: ../../adsb.md:6
 msgid "Airplanes.live API Limits"
-msgstr ""
+msgstr "Airplanes.live API Beschränkung"
 
 #: ../../adsb.md:8
 msgid ""
 "Airplanes.live limits their API to at most one request per second and a "
 "radius of 250nm."
 msgstr ""
+"Airplanes.live begrenzt seine API auf maximal eine Anfrage pro Sekunde und "
+"einen Radius von 250 Seemeilen."
 
 #: ../../adsb.md:10
 msgid "Setting Location"
@@ -52,24 +58,27 @@ msgid ""
 "You can change the location and radius to query in your `config.yml` "
 "file. The options are:"
 msgstr ""
+"Sie können den Ort und den Radius der Abfrage in Ihrer `config.yml`-Datei "
+"ändern. Folgende Optionen stehen zur Verfügung:"
 
 #: ../../adsb.md:14
 msgid "`OTS_AIRPLANES_LIVE_LAT`: Latitude"
-msgstr ""
+msgstr "`OTS_AIRPLANES_LIVE_LAT`: Breitengrad"
 
 #: ../../adsb.md:15
 msgid "`OTS_AIRPLANES_LIVE_LON`: Longitude"
-msgstr ""
+msgstr "`OTS_AIRPLANES_LIVE_LON`: Längengrad"
 
 #: ../../adsb.md:16
 msgid ""
 "`OTS_AIRPLANES_LIVE_RADIUS`: In nautical miles and cannot be greater than"
 " 250"
 msgstr ""
+"`OTS_AIRPLANES_LIVE_RADIUS`: In Seemeilen und darf nicht größer als 250 sein"
 
 #: ../../adsb.md:18
 msgid "Setting Query Frequency"
-msgstr ""
+msgstr "Abfragehäufigkeit festlegen"
 
 #: ../../adsb.md:20
 msgid ""
@@ -78,14 +87,20 @@ msgid ""
 "and click the `Edit` button. Enter the desired amount of minutes and "
 "seconds to query the API and click the `Save` button."
 msgstr ""
+"Melden Sie sich als Administrator in der OTS-Weboberfläche an und klicken "
+"Sie in der Navigationsleiste auf `Geplante Jobs`. Suchen Sie in der Tabelle "
+"den Job `Airplanes.live` und klicken Sie auf die Schaltfläche `Bearbeiten`. "
+"Geben Sie die gewünschte Anzahl an Minuten und Sekunden für die API-Abfrage "
+"ein und klicken Sie auf die Schaltfläche `Speichern`."
 
 #: ../../adsb.md:24
 msgid "Click on the `Activate` switch to enable the job."
 msgstr ""
+"Klicken Sie auf den Schalter `Aktivieren`, um den Auftrag zu aktivieren."
 
 #: ../../adsb.md:26
 msgid "Run a Query Immediately"
-msgstr ""
+msgstr "Führen Sie sofort eine Abfrage aus"
 
 #: ../../adsb.md:28
 msgid ""
@@ -93,15 +108,19 @@ msgid ""
 " is due to run. While logged into the web UI as an administrator, click "
 "on `Scheduled Jobs`, then click the `Run Now` button."
 msgstr ""
+"Sie können die API abfragen, während der geplante Auftrag deaktiviert ist "
+"oder bevor er ausgeführt werden soll. Melden Sie sich als Administrator in "
+"der Web-Oberfläche an, klicken Sie auf `Geplante Aufträge` und anschließend "
+"auf die Schaltfläche `Jetzt ausführen`."
 
 #: ../../adsb.md:31
 msgid "Screenshot"
-msgstr ""
+msgstr "Screenshot"
 
 #: ../../adsb.md:33
 msgid "![!ADS-B data on the map](images/adsb_map.png)"
-msgstr ""
+msgstr "![!ADS-B-Daten auf der Karte](images/adsb_map.png)"
 
 #: ../../adsb.md:33
 msgid "!ADS-B data on the map"
-msgstr ""
+msgstr "!ADS-B-Daten auf der Karte"

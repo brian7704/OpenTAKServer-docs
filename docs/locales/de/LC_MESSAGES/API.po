@@ -4,39 +4,42 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/api/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../API.rst:2
 msgid "API"
-msgstr ""
+msgstr "API"
 
 #: ../../API.rst:5
 msgid "Authentication"
-msgstr ""
+msgstr "Authentifizierung"
 
 #: ../../API.rst:7
 msgid ""
 "All API calls except for ``/api/login`` require `authentication "
 "<authentication.html>`__. Some are restricted to administrators only."
 msgstr ""
+"Alle API Abfragen, außer ``/api/login`` erfordern `authentication "
+"<authentication.html>`__. Einige sind auf Admins beschränkt."
 
 #: ../../API.rst:12
 msgid "Pagination"
-msgstr ""
+msgstr "Seitenzahlen"
 
 #: ../../API.rst:14
 msgid ""
@@ -44,359 +47,368 @@ msgid ""
 "``per_page`` parameters to specify which page to get and how many results"
 " should be returned."
 msgstr ""
+"Die meisten ``GET``-Abfragen sind paginiert. Sie können die Parameter "
+"``Seite`` und ``je_Seite`` angeben, um festzulegen, welche Seite abgerufen "
+"werden soll und wie viele Ergebnisse zurückgegeben werden sollen."
 
 #: ../../API.rst:19
 msgid "/api/status"
-msgstr ""
+msgstr "/api/status"
 
 #: ../../API.rst:21
 msgid ""
 "Returns information about the server including disk usage, memory, usage,"
 " OS type and version, etc."
 msgstr ""
+"Gibt Informationen über den Server zurück, einschließlich "
+"Festplattennutzung, Speicherauslastung, Betriebssystemtyp und -version usw."
 
 #: ../../API.rst:24 ../../API.rst:32 ../../API.rst:40 ../../API.rst:48
 #: ../../API.rst:56 ../../API.rst:64 ../../API.rst:84 ../../API.rst:113
 #: ../../API.rst:132 ../../API.rst:142 ../../API.rst:158 ../../API.rst:173
 #: ../../API.rst:187 ../../API.rst:202 ../../API.rst:288
 msgid "HTTP Method: ``GET``"
-msgstr ""
+msgstr "HTTP-Methode: ``GET``"
 
 #: ../../API.rst:25 ../../API.rst:85 ../../API.rst:93 ../../API.rst:103
 #: ../../API.rst:114 ../../API.rst:133 ../../API.rst:143 ../../API.rst:159
 #: ../../API.rst:174 ../../API.rst:188 ../../API.rst:203 ../../API.rst:229
 #: ../../API.rst:276 ../../API.rst:289 ../../API.rst:304
 msgid "Access: Everyone"
-msgstr ""
+msgstr "Zugang: Für alle"
 
 #: ../../API.rst:28
 msgid "/api/tcp/start"
-msgstr ""
+msgstr "/api/tcp/start"
 
 #: ../../API.rst:30
 msgid "Starts the TCP CoT streaming server."
-msgstr ""
+msgstr "Startet den TCP CoT Streaming-Server."
 
 #: ../../API.rst:33 ../../API.rst:41 ../../API.rst:49 ../../API.rst:57
 #: ../../API.rst:65 ../../API.rst:76
 msgid "Access: Administrators only"
-msgstr ""
+msgstr "Zugriff: Nur für Administratoren"
 
 #: ../../API.rst:36
 msgid "/api/tcp/stop"
-msgstr ""
+msgstr "/api/tcp/stop"
 
 #: ../../API.rst:38
 msgid "Stops the TCP CoT streaming server."
-msgstr ""
+msgstr "Stoppt den TCP CoT-Streaming-Server."
 
 #: ../../API.rst:44
 msgid "/api/ssl/start"
-msgstr ""
+msgstr "/api/ssl/start"
 
 #: ../../API.rst:46
 msgid "Starts the SSL CoT streaming server"
-msgstr ""
+msgstr "Startet den SSL CoT-Streaming-Server"
 
 #: ../../API.rst:52
 msgid "/api/ssl/stop"
-msgstr ""
+msgstr "/api/ssl/stop"
 
 #: ../../API.rst:54
 msgid "Stops the TCP SSL streaming server"
-msgstr ""
+msgstr "Stoppt den TCP/SSL-Streaming-Server"
 
 #: ../../API.rst:60 ../../API.rst:71
 msgid "/api/certificate"
-msgstr ""
+msgstr "/api/certificate"
 
 #: ../../API.rst:62
 msgid "Downloads a certificate data package for the specified callsign"
-msgstr ""
+msgstr "Lädt ein Zertifikatsdatenpaket für das angegebene Rufzeichen herunter"
 
 #: ../../API.rst:66
 msgid "Parameters: callsign"
-msgstr ""
+msgstr "Parameter: Rufzeichen"
 
 #: ../../API.rst:73
 msgid "Creates a certificate data package for an EUD"
-msgstr ""
+msgstr "Erstellt ein Zertifikatsdatenpaket für eine EUD"
 
 #: ../../API.rst:75 ../../API.rst:92 ../../API.rst:228
 msgid "HTTP Method: ``POST``"
-msgstr ""
+msgstr "HTTP-Methode: ``POST``"
 
 #: ../../API.rst:77
 msgid "Content Type: ``JSON``"
-msgstr ""
+msgstr "Inhaltstyp: ``JSON``"
 
 #: ../../API.rst:78
 #, python-brace-format
 msgid "Content: ``{'uid': 'Android-123456789', 'callsign': 'BRAVO'}``"
-msgstr ""
+msgstr "Inhalt: ``{'uid': 'Android-123456789', 'callsign': 'BRAVO'}``"
 
 #: ../../API.rst:80
 msgid "/api/me"
-msgstr ""
+msgstr "/api/me"
 
 #: ../../API.rst:82
 msgid "Returns user account details"
-msgstr ""
+msgstr "Gibt Details zum Benutzerkonto zurück"
 
 #: ../../API.rst:88 ../../API.rst:98 ../../API.rst:109
 msgid "/api/data_packages"
-msgstr ""
+msgstr "/api/data_packages"
 
 #: ../../API.rst:90
 msgid "Uploads a data package"
-msgstr ""
+msgstr "Lädt ein Datenpaket hoch"
 
 #: ../../API.rst:100
 msgid "Deletes a data package"
-msgstr ""
+msgstr "Löscht ein Datenpaket"
 
 #: ../../API.rst:102 ../../API.rst:275
 msgid "HTTP Method: ``DELETE``"
-msgstr ""
+msgstr "HTTP-Methode: ``DELETE``"
 
 #: ../../API.rst:104
 msgid "Parameters: ``hash`` - The sha256 hash of the data package to delete"
-msgstr ""
+msgstr "Parameter: ``hash`` - Der SHA256-Hash des zu löschenden Datenpakets"
 
 #: ../../API.rst:111
 msgid "Returns info about data packages"
-msgstr ""
+msgstr "Gibt Informationen über Datenpakete zurück"
 
 #: ../../API.rst:115 ../../API.rst:144
 msgid "Parameters: The following parameters are all optional"
-msgstr ""
+msgstr "Parameter: Die folgenden Parameter sind alle optional"
 
 #: ../../API.rst:117
 msgid "``hash`` - The sha256 hash of the data package"
-msgstr ""
+msgstr "``hash`` - Der SHA256-Hash des Datenpakets"
 
 #: ../../API.rst:118
 msgid "``filename`` - Data package filename."
-msgstr ""
+msgstr "``filename`` - Dateiname des Datenpakets."
 
 #: ../../API.rst:119
 msgid "``creator_uid``"
-msgstr ""
+msgstr "``creator_uid``"
 
 #: ../../API.rst:120
 msgid "``keywords``"
-msgstr ""
+msgstr "``Schlüsselwörter``"
 
 #: ../../API.rst:121
 msgid "``mime_type``"
-msgstr ""
+msgstr "``mime_type``"
 
 #: ../../API.rst:122
 msgid "``size``"
-msgstr ""
+msgstr "``size``"
 
 #: ../../API.rst:123
 msgid "``tool``"
-msgstr ""
+msgstr "``Werkzeug``"
 
 #: ../../API.rst:124
 msgid "``page`` - Which page to get"
-msgstr ""
+msgstr "``page`` - Welche Seite soll aufgerufen werden"
 
 #: ../../API.rst:125
 msgid "``per_page`` - Number of results per page"
-msgstr ""
+msgstr "``per_page`` - Anzahl der Ergebnisse pro Seite"
 
 #: ../../API.rst:128
 msgid "/api/data_packages/download"
-msgstr ""
+msgstr "/api/data_packages/download"
 
 #: ../../API.rst:130
 msgid "Downloads a data package"
-msgstr ""
+msgstr "Lädt ein Datenpaket herunter"
 
 #: ../../API.rst:134
 msgid "Parameters: ``hash`` - The sha256 hash of the data package to download"
 msgstr ""
+"Parameter: ``hash`` - Der SHA256-Hash des herunterzuladenden Datenpakets"
 
 #: ../../API.rst:138
 msgid "/api/cot"
-msgstr ""
+msgstr "/api/cot"
 
 #: ../../API.rst:140
 msgid "Searches for CoTs stored in the database"
-msgstr ""
+msgstr "Suche nach in der Datenbank gespeicherten CoTs"
 
 #: ../../API.rst:146
 msgid "``how``"
-msgstr ""
+msgstr "``wie``"
 
 #: ../../API.rst:147
 msgid "``type``"
-msgstr ""
+msgstr "``Typ``"
 
 #: ../../API.rst:148
 msgid "``sender_callsign``"
-msgstr ""
+msgstr "``sender_callsign``"
 
 #: ../../API.rst:149 ../../API.rst:163
 msgid "``sender_uid``"
-msgstr ""
+msgstr "``sender_uid``"
 
 #: ../../API.rst:150 ../../API.rst:165 ../../API.rst:179 ../../API.rst:194
 msgid "``page``"
-msgstr ""
+msgstr "``Seite``"
 
 #: ../../API.rst:151 ../../API.rst:166 ../../API.rst:180 ../../API.rst:195
 msgid "``per_page``"
-msgstr ""
+msgstr "``per_page``"
 
 #: ../../API.rst:154
 msgid "/api/alerts"
-msgstr ""
+msgstr "/api/alerts"
 
 #: ../../API.rst:156
 msgid "Searches for alerts stored in the database"
-msgstr ""
+msgstr "Sucht nach in der Datenbank gespeicherten Warnmeldungen"
 
 #: ../../API.rst:160
 msgid "Parameters:"
-msgstr ""
+msgstr "Parameter:"
 
 #: ../../API.rst:162
 msgid "``uid``"
-msgstr ""
+msgstr "``uid``"
 
 #: ../../API.rst:164
 msgid "``alert_type``"
-msgstr ""
+msgstr "``Warn_typ``"
 
 #: ../../API.rst:169
 msgid "/api/point"
-msgstr ""
+msgstr "/api/point"
 
 #: ../../API.rst:171
 msgid "Searches for points stored in the database"
-msgstr ""
+msgstr "Sucht nach in der Datenbank gespeicherten Punkten"
 
 #: ../../API.rst:175 ../../API.rst:189 ../../API.rst:204 ../../API.rst:277
 #: ../../API.rst:290
 msgid "Parameters"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../API.rst:177
 msgid "``uid`` - UID of the EUD that created the point"
-msgstr ""
+msgstr "``uid`` - UID des EUD, der den Punkt erstellt hat"
 
 #: ../../API.rst:178 ../../API.rst:192
 msgid "``callsign`` - Callsign of the EUD that created the point"
-msgstr ""
+msgstr "``callsign`` - Rufzeichen des EUD, das den Punkt erstellt hat"
 
 #: ../../API.rst:183 ../../API.rst:284 ../../API.rst:299
 msgid "/api/casevac"
-msgstr ""
+msgstr "/api/casevac"
 
 #: ../../API.rst:185
 msgid "Searches for CasEvacs that are stored in the database"
-msgstr ""
+msgstr "Sucht nach CasEvacs, die in der Datenbank gespeichert sind"
 
 #: ../../API.rst:191
 msgid "``sender_uid`` - UID of the EUD that created the point"
-msgstr ""
+msgstr "``sender_uid`` - UID des EUD, der den Punkt erstellt hat"
 
 #: ../../API.rst:193
 msgid "``uid`` - UID of the CasEvac"
-msgstr ""
+msgstr "``uid`` - UID des CasEvac"
 
 #: ../../API.rst:198 ../../API.rst:224 ../../API.rst:271
 msgid "/api/markers"
-msgstr ""
+msgstr "/api/markers"
 
 #: ../../API.rst:200
 msgid "Searches for markers stored in the database"
-msgstr ""
+msgstr "Sucht nach in der Datenbank gespeicherten Markern"
 
 #: ../../API.rst:206
 msgid "``uid`` - The marker’s unique ID"
-msgstr ""
+msgstr "``uid`` - Die eindeutige ID des Markers"
 
 #: ../../API.rst:207
 msgid "``affiliation`` - One of the following"
-msgstr ""
+msgstr "``Zugehörigkeit`` - Eine der folgenden"
 
 #: ../../API.rst:209
 msgid "friendly"
-msgstr ""
+msgstr "eigene"
 
 #: ../../API.rst:210
 msgid "hostile"
-msgstr ""
+msgstr "Feind"
 
 #: ../../API.rst:211
 msgid "unknown"
-msgstr ""
+msgstr "unbekannt"
 
 #: ../../API.rst:212
 msgid "pending"
-msgstr ""
+msgstr "ausstehend"
 
 #: ../../API.rst:213
 msgid "assumed"
-msgstr ""
+msgstr "vermutet"
 
 #: ../../API.rst:214
 msgid "neutral"
-msgstr ""
+msgstr "neutral"
 
 #: ../../API.rst:215
 msgid "suspect"
-msgstr ""
+msgstr "verdächtig"
 
 #: ../../API.rst:216
 msgid "joker"
-msgstr ""
+msgstr "Joker"
 
 #: ../../API.rst:217
 msgid "faker"
-msgstr ""
+msgstr "Täuschung"
 
 #: ../../API.rst:219
 msgid "``callsign`` - The marker’s callsign"
-msgstr ""
+msgstr "``Rufzeichen`` - Das Rufzeichen des Markers"
 
 #: ../../API.rst:226
 msgid "Adds a new marker or updates an existing one"
-msgstr ""
+msgstr "Fügt eine neue Markierung hinzu oder aktualisiert eine bestehende"
 
 #: ../../API.rst:230 ../../API.rst:305
 msgid "Content Type: JSON"
-msgstr ""
+msgstr "Inhaltstyp: JSON"
 
 #: ../../API.rst:231
 msgid "Required data in the JSON body"
-msgstr ""
+msgstr "Erforderliche Daten im JSON-Body"
 
 #: ../../API.rst:233 ../../API.rst:312
 msgid "``latitude`` - float, must be >= -90 and <= 90"
-msgstr ""
+msgstr "``latitude`` - Gleitkommazahl, muss zwischen -90 und 90 liegen"
 
 #: ../../API.rst:234 ../../API.rst:313
 msgid "``longitude`` - float, must be >= -180 and <= 180"
-msgstr ""
+msgstr "``longitude`` - Gleitkommazahl, muss >= -180 und <= 180 sein"
 
 #: ../../API.rst:235
 msgid "``name`` - name/callsign of the marker"
-msgstr ""
+msgstr "``name`` - Name/Rufzeichen des Markers"
 
 #: ../../API.rst:236 ../../API.rst:308
 msgid ""
 "``uid`` - An identifier in UUID4 format. If no marker exists with this "
 "UUID, a new on is created. Otherwise, the existing marker is updated."
 msgstr ""
+"``uid`` – Eine Kennung im UUID4-Format. Existiert noch keine Markierung mit "
+"dieser UUID, wird eine neue erstellt. Andernfalls wird die vorhandene "
+"Markierung aktualisiert."
 
 #: ../../API.rst:240 ../../API.rst:315
 msgid "Optional data in the JSON body"
-msgstr ""
+msgstr "Optionale Daten im JSON-Body"
 
 #: ../../API.rst:242
 msgid ""
@@ -405,244 +417,261 @@ msgid ""
 "See `this chart <https://www.spatialillusions.com/milsymbol/docs"
 "/milsymbol-2525c.html#heading-1>`__ from milsymbol for more examples."
 msgstr ""
+"``type`` – Der CoT-Typ, standardmäßig ``a-u-G``, falls keiner angegeben "
+"wird. Es gibt zu viele mögliche gültige Werte, um sie hier aufzulisten; hier "
+"sind jedoch einige Beispiele. Weitere Beispiele finden Sie in `this chart "
+"<https://www.spatialillusions.com/milsymbol/docs/milsymbol-"
+"2525c.html#heading-1>`__ von milsymbol."
 
 #: ../../API.rst:248
 msgid "``a-f-G`` - Affiliation friendly, battle dimension ground"
-msgstr ""
+msgstr "``a-f-G`` – Zugehörigkeit Freund, Boden"
 
 #: ../../API.rst:249
 msgid "``a-h-U`` - Affiliation hostile, battle dimension subsurface"
-msgstr ""
+msgstr "``a-h-U`` - Zugehörigkeit feindlich, unter Wasser"
 
 #: ../../API.rst:250
 msgid "``a-j-A`` - Affiliation joker, battle dimension airborne"
-msgstr ""
+msgstr "``a-j-A`` – Zugehörigkeit: Joker, Luft"
 
 #: ../../API.rst:252
 msgid ""
 "``course`` - The direction of travel in compass degrees. Must be >= 0 and"
 " < 360. Defaults to 0."
 msgstr ""
+"``course`` – Die Reiserichtung in Kompassgrad. Muss zwischen 0 und 360 "
+"liegen. Standardwert ist 0."
 
 #: ../../API.rst:254
 msgid ""
 "``azimuth`` - The azimuth in compass degrees. Must be >= 0 and < 360. "
 "Defaults to 0."
 msgstr ""
+"``azimut`` – Der Azimut in Kompassgrad. Muss zwischen 0 und 360 liegen. "
+"Standardwert ist 0."
 
 #: ../../API.rst:256
 msgid "``speed`` - The speed in INSERT_UNIT_HERE. Must be >= 0. Defaults to 0."
 msgstr ""
+"``speed`` – Die Geschwindigkeit in INSERT_UNIT_HERE. Muss >= 0 sein. "
+"Standardwert ist 0."
 
 #: ../../API.rst:258
 msgid ""
 "``battery`` - The remaining battery percentage. Must be >= 0 and <= 100. "
 "Defaults to NULL."
 msgstr ""
+"``battery`` – Der verbleibende Akkustand in Prozent. Muss zwischen 0 und 100 "
+"% liegen. Standardwert ist NULL."
 
 #: ../../API.rst:260
 msgid ""
 "``fov`` - The camera’s field of vision in compass degrees. This will show"
 " a camera’s view shed on the map."
 msgstr ""
+"``fov`` – Das Sichtfeld der Kamera in Grad. Dies zeigt den Sichtbereich der "
+"Kamera auf der Karte an."
 
 #: ../../API.rst:262
 msgid "``ce`` - Circular 1-sigma or a circular area about the location in meters"
 msgstr ""
+"``ce`` - Kreisförmige 1-Sigma- oder Kreisfläche um den Standort in Metern"
 
 #: ../../API.rst:264
 msgid "``hae`` - Height above the WGS ellipsoid in meters"
-msgstr ""
+msgstr "``hae`` - Höhe über dem WGS-Ellipsoid in Metern"
 
 #: ../../API.rst:265
 msgid ""
 "``le`` - Linear 1-sigma error or an altitude range about the location in "
 "meters"
 msgstr ""
+"``le`` - Linearer 1-Sigma-Fehler oder Höhenbereich um den Standort in Metern"
 
 #: ../../API.rst:273
 msgid "Deletes a marker"
-msgstr ""
+msgstr "Löscht eine Markierung"
 
 #: ../../API.rst:279
 msgid "``uid`` - The marker’s UID"
-msgstr ""
+msgstr "``uid`` - Die UID des Markers"
 
 #: ../../API.rst:286
 msgid "Searches for CasEvacs in the database"
-msgstr ""
+msgstr "Sucht in der Datenbank nach CasEvacs"
 
 #: ../../API.rst:292
 msgid "``callsign`` - The CasEvac’s Callsign"
-msgstr ""
+msgstr "``Rufzeichen`` - Das Rufzeichen des CasEvac"
 
 #: ../../API.rst:294
 msgid "``uid`` - The CasEvac’s UID"
-msgstr ""
+msgstr "``uid`` - Die Benutzer-ID von CasEvac"
 
 #: ../../API.rst:301
 msgid "Add or update a CasEvac"
-msgstr ""
+msgstr "Fügen Sie einen CasEvac hinzu oder aktualisieren Sie ihn"
 
 #: ../../API.rst:303
 msgid "HTTP Method ``POST``"
-msgstr ""
+msgstr "HTTP-Methode ``POST``"
 
 #: ../../API.rst:306
 msgid "Required data in JSON body"
-msgstr ""
+msgstr "Erforderliche Daten im JSON-Body"
 
 #: ../../API.rst:311
 msgid "``title`` - Name of the CasEvac that will appear on the map"
-msgstr ""
+msgstr "``title`` - Name der CasEvac-Mission, der auf der Karte angezeigt wird"
 
 #: ../../API.rst:317
 msgid "``ambulatory`` - Integer"
-msgstr ""
+msgstr "``ambulant`` - Integer"
 
 #: ../../API.rst:318
 msgid "``casevac`` - Boolean"
-msgstr ""
+msgstr "``casevac`` - Boolescher Wert"
 
 #: ../../API.rst:319
 msgid "``child`` - Integer"
-msgstr ""
+msgstr "``Kind`` - Integer"
 
 #: ../../API.rst:320
 msgid "``enemy`` - Integer"
-msgstr ""
+msgstr "``Feind`` - Integer"
 
 #: ../../API.rst:321
 msgid "``epw`` - Integer"
-msgstr ""
+msgstr "``epw`` - Integer"
 
 #: ../../API.rst:322
 msgid "``equipment_detail`` - String"
-msgstr ""
+msgstr "``Ausrüstung_detail`` - String"
 
 #: ../../API.rst:323
 msgid "``equipment_none`` - Boolean"
-msgstr ""
+msgstr "``Ausrüstung_keine`` - Boolean"
 
 #: ../../API.rst:324
 msgid "``equipment_other`` - Boolean"
-msgstr ""
+msgstr "``Ausrüstung_andere`` - Boolean"
 
 #: ../../API.rst:325
 msgid "``extration_equipment`` - Boolean"
-msgstr ""
+msgstr "``Extrations_Ausrüstung`` - Boolean"
 
 #: ../../API.rst:326
 msgid "``freq`` - Integer"
-msgstr ""
+msgstr "``freq`` - Integer"
 
 #: ../../API.rst:327
 msgid "``friendlies`` - String"
-msgstr ""
+msgstr "``verbündet`` - String"
 
 #: ../../API.rst:328
 msgid "``hlz_marking`` - Integer"
-msgstr ""
+msgstr "``hlz_marking`` - Ganzzahl"
 
 #: ../../API.rst:329
 msgid "``hlz_remarks`` - String"
-msgstr ""
+msgstr "``hlz_remarks`` - String"
 
 #: ../../API.rst:330
 msgid "``hoist`` - Boolean"
-msgstr ""
+msgstr "``Seilwinde`` - Boolean"
 
 #: ../../API.rst:331
 msgid "``litter`` - Integer"
-msgstr ""
+msgstr "``Trage`` - Integer"
 
 #: ../../API.rst:332
 msgid "``marked_by`` - String"
-msgstr ""
+msgstr "``markiert_von`` - String"
 
 #: ../../API.rst:333
 msgid "``medline_remarks`` - String"
-msgstr ""
+msgstr "``medline_remarks`` - String"
 
 #: ../../API.rst:334
 msgid "``nonus_civilian`` - Integer"
-msgstr ""
+msgstr "``nonus_zivil`` - Integer"
 
 #: ../../API.rst:335
 msgid "``nonus_military`` - Integer"
-msgstr ""
+msgstr "``nonus_Militär`` - Integer"
 
 #: ../../API.rst:336
 msgid "``obstacles`` - String"
-msgstr ""
+msgstr "``Hindernisse`` - String"
 
 #: ../../API.rst:337
 msgid "``priority`` - Integer"
-msgstr ""
+msgstr "``Priorität`` - Integer"
 
 #: ../../API.rst:338
 msgid "``routine`` - Integer"
-msgstr ""
+msgstr "``routine`` - Integer"
 
 #: ../../API.rst:339
 msgid "``security`` - Integer"
-msgstr ""
+msgstr "``security`` - Integer"
 
 #: ../../API.rst:340
 msgid "``terrain_loose`` - Boolean"
-msgstr ""
+msgstr "``Boden_lose`` - Boolean"
 
 #: ../../API.rst:341
 msgid "``terrain_other`` - Boolean"
-msgstr ""
+msgstr "``Boden_sonstige`` - Boolean"
 
 #: ../../API.rst:342
 msgid "``terrain_other_detail`` - Boolean"
-msgstr ""
+msgstr "``Boden_sonstiges_detail`` - Boolean"
 
 #: ../../API.rst:343
 msgid "``terrain_detail`` - String"
-msgstr ""
+msgstr "``Boden_detail`` - String"
 
 #: ../../API.rst:344
 msgid "``terrain_none`` - Boolean"
-msgstr ""
+msgstr "``Boden_kein`` - Boolean"
 
 #: ../../API.rst:345
 msgid "``terrain_rough`` - Boolean"
-msgstr ""
+msgstr "``Gelände_unwegsam`` - Boolean"
 
 #: ../../API.rst:346
 msgid "``terrain_slope`` - Boolean"
-msgstr ""
+msgstr "``Gelände_steil`` - Boolean"
 
 #: ../../API.rst:347
 msgid "``terrain_slope_dir`` - String"
-msgstr ""
+msgstr "``terrain_slope_dir`` - String"
 
 #: ../../API.rst:348
 msgid "``urgent`` - Integer"
-msgstr ""
+msgstr "``dringend`` - Integer"
 
 #: ../../API.rst:349
 msgid "``us_civilian`` - Integer"
-msgstr ""
+msgstr "``us_zivil`` - Integer"
 
 #: ../../API.rst:350
 msgid "``us_military`` - Integer"
-msgstr ""
+msgstr "``us_Militär`` - Integer"
 
 #: ../../API.rst:351
 msgid "``ventilator`` - Boolean"
-msgstr ""
+msgstr "``ventilator`` - Boolean"
 
 #: ../../API.rst:352
 msgid "``winds_are_from`` - String"
-msgstr ""
+msgstr "``winds_are_from`` - String"
 
 #: ../../API.rst:353
 msgid "``zone_prot_selection`` - Integer"
-msgstr ""
+msgstr "``zone_prot_selection`` - Ganzzahl"
 
 #~ msgid ""
 #~ "All API calls except for ``/api/login``"
@@ -650,4 +679,3 @@ msgstr ""
 #~ "Some are restricted to administrators "
 #~ "only."
 #~ msgstr ""
-

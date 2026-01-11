@@ -4,157 +4,164 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/ots_api/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../ots_api.rst:2
 msgid "OpenTAKServer API"
-msgstr ""
+msgstr "OpenTAKServer API"
 
 #: ../../<autoflask>:1
 msgid "Required by CloudTAK, returns the following"
-msgstr ""
+msgstr "Wird von CloudTAK benötigt und gibt Folgendes zurück"
 
 #: ../../<autoflask>:1
 msgid "Health check for Docker, returns the following"
-msgstr ""
+msgstr "Health-Check für Docker, gibt Folgendes zurück"
 
 #: ../../<autoflask>:1
 msgid "Server status used on the Dashboard page of the web UI"
-msgstr ""
+msgstr "Serverstatus, der auf der Dashboard-Seite der Web-UI verwendet wird"
 
 #: ../../<autoflask>
 msgid "rtype"
-msgstr ""
+msgstr "rtype"
 
 #: ../../<autoflask>:1
 msgid "dict"
-msgstr ""
+msgstr "Wörterbuch"
 
 #: ../../<autoflask>:1
 msgid "Get the details of the currently logged in user"
-msgstr ""
+msgstr "Die Details des aktuell angemeldeten Benutzers abrufen"
 
 #: ../../<autoflask>:1
 msgid "User"
-msgstr ""
+msgstr "Benutzer"
 
 #: ../../<autoflask>:1
 msgid "Get CoT messages. All parameters are optional."
-msgstr ""
+msgstr "CoT-Nachrichten abrufen. Alle Parameter sind optional."
 
 #: ../../ots_api.rst
 msgid "Parameters"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../<autoflask>:1
 msgid "The how attribute of the CoT message, i.e. ``m-g``, ``h-g-i-g-o``"
-msgstr ""
+msgstr "Das „Wie“-Attribut der CoT-Nachricht, d. h. „`m-g``, „`h-g-i-g-o``"
 
 #: ../../<autoflask>:1
 msgid "The type attribute of the CoT message, i.e. ``a-f-G-U-C``"
-msgstr ""
+msgstr "Das Typattribut der CoT-Nachricht, d.h. „a-f-G-U-C“"
 
 #: ../../<autoflask>:1
 msgid "The callsign of the EUD that sent the CoT message"
-msgstr ""
+msgstr "Das Rufzeichen des EUD, das die CoT-Nachricht gesendet hat"
 
 #: ../../<autoflask>:1
 msgid "The UID of the EUD that sent the CoT message"
-msgstr ""
+msgstr "Die UID des EUD, der die CoT-Nachricht gesendet hat"
 
 #: ../../<autoflask>:1
 msgid "The page number"
-msgstr ""
+msgstr "Die Seitenzahl"
 
 #: ../../<autoflask>:1
 msgid "The number of results per page"
-msgstr ""
+msgstr "Die Anzahl der Ergebnisse pro Seite"
 
 #: ../../<autoflask>:1
 msgid "Get alerts. All parameters are optional."
-msgstr ""
+msgstr "Benachrichtigungen erhalten. Alle Parameter sind optional."
 
 #: ../../<autoflask>:1
 msgid "The alert's UID"
-msgstr ""
+msgstr "Die UID der Warnung"
 
 #: ../../<autoflask>:1
 msgid "The UID of the EUD that sent the alert"
-msgstr ""
+msgstr "Die UID des EUD, der die Warnung gesendet hat"
 
 #: ../../<autoflask>:1
 msgid "The type of alert"
-msgstr ""
+msgstr "Die Art der Warnung"
 
 #: ../../<autoflask>:1
 msgid "Query points. All parameters are optional."
-msgstr ""
+msgstr "Abfragepunkte. Alle Parameter sind optional."
 
 #: ../../<autoflask>:1
 msgid "The point's UID"
-msgstr ""
+msgstr "Die UID des Punktes"
 
 #: ../../<autoflask>:1
 msgid "The point's callsign"
-msgstr ""
+msgstr "Rufzeichen des Punktes"
 
 #: ../../<autoflask>:1
 msgid "Query EUDS. All parameters are optional."
-msgstr ""
+msgstr "EUDS abfragen. Alle Parameter sind optional."
 
 #: ../../<autoflask>:1
 msgid "The EUD's callsign"
-msgstr ""
+msgstr "Rufzeichen der EUD"
 
 #: ../../<autoflask>:1
 msgid "The username that the EUD belongs to"
-msgstr ""
+msgstr "Der Benutzername, zu dem die EUD gehört"
 
 #: ../../<autoflask>:1
 msgid "Downloads the server's truststore with no authentication required."
 msgstr ""
+"Lädt den Truststore des Servers herunter, ohne dass eine Authentifizierung "
+"erforderlich ist."
 
 #: ../../<autoflask>:1
 msgid "Gets the latest data to be displayed on the web UI's map"
 msgstr ""
+"Ruft die neuesten Daten ab, die auf der Karte der Web-Benutzeroberfläche "
+"angezeigt werden sollen"
 
 #: ../../<autoflask>:1
 msgid "Query map icons. All parameters are optional."
-msgstr ""
+msgstr "Kartensymbole abfragen. Alle Parameter sind optional."
 
 #: ../../<autoflask>:1
 msgid "The iTAK QR string in the following format:"
-msgstr ""
+msgstr "Der iTAK-QR-Code hat folgendes Format:"
 
 #: ../../<autoflask>:1
 msgid "``OpenTAKServer_SERVER-ADDRESS,SERVER-ADDRESS,8089,SSL``"
-msgstr ""
+msgstr "``OpenTAKServer_SERVER-ADDRESS,SERVER-ADDRESS,8089,SSL``"
 
 #: ../../<autoflask>:1
 msgid "Gets a list of group memberships for a user :parameter: username"
 msgstr ""
+"Ruft eine Liste der Gruppenzugehörigkeiten eines Benutzers ab: Parameter: "
+"Benutzername"
 
 #: ../../<autoflask>
 msgid "return"
-msgstr ""
+msgstr "zurückkehren"
 
 #: ../../<autoflask>:1
 msgid "List of group memberships"
-msgstr ""
+msgstr "Liste der Gruppenmitgliedschaften"
 
 #: ../../<autoflask>:1
 msgid ""
@@ -162,6 +169,10 @@ msgid ""
 "add a user to :parameter: username :parameter: direction - Group "
 "direction, must be either IN or OUT"
 msgstr ""
+"Fügt einen Benutzer einer oder mehreren Gruppen hinzu: Parameter: Gruppen – "
+"Liste der Gruppen, denen ein Benutzer hinzugefügt werden soll; Parameter: "
+"Benutzername; Parameter: Richtung – Gruppenrichtung (muss entweder IN oder "
+"OUT sein)"
 
 #: ../../<autoflask>:1
 msgid ""
@@ -169,68 +180,73 @@ msgid ""
 "specified group or user doesn't exist or the user is already in the "
 "group. 200 on success."
 msgstr ""
+"Fehlercode 400, wenn LDAP aktiviert ist, keine Gruppe oder kein Benutzername "
+"angegeben wurde oder die angegebene Gruppe oder der Benutzer nicht existiert "
+"bzw. der Benutzer bereits Mitglied der Gruppe ist. Fehlercode 200 bei Erfolg."
 
 #: ../../<autoflask>:1
 msgid "Response"
-msgstr ""
+msgstr "Antwort"
 
 #: ../../<autoflask>:1
 msgid "Search groups with filters and pagination"
-msgstr ""
+msgstr "Suchgruppen mit Filtern und Paginierung"
 
 #: ../../<autoflask>
 msgid "parameter"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../<autoflask>:1
 msgid "name"
-msgstr ""
+msgstr "Name"
 
 #: ../../<autoflask>:1
 msgid "type"
-msgstr ""
+msgstr "Typ"
 
 #: ../../<autoflask>:1
 msgid "bitpos"
-msgstr ""
+msgstr "Bitpos"
 
 #: ../../<autoflask>:1
 msgid "active"
-msgstr ""
+msgstr "aktiv"
 
 #: ../../<autoflask>:1
 msgid "page"
-msgstr ""
+msgstr "Seite"
 
 #: ../../<autoflask>:1
 msgid "per_page"
-msgstr ""
+msgstr "pro Seite"
 
 #: ../../<autoflask>:1
 msgid "JSON array of groups"
-msgstr ""
+msgstr "JSON-Array von Gruppen"
 
 #: ../../<autoflask>:1
 msgid "Get a list of all groups"
-msgstr ""
+msgstr "Erhalte eine Liste aller Gruppen"
 
 #: ../../<autoflask>:1
 msgid "Get a list of members of a group"
-msgstr ""
+msgstr "Erhalte eine Liste der Mitglieder einer Gruppe"
 
 #: ../../<autoflask>:1
 msgid "JSON array of group members"
-msgstr ""
+msgstr "JSON-Array von Gruppenmitgliedern"
 
 #: ../../<autoflask>:1
 msgid "Creates a new group"
-msgstr ""
+msgstr "Erstellt eine neue Gruppe"
 
 #: ../../<autoflask>:1
 msgid ""
 "400 if LDAP is enabled, the request is missing the name key or the group "
 "exists. 500 on server errors."
 msgstr ""
+"Fehlercode 400, wenn LDAP aktiviert ist, der Name-Schlüssel in der Anfrage "
+"fehlt oder die Gruppe bereits existiert. Fehlercode 500 bei Serverfehlern."
 
 #: ../../<autoflask>:1
 msgid ""
@@ -240,14 +256,20 @@ msgid ""
 "group_name - Name of the group to add users to :parameter: direction - "
 "Group direction, can only be IN or OUT"
 msgstr ""
+"Fügt einen Benutzer einer Gruppe hinzu. Dadurch können alle Endbenutzer "
+"(EUDs) des Benutzers die Kanäle/Gruppen abonnieren und abbestellen, die sie "
+"sehen dürfen. :parameter: users – Eine Liste der Benutzer, die einer Gruppe "
+"hinzugefügt werden sollen. :parameter: group_name – Name der Gruppe, der "
+"Benutzer hinzugefügt werden sollen. :parameter: direction – Gruppenrichtung ("
+"nur IN oder OUT)"
 
 #: ../../<autoflask>:1
 msgid "Provides an OAuth token for TAKX and CloudTAK"
-msgstr ""
+msgstr "Stellt ein OAuth-Token für TAKX und CloudTAK bereit."
 
 #: ../../<autoflask>:1
 msgid "jwt"
-msgstr ""
+msgstr "jwt"
 
 #: ../../<autoflask>:1
 msgid ""
@@ -255,36 +277,43 @@ msgid ""
 "enrollment via QR code only works if your server has a Let's Encrypt "
 "certificate. Params are sent as JSON."
 msgstr ""
+"Erzeugt einen QR-Code für die ATAK-Zertifikatregistrierung. Die ATAK-"
+"Zertifikatregistrierung per QR-Code funktioniert nur, wenn Ihr Server über "
+"ein Let's Encrypt-Zertifikat verfügt. Die Parameter werden im JSON-Format "
+"gesendet."
 
 #: ../../<autoflask>:1
 msgid "The expiration time in unix epoch seconds i.e.1764260510"
-msgstr ""
+msgstr "Die Ablaufzeit in Unix-Epochensekunden, d.h. 1764260510"
 
 #: ../../<autoflask>:1
 msgid ""
 "Not Before, the token will not be valid until this date in unix epoch "
 "seconds."
 msgstr ""
+"Nicht vor diesem Datum: Das Token ist erst ab diesem Datum in Unix-"
+"Epochensekunden gültig."
 
 #: ../../<autoflask>:1
 msgid "The maximum number of uses for this token."
-msgstr ""
+msgstr "Die maximale Anzahl an Verwendungen für dieses Token."
 
 #: ../../<autoflask>:1
 msgid ""
 "String in the format of "
 "tak://com.atakmap.app/enroll?host=server_address.com&username=your_username&token=jwt_token"
 msgstr ""
+"Zeichenkette im Format tak://com.atakmap.app/"
+"enroll?host=server_address.com&username=your_username&token=jwt_token"
 
 #: ../../<autoflask>:1
 msgid "Returns an existing ATAK QR string"
-msgstr ""
+msgstr "Gibt eine vorhandene ATAK-QR-Zeichenkette zurück"
 
 #: ../../<autoflask>:1
 msgid "Deletes a token"
-msgstr ""
+msgstr "Löscht ein Token"
 
 #: ../../<autoflask>:1
 msgid "200 on success"
-msgstr ""
-
+msgstr "200 zum Erfolg"

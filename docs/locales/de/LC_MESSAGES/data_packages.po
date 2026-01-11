@@ -4,49 +4,55 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/data_packages/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../data_packages.md:1
 msgid "Data Packages"
-msgstr ""
+msgstr "Datenpakete"
 
 #: ../../data_packages.md:3
 msgid "Uploading Data Packages Zip files"
-msgstr ""
+msgstr "Zip Datei Pakete hochladen"
 
 #: ../../data_packages.md:5
 msgid ""
 "Data package zip files can be uploaded via OpenTAKServer's web UI. When "
 "they are uploaded, EUDs can download them via the data package tool."
 msgstr ""
+"ZIP-Dateien von Datenpaketen können über die Web-UI von OpenTAKServer "
+"hochgeladen werden. Nach dem Hochladen können EUDs diese über das Datenpaket-"
+"Tool herunterladen."
 
 #: ../../data_packages.md:8
 msgid "Sending Data Packages from EUDs"
-msgstr ""
+msgstr "Datenpakete vom Endgerät versenden"
 
 #: ../../data_packages.md:10
 msgid ""
 "OpenTAKServer will automatically store a copy of and data package sent "
 "out by EUDs."
 msgstr ""
+"OpenTAKServer speichert automatisch eine Kopie jedes von EUDs gesendeten "
+"Datenpakets."
 
 #: ../../data_packages.md:12
 msgid "Automatic Data Package Creation"
-msgstr ""
+msgstr "Automatische Erstellung von Datenpaketen"
 
 #: ../../data_packages.md:14
 msgid ""
@@ -56,10 +62,15 @@ msgid ""
 " coordinates set in its EXIF data, it will automatically show on the "
 "EUD's map when it is downloaded."
 msgstr ""
+"`png`-, `jpg`-, `jpeg`- und `xml`-Dateien können auch auf der Seite "
+"„Datenpakete“ der Web-Benutzeroberfläche hochgeladen werden. Beim Hochladen "
+"erstellt OpenTAKServer automatisch ZIP-Dateien für die Datenpakete. Wenn ein "
+"Bild GPS-Koordinaten in seinen EXIF-Daten enthält, wird es nach dem "
+"Herunterladen automatisch auf der EUD-Karte angezeigt."
 
 #: ../../data_packages.md:18
 msgid "Install on Enrollment and Connection"
-msgstr ""
+msgstr "Installation bei Registrierung und Verbindung"
 
 #: ../../data_packages.md:20
 msgid ""
@@ -71,10 +82,18 @@ msgid ""
 "package will be automatically installed the next time the EUD connects. "
 "One or both of these options can be enabled for each data package"
 msgstr ""
+"Auf der Datenpaketseite in der Web-UI befinden sich Schalter für die "
+"Installation des Datenpakets bei der Zertifikatsregistrierung und bei der "
+"Serververbindung. Ist der Schalter für die Registrierung aktiviert, wird das "
+"Datenpaket nach erfolgreicher Zertifikatsregistrierung automatisch auf dem "
+"Endgerät (EUD) installiert. Ist der Schalter für die Verbindung aktiviert, "
+"wird das Datenpaket beim nächsten Verbindungsaufbau des Endgeräts "
+"automatisch installiert. Für jedes Datenpaket kann eine oder können beide "
+"dieser Optionen aktiviert werden"
 
 #: ../../data_packages.md:25
 msgid "ATAK Settings for Installation on Connection"
-msgstr ""
+msgstr "ATAK-Einstellungen für die Installation bei Verbindung"
 
 #: ../../data_packages.md:27
 msgid ""
@@ -84,6 +103,11 @@ msgid ""
 " manually enable it. It can be found under Settings->Network "
 "Preferences->Network Connection Preferences."
 msgstr ""
+"Wird ein Endgerät (EUD) initial über eine Zertifikatsregistrierung oder ein "
+"Datenpaket mit dem OpenTAKServer verbunden, wird die Option `TAK-"
+"Serverprofilaktualisierungen anwenden` in ATAK automatisch aktiviert. "
+"Andernfalls müssen Sie sie manuell aktivieren. Sie finden sie unter "
+"Einstellungen → Netzwerkpräferenzen → Netzwerkverbindungspräferenzen."
 
 #: ../../data_packages.md:31
 msgid ""
@@ -94,4 +118,10 @@ msgid ""
 " OpenTAKServer will only send the EUD new or changed data packages "
 "between the current time and the last time the EUD connected."
 msgstr ""
-
+"Wenn ATAK eine Verbindung zu einem Server herstellt und diese Option "
+"aktiviert ist, ruft es die Funktion `/Marti/api/device/profile/connection` "
+"mit dem optionalen Parameter `syncSecago` auf. `syncSecago` ist eine "
+"Ganzzahl, die die Anzahl der Sekunden seit der letzten Verbindung des "
+"Endgeräts (EUD) zum Server angibt. Ist dieser Parameter vorhanden, sendet "
+"OpenTAKServer dem Endgerät nur neue oder geänderte Datenpakete, die zwischen "
+"dem aktuellen Zeitpunkt und der letzten Verbindung des Endgeräts liegen."

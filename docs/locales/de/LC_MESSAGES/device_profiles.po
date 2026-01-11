@@ -4,25 +4,26 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/device_profiles/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../device_profiles.md:1
 msgid "Device Profiles"
-msgstr ""
+msgstr "Geräteprofile"
 
 #: ../../device_profiles.md:3
 msgid ""
@@ -31,10 +32,15 @@ msgid ""
 " of OpenTAKServer will support assigning different settings to specific "
 "users or groups of users."
 msgstr ""
+"Geräteprofile ermöglichen es Administratoren, Einstellungen automatisch an "
+"EUDs zu verteilen. Dadurch können die Einstellungen auf allen EUDs synchron "
+"gehalten werden. Zukünftige Versionen von OpenTAKServer werden die Zuweisung "
+"unterschiedlicher Einstellungen an bestimmte Benutzer oder Benutzergruppen "
+"unterstützen."
 
 #: ../../device_profiles.md:6
 msgid "Usage"
-msgstr ""
+msgstr "Auslastung"
 
 #: ../../device_profiles.md:8
 msgid ""
@@ -43,40 +49,56 @@ msgid ""
 "administrator has already enabled as well as an `Add Device Profile` "
 "button."
 msgstr ""
+"Während Sie als Administrator bei OpenTAKServer angemeldet sind, klicken Sie "
+"in der Navigationsleiste auf `Device Profiles`. Dort finden Sie eine Liste "
+"der Einstellungen, die der Administrator bereits aktiviert hat, sowie eine "
+"Schaltfläche `Add Device Profile`."
 
 #: ../../device_profiles.md:11
 msgid ""
 "In the settings list there are three switches for `Install on "
 "Enrollment`, `Install on Connection`, and `Active`."
 msgstr ""
+"In der Einstellungsliste gibt es drei Schalter für `Installieren bei "
+"Registrierung`, `Installieren bei Verbindung` und `Aktiv`."
 
 #: ../../device_profiles.md:13
 msgid ""
 "`Install on Enrollment` - Installs the setting on an EUD after a "
 "successful [certificate enrollment](certificate_enrollment.md)."
 msgstr ""
+"`Install on Enrollment` - Installiert die Einstellung auf einem EUD nach "
+"einer erfolgreichen [Zertifikatregistrierung](certificate_enrollment.md)."
 
 #: ../../device_profiles.md:14
 msgid ""
 "`Install on Connection` - Installs the setting the next time the EUD "
 "connects to the server."
 msgstr ""
+"`Install on Connection` - Installiert die Einstellung beim nächsten "
+"Verbindungsaufbau des EUD zum Server."
 
 #: ../../device_profiles.md:15
 msgid ""
 "`Active` - Enables or disables the setting from being installed on EUDs, "
 "even if `Install on Enrollment` or `Install on Connection` are enabled."
 msgstr ""
+"`Aktiv` - Aktiviert oder deaktiviert die Installation der Einstellung auf "
+"EUDs, selbst wenn `Bei Registrierung installieren` oder `Bei Verbindung "
+"installieren` aktiviert sind."
 
 #: ../../device_profiles.md:17
 msgid ""
 "One or both of `Install on Enrollment` and `Install on Connection` may be"
 " enabled for each setting."
 msgstr ""
+"Für jede Einstellung kann entweder die Option `Bei der Registrierung "
+"installieren` oder die Option `Bei der Verbindung installieren` aktiviert "
+"werden."
 
 #: ../../device_profiles.md:19
 msgid "Settings keys and Values"
-msgstr ""
+msgstr "Einstellungsschlüssel und -werte"
 
 #: ../../device_profiles.md:21
 msgid ""
@@ -86,16 +108,20 @@ msgid ""
 "set the `Value Type` field is set to the value of the setting's Type "
 "field in the MyTeckNeck spreadsheet."
 msgstr ""
+"Die vollständigste Liste der möglichen Einstellungen und ihrer Werte finden "
+"Sie in der [MyTeckNet-Tabelle](https://mytecknet.com/"
+"creating-tak-data-packages-for-enrollment/#atak-preference-key). Stellen Sie "
+"außerdem sicher, dass das Feld `Werttyp` auf den Wert des Felds „Typ“ der "
+"jeweiligen Einstellung in der MyTeckNet-Tabelle gesetzt ist."
 
 #: ../../device_profiles.md:25
 msgid "Screenshot"
-msgstr ""
+msgstr "Screenshot"
 
 #: ../../device_profiles.md:27
 msgid "![!Screenshot](images/device_profiles.png)"
-msgstr ""
+msgstr "![!Screenshot](images/device_profiles.png)"
 
 #: ../../device_profiles.md:27
 msgid "!Screenshot"
-msgstr ""
-
+msgstr "Screenshot"

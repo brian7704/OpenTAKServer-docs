@@ -4,25 +4,26 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/email/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../email.md:1
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: ../../email.md:3
 msgid ""
@@ -30,74 +31,87 @@ msgid ""
 "mailman) is used to handle emails.  Enabling email support also enables "
 "the following features:"
 msgstr ""
+"OpenTAKServer benutz [Flask-Mailman](https://github.com/waynerv/flask-"
+"mailman) um Emails zu versenden. Aktiviere Emailunterstützung aktiviert auch "
+"folgende Features:"
 
 #: ../../email.md:6
 msgid "User account self registration"
-msgstr ""
+msgstr "User Account Selbstregistrierung"
 
 #: ../../email.md:7
 msgid ""
 "Password reset - Without email, only administrators can change a user's "
 "password if they forget it"
 msgstr ""
+"Passwortzurücksetzung – Ohne E-Mail können nur Administratoren das Passwort "
+"eines Benutzers ändern, wenn es vergessen wurde"
 
 #: ../../email.md:8
 msgid "Two-factor authentication via email"
-msgstr ""
+msgstr "Zwei-Faktor-Authentifizierung per E-Mail"
 
 #: ../../email.md:10
 msgid "Enabling Email Support"
-msgstr ""
+msgstr "E-Mail-Unterstützung aktivieren"
 
 #: ../../email.md:12
 msgid ""
 "The following settings are required to enable email support. You can find"
 " them in your `config.yml` file."
 msgstr ""
+"Folgende Einstellungen sind erforderlich, um die E-Mail-Unterstützung zu "
+"aktivieren. Sie finden diese in Ihrer `config.yml`-Datei."
 
 #: ../../email.md:14
 msgid ""
 "`OTS_ENABLE_EMAIL`: Other settings have no effect if this is set to "
 "`false`"
 msgstr ""
+"`OTS_ENABLE_EMAIL`: Andere Einstellungen haben keine Auswirkung, wenn diese "
+"auf `false` gesetzt ist"
 
 #: ../../email.md:15
 msgid "`MAIL_SERVER`"
-msgstr ""
+msgstr "`MAIL_SERVER`"
 
 #: ../../email.md:16
 msgid "`MAIL_PORT`"
-msgstr ""
+msgstr "`MAIL_PORT`"
 
 #: ../../email.md:17
 msgid "`MAIL_USERNAME`"
-msgstr ""
+msgstr "`MAIL_Benutzername`"
 
 #: ../../email.md:18
 msgid "`MAIL_PASSWORD`"
-msgstr ""
+msgstr "`MAIL_PASSWORD`"
 
 #: ../../email.md:20
 msgid "These settings are optional and will depend on the email service you use."
 msgstr ""
+"Diese Einstellungen sind optional und hängen vom verwendeten E-Mail-Dienst "
+"ab."
 
 #: ../../email.md:22
 msgid "`MAIL_USE_SSL`"
-msgstr ""
+msgstr "`MAIL_USE_SSL`"
 
 #: ../../email.md:23
 msgid "`MAIL_USE_TLS`"
-msgstr ""
+msgstr "`MAIL_USE_TLS`"
 
 #: ../../email.md:25
 msgid ""
 "You can find a full list of Flask-Mailman's settings in their "
 "[documentation](https://waynerv.github.io/flask-mailman/)."
 msgstr ""
+"Eine vollständige Liste der Einstellungen von Flask-Mailman finden Sie in "
+"deren [Dokumentation](https://waynerv.github.io/flask-mailman/)."
 
 #: ../../email.md:27
 msgid "Gmail"
-msgstr ""
+msgstr "Gmail"
 
 #: ../../email.md:29
 msgid ""
@@ -107,64 +121,68 @@ msgid ""
 "documentation](https://support.google.com/accounts/answer/185833?hl=en)  "
 "for details."
 msgstr ""
+"Wenn Sie E-Mails mit einem Gmail-Konto versenden möchten, müssen Sie sich "
+"anmelden und ein App-Passwort aktivieren. Ihr reguläres Passwort "
+"funktioniert nicht in OpenTAKServer. Weitere Informationen finden Sie in der "
+"[Google-Dokumentation](https://support.google.com/accounts/answer/"
+"185833?hl=en)."
 
 #: ../../email.md:33
 msgid "Gmail settings"
-msgstr ""
+msgstr "Gmail-Einstellungen"
 
 #: ../../email.md
 msgid "Setting"
-msgstr ""
+msgstr "Einstellung"
 
 #: ../../email.md
 msgid "Value"
-msgstr ""
+msgstr "Wert"
 
 #: ../../email.md
 msgid "**MAIL_SERVER**"
-msgstr ""
+msgstr "**MAIL_SERVER**"
 
 #: ../../email.md
 msgid "`smtp.gmail.com`"
-msgstr ""
+msgstr "`smtp.gmail.com`"
 
 #: ../../email.md
 msgid "**MAIL_PORT**"
-msgstr ""
+msgstr "**MAIL_PORT**"
 
 #: ../../email.md
 msgid "`587`"
-msgstr ""
+msgstr "`587`"
 
 #: ../../email.md
 msgid "**MAIL_USE_SSL**"
-msgstr ""
+msgstr "**MAIL_USE_SSL**"
 
 #: ../../email.md
 msgid "`false`"
-msgstr ""
+msgstr "`falsch`"
 
 #: ../../email.md
 msgid "**MAIL_USE_TLS**"
-msgstr ""
+msgstr "**MAIL_USE_TLS**"
 
 #: ../../email.md
 msgid "`true`"
-msgstr ""
+msgstr "`true`"
 
 #: ../../email.md
 msgid "**MAIL_USERNAME**"
-msgstr ""
+msgstr "**MAIL_Benutzername**"
 
 #: ../../email.md
 msgid "`your_username@gmail.com`"
-msgstr ""
+msgstr "`your_username@gmail.com`"
 
 #: ../../email.md
 msgid "**MAIL_PASSWORD**"
-msgstr ""
+msgstr "**MAIL_PASSWORD**"
 
 #: ../../email.md
 msgid "`your_app_password`"
-msgstr ""
-
+msgstr "`Ihr_App-Passwort`"

@@ -4,35 +4,38 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/authentication/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../authentication.md:1
 msgid "Authentication"
-msgstr ""
+msgstr "Authentifizierung"
 
 #: ../../authentication.md:3
 msgid ""
 "OpenTAKServer uses [Flask-Security](https://flask-security-"
 "too.readthedocs.io/en/stable/) to provide authentication."
 msgstr ""
+"OpenTAKServer verwendet [Flask-Security](https://flask-"
+"security-too.readthedocs.io/en/stable/) zur Authentifizierung."
 
 #: ../../authentication.md:5
 msgid "Administrator Account"
-msgstr ""
+msgstr "Administrator Account"
 
 #: ../../authentication.md:7
 msgid ""
@@ -41,10 +44,13 @@ msgid ""
 "password is `password`. You should immediately change the password when "
 "you first log in."
 msgstr ""
+"Beim ersten Start von OpenTAKServer wird automatisch ein Administratorkonto "
+"erstellt. Der Benutzername lautet `administrator` und das Passwort `password`"
+". Sie sollten das Passwort unmittelbar nach der ersten Anmeldung ändern."
 
 #: ../../authentication.md:10
 msgid "Creating Accounts"
-msgstr ""
+msgstr "Konten erstellen"
 
 #: ../../authentication.md:12
 msgid ""
@@ -52,10 +58,13 @@ msgid ""
 "can register their own accounts if an administrator enables "
 "[email](email.md) support."
 msgstr ""
+"Standardmäßig können nur Administratoren Benutzerkonten erstellen. Benutzer "
+"können jedoch ihre eigenen Konten registrieren, wenn ein Administrator die E"
+"-Mail-Unterstützung [email](email.md) aktiviert."
 
 #: ../../authentication.md:15
 msgid "Note on Passwords"
-msgstr ""
+msgstr "Hinweis zu Passwörtern"
 
 #: ../../authentication.md:17
 msgid ""
@@ -69,10 +78,19 @@ msgid ""
 " a password with these characters will cause browsers and video players "
 "to incorrectly parse the URL."
 msgstr ""
+"OpenTAKServer verhindert die Zeichen `@` und `:` in Passwörtern. Bei der "
+"Verwendung der Basisauthentifizierung, beispielsweise beim Ansehen von RTSP-"
+"Streams, kann die Verwendung dieser Zeichen zu einer ungültigen URL führen. "
+"Eine typische URL bei Verwendung der Basisauthentifizierung sieht "
+"folgendermaßen aus: `rtsp://username:password@server_address:8554/path`. "
+"Hierbei trennt der Doppelpunkt (:) Benutzername und Passwort, und das "
+"Zeichen `@` trennt Benutzername/Passwort von der Serveradresse. Passwörter "
+"mit diesen Zeichen führen dazu, dass Browser und Videoplayer die URL falsch "
+"interpretieren."
 
 #: ../../authentication.md:23
 msgid "Token Authentication"
-msgstr ""
+msgstr "Token-Authentifizierung"
 
 #: ../../authentication.md:25
 msgid ""
@@ -80,6 +98,10 @@ msgid ""
 "interacting with OpenTAKServer via the [API](API_old). Use the following "
 "steps to authenticate with a token:"
 msgstr ""
+"OpenTAKServer unterstützt die Token-Authentifizierung, die bei der "
+"Interaktion mit OpenTAKServer über die [API](API_old) hilfreich sein kann. "
+"Führen Sie die folgenden Schritte aus, um sich mit einem Token zu "
+"authentifizieren:"
 
 #: ../../authentication.md:28
 msgid ""
@@ -87,12 +109,18 @@ msgid ""
 "This will remove the CSRF requirements for token auth but still require "
 "CSRF for basic and session auth."
 msgstr ""
+"Fügen Sie diese Einstellungen zu `~/ots/config.yml` hinzu, falls sie noch "
+"nicht vorhanden sind. Dadurch werden die CSRF-Anforderungen für die Token-"
+"Authentifizierung aufgehoben, CSRF ist jedoch weiterhin für die Basis- und "
+"Sitzungsauthentifizierung erforderlich."
 
 #: ../../authentication.md:37
 msgid ""
 "If you changed `config.yml` you must restart OpenTAKServer `sudo "
 "systemctl restart opentakserver`"
 msgstr ""
+"Wenn Sie die Datei `config.yml` geändert haben, müssen Sie OpenTAKServer neu "
+"starten: `sudo systemctl restart opentakserver`"
 
 #: ../../authentication.md:39
 msgid ""
@@ -101,10 +129,15 @@ msgid ""
 "is an example in Python. If your server uses signed certs such as from "
 "Let's Encrypt you can remove `verify=False`."
 msgstr ""
+"Senden Sie anschließend eine HTTP-POST-Anfrage an `/api/login` mit dem "
+"Abfrageparameter `include_auth_token` und Ihren Anmeldeinformationen im JSON-"
+"Format. Hier ist ein Beispiel in Python. Wenn Ihr Server signierte "
+"Zertifikate verwendet, beispielsweise von Let's Encrypt, können Sie "
+"`verify=False` entfernen."
 
 #: ../../authentication.md:47
 msgid "A successful login JSON response will be as follows"
-msgstr ""
+msgstr "Eine erfolgreiche Login-JSON-Antwort sieht wie folgt aus"
 
 #: ../../authentication.md:63
 msgid ""
@@ -112,10 +145,13 @@ msgid ""
 "can be in a query parameter called `auth_token` or in an HTTP header "
 "called `Authentication-Token`"
 msgstr ""
+"Das `Authentifizierungstoken` muss bei jeder nachfolgenden Anfrage gesendet "
+"werden. Es kann in einem Abfrageparameter namens `auth_token` oder in einem "
+"HTTP-Header namens `Authentication-Token` enthalten sein"
 
 #: ../../authentication.md:66
 msgid "Session Authentication"
-msgstr ""
+msgstr "Sitzungsauthentifizierung"
 
 #: ../../authentication.md:68
 msgid ""
@@ -124,10 +160,14 @@ msgid ""
 "server uses signed certs such as from Let's Encrypt you can remove "
 "`verify=False`."
 msgstr ""
+"Für API-Aufrufe mit Sitzungsauthentifizierung ist ein CSRF-Token "
+"erforderlich. Hier ist ein Python-Beispiel mit Sitzungsauthentifizierung. "
+"Wenn Ihr Server signierte Zertifikate wie beispielsweise von Let's Encrypt "
+"verwendet, können Sie `verify=False` entfernen."
 
 #: ../../authentication.md:83
 msgid "Whitelisting and Blacklisting Email Domains"
-msgstr ""
+msgstr "Whitelisting und Blacklisting von E-Mail-Domains"
 
 #: ../../authentication.md:85
 msgid ""
@@ -140,6 +180,15 @@ msgid ""
 "option. For example, adding `gov` and `mil` will allow only users with "
 ".gov or .mil email accounts to register accounts."
 msgstr ""
+"Wenn die E-Mail-Unterstützung aktiviert ist, kann jede gültige E-Mail-"
+"Adresse zur Kontoerstellung verwendet werden. Es gibt jedoch Whitelists für E"
+"-Mail-Domains und Top-Level-Domains (TLDs). Ebenso existieren Blacklists. "
+"Wenn Sie beispielsweise `example.com` zur Option `OTS_EMAIL_DOMAIN_WHITELIST`"
+" hinzufügen, können sich nur Nutzer mit E-Mail-Adressen der Endung "
+"`@example.com` registrieren. Sie können auch Top-Level-Domains (TLDs) zur "
+"Option `OTS_EMAIL_TLD_WHITELIST` hinzufügen. Wenn Sie beispielsweise `gov` "
+"und `mil` hinzufügen, können sich nur Nutzer mit .gov- oder .mil-E-Mail-"
+"Konten registrieren."
 
 #: ../../authentication.md:91
 msgid ""
@@ -147,14 +196,17 @@ msgid ""
 "except that any email address not in those lists will be able to register"
 " for an account."
 msgstr ""
+"`OTS_EMAIL_DOMAIN_BLACKLIST` und `OTS_EMAIL_TLD_BLACKLIST` sind ähnlich, mit "
+"der Ausnahme, dass sich jede E-Mail-Adresse, die nicht auf diesen Listen "
+"steht, für ein Konto registrieren kann."
 
 #: ../../authentication.md:94
 msgid "Two-Factor Authentication"
-msgstr ""
+msgstr "Zwei-Faktor-Authentifizierung"
 
 #: ../../authentication.md:96
 msgid "TOTP"
-msgstr ""
+msgstr "TOTP"
 
 #: ../../authentication.md:98
 msgid ""
@@ -169,10 +221,24 @@ msgid ""
 " or copy and paste the code into the authenticator app. Your "
 "authenticator app will give you a PIN that you enter below the QR code."
 msgstr ""
+"Die Zwei-Faktor-Authentifizierung (2FA) kann für jedes Konto mithilfe eines "
+"TOTP-Codes einer Authentifizierungs-App wie Google Authenticator ([Android]"
+"(https://play.google.com/store/apps/"
+"details?id=com.google.android.apps.authenticator2&hl=en_US&gl=US)/[iOS]"
+"(https://apps.apple.com/us/app/google-authenticator/id388497605)) oder "
+"Microsoft Authenticator ([Android](https://play.google.com/store/apps/"
+"details?id=com.azure.authenticator)/[iOS](https://apps.apple.com/us/app/"
+"microsoft-authenticator/id983156458)) aktiviert werden. Klicken Sie in der "
+"Navigationsleiste auf `2FA einrichten` und wählen Sie die Option für die "
+"Authentifizierungs-App aus. Es werden ein Code und ein QR-Code generiert. "
+"Scannen Sie entweder den QR-Code mit Ihrer Authentifizierungs-App oder "
+"kopieren Sie ihn in die App und fügen Sie ihn dort ein. Ihre "
+"Authentifizierungs-App generiert dann eine PIN, die Sie unterhalb des QR-"
+"Codes eingeben."
 
 #: ../../authentication.md:105
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: ../../authentication.md:107
 msgid ""
@@ -180,22 +246,26 @@ msgid ""
 "has [enabled](email.md) email support. A code will be sent to your email "
 "address which you will need to enter when you log in."
 msgstr ""
+"Sie können Ihre E-Mail-Adresse als Zwei-Faktor-Authentifizierung (2FA) "
+"verwenden, sofern Ihr Administrator E-Mail-Unterstützung [enabled](email.md) "
+"aktiviert hat. Sie erhalten dann einen Code per E-Mail, den Sie beim "
+"Anmelden eingeben müssen."
 
 #: ../../authentication.md:110
 msgid "Screenshot"
-msgstr ""
+msgstr "Screenshot"
 
 #: ../../authentication.md:112
 msgid "![!2FA Setup](images/2fa_setup.png)"
-msgstr ""
+msgstr "![!2FA-Einrichtung](images/2fa_setup.png)"
 
 #: ../../authentication.md:112
 msgid "!2FA Setup"
-msgstr ""
+msgstr "!2FA-Einrichtung"
 
 #: ../../authentication.md:114
 msgid "SSL Socket Authentication"
-msgstr ""
+msgstr "SSL-Socket-Authentifizierung"
 
 #: ../../authentication.md:116
 msgid ""
@@ -207,4 +277,11 @@ msgid ""
 " the connection. Two-Factor authentication is not required for the SSL "
 "socket."
 msgstr ""
-
+"Für die Verbindung zum SSL-Socket von OpenTAKServer ist eine "
+"Authentifizierung erforderlich. Tippen Sie in den Servereinstellungen von "
+"ATAK auf `Authentifizierung verwenden` und geben Sie Ihren Benutzernamen und "
+"Ihr Passwort ein. Nach erfolgreicher Verbindung sendet ATAK eine `<auth>` "
+"CoT mit Benutzername und Passwort. Sind Benutzername und Passwort falsch, "
+"das Konto deaktiviert oder wird keine `<auth>` CoT gesendet, schließt "
+"OpenTAKServer die Verbindung. Eine Zwei-Faktor-Authentifizierung ist für den "
+"SSL-Socket nicht erforderlich."

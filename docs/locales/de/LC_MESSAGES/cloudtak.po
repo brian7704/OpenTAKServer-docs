@@ -4,35 +4,38 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/cloudtak/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../cloudtak.md:1 ../../cloudtak.md:37
 msgid "CloudTAK"
-msgstr ""
+msgstr "CloudTAK"
 
 #: ../../cloudtak.md:3
 msgid ""
 "OpenTAKServer is compatible with [CloudTAK](https://github.com/dfpc-"
 "coe/CloudTAK), a fully featured, in-browser TAK client."
 msgstr ""
+"OpenTAKServer ist mit [CloudTAK](https://github.com/dfpc-coe/CloudTAK), "
+"einem vollwertigen in-browser Tak client kompatibel."
 
 #: ../../cloudtak.md:5
 msgid "Notes"
-msgstr ""
+msgstr "Notizen"
 
 #: ../../cloudtak.md:7
 msgid ""
@@ -42,36 +45,49 @@ msgid ""
 "subdomain. For example, if your FQDN is `example.com`, your subdomain "
 "could be `cloudtak.example.com`."
 msgstr ""
+"CloudTAK wurde bisher nur mit einem FQDN und einem vertrauenswürdigen "
+"Zertifikat (z. B. Let’s Encrypt) getestet. Es kann zwar auch ohne FQDN oder "
+"vertrauenswürdiges Zertifikat funktionieren, SSL ist jedoch immer "
+"erforderlich. Für beste Ergebnisse sollten Sie eine Subdomain erstellen. "
+"Wenn Ihr FQDN beispielsweise `example.com` ist, könnte Ihre Subdomain "
+"`cloudtak.example.com` sein."
 
 #: ../../cloudtak.md:10
 msgid ""
 "If you need support, please ask in the OTS discord rather than contacting"
 " COTAK (the creators of CloudTAK)."
 msgstr ""
+"Wenn Sie Unterstützung benötigen, wenden Sie sich bitte an den OTS-Discord "
+"und nicht an COTAK (die Entwickler von CloudTAK)."
 
 #: ../../cloudtak.md:12
 msgid "Installation"
-msgstr ""
+msgstr "Installation"
 
 #: ../../cloudtak.md:14
 msgid ""
 "This guide assume that you're installing CloudTAK on the same server as "
 "OpenTAKServer."
 msgstr ""
+"Diese Anleitung setzt voraus, dass Sie CloudTAK auf demselben Server wie "
+"OpenTAKServer installieren."
 
 #: ../../cloudtak.md:16
 msgid "Docker"
-msgstr ""
+msgstr "Docker"
 
 #: ../../cloudtak.md:18
 msgid ""
 "Run these commands to install Docker on Ubuntu. If you're not using "
 "Ubuntu, check the Docker docs on how to install for your distro."
 msgstr ""
+"Führen Sie diese Befehle aus, um Docker unter Ubuntu zu installieren. Wenn "
+"Sie nicht Ubuntu verwenden, lesen Sie in der Docker-Dokumentation nach, wie "
+"Sie Docker für Ihre Distribution installieren."
 
 #: ../../cloudtak.md:39
 msgid "Clone the CloudTAK repo"
-msgstr ""
+msgstr "Klonen Sie das CloudTAK-Repository"
 
 #: ../../cloudtak.md:46
 msgid ""
@@ -81,6 +97,11 @@ msgid ""
 "localhost unless you're installing CloudTAK to the same computer you'll "
 "be accessing it from."
 msgstr ""
+"Ändern Sie `API_URL` in docker_compose.yml. Es sollte mit `https://` "
+"beginnen und durch die IP-Adresse oder den FQDN ersetzt werden, über den Sie "
+"darauf zugreifen. Entfernen Sie außerdem `:5000` am Ende. „localhost“ ist "
+"nur zulässig, wenn Sie CloudTAK auf demselben Computer installieren, von dem "
+"aus Sie darauf zugreifen."
 
 #: ../../cloudtak.md:47
 msgid ""
@@ -88,10 +109,16 @@ msgid ""
 "file at `/etc/nginx/sites-available/cloudtak`. You also need to change "
 "the `server_name` line to your FQDN."
 msgstr ""
+"Konfigurieren Sie den Nginx-Proxy. Kopieren Sie die unten stehende "
+"Konfiguration und fügen Sie sie in eine neue Datei unter `/etc/nginx/"
+"sites-available/cloudtak` ein. Ersetzen Sie außerdem in der Zeile "
+"`server_name` Ihren FQDN."
 
 #: ../../cloudtak.md:76
 msgid "Create a symbolic link to enable the new nginx config file."
 msgstr ""
+"Erstellen Sie einen symbolischen Link, um die neue nginx-Konfigurationsdatei "
+"zu aktivieren."
 
 #: ../../cloudtak.md:82
 #, python-brace-format
@@ -99,6 +126,8 @@ msgid ""
 "Edit `/etc/nginx/sites-available/ots_certificate_enrollment` and add the "
 "following inside the `server {}` stanza."
 msgstr ""
+"Bearbeiten Sie `/etc/nginx/sites-available/ots_certificate_enrollment` und "
+"fügen Sie Folgendes innerhalb des `server {}`-Abschnitts hinzu."
 
 #: ../../cloudtak.md:96
 #, python-brace-format
@@ -106,24 +135,29 @@ msgid ""
 "Edit `/etc/nginx/sites-available/ots_https` and add this inside the "
 "listen 8443 `server {}`."
 msgstr ""
+"Bearbeiten Sie `/etc/nginx/sites-available/ots_https` und fügen Sie dies "
+"innerhalb von listen 8443 `server {}` hinzu."
 
 #: ../../cloudtak.md:110
 msgid ""
 "Install certbot and nginx `sudo apt install nginx certbot python3"
 "-certbot-nginx -y`"
 msgstr ""
+"Installieren Sie certbot und nginx `sudo apt install nginx certbot python3"
+"-certbot-nginx -y`"
 
 #: ../../cloudtak.md:111
 msgid "Get a cert from Let's Encrypt `sudo certbot --nginx`"
-msgstr ""
+msgstr "Holen Sie sich ein Zertifikat von Let's Encrypt `sudo certbot --nginx`"
 
 #: ../../cloudtak.md:112
 msgid "Restart nginx `sudo systemctl restart nginx`"
-msgstr ""
+msgstr "nginx neu starten `sudo systemctl restart nginx`"
 
 #: ../../cloudtak.md:113
 msgid ""
 "Open a browser and enter your CloudTAK server's URL, i.e. "
 "https://cloudtak.example.com"
 msgstr ""
-
+"Öffnen Sie einen Browser und geben Sie die URL Ihres CloudTAK-Servers ein, "
+"z. B. https://cloudtak.example.com"

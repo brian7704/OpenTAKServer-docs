@@ -4,29 +4,30 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/plugins/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../plugins.rst:3
 msgid "Server Plugins"
-msgstr ""
+msgstr "Serverplugins"
 
 #: ../../plugins.rst:5
 msgid "As of version 1.5.0, OpenTAKServer includes a plugin system."
-msgstr ""
+msgstr "Ab Version 1.5.0, verfügt OpenTAKServer über ein Plugin System."
 
 #: ../../plugins.rst:7
 msgid ""
@@ -35,12 +36,18 @@ msgid ""
 " plugins are `Flask Blueprints "
 "<https://flask.palletsprojects.com/en/stable/tutorial/views/>`_."
 msgstr ""
+"Wie OpenTAKServer werden auch Plugins mit dem Python-Framework `Flask "
+"<https://flask.palletsprojects.com/en/stable/>`_ erstellt. Konkret handelt "
+"es sich bei Plugins um `Flask Blueprints <https://flask.palletsprojects.com/"
+"en/stable/tutorial/views/>`_."
 
 #: ../../plugins.rst:10
 msgid ""
 "Plugins classes must be a subclass of "
 "``opentakserver.plugins.Plugin.Plugin``"
 msgstr ""
+"Plugin Klassen müssen eine Unterklasse von "
+"``opentakserver.plugins.Plugin.Plugin`` sein"
 
 #: ../../plugins.rst:12
 msgid ""
@@ -48,10 +55,13 @@ msgid ""
 "Template <https://github.com/brian7704/OTS-Plugin-Template>`_. See the "
 "screenshot below."
 msgstr ""
+"Plugins können erstellt werden, indem ein neues Repository aus `OTS-Plugin-"
+"Template <https://github.com/brian7704/OTS-Plugin-Template>`_ erstellt wird. "
+"Siehe Screenshot unten."
 
 #: ../../plugins.rst:20
 msgid "Web UI"
-msgstr ""
+msgstr "Web-Benutzeroberfläche"
 
 #: ../../plugins.rst:22
 msgid ""
@@ -63,6 +73,15 @@ msgid ""
 "should be separate from the plugin's repo. See the `SkyFi Plugin's UI "
 "<https://github.com/brian7704/OTS-SkyFi-Plugin-UI>`_ for an example."
 msgstr ""
+"Plugins können optional eine Web-Oberfläche enthalten, die in einem iFrame "
+"in der OpenTAKServer-Benutzeroberfläche angezeigt wird. Plugin-Oberflächen "
+"werden im React-Framework `Mantine <https://mantine.dev/>`_ geschrieben. Um "
+"eine neue Plugin-Oberfläche zu erstellen, legen Sie ein neues Repository aus "
+"der Vorlage `OTS-UI-Plugin-Template <https://github.com/brian7704/OTS-UI-"
+"Plugin-Template>`_ an. Das Repository der Benutzeroberfläche sollte vom "
+"Repository des Plugins getrennt sein. Ein Beispiel finden Sie in der "
+"Benutzeroberfläche des `SkyFi-Plugins <https://github.com/brian7704/OTS-"
+"SkyFi-Plugin-UI>`_."
 
 #: ../../plugins.rst:27
 msgid ""
@@ -76,10 +95,19 @@ msgid ""
 "Template/blob/bf00f38321d24572a85210d40809ec8cc2454893/vite.config.mjs#L13>`_"
 " file"
 msgstr ""
+"Beim Erstellen der Benutzeroberfläche Ihres Plugins wird davon ausgegangen, "
+"dass sich Ihr Code in ``~/Webstorm Projects/Your-OTS-Plugin-UI`` und Ihr "
+"Plugin in ``~/PyCharm Projects/Your-OTS-Plugin``befindet. Der Befehl ``npm "
+"build`` speichert die erstellten UI-Dateien automatisch in ``~/PyCharm "
+"Projects/Your-OTS-Plugin/ui``. Befindet sich Ihr Code in einem anderen "
+"Verzeichnis, bearbeiten Sie die Option ``outDir`` in der Datei `"
+"vite.config.mjs <https://github.com/brian7704/OTS-UI-Plugin-Template/blob/"
+"bf00f38321d24572a85210d40809ec8cc2454893/vite.config.mjs#L13>`Ihrer "
+"Benutzeroberfläche"
 
 #: ../../plugins.rst:34
 msgid "Licensing"
-msgstr ""
+msgstr "Lizenzierung"
 
 #: ../../plugins.rst:36
 msgid ""
@@ -87,10 +115,13 @@ msgid ""
 "`compatible <https://gplv3.fsf.org/wiki/index.php/Compatible_licenses>`_ "
 "license."
 msgstr ""
+"Öffentlich vertriebene Plugins müssen unter der GPLv3 oder einer anderen `"
+"kompatiblen <https://gplv3.fsf.org/wiki/index.php/Compatible_licenses>`"
+"_Lizenz stehen."
 
 #: ../../plugins.rst:40
 msgid "Public Repo"
-msgstr ""
+msgstr "Öffentliches Repository"
 
 #: ../../plugins.rst:42
 msgid ""
@@ -102,10 +133,18 @@ msgid ""
 " from this repo from within the web UI. The repo can be browsed at "
 "https://repo.opentakserver.io."
 msgstr ""
+"Plugins können nach Belieben des Autors veröffentlicht oder privat gehalten "
+"werden (auch auf PyPI). Es steht jedoch ein öffentliches Plugin-Repository "
+"zur Verfügung. Plugins in diesem Repository werden nach einer Code-"
+"Überprüfung akzeptiert, um sicherzustellen, dass sie die Plugin-"
+"Anforderungen erfüllen, wie vorgesehen funktionieren und keinen Schadcode "
+"enthalten. Nach der Akzeptanz können OpenTAKServer-Benutzer Plugins aus "
+"diesem Repository über die Web-Oberfläche installieren. Das Repository kann "
+"unter https://repo.opentakserver.io eingesehen werden."
 
 #: ../../plugins.rst:49
 msgid "Development"
-msgstr ""
+msgstr "Entwicklung"
 
 #: ../../plugins.rst:51
 msgid ""
@@ -114,20 +153,28 @@ msgid ""
 "and `Webstorm <https://www.jetbrains.com/webstorm/>`_ for the UI. Both "
 "PyCharm and Webstorm have free versions which can be used."
 msgstr ""
+"Obwohl jede IDE für die Entwicklung verwendet werden kann, konzentriert sich "
+"diese Anleitung auf `PyCharm <https://www.jetbrains.com/pycharm/download>`_ "
+"für das Plugin und `Webstorm <https://www.jetbrains.com/webstorm/>`_  für "
+"die Benutzeroberfläche. Sowohl PyCharm als auch WebStorm bieten kostenlose "
+"Versionen an."
 
 #: ../../plugins.rst:57
 msgid "Poetry"
-msgstr ""
+msgstr "Poetry"
 
 #: ../../plugins.rst:59
 msgid ""
 "`Poetry <https://python-poetry.org/>`_ is used to build, package, and "
 "version plugins, as well as manage dependencies."
 msgstr ""
+"`Poetry <https://python-poetry.org/>`_ wird verwendet, um Plugins zu "
+"erstellen, zu verpacken und zu versionieren sowie Abhängigkeiten zu "
+"verwalten."
 
 #: ../../plugins.rst:63
 msgid "Versioning"
-msgstr ""
+msgstr "Versionierung"
 
 #: ../../plugins.rst:65
 msgid ""
@@ -140,58 +187,76 @@ msgid ""
 "``poetry build`` command, the sdist and wheel files will be automatically"
 " tagged with this version number."
 msgstr ""
+"`Die dynamische Versionierung von Poetry <https://github.com/mtkennerly/"
+"poetry-dynamic-versioning>`_ dient der Versionierung von Plugins anhand von "
+"Git-Tags. Sobald eine neue Version Ihres Plugins veröffentlicht werden soll, "
+"wird mithilfe der `semantischen Versionierung  <https://semver.org/>`_ ein "
+"neuer Git-Tag mit der Plugin-Version erstellt. Der erste Versions-Tag könnte "
+"beispielsweise ``1.0.0`` lauten. Beim anschließenden Erstellen des Plugins "
+"für die Verteilung mit dem Befehl ``poetry build`` werden die sdist- und "
+"wheel-Dateien automatisch mit dieser Versionsnummer versehen."
 
 #: ../../plugins.rst:72
 msgid "Start Developing Your Plugin"
-msgstr ""
+msgstr "Beginnen Sie mit der Entwicklung Ihres Plugins"
 
 #: ../../plugins.rst:74
 msgid ""
 "The things that need to be changed are marked with ``TODO`` comments in "
 "OTS-Plugin-Template and OTS-UI-Plugin-Template."
 msgstr ""
+"Die zu ändernden Punkte sind in OTS-Plugin-Template und OTS-UI-Plugin-"
+"Template mit ``TODO``-Kommentaren gekennzeichnet."
 
 #: ../../plugins.rst:76
 msgid "pyproject.toml"
-msgstr ""
+msgstr "pyproject.toml"
 
 #: ../../plugins.rst:77
 msgid "Set the name, description, author information, and URLs"
-msgstr ""
+msgstr "Name, Beschreibung, Autoreninformationen und URLs festlegen"
 
 #: ../../plugins.rst:78
 msgid "*. The name must start with ``OTS-``"
-msgstr ""
+msgstr "*. Der Name muss mit ``OTS-`` beginnen."
 
 #: ../../plugins.rst:79
 msgid ""
 "Change the ``include`` option under ``[tool.poetry]`` to the name of the "
 "folder that contains your plugin's code"
 msgstr ""
+"Ändern Sie die Option ``include`` unter ``[tool.poetry]`` in den Namen des "
+"Ordners, der den Code Ihres Plugins enthält"
 
 #: ../../plugins.rst:80
 msgid "Do the same for ``tool.poetry-dynamic-versioning.files``"
 msgstr ""
+"Führen Sie das gleiche Verfahren für ``tool.poetry-dynamic-versioning.files``"
+" durch."
 
 #: ../../plugins.rst:81
 msgid "app.py"
-msgstr ""
+msgstr "app.py"
 
 #: ../../plugins.rst:82
 msgid "Change the class name"
-msgstr ""
+msgstr "Ändern Sie den Klassennamen"
 
 #: ../../plugins.rst:83
 msgid ""
 "Change the name of the blueprint from ``PluginTemplate`` to your plugin's"
 " name"
 msgstr ""
+"Ändern Sie den Namen der Vorlage von ``PluginTemplate`` in den Namen Ihres "
+"Plugins"
 
 #: ../../plugins.rst:84
 msgid ""
 "Add API routes as necessary. Remember to protect your routes using the "
 "``@auth_required`` or ``@roles_accepted`` decorators"
 msgstr ""
+"Fügen Sie bei Bedarf API-Routen hinzu. Denken Sie daran, Ihre Routen mit den "
+"Dekoratoren ``@auth_required`` oder ``@roles_accepted`` zu schützen"
 
 #: ../../plugins.rst:85
 msgid ""
@@ -199,20 +264,26 @@ msgid ""
 "background. For example, the AISStream plugin uses the ``activate()`` "
 "method to connect to AISStream's servers to pull data."
 msgstr ""
+"Bearbeiten Sie die ``activate()``-Methode, wenn Ihr Plugin im Hintergrund "
+"ausgeführt werden soll. Das AISStream-Plugin verwendet beispielsweise die "
+"``activate()``-Methode, um eine Verbindung zu den AISStream-Servern "
+"herzustellen und Daten abzurufen."
 
 #: ../../plugins.rst:86
 msgid "default_config.py"
-msgstr ""
+msgstr "default_config.py"
 
 #: ../../plugins.rst:87
 msgid "Rename ``OTS_PLUGIN_TEMPLATE_ENABLED`` to your plugin's name"
 msgstr ""
+"Benennen Sie ``OTS_PLUGIN_TEMPLATE_ENABLED`` in den Namen Ihres Plugins um"
 
 #: ../../plugins.rst:88
 msgid "Add config options as necessary"
-msgstr ""
+msgstr "Fügen Sie bei Bedarf Konfigurationsoptionen hinzu"
 
 #: ../../plugins.rst:89
 msgid "Edit the validate() method to validate user input"
 msgstr ""
-
+"Bearbeiten Sie die Methode `validate()`, um die Benutzereingaben zu "
+"validieren"

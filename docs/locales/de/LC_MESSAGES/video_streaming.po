@@ -4,25 +4,26 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/video_streaming/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../video_streaming.md:1
 msgid "Video Streaming"
-msgstr ""
+msgstr "Videostreaming"
 
 #: ../../video_streaming.md:3
 msgid ""
@@ -31,10 +32,14 @@ msgid ""
 "[OpenTAK ICU](https://github.com/brian7704/OpenTAK_ICU) and TAK ICU, as "
 "well as devices like drones and IP Cameras."
 msgstr ""
+"OpenTAKServer verwendet [MediaMTX](https://github.com/bluenviron/mediamtx) "
+"für Videoaufnahmen und Streaming. Das Protokoll akzeptiert Streams von Apps "
+"wie z.B.[OpenTAK ICU](https://github.com/brian7704/OpenTAK_ICU) und TAK ICU, "
+"Dronen und IP Kameras."
 
 #: ../../video_streaming.md:6
 msgid "Streaming From Your Browser"
-msgstr ""
+msgstr "Streaming über den Browser"
 
 #: ../../video_streaming.md:8
 msgid ""
@@ -47,6 +52,16 @@ msgid ""
 " users on the server but they have no app to do so. Laptop and desktop "
 "computers can also use this button to stream from their cameras."
 msgstr ""
+"OpenTAKServer unterstützt das Streaming von jedem Gerät, das über einen "
+"Browser und eine Kamera verfügt. Auf der Seite Video Streams der Web-UI von "
+"OpenTAKServer befindet sich eine Schaltfläche mit der Bezeichnung `Start "
+"Streaming`. Durch Anklicken dieser Schaltfläche fordert der Browser die "
+"Berechtigung an, die Kamera und das Mikrofon Ihres Geräts zu verwenden, um "
+"Audio und Video an MediaMTX zu streamen. Dies ist hilfreich in Situationen, "
+"in denen jemand mit einem Android- oder iOS-Gerät an andere Benutzer auf dem "
+"Server streamen möchte, dafür jedoch keine App zur Verfügung hat. Auch "
+"Laptop- und Desktop-Computer können diese Schaltfläche nutzen, um über ihre "
+"Kameras zu streamen."
 
 #: ../../video_streaming.md:14
 msgid ""
@@ -55,46 +70,51 @@ msgid ""
 "with the stream, meaning there will be no icon on OpenTAKServer's or any "
 "EUD's maps for the location of the stream."
 msgstr ""
+"Beachten Sie, dass bei dieser Art des Streamings ausschließlich Audio und "
+"Video übertragen werden. Benutzer können den Stream auf ihren EUDs ansehen, "
+"es werden jedoch keine Positionsinformationen mit dem Stream übertragen. Das "
+"bedeutet, dass weder auf der Karte von OpenTAKServer noch auf den Karten der "
+"EUDs ein Symbol für den Standort des Streams angezeigt wird."
 
 #: ../../video_streaming.md:18
 msgid "Streaming Protocols"
-msgstr ""
+msgstr "Streaming-Protokolle"
 
 #: ../../video_streaming.md:20
 msgid "You can stream to MediaMTX using a variety of protocols:"
-msgstr ""
+msgstr "Sie können über verschiedene Protokolle zu MediaMTX streamen:"
 
 #: ../../video_streaming.md:22
 msgid "RTSP(S)"
-msgstr ""
+msgstr "RTSP(S)"
 
 #: ../../video_streaming.md:23
 msgid "RTMP(S)"
-msgstr ""
+msgstr "RTMP(S)"
 
 #: ../../video_streaming.md:24
 msgid "SRT"
-msgstr ""
+msgstr "SRT"
 
 #: ../../video_streaming.md:25
 msgid "HLS"
-msgstr ""
+msgstr "HLS"
 
 #: ../../video_streaming.md:26
 msgid "WebRTC"
-msgstr ""
+msgstr "WebRTC"
 
 #: ../../video_streaming.md:27
 msgid "UDP Multicast"
-msgstr ""
+msgstr "UDP-Multicast"
 
 #: ../../video_streaming.md:29
 msgid "Watching Video Streams"
-msgstr ""
+msgstr "Videostreams ansehen"
 
 #: ../../video_streaming.md:31
 msgid "In Browser"
-msgstr ""
+msgstr "Im Browser"
 
 #: ../../video_streaming.md:33
 msgid ""
@@ -104,16 +124,23 @@ msgid ""
 "player sometimes doesn't show up. If that happens, refresh the page and "
 "try again."
 msgstr ""
+"Klicken Sie in OpenTAKServer auf `Videostreams`. Klicken Sie in der "
+"Streamliste auf die Schaltfläche `Ansehen` des gewünschten Streams. "
+"Unterhalb der Streamliste wird ein Videoplayer angezeigt. Es gibt ein "
+"bekanntes Problem, bei dem der Player manchmal nicht angezeigt wird. "
+"Aktualisieren Sie in diesem Fall die Seite und versuchen Sie es erneut."
 
 #: ../../video_streaming.md:37
 msgid ""
 "Alternatively, you can copy the WebRTC link of the video and paste it in "
 "a new tab."
 msgstr ""
+"Alternativ können Sie den WebRTC-Link des Videos kopieren und in einem neuen "
+"Tab einfügen."
 
 #: ../../video_streaming.md:39
 msgid "In ATAK"
-msgstr ""
+msgstr "In ATAK"
 
 #: ../../video_streaming.md:41
 msgid ""
@@ -123,10 +150,16 @@ msgid ""
 "the video settings and add your OpenTAKServer username and password. You "
 "can now view the video stream."
 msgstr ""
+"Sobald ATAK mit OpenTAKServer verbunden ist, öffnen Sie das Video-Tool und "
+"tippen Sie auf die Schaltfläche „Herunterladen“. ATAK fragt den Server nach "
+"einer Liste der verfügbaren Videostreams ab. Wählen Sie den gewünschten "
+"Stream aus und tippen Sie auf die Schaltfläche  `Ok` . Bearbeiten Sie "
+"anschließend die Videoeinstellungen und geben Sie Ihren OpenTAKServer-"
+"Benutzernamen und Ihr Passwort ein. Nun können Sie den Videostream ansehen."
 
 #: ../../video_streaming.md:45
 msgid "In Kodi"
-msgstr ""
+msgstr "In Kodi"
 
 #: ../../video_streaming.md:47
 msgid ""
@@ -136,6 +169,11 @@ msgid ""
 "To in stall the add-on, browse to Add-ons -> Download -> Video add-ons ->"
 " OpenTAKServer Video Plugin and select the install button."
 msgstr ""
+"Es gibt ein Add-on für [Kodi](https://kodi.tv/), mit dem Sie Streams und "
+"Aufnahmen von Ihrem Server ansehen können. Das Add-on funktioniert auf allen "
+"Plattformen, auf denen Kodi läuft (Windows, macOS, Linux, Android, iOS usw.)"
+". Um das Add-on zu installieren, gehen Sie zu Add-ons → Downloads → Video-"
+"Add-ons → OpenTAKServer Video-Plugin und klicken Sie auf „Installieren“."
 
 #: ../../video_streaming.md:51
 msgid ""
@@ -143,18 +181,21 @@ msgid ""
 "screen where you will need to enter your server's address, username, and "
 "password."
 msgstr ""
+"Beim ersten Start des Add-ons gelangen Sie zum Einstellungsbildschirm, wo "
+"Sie die Adresse Ihres Servers, Ihren Benutzernamen und Ihr Passwort eingeben "
+"müssen."
 
 #: ../../video_streaming.md:54
 msgid "![Kodi Add-on](images/kodi_screenshot_1.png)"
-msgstr ""
+msgstr "![Kodi Add-on](images/kodi_screenshot_1.png)"
 
 #: ../../video_streaming.md:54
 msgid "Kodi Add-on"
-msgstr ""
+msgstr "Kodi-Add-on"
 
 #: ../../video_streaming.md:56
 msgid "In VLC"
-msgstr ""
+msgstr "In VLC"
 
 #: ../../video_streaming.md:58
 msgid ""
@@ -163,10 +204,14 @@ msgid ""
 "be prompted for your OpenTAKServer username and password. Enter them and "
 "click Ok."
 msgstr ""
+"Kopieren Sie den RTSP-Link von OpenTAKServer. Klicken Sie in VLC auf „Medien“"
+" → „Netzwerkstream öffnen“. Fügen Sie den RTSP-Link ein und klicken Sie auf "
+"„Wiedergabe“. Sie werden nach Ihrem OpenTAKServer-Benutzernamen und -"
+"Passwort gefragt. Geben Sie diese ein und klicken Sie auf „OK“."
 
 #: ../../video_streaming.md:61
 msgid "Recording Streams"
-msgstr ""
+msgstr "Aufzeichnung von Streams"
 
 #: ../../video_streaming.md:63
 msgid ""
@@ -177,16 +222,22 @@ msgid ""
 " can watch and download recording by clicking `Video Recordings` in the "
 "navigation bar."
 msgstr ""
+"Um einen Stream aufzuzeichnen, klicken Sie einfach auf den Aufnahmeschalter "
+"des Streams. Dies ist sowohl während eines laufenden Streams als auch "
+"außerhalb der Stream-Zeit möglich. Die Aufnahme startet automatisch, sobald "
+"ein Stream live geht, und endet, sobald der Stream beendet wird. "
+"Aufgezeichnete Videos werden standardmäßig unter `~/ots/mediaamtx/recordings/"
+"<Pfadname>` gespeichert. Sie können die Aufnahmen ansehen und herunterladen, "
+"indem Sie in der Navigationsleiste auf `Videoaufnahmen` klicken."
 
 #: ../../video_streaming.md:68
 msgid "Screenshot"
-msgstr ""
+msgstr "Screenshot"
 
 #: ../../video_streaming.md:70
 msgid "![!Video Streams](images/video_streams.png)"
-msgstr ""
+msgstr "![!Video Streams](images/video_streams.png)"
 
 #: ../../video_streaming.md:70
 msgid "!Video Streams"
-msgstr ""
-
+msgstr "Videostreams"

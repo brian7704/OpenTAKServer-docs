@@ -4,25 +4,26 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/internationalization/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../internationalization.rst:2
 msgid "Internationalization"
-msgstr ""
+msgstr "Internationalisierung"
 
 #: ../../internationalization.rst:4
 msgid ""
@@ -32,10 +33,16 @@ msgid ""
 "using GitHub OAuth. With GitHub OAuth you will be tagged as a contributor"
 " once the translation gets merged into the main branch."
 msgstr ""
+"Ab Version 1.7.0 unterstützt OpenTAKServer die Internationalisierung. Wenn "
+"Sie durch Übersetzungen von OTS in Ihre Sprache beitragen möchten, können "
+"Sie sich über GitHub OAuth beim `OTS Weblate Server "
+"<https://weblate.opentakserver.io>`__ anmelden. Mit GitHub OAuth werden Sie "
+"als Mitwirkender gekennzeichnet, sobald die Übersetzung in den Main-Branch "
+"übernommen wurde."
 
 #: ../../internationalization.rst:9
 msgid "View Translation Status"
-msgstr ""
+msgstr "Übersetzungsstatus anzeigen"
 
 #: ../../internationalization.rst:11
 msgid ""
@@ -45,10 +52,15 @@ msgid ""
 "completion, and the translations themselves can be viewed without logging"
 " in."
 msgstr ""
+"Um den Status der unterstützten Sprachen einzusehen, rufen Sie `https://"
+"weblate.opentakserver.io <https://weblate.opentakserver.io>`__ auf und "
+"klicken Sie auf OpenTAKServer. Alle unterstützten Sprachen, deren "
+"Fertigstellungsgrad sowie die Übersetzungen selbst können ohne Anmeldung "
+"eingesehen werden."
 
 #: ../../internationalization.rst:17
 msgid "Adding New Languages"
-msgstr ""
+msgstr "Hinzufügen neuer Sprachen"
 
 #: ../../internationalization.rst:19
 msgid ""
@@ -56,10 +68,13 @@ msgid ""
 "Weblate, you can request it by opening a GitHub issue or in the discord "
 "server."
 msgstr ""
+"Falls Sie eine Sprache zu OTS hinzufügen möchten, die derzeit nicht in "
+"Weblate aufgeführt ist, können Sie dies anfordern, indem Sie ein GitHub-"
+"Issue oder einen Beitrag auf dem Discord-Server erstellen."
 
 #: ../../internationalization.rst:23
 msgid "Contributing"
-msgstr ""
+msgstr "Mitwirken"
 
 #: ../../internationalization.rst:25
 msgid ""
@@ -71,10 +86,18 @@ msgid ""
 "text and click the ``Save and Continue`` button to go to the next string."
 " See the screenshot at the bottom of this page for an example."
 msgstr ""
+"Nach der Anmeldung über GitHub OAuth werden Sie zum Dashboard "
+"weitergeleitet. Klicken Sie dort auf das OpenTAKServer-Projekt und "
+"anschließend auf die gewünschte Sprache. Wählen Sie dann die Option „Nicht "
+"übersetzte Zeichenketten“. Sie gelangen nun zur ersten nicht übersetzten "
+"Zeichenkette. Geben Sie auf dieser Seite die Übersetzung in das leere Feld "
+"unter dem englischen Text ein und klicken Sie auf ``Speichern und "
+"fortfahren``, um zur nächsten Zeichenkette zu gelangen. Ein Beispiel finden "
+"Sie im Screenshot unten auf dieser Seite."
 
 #: ../../internationalization.rst:31
 msgid "Google Translate API"
-msgstr ""
+msgstr "Google Translate API"
 
 #: ../../internationalization.rst:33
 msgid ""
@@ -82,4 +105,7 @@ msgid ""
 "it, click on the ``Automatic Suggestions`` button on the translation "
 "screen. See the screenshot below for an example."
 msgstr ""
-
+"Der Weblate-Server ist mit einem Google Translate API-Schlüssel "
+"konfiguriert. Um ihn zu verwenden, klicken Sie auf der Übersetzungsseite auf "
+"die Schaltfläche ``Automatische Vorschläge``. Ein Beispiel finden Sie im "
+"Screenshot unten."

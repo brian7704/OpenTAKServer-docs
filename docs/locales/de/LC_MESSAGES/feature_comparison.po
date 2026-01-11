@@ -4,155 +4,155 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenTAKServer \n"
+"Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-01-10 15:38+0000\n"
+"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"Language-Team: German <https://weblate.opentakserver.io/projects/"
+"opentakserver-docs/feature_comparison/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../feature_comparison.md:1
 msgid "Feature Comparison"
-msgstr ""
+msgstr "Funktionsvergleich"
 
 #: ../../feature_comparison.md
 msgid "OpenTAKServer"
-msgstr ""
+msgstr "OpenTAKServer"
 
 #: ../../feature_comparison.md
 msgid "FreeTAKServer"
-msgstr ""
+msgstr "FreeTAKServer"
 
 #: ../../feature_comparison.md
 msgid "TAKServer"
-msgstr ""
+msgstr "TAKServer"
 
 #: ../../feature_comparison.md
 msgid "TCP"
-msgstr ""
+msgstr "TCP"
 
 #: ../../feature_comparison.md
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: ../../feature_comparison.md
 msgid "SSL"
-msgstr ""
+msgstr "SSL"
 
 #: ../../feature_comparison.md
 msgid "Automatic Certificate Authority Generation"
-msgstr ""
+msgstr "Automatische Zertifizierungsstellengenerierung"
 
 #: ../../feature_comparison.md
 msgid "No"
-msgstr ""
+msgstr "NEIN"
 
 #: ../../feature_comparison.md
 msgid "Certificate Enrollment"
-msgstr ""
+msgstr "Zertifikatverteilung"
 
 #: ../../feature_comparison.md
 msgid "Federation"
-msgstr ""
+msgstr "Federation"
 
 #: ../../feature_comparison.md
 msgid "No (Coming in 1.7.0)"
-msgstr ""
+msgstr "Nein (Erscheint in Version 1.7.0)"
 
 #: ../../feature_comparison.md
 msgid "Data Packages"
-msgstr ""
+msgstr "Datenpakete"
 
 #: ../../feature_comparison.md
 msgid "DataSync"
-msgstr ""
+msgstr "DataSync"
 
 #: ../../feature_comparison.md
 msgid "ExCheck"
-msgstr ""
+msgstr "ExCheck"
 
 #: ../../feature_comparison.md
 msgid "Coming Soon"
-msgstr ""
+msgstr "Demnächst verfügbar"
 
 #: ../../feature_comparison.md
 msgid "Video Streaming"
-msgstr ""
+msgstr "Videostreaming"
 
 #: ../../feature_comparison.md
 msgid "Installed Separately"
-msgstr ""
+msgstr "Separat installiert"
 
 #: ../../feature_comparison.md
 msgid "Video Stream Recording/Playback"
-msgstr ""
+msgstr "Videostream-Aufzeichnung/Wiedergabe"
 
 #: ../../feature_comparison.md
 msgid "Mumble Server Authentication"
-msgstr ""
+msgstr "Mumble-Server-Authentifizierung"
 
 #: ../../feature_comparison.md
 msgid "Web UI"
-msgstr ""
+msgstr "Web-Benutzeroberfläche"
 
 #: ../../feature_comparison.md
 msgid "EUD Authentication"
-msgstr ""
+msgstr "EUD-Authentifizierung"
 
 #: ../../feature_comparison.md
 msgid "ADS-B Data From Airplanes.live"
-msgstr ""
+msgstr "ADS-B-Daten von Flugzeugen.live"
 
 #: ../../feature_comparison.md
 msgid "AIS Data From AISHub.net"
-msgstr ""
+msgstr "AIS-Daten von AISHub.net"
 
 #: ../../feature_comparison.md
 msgid "Database"
-msgstr ""
+msgstr "Datenbank"
 
 #: ../../feature_comparison.md
 msgid "SqlAlchemy (Defaults to PostGIS)"
-msgstr ""
+msgstr "SQLAlchemy (Standardmäßig PostGIS)"
 
 #: ../../feature_comparison.md
 msgid "SqlAlchemy (Defaults to SQLite)"
-msgstr ""
+msgstr "SQLAlchemy (Standardmäßig SQLite)"
 
 #: ../../feature_comparison.md
 msgid "PostgreSQL"
-msgstr ""
+msgstr "PostgreSQL"
 
 #: ../../feature_comparison.md
 msgid "Runs on Raspberry Pi"
-msgstr ""
+msgstr "Läuft auf Raspberry Pi"
 
 #: ../../feature_comparison.md
 msgid "Meshtastic support"
-msgstr ""
+msgstr "Meshtastic-Unterstützung"
 
 #: ../../feature_comparison.md
 msgid "Update Server"
-msgstr ""
+msgstr "Update-Server"
 
 #: ../../feature_comparison.md
 msgid "Device Profiles"
-msgstr ""
+msgstr "Geräteprofile"
 
 #: ../../feature_comparison.md
 msgid "Groups/Channels"
-msgstr ""
+msgstr "Gruppe/Kanal"
 
 #: ../../feature_comparison.md
 msgid "Actively Developed"
-msgstr ""
-
+msgstr "Aktiv entwickelt"
