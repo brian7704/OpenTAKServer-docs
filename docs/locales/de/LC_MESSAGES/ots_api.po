@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-10 22:17-0500\n"
-"PO-Revision-Date: 2026-01-10 15:38+0000\n"
-"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"PO-Revision-Date: 2026-03-03 14:31+0000\n"
+"Last-Translator: Inco Mode <github.com@incomode.de>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/ots_api/de/>\n"
 "Language: de\n"
@@ -265,7 +265,7 @@ msgstr ""
 
 #: ../../<autoflask>:1
 msgid "Provides an OAuth token for TAKX and CloudTAK"
-msgstr "Stellt ein OAuth-Token für TAKX und CloudTAK bereit."
+msgstr "Stellt ein OAuth-Token für TAKX und CloudTAK bereit"
 
 #: ../../<autoflask>:1
 msgid "jwt"
