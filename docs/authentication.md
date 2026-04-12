@@ -20,6 +20,15 @@ looks like `rtsp://username:password@server_address:8554/path`. In these situati
 username and password, and the `@` character separates the username/password from the server address. Having a password
 with these characters will cause browsers and video players to incorrectly parse the URL.
 
+## OpenID Connect (OIDC)
+
+If you want browser-based single sign-on, OpenTAKServer supports OpenID Connect.
+OIDC is optional and disabled by default, so OpenTAKServer will continue using its
+normal local authentication flow unless you explicitly enable it.
+
+See the dedicated [OIDC documentation](oidc.md) for configuration, claim mapping,
+role mapping, PKCE, and migration guidance.
+
 ## Token Authentication
 
 OpenTAKServer supports token authentication which can be helpful when interacting with OpenTAKServer via the
