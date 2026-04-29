@@ -26,13 +26,16 @@ If you want browser-based single sign-on, OpenTAKServer supports OpenID Connect.
 OIDC is optional and disabled by default, so OpenTAKServer will continue using its
 normal local authentication flow unless you explicitly enable it.
 
+When OIDC is enabled, the web UI detects that and starts the browser login flow
+with `/api/oidc/login` instead of using the normal credential POST to `/api/login`.
+
 See the dedicated [OIDC documentation](oidc.md) for configuration, claim mapping,
-role mapping, PKCE, and migration guidance.
+role mapping, PKCE, provider behavior, and web UI integration details.
 
 ## Token Authentication
 
 OpenTAKServer supports token authentication which can be helpful when interacting with OpenTAKServer via the
-[API](API_old). Use the following steps to authenticate with a token:
+[API](API_old.md). Use the following steps to authenticate with a token:
 
 Add these settings to `~/ots/config.yml` if they're not already present. This will remove the CSRF requirements
 for token auth but still require CSRF for basic and session auth.
