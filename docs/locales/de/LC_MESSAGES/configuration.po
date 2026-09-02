@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OpenTAKServer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-28 22:52-0500\n"
-"PO-Revision-Date: 2026-01-10 15:38+0000\n"
-"Last-Translator: Max <berrytak@users.noreply.weblate.opentakserver.io>\n"
+"PO-Revision-Date: 2026-03-03 14:31+0000\n"
+"Last-Translator: Inco Mode <github.com@incomode.de>\n"
 "Language-Team: German <https://weblate.opentakserver.io/projects/"
 "opentakserver-docs/configuration/de/>\n"
 "Language: de\n"
@@ -141,7 +141,7 @@ msgid ""
 msgstr ""
 "Die API von OpenTAKServer lauscht auf diesem Port über die Loopback-"
 "Schnittstelle. Nginx leitet HTTP-Anfragen an diesen Port weiter. "
-"Standardmäßig ist dies „8081“"
+"Standardmäßig ist dies ``8081``"
 
 #: ../../configuration.rst:66
 msgid ""
@@ -149,7 +149,7 @@ msgid ""
 "requests to OTS_LISTENER_PORT. Default ``8080``"
 msgstr ""
 "Port, an dem nginx auf HTTP-Anfragen wartet. Nginx leitet diese Anfragen an "
-"OTS_LISTENER_PORT weiter. Standardwert: 8080"
+"OTS_LISTENER_PORT weiter. Standardwert: ``8080``"
 
 #: ../../configuration.rst:71
 msgid ""
@@ -157,7 +157,7 @@ msgid ""
 "OTS_LISTENER_PORT. Default ``8443``"
 msgstr ""
 "Nginx lauscht an diesem Port auf HTTPS-Anfragen und leitet sie an "
-"OTS_LISTENER_PORT weiter. Standardwert: 8443"
+"OTS_LISTENER_PORT weiter. Standardwert: ``8443``"
 
 #: ../../configuration.rst:76
 msgid ""
@@ -165,7 +165,7 @@ msgid ""
 "proxies them to OTS_LISTENER_PORT. Default ``8446``"
 msgstr ""
 "Nginx lauscht an diesem Port auf Zertifikatsregistrierungsanfragen und "
-"leitet sie an OTS_LISTENER_PORT weiter. Standardwert: 8446"
+"leitet sie an OTS_LISTENER_PORT weiter. Standardwert: ``8446``"
 
 #: ../../configuration.rst:81
 msgid ""
@@ -187,7 +187,7 @@ msgid ""
 " and iTAK. Default ``8088``"
 msgstr ""
 "OpenTAKServer lauscht an diesem Port auf TCP-Verbindungen von ATAK, WinTAK "
-"und iTAK. Standardwert: „8088“"
+"und iTAK. Standardwert: ``8088``"
 
 #: ../../configuration.rst:93
 msgid ""
@@ -195,7 +195,7 @@ msgid ""
 " and iTAK. Default ``8089``"
 msgstr ""
 "OpenTAKServer lauscht an diesem Port auf SSL-Verbindungen von ATAK, WinTAK "
-"und iTAK. Standardmäßig wird der Port 8089 verwendet"
+"und iTAK. Standardmäßig wird der Port ``8089`` verwendet"
 
 #: ../../configuration.rst:98
 msgid ""
@@ -210,7 +210,7 @@ msgstr ""
 
 #: ../../configuration.rst:105
 msgid "Address of the RabbitMQ server. Default ``127.0.0.1``"
-msgstr "Adresse des RabbitMQ-Servers. Standardwert: „127.0.0.1“"
+msgstr "Adresse des RabbitMQ-Servers. Standardwert: ``127.0.0.1``"
 
 #: ../../configuration.rst:109
 msgid ""
@@ -228,7 +228,7 @@ msgstr ""
 
 #: ../../configuration.rst:118
 msgid "Number of ``cot_parser`` processes to run. Default: ``1``"
-msgstr "Anzahl der auszuführenden „cot_parser“-Prozesse. Standardwert: „1“"
+msgstr "Anzahl der auszuführenden ``cot_parser``-Prozesse. Standardwert: ``1``"
 
 #: ../../configuration.rst:122
 msgid ""
@@ -236,8 +236,8 @@ msgid ""
 "``http://``), address, and port. Default ``http://localhost:9997``"
 msgstr ""
 "Adresse des MediaMTX-API-Servers. Bitte geben Sie das Schema (z. B. "
-"„http://“), die Adresse und den Port an. Standardmäßig "
-"„http://localhost:9997“"
+"``http://``), die Adresse und den Port an. Standardmäßig "
+"``http://localhost:9997``"
 
 #: ../../configuration.rst:128
 msgid ""
@@ -255,7 +255,7 @@ msgid ""
 msgstr ""
 "SSL-Verifizierungsmodus für den SSL-CoT-Port. Weitere Informationen finden "
 "Sie in der Python-Dokumentation <https://docs.python.org/3/library/ssl.html#"
-"ssl.SSLContext.verify_mode>. Standardmäßig ist `ssl.CERT_REQUIRED` "
+"ssl.SSLContext.verify_mode>. Standardmäßig ist ``ssl.CERT_REQUIRED`` "
 "eingestellt"
 
 #: ../../configuration.rst:139
@@ -272,7 +272,7 @@ msgstr ""
 
 #: ../../configuration.rst:145
 msgid "Name for your certificate authority. Default ``OpenTAKServer-CA``"
-msgstr "Name Ihrer Zertifizierungsstelle. Standardwert: „OpenTAKServer-CA“"
+msgstr "Name Ihrer Zertifizierungsstelle. Standardwert: ``OpenTAKServer-CA``"
 
 #: ../../configuration.rst:149
 msgid "Location of your certificate authority. Default ``~/ots/ca``"
@@ -288,11 +288,11 @@ msgid ""
 "``3650``"
 msgstr ""
 "Anzahl der Tage, für die die Zertifikate gültig sein sollten. Standardwert: "
-"„3650“."
+"``3650``"
 
 #: ../../configuration.rst:162
 msgid "ISO country code for your certificate authority. Default ``WW``"
-msgstr "ISO-Ländercode für Ihre Zertifizierungsstelle. Standardwert: „WW“"
+msgstr "ISO-Ländercode für Ihre Zertifizierungsstelle. Standardwert: ``WW``"
 
 #: ../../configuration.rst:166
 msgid "State abbreviation for your certificate authority. Default ``XX``"
@@ -302,7 +302,7 @@ msgstr ""
 
 #: ../../configuration.rst:170
 msgid "City name for your certificate authority. Default ``YY``"
-msgstr "Stadtname Ihrer Zertifizierungsstelle. Standardwert: „JJ“"
+msgstr "Stadtname Ihrer Zertifizierungsstelle. Standardwert: ``YY``"
 
 #: ../../configuration.rst:174
 msgid "Organization name for your certificate authority. Default ``ZZ``"
@@ -687,7 +687,7 @@ msgstr ""
 "``True`` gesetzt ist. Standardmäßig werden E-Mails über ein Gmail-Konto "
 "versendet. Geben Sie dazu einfach Ihren Benutzernamen und Ihr `App Passwort "
 "<https://support.google.com/accounts/answer/185833?hl=en>`__ an. Weitere "
-"Informationen finden Sie unter `E-Mail <email.md>`."
+"Informationen finden Sie unter `E-Mail <email.md>`__."
 
 #: ../../configuration.rst:442 ../../configuration.rst:446
 msgid "Default ``False``"
