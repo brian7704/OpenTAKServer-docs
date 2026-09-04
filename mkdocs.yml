@@ -38,6 +38,7 @@ nav:
   - Mission API/Data Sync: 'mission_api.md'
   - Email: 'email.md'
   - Authentication: 'authentication.md'
+  - OpenID Connect (OIDC): 'oidc.md'
   - API: 'API_old.md'
   - ADS-B: 'adsb.md'
   - AIS: 'ais.md'
