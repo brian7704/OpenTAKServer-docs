@@ -3,6 +3,11 @@
 OpenTAKServer can pull live AIS data from the [AISHub.net](https://www.aishub.net/). Vessels will be shown on your EUD's
 map and OpenTAKServer's map. You can find it under Scheduled Jobs in the UI.
 
+# Temporarily Disabled
+
+As of version 1.7.14, AIS support has been disabled due to the aiscot library being deleted from GitHub and PyPI. This feature
+will be re-enabled in a future version when a replacement for aiscot is found.
+
 ## AISHub API
 
 You will need an account on AISHub with API access. Generally this requires that you setup an AIS feeder and share your data with them.

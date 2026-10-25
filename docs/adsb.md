@@ -3,6 +3,11 @@
 OpenTAKServer can pull live ADS-B data from the free [Airplanes.live](https://airplanes.live/) [API](https://airplanes.live/api-guide/). Aircraft will show on both
 your EUD's map and OpenTAKServer's map with 2525c icons.
 
+# Temporarily Disabled
+
+As of version 1.7.14, ADS-B support has been disabled due to the adsbcot library being deleted from GitHub and PyPI. This feature
+will be re-enabled in a future version when a replacement for adsbcot is found.
+
 ## Airplanes.live API Limits
 
 Airplanes.live limits their API to at most one request per second and a radius of 250nm.
