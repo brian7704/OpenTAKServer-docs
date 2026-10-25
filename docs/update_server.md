@@ -7,6 +7,7 @@ be automatically pushed out to EUDs when ATAK is opened.
 
 OpenTAKServer does not come with any plugins. Official plugins are available at [TAK.gov](https://tak.gov) and some
 open source plugins are available on GitHub. You must obtain them and upload them to your OpenTAKServer manually.
+You can also link your TAK.gov account to OTS.
 
 ## Uploading Plugins
 

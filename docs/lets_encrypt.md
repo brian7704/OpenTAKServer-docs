@@ -1,7 +1,7 @@
 # Let's Encrypt
 
 If you have a domain name for your server you can use a Let's Encrypt certificate to secure the web UI. This also
-allows iTAK to register with the server using a QR code.
+allows TAK clients to register with the server using a QR code.
 
 Before beginning, make sure your domain has a DNS A record that points to the public IP of your server.
 

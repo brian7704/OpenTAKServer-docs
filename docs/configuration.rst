@@ -494,8 +494,7 @@ to include the scheme (ie ``http://`` or ``https://``), server address,
 and port.
 
 The nginx config also needs to be changed. In
-``/etc/nginx/sites-enabled/ots_https`` (or
-``c:\tools\nginx-1.25.4\conf\ots\ots_https.conf`` on Windows), look for
+``/etc/nginx/sites-enabled/ots_https``, look for
 the ``location`` blocks for webrtc and hls. Each should have a
 ``proxy_pass`` line that starts with ``https://127.0.0.1``. Change that
 address (and port number if necessary) to the address of your MediaMTX

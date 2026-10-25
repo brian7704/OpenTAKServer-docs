@@ -11,9 +11,9 @@ import sys
 sys.path.insert(0, os.path.abspath('../../OpenTAKServer'))
 
 project = 'OpenTAKServer'
-copyright = '2025, Brian Wallen'
+copyright = '2026, Brian Wallen'
 author = 'Brian Wallen'
-release = '1.7.0'
+release = '1.7.14'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
