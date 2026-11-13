@@ -6,7 +6,7 @@
 | SSL                                        | Yes                  | Yes                             | Yes                  |
 | Automatic Certificate Authority Generation | Yes                  | No                              | No                   |
 | Certificate Enrollment                     | Yes                  | No                              | Yes                  |
-| Federation                                 | No (Coming in 1.8.0) | Yes                             | Yes                  |
+| Federation                                 | Yes[^1]               | No                              | Yes                  |
 | Data Packages                              | Yes                  | Yes                             | Yes                  |
 | DataSync                                   | Yes                  | Yes                             | Yes                  |
 | ExCheck                                    | Coming Soon          | Yes                             | Yes                  |
@@ -25,3 +25,5 @@
 | Device Profiles                            | Yes                  | No                              | Yes                  |
 | Groups/Channels                            | Yes                  | No                              | Yes                  |
 | Actively Developed                         | Yes                  | No                              | Yes                  |
+
+[^1]: Federation support added in 1.8.0. Currently only supports outgoing connections to FedHub and the GOTS takserver. Missions, tokens, and incoming connections to be added at a later date

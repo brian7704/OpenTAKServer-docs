@@ -1,5 +1,5 @@
-Models
-------
+Database Models
+---------------
 
 .. sqla-model:: opentakserver.models.Alert.Alert
 
@@ -13,6 +13,10 @@ Models
 
 .. sqla-model:: opentakserver.models.ChatroomsUids.ChatroomsUids
 
+.. sqla-model:: opentakserver.models.user.User
+
+.. sqla-model:: opentakserver.models.CITrap.CITrap
+
 .. sqla-model:: opentakserver.models.CoT.CoT
 
 .. sqla-model:: opentakserver.models.DataPackage.DataPackage
@@ -23,9 +27,23 @@ Models
 
 .. sqla-model:: opentakserver.models.EUDStats.EUDStats
 
+.. sqla-model:: opentakserver.models.Federate.Federate
+
+.. sqla-model:: opentakserver.models.FederateGroupMapping.FederateGroupMapping
+
+.. sqla-model:: opentakserver.models.FederateGroups.FederateGroups
+
+.. sqla-model:: opentakserver.models.FederateToken.FederateToken
+
+.. sqla-model:: opentakserver.models.FederationConnection.FederationConnection
+
+.. sqla-model:: opentakserver.models.FederationGroups.FederationGroups
+
 .. sqla-model:: opentakserver.models.GeoChat.GeoChat
 
 .. sqla-model:: opentakserver.models.Group.Group
+
+.. sqla-model:: opentakserver.models.GroupCITrap.GroupCITrap
 
 .. sqla-model:: opentakserver.models.GroupMission.GroupMission
 
@@ -66,8 +84,6 @@ Models
 .. sqla-model:: opentakserver.models.Team.Team
 
 .. sqla-model:: opentakserver.models.Token.Token
-
-.. sqla-model:: opentakserver.models.user.User
 
 .. sqla-model:: opentakserver.models.VideoRecording.VideoRecording
 

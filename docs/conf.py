@@ -8,12 +8,35 @@
 
 import os
 import sys
+import sphinx.builders.latex
+
+sphinx.builders.latex.constants.XELATEX_DEFAULT_FONTPKG = r'''
+\setmainfont{FreeSerif}[
+  UprightFont    = *,
+  ItalicFont     = *Italic,
+  BoldFont       = *Bold,
+  BoldItalicFont = *BoldItalic
+]
+\setsansfont{FreeSans}[
+  UprightFont    = *,
+  ItalicFont     = *Oblique,
+  BoldFont       = *Bold,
+  BoldItalicFont = *BoldOblique,
+]
+\setmonofont{FreeMono}[
+  UprightFont    = *,
+  ItalicFont     = *Oblique,
+  BoldFont       = *Bold,
+  BoldItalicFont = *BoldOblique,
+]
+'''
+
 sys.path.insert(0, os.path.abspath('../../OpenTAKServer'))
 
 project = 'OpenTAKServer'
 copyright = '2026, Brian Wallen'
 author = 'Brian Wallen'
-release = '1.7.14'
+release = '1.8.x'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -23,6 +46,31 @@ extensions = ['myst_parser', 'sphinx_copybutton', 'sphinxcontrib.lightbox2', 'sp
               'sphinx_sqlalchemy',]
 
 autosummary_generate = True
+
+latex_engine = 'xelatex'
+latex_elements = {
+    'fontpkg': '''
+\setmainfont{FreeSerif}[
+  UprightFont    = *,
+  ItalicFont     = *Italic,
+  BoldFont       = *Bold,
+  BoldItalicFont = *BoldItalic
+]
+\setsansfont{FreeSans}[
+  UprightFont    = *,
+  ItalicFont     = *Oblique,
+  BoldFont       = *Bold,
+  BoldItalicFont = *BoldOblique,
+]
+\setmonofont{FreeMono}[
+  UprightFont    = *,
+  ItalicFont     = *Oblique,
+  BoldFont       = *Bold,
+  BoldItalicFont = *BoldOblique,
+]
+''',
+ }
+
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']

@@ -375,6 +375,35 @@ OpenTAKServer Settings
 
     Default: ``Meshtastic``
 
+.. py:data:: OTS_UDP_PORT (Added in 1.7.0)
+
+    Port to listen for UDP CoT data
+
+    Default: ``8087``
+
+.. py:data:: OTS_STREAMING_INTERFACE (Added in 1.7.0)
+
+    Interface IP address for eud_handler to listen on
+
+    Default: ``0.0.0.0``
+
+.. py:data:: OTS_FEDERATION_CERTIFICATE (Added in 1.8.0)
+
+    Location of the federation certificate.
+
+    Default: ``~/ots/ca/ca.pem``
+
+.. py:data:: OTS_FEDERATION_HEALTHCHECK (Added in 1.8.0)
+
+    Perform federation healthcheck ping
+
+    Default: ``True``
+
+.. py:data:: OTS_FEDERATION_HEALTHCHECK_INTERVAL (Added in 1.8.0)
+
+    Number of seconds between federation healthcheck pings
+
+    Default: ``5``
 
 
 Flask-Security

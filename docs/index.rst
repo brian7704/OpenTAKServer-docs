@@ -22,8 +22,7 @@ us on our `Discord server <https://discord.gg/6uaVHjtfXN>`__
 Current Features
 ----------------
 
--  Support for ATAK 4.8 and up (Older versions may work, needs to be
-   tested)
+-  Support for ATAK 4.8 and up
 -  WinTAK support
 -  iTAK support
 -  TAKX support
@@ -32,6 +31,12 @@ Current Features
 -  `Plugin Update Server <update_server.html>`__
 -  `Device Profiles <device_profiles.html>`__
 -  Groups/Channels
+-  Initial Federation Support
+
+   -  Outgoing connections to FedHub or a GOTS takserver supported
+   -  Group Mapping
+   -  Does not currently support tokens, federated missions, or incoming federation connections (these features are planned for a future version)
+
 -  LDAP/Active Directory
 -  Authentication
 
@@ -77,13 +82,6 @@ Below is a list of currently supported languages.
 
 .. image:: https://weblate.opentakserver.io/widget/opentakserver/multi-auto.svg
 
-Planned Features
-----------------
-
--  Federation
--  Pull data from networked SDRs (ie dump1090, rtl_ais, rtl_tcp, etc)
--  Traccar integration
-
 Supporting The Project
 ----------------------
 
@@ -126,6 +124,7 @@ open source.
    ldap.rst
    certificate_enrollment.md
    mission_api.md
+   federation.rst
    link_account.rst
    email.md
    authentication.md
